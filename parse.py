@@ -36,12 +36,22 @@ def main(argv):
     G = generate(open(input_))
     print("\n".join(networkx.generate_gml(G)))
 
+    #from ipdb import set_trace ; set_trace()
+
+    def generate_edgelist_ids(G):
+        labels_to_ids = networkx.get_node_attributes(G, 'id')
+        G2 = networkx.relabel_nodes(G, labels_to_ids, copy=True)
+
+        yield from networkx.generate_edgelist(G2, data=False)
+
     for ext, func in [
             ('gml', networkx.generate_gml),
             ('graphml', networkx.generate_graphml),
+            ('edg', generate_edgelist_ids),
         ]:
         output = os.path.splitext(input_)[0] + '.' + ext
         open(output, 'w').write('\n'.join(func(G)))
+
 
 if __name__ == '__main__':
     main(sys.argv)
