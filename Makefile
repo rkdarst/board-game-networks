@@ -3,7 +3,7 @@ EXTENSIONS=gml graphml edg
 OUTPUTS=$(INPUTS:.yaml=.gml) $(INPUTS:.yaml=.graphml)
 
 
-all: setup $(OUTPUTS)
+all: $(OUTPUTS)
 
 clean:
 	rm -f index.html
@@ -13,6 +13,9 @@ setup:
 	echo 'Board game network dataset.  <a href="https://github.com/rkdarst/board-game-networks/">Information</a><br><br>' >> index.html
 	echo >> index.html
 	echo >> index.html
+
+finalization:
+	echo 'Get all data: <tt>git clone https://github.com/rkdarst/board-game-networks --branch gh-pages</tt>'>> index.html
 
 %.gml: %.yaml parse.py
 	python3 parse.py $<
@@ -26,9 +29,10 @@ setup:
 	echo >> index.html
 
 
-gh-pages:
+gh-pages: setup all finalization
+	git br -D gh-pages && true
 	git checkout --orphan gh-pages
 	git add index.html *.yaml *.gml *.graphml *.edg
 	git commit -m gh-pages
-	git push -u origin gh-pages
+	git push -u origin gh-pages -f
 	git checkout master
