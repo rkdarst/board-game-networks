@@ -52,16 +52,33 @@ def generate(fname):
     return G
 
 def main(argv):
-    input_ = argv[1]
-    G = generate(open(input_))
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--stats', action='store_true')
+    parser.add_argument('graph')
+    args = parser.parse_args(argv[1:])
+
+    G = generate(open(args.graph))
     #print("\n".join(networkx.generate_gml(G)))
+
+    if args.stats:
+        print("nodes=%s"%len(G.nodes()))
+        print("edges=%s"%len(G.edges()))
+        print("avg degree=%.2f"%(len(G.edges())*2/len(G.nodes())))
+        print("density=%g.2f"%(networkx.density(G)))
+        print("transitivity=%.2f"%(networkx.transitivity(G)))
+        node_keys = set().union(*[list(x.keys()) for x in dict(G.nodes(data=True)).values()])
+        print("node keys: %s"%(node_keys,))
+        edge_keys = set().union(*[list(x[2].keys()) for x in G.edges(data=True)])
+        print("edge keys: %s"%(edge_keys,))
+        exit(0)
 
     #from ipdb import set_trace ; set_trace()
 
     def generate_edgelist_ids(G):
+        """Generate an edgelist with IDs instead of labels"""
         labels_to_ids = networkx.get_node_attributes(G, 'id')
         G2 = networkx.relabel_nodes(G, labels_to_ids, copy=True)
-
         yield from networkx.generate_edgelist(G2, data=False)
 
     for ext, func in [
@@ -69,7 +86,7 @@ def main(argv):
             ('graphml', networkx.generate_graphml),
             ('edg', generate_edgelist_ids),
         ]:
-        output = os.path.splitext(input_)[0] + '.' + ext
+        output = os.path.splitext(args.graph)[0] + '.' + ext
         open(output, 'w').write('\n'.join(func(G)))
 
 
