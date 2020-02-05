@@ -15,26 +15,46 @@ def generate(fname):
         G.add_node(node['label'], id=i, **node['labels'])
 
     edges = collections.defaultdict(int)
+    edges_weights = collections.defaultdict(list)
     for j, edge in enumerate(net['adjacency']):
         a = edge['src']
+
+        # weights or other data:
         for b in edge['dst']:
-            G.add_edge(a['label'], b['label'])
-            edges[frozenset((a['label'], b['label']))] += 1
+            if isinstance(b, list):
+                a_label = a['label']
+                b_label = b[0]['label']
+                weight = b[1]
+                G.add_edge(a_label, b_label, weight=weight)
+                edges[frozenset((a_label, b_label))] += 1
+                edges_weights[frozenset((a_label, b_label))].append(weight)
+            else:
+                G.add_edge(a['label'], b['label'])
+                edges[frozenset((a['label'], b['label']))] += 1
 
     # Check the graph
 
     # Each edge is bi-directional
     for k, v in edges.items():
-        assert v == 2, "%s is not bidirectional"%(k, )
+        if v != 2:
+            print("WARN: %s is not bidirectional (n=%s)"%(k, v))
+        #assert v == 2, "%s is not bidirectional"%(k, )
+
+    # Each edge has same weight both ways
+    for k, v in edges_weights.items():
+        #print(k, v)
+        if len(v) == 2 and v[0] != v[1]:
+            print("WARN: %s does not have the same weights both ways"%(k, ))
 
     # no self-loops
+    assert len(list(G.nodes_with_selfloops())) == 0, "Self loops in %s"%list(G.nodes_with_selfloops())
 
     return G
 
 def main(argv):
     input_ = argv[1]
     G = generate(open(input_))
-    print("\n".join(networkx.generate_gml(G)))
+    #print("\n".join(networkx.generate_gml(G)))
 
     #from ipdb import set_trace ; set_trace()
 
