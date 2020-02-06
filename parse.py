@@ -9,7 +9,10 @@ def generate(fname):
     #print(net)
     #print(yaml.dump(net))
 
-    G = networkx.Graph()
+    if net.get('meta', {}).get('graph-class') == 'MultiGraph':
+        G = networkx.MultiGraph()
+    else:
+        G = networkx.Graph()
 
     for i, node in enumerate(net['nodes']):
         G.add_node(node['label'], id=i, **node['labels'])
@@ -66,7 +69,7 @@ def main(argv):
         print("edges=%s"%len(G.edges()))
         print("avg degree=%.2f"%(len(G.edges())*2/len(G.nodes())))
         print("density=%.3g"%(networkx.density(G)))
-        print("transitivity=%.3g"%(networkx.transitivity(G)))
+        print("transitivity=%.3g"%(networkx.transitivity(networkx.Graph(G))))
         node_keys = set().union(*[list(x.keys()) for x in dict(G.nodes(data=True)).values()])
         print("node keys: %s"%(node_keys,))
         edge_keys = set().union(*[list(x[2].keys()) for x in G.edges(data=True)])
