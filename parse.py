@@ -15,7 +15,7 @@ def generate(fname):
         G = networkx.Graph()
 
     for i, node in enumerate(net['nodes']):
-        G.add_node(node['label'], id=i, **node['labels'])
+        G.add_node(node['label'], id=i, **node.get('labels', {}))
 
     edges = collections.defaultdict(int)
     edges_weights = collections.defaultdict(list)
