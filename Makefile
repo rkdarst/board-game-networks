@@ -29,7 +29,7 @@ finalization:
 	echo >> index.html
 
 
-gh-pages: setup all finalization
+gh-pages: clean setup all finalization
 	git br -D gh-pages && true
 	git checkout --orphan gh-pages
 	git add index.html *.yaml *.gml *.graphml *.edg
