@@ -28,7 +28,13 @@ def generate(fname):
                 a_label = a['label']
                 b_label = b[0]['label']
                 weight = b[1]
-                G.add_edge(a_label, b_label, weight=weight)
+                if len(b) > 2:
+                    attrs = dict(b[2])   # making a copy of dict
+                else:
+                    attrs = { }
+                if weight is not None:
+                    attrs['weight'] = weight
+                G.add_edge(a_label, b_label, **attrs)
                 edges[frozenset((a_label, b_label))] += 1
                 edges_weights[frozenset((a_label, b_label))].append(weight)
             else:
