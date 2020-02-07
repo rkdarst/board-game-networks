@@ -13,10 +13,11 @@ About
 -----
 
 All data is manually collected into a YAML format which provides some
-built-in integrity checking.  Then, it is complied (with more
-integrity checking) into other useful formats for downloading.  Raw
-data is stored in this git repository, and processed data is put in
-the ``gh-pages`` branch and published on Github Pages.
+built-in referential integrity checking, yet is still easy to modify
+by hand.  Then, it is complied (with more integrity checking) into
+other useful formats for downloading.  Raw data is stored in this git
+repository, and processed data is put in the ``gh-pages`` branch and
+published on Github Pages.
 
 Data can be generated from the source with ``make all``.
 
@@ -25,7 +26,7 @@ Status
 ------
 
 Under development, formats and all are unstable.  Building gh-pages is
-a hack.  Most is undocumented.
+a hack.  So far almost everything is undocumented.
 
 License
 -------
