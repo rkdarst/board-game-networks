@@ -1,9 +1,9 @@
 data:
   - &g  green
   - &w  white
-  - &a  A
-  - &c  C
-  - &o  O
+  - &a  andina
+  - &c  caribe
+  - &o  orinoquía
 
 
 nodes:
