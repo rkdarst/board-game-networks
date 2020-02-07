@@ -106,7 +106,7 @@ def main(argv):
         diameter = max(max(x[1].values()) for x in shortestpaths)
         print("diameter (weighted)=%.3g"%(diameter, ))
         node_keys = set().union(*[list(x.keys()) for x in dict(G.nodes(data=True)).values()])
-        print("node keys: %s"%(node_keys,))
+        print("node keys: %s"%(node_keys - set(['id']),))
         edge_keys = set().union(*[list(x[2].keys()) for x in G.edges(data=True)])
         print("edge keys: %s"%(edge_keys,))
         exit(0)
