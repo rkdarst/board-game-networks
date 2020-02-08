@@ -40,6 +40,11 @@ def generate(fname):
                         attrs = { }
                     if weight is not None:
                         attrs['weight'] = weight
+                    if G.has_edge(a_label, b_label):
+                        assert G[a_label][b_label]['weight'] == weight, \
+                          "(%s-%s) has inconsistent weight"%(a_label, b_label)
+                        assert G[a_label][b_label] == attrs, \
+                          "(%s-%s) has inconsistent attributes"%(a_label, b_label)
                     G.add_edge(a_label, b_label, **attrs)
                     edges[frozenset((a_label, b_label))] += 1
                     edges_weights[frozenset((a_label, b_label))].append(weight)
