@@ -1,0 +1,177 @@
+meta:
+  bgg: https://boardgamegeek.com/boardgame/14996/ticket-ride-europe
+  graph-class: MultiGraph
+
+data:
+  - &bla  black
+  - &yel  yellow
+  - &red  red
+  - &grn  green
+  - &ora  orange
+  - &pur  purple
+  - &blu   blue
+  - &whi   white
+  - &gry   grey
+
+nodes:
+  # Edinburgh column
+  - &edi   {deg:  2, label: Edinburgh}
+  - &lon   {deg:  5, label: London}
+  - &die   {deg:  5, label: Dieppe}
+  - &bre   {deg:  3, label: Brest}
+  - &par   {deg: 10, label: Paris}
+  - &pam   {deg:  7, label: Pamplona}
+  - &mad   {deg:  5, label: Madrid}
+  - &lis   {deg:  2, label: Lisboa}
+  - &cad   {deg:  2, label: Cádiz}
+  - &bar   {deg:  3, label: Barcelona}
+  # Amsterdam column
+  - &ams   {deg:  4, label: Amsterdam}
+  - &bru   {deg:  5, label: Bruxelles}
+  - &ess   {deg:  5, label: Essen}
+  - &fra   {deg:  8, label: Frankfurt}
+  - &muc   {deg:  4, label: Muchen}
+  - &zur   {deg:  4, label: Zurich}
+  - &mar   {deg:  5, label: Marseille}
+  - &ven   {deg:  4, label: Venezia}
+  - &rom   {deg:  4, label: Roma}
+  - &bri   {deg:  3, label: Brindisi}
+  - &pal   {deg:  3, label: Palmero}
+  # Stockholm column
+  - &sto   {deg:  3, label: Stockholm}
+  - &kob   {deg:  4, label: København}
+  - &ber   {deg:  7, label: Berlin}
+  - &wie   {deg:  6, label: Wien}
+  - &bud   {deg:  6, label: Budapest}
+  - &zag   {deg:  4, label: Zagrab}
+  - &sar   {deg:  4, label: Sarajevo}
+  - &sof   {deg:  4, label: Sofia}
+  - &ath   {deg:  4, label: Athína}
+  # Riga column
+  - &rig   {deg:  3, label: Riga}
+  - &dan   {deg:  3, label: Danzig}
+  - &wil   {deg:  5, label: Wilno}
+  - &war   {deg:  6, label: Warszawa}
+  - &buc   {deg:  5, label: Bucuresti}
+  - &con   {deg:  5, label: Constantinople}
+  - &ang   {deg:  3, label: Angora}
+  - &smy   {deg:  4, label: Smyrna}
+  # Petrograd column
+  - &pet   {deg:  4, label: Petrograd}
+  - &mos   {deg:  3, label: Moskva}
+  - &smo   {deg:  3, label: Smolensk}
+  - &kyi   {deg:  6, label: Kyiv}
+  - &kha   {deg:  3, label: Kharkov}
+  - &ros   {deg:  3, label: Rostov}
+  - &sev   {deg:  5, label: Sevastopol}
+  - &soc   {deg:  3, label: Sochi}
+  - &erz   {deg:  3, label: Erzurum}
+
+
+edges:
+  # West coast
+  - [ *edi, *lon, 4, {color: *ora, locomotives: 0, tunnel: 0 } ]
+  - [ *edi, *lon, 4, {color: *bla, locomotives: 0, tunnel: 0 } ]
+  - [ *lon, *ams, 2, {color: *gry, locomotives: 2, tunnel: 0 } ]
+  - [ *lon, *die, 2, {color: *gry, locomotives: 1, tunnel: 0 } ]
+  - [ *lon, *die, 2, {color: *gry, locomotives: 1, tunnel: 0 } ]
+  - [ *die, *bre, 2, {color: *ora, locomotives: 0, tunnel: 0 } ]
+  - [ *die, *bru, 2, {color: *grn, locomotives: 0, tunnel: 0 } ]
+  - [ *die, *par, 1, {color: *pur, locomotives: 0, tunnel: 0 } ]
+  - [ *bre, *par, 3, {color: *bla, locomotives: 0, tunnel: 0 } ]
+  - [ *bre, *pam, 4, {color: *pur, locomotives: 0, tunnel: 0 } ]
+  - [ *par, *bru, 2, {color: *yel, locomotives: 0, tunnel: 0 } ]
+  - [ *par, *bru, 2, {color: *red, locomotives: 0, tunnel: 0 } ]
+  - [ *par, *fra, 3, {color: *whi, locomotives: 0, tunnel: 0 } ]
+  - [ *par, *fra, 3, {color: *ora, locomotives: 0, tunnel: 0 } ]
+  - [ *par, *zur, 3, {color: *gry, locomotives: 0, tunnel: 1 } ]
+  - [ *par, *mar, 4, {color: *gry, locomotives: 0, tunnel: 0 } ]
+  - [ *par, *pam, 4, {color: *blu, locomotives: 0, tunnel: 0 } ]
+  - [ *par, *pam, 4, {color: *grn, locomotives: 0, tunnel: 0 } ]
+  - [ *pam, *mar, 4, {color: *red, locomotives: 0, tunnel: 0 } ]
+  - [ *pam, *bar, 2, {color: *gry, locomotives: 0, tunnel: 1 } ]
+  - [ *pam, *mad, 3, {color: *bla, locomotives: 0, tunnel: 1 } ]
+  - [ *pam, *mad, 3, {color: *whi, locomotives: 0, tunnel: 1 } ]
+  - [ *mad, *lis, 3, {color: *pur, locomotives: 0, tunnel: 0 } ]
+  - [ *lis, *cad, 2, {color: *blu, locomotives: 0, tunnel: 0 } ]
+  - [ *cad, *mad, 3, {color: *ora, locomotives: 0, tunnel: 0 } ]
+  - [ *mad, *bar, 2, {color: *yel, locomotives: 0, tunnel: 0 } ]
+  - [ *bar, *mar, 4, {color: *gry, locomotives: 0, tunnel: 0 } ]
+  # Amsterdam column
+  - [ *ams, *ess, 3, {color: *yel, locomotives: 0, tunnel: 0 } ]
+  - [ *ams, *fra, 2, {color: *whi, locomotives: 0, tunnel: 0 } ]
+  - [ *ams, *bru, 1, {color: *bla, locomotives: 0, tunnel: 0 } ]
+  - [ *bru, *fra, 2, {color: *blu, locomotives: 0, tunnel: 0 } ]
+  - [ *ess, *kob, 3, {color: *gry, locomotives: 1, tunnel: 0 } ]
+  - [ *ess, *kob, 3, {color: *gry, locomotives: 1, tunnel: 0 } ]
+  - [ *ess, *ber, 2, {color: *blu, locomotives: 0, tunnel: 0 } ]
+  - [ *ess, *fra, 2, {color: *grn, locomotives: 0, tunnel: 0 } ]
+  - [ *fra, *ber, 3, {color: *bla, locomotives: 0, tunnel: 0 } ]
+  - [ *fra, *ber, 3, {color: *red, locomotives: 0, tunnel: 0 } ]
+  - [ *fra, *muc, 2, {color: *pur, locomotives: 0, tunnel: 0 } ]
+  - [ *muc, *wie, 3, {color: *ora, locomotives: 0, tunnel: 0 } ]
+  - [ *muc, *ven, 2, {color: *blu, locomotives: 0, tunnel: 1 } ]
+  - [ *muc, *zur, 2, {color: *yel, locomotives: 0, tunnel: 1 } ]
+  - [ *zur, *ven, 2, {color: *grn, locomotives: 0, tunnel: 1 } ]
+  - [ *zur, *mar, 2, {color: *pur, locomotives: 0, tunnel: 1 } ]
+  - [ *mar, *rom, 4, {color: *gry, locomotives: 0, tunnel: 1 } ]
+  - [ *ven, *zag, 2, {color: *gry, locomotives: 0, tunnel: 0 } ]
+  - [ *ven, *rom, 2, {color: *bla, locomotives: 0, tunnel: 0 } ]
+  - [ *rom, *bri, 2, {color: *whi, locomotives: 0, tunnel: 0 } ]
+  - [ *rom, *pal, 4, {color: *gry, locomotives: 1, tunnel: 0 } ]
+  - [ *bri, *ath, 4, {color: *gry, locomotives: 1, tunnel: 0 } ]
+  - [ *bri, *pal, 3, {color: *gry, locomotives: 1, tunnel: 0 } ]
+  - [ *pal, *smy, 6, {color: *gry, locomotives: 2, tunnel: 0 } ]
+  # Stockholm column
+  - [ *sto, *pet, 8, {color: *gry, locomotives: 0, tunnel: 1 } ]
+  - [ *sto, *kob, 3, {color: *yel, locomotives: 0, tunnel: 0 } ]
+  - [ *sto, *kob, 3, {color: *whi, locomotives: 0, tunnel: 0 } ]
+  - [ *ber, *dan, 4, {color: *gry, locomotives: 0, tunnel: 0 } ]
+  - [ *ber, *war, 4, {color: *pur, locomotives: 0, tunnel: 0 } ]
+  - [ *ber, *war, 4, {color: *yel, locomotives: 0, tunnel: 0 } ]
+  - [ *ber, *wie, 3, {color: *grn, locomotives: 0, tunnel: 0 } ]
+  - [ *wie, *war, 4, {color: *blu, locomotives: 0, tunnel: 0 } ]
+  - [ *wie, *bud, 1, {color: *red, locomotives: 0, tunnel: 0 } ]
+  - [ *wie, *bud, 1, {color: *whi, locomotives: 0, tunnel: 0 } ]
+  - [ *wie, *zag, 2, {color: *grn, locomotives: 0, tunnel: 0 } ]
+  - [ *bud, *kyi, 6, {color: *gry, locomotives: 0, tunnel: 1 } ]
+  - [ *bud, *buc, 4, {color: *gry, locomotives: 0, tunnel: 1 } ]
+  - [ *bud, *sar, 3, {color: *pur, locomotives: 0, tunnel: 0 } ]
+  - [ *bud, *zag, 2, {color: *ora, locomotives: 0, tunnel: 0 } ]
+  - [ *zag, *sar, 3, {color: *red, locomotives: 0, tunnel: 0 } ]
+  - [ *sar, *sof, 2, {color: *gry, locomotives: 0, tunnel: 1 } ]
+  - [ *sar, *ath, 4, {color: *grn, locomotives: 0, tunnel: 0 } ]
+  - [ *sof, *buc, 2, {color: *gry, locomotives: 0, tunnel: 1 } ]
+  - [ *sof, *con, 3, {color: *blu, locomotives: 0, tunnel: 0 } ]
+  - [ *sof, *ath, 3, {color: *pur, locomotives: 0, tunnel: 0 } ]
+  - [ *ath, *smy, 2, {color: *gry, locomotives: 1, tunnel: 0 } ]
+  # Riga column
+  - [ *rig, *pet, 4, {color: *gry, locomotives: 0, tunnel: 0 } ]
+  - [ *rig, *wil, 4, {color: *grn, locomotives: 0, tunnel: 0 } ]
+  - [ *rig, *dan, 3, {color: *bla, locomotives: 0, tunnel: 0 } ]
+  - [ *dan, *war, 2, {color: *gry, locomotives: 0, tunnel: 0 } ]
+  - [ *wil, *pet, 4, {color: *blu, locomotives: 0, tunnel: 0 } ]
+  - [ *wil, *smo, 3, {color: *yel, locomotives: 0, tunnel: 0 } ]
+  - [ *wil, *kyi, 2, {color: *gry, locomotives: 0, tunnel: 0 } ]
+  - [ *wil, *war, 3, {color: *red, locomotives: 0, tunnel: 0 } ]
+  - [ *war, *kyi, 4, {color: *gry, locomotives: 0, tunnel: 0 } ]
+  - [ *buc, *kyi, 4, {color: *gry, locomotives: 0, tunnel: 0 } ]
+  - [ *buc, *sev, 4, {color: *whi, locomotives: 0, tunnel: 0 } ]
+  - [ *buc, *con, 3, {color: *yel, locomotives: 0, tunnel: 0 } ]
+  - [ *con, *sev, 4, {color: *gry, locomotives: 2, tunnel: 0 } ]
+  - [ *con, *ang, 2, {color: *gry, locomotives: 0, tunnel: 1 } ]
+  - [ *con, *smy, 2, {color: *gry, locomotives: 0, tunnel: 1 } ]
+  - [ *ang, *erz, 3, {color: *bla, locomotives: 0, tunnel: 0 } ]
+  - [ *ang, *smy, 3, {color: *ora, locomotives: 0, tunnel: 1 } ]
+  # Petrograd column
+  - [ *pet, *mos, 4, {color: *whi, locomotives: 0, tunnel: 0 } ]
+  - [ *mos, *kha, 4, {color: *gry, locomotives: 0, tunnel: 0 } ]
+  - [ *mos, *smo, 2, {color: *ora, locomotives: 0, tunnel: 0 } ]
+  - [ *smo, *kyi, 3, {color: *red, locomotives: 0, tunnel: 0 } ]
+  - [ *kyi, *kha, 4, {color: *gry, locomotives: 0, tunnel: 0 } ]
+  - [ *kha, *ros, 2, {color: *grn, locomotives: 0, tunnel: 0 } ]
+  - [ *ros, *soc, 2, {color: *gry, locomotives: 0, tunnel: 0 } ]
+  - [ *ros, *sev, 4, {color: *gry, locomotives: 0, tunnel: 0 } ]
+  - [ *sev, *soc, 2, {color: *gry, locomotives: 1, tunnel: 0 } ]
+  - [ *sev, *erz, 4, {color: *gry, locomotives: 2, tunnel: 0 } ]
+  - [ *soc, *erz, 3, {color: *red, locomotives: 0, tunnel: 1 } ]
