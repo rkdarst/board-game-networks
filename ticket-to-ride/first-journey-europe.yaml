@@ -1,0 +1,125 @@
+meta:
+  graph-class: MultiGraph
+
+data:
+  - &black  black
+  - &yellow yellow
+  - &red    red
+  - &green  green
+#  - &orange orange
+# - &purple purple
+  - &blue   blue
+  - &white  white
+ # - &grey   grey
+
+
+nodes:
+  # West coast
+  - &dub   {label: Dublin, deg: 3}
+  - &bre   {label: Brest, deg: 4}
+  - &mad   {label: Madrid, deg: 5}
+  - &lon   {label: London, deg: 7}
+  - &par   {label: Paris, deg: 11}
+  - &bar   {label: Barcelona, deg: 5}
+  # Amsterdam column
+  - &ams   {label: Amsterdam, deg: 6}
+  - &zur   {label: Zurich, deg: 6}
+  - &rom   {label: Rome, deg: 8}
+  # Copenhagen column
+  - &cop   {label: Copenhagen, deg: 5}
+  - &ber   {label: Berlin, deg: 10}
+  - &vie   {label: Vienna, deg: 10}
+  - &sar   {label: Sarajevo, deg: 4}
+  - &ath   {label: Athens, deg: 6}
+  # Stockholm column
+  - &sto   {label: Stockholm, deg: 4}
+  - &war   {label: Warsaw, deg: 7}
+  - &buc   {label: Bucharest, deg: 9}
+  - &ank   {label: Ankara, deg: 6}
+  # Riga column
+  - &rig   {label: Riga, deg: 5}
+  - &kie   {label: Kiev, deg: 5}
+  # Moscow column
+  - &mos   {label: Moscow, deg: 7}
+  - &ros   {label: Rostov, deg: 7}
+
+edges:
+  # West coast
+  - [ *dub, *lon, 1, {color: *green} ]
+  - [ *dub, *lon, 1, {color: *yellow} ]
+  - [ *dub, *bre, 2, {color: *blue} ]
+  - [ *bre, *lon, 2, {color: *red} ]
+  - [ *bre, *par, 2, {color: *yellow} ]
+  - [ *bre, *mad, 3, {color: *green} ]
+  - [ *mad, *par, 3, {color: *blue} ]
+  - [ *mad, *par, 3, {color: *red} ]
+  - [ *mad, *bar, 1, {color: *white} ]
+  - [ *mad, *bar, 1, {color: *red} ]
+  # London column
+  - [ *lon, *ams, 1, {color: *white} ]
+  - [ *lon, *ams, 1, {color: *black} ]
+  - [ *lon, *par, 1, {color: *green} ]
+  - [ *lon, *par, 1, {color: *black} ]
+  - [ *par, *ams, 1, {color: *blue} ]
+  - [ *par, *ber, 3, {color: *yellow} ]
+  - [ *par, *ber, 3, {color: *white} ]
+  - [ *par, *zur, 1, {color: *blue} ]
+  - [ *par, *zur, 1, {color: *white} ]
+  - [ *bar, *par, 2, {color: *white} ]
+  - [ *bar, *rom, 2, {color: *black} ]
+  - [ *bar, *rom, 2, {color: *yellow} ]
+  # Amsterdam column
+  - [ *ams, *cop, 2, {color: *red} ]
+  - [ *ams, *ber, 1, {color: *black} ]
+  - [ *ams, *ber, 1, {color: *green} ]
+  - [ *zur, *vie, 2, {color: *black} ]
+  - [ *zur, *vie, 2, {color: *red} ]
+  - [ *zur, *rom, 1, {color: *white} ]
+  - [ *zur, *rom, 1, {color: *green} ]
+  - [ *rom, *vie, 2, {color: *blue} ]
+  - [ *rom, *sar, 2, {color: *black} ]
+  - [ *rom, *ath, 3, {color: *white} ]
+  - [ *rom, *ath, 3, {color: *blue} ]
+  # Copenhagen column
+  - [ *cop, *sto, 1, {color: *blue} ]
+  - [ *cop, *sto, 1, {color: *black} ]
+  - [ *cop, *ber, 1, {color: *white} ]
+  - [ *cop, *ber, 1, {color: *green} ]
+  - [ *ber, *war, 2, {color: *blue} ]
+  - [ *ber, *war, 2, {color: *green} ]
+  - [ *ber, *vie, 1, {color: *yellow} ]
+  - [ *ber, *vie, 1, {color: *red} ]
+  - [ *vie, *war, 1, {color: *black} ]
+  - [ *vie, *kie, 3, {color: *white} ]
+  - [ *vie, *buc, 2, {color: *blue} ]
+  - [ *vie, *buc, 2, {color: *yellow} ]
+  - [ *vie, *sar, 2, {color: *green} ]
+  - [ *sar, *buc, 1, {color: *green} ]
+  - [ *sar, *ath, 1, {color: *red} ]
+  - [ *ath, *buc, 2, {color: *yellow} ]
+  - [ *ath, *ank, 2, {color: *black} ]
+  - [ *ath, *ank, 2, {color: *red} ]
+  # Stockholm column
+  - [ *sto, *rig, 1, {color: *red} ]
+  - [ *sto, *rig, 1, {color: *yellow} ]
+  - [ *war, *rig, 1, {color: *white} ]
+  - [ *war, *mos, 3, {color: *red} ]
+  - [ *war, *mos, 3, {color: *black} ]
+  - [ *war, *kie, 1, {color: *yellow} ]
+  - [ *buc, *kie, 2, {color: *red} ]
+  - [ *buc, *ros, 2, {color: *green} ]
+  - [ *buc, *ros, 2, {color: *red} ]
+  - [ *buc, *ank, 2, {color: *blue} ]
+  - [ *buc, *ank, 2, {color: *black} ]
+  - [ *ank, *ros, 3, {color: *black} ]
+  - [ *ank, *ros, 3, {color: *white} ]
+  # Riga column
+  - [ *rig, *mos, 3, {color: *yellow} ]
+  - [ *rig, *mos, 3, {color: *green} ]
+  - [ *kie, *mos, 2, {color: *green} ]
+  - [ *kie, *ros, 2, {color: *black} ]
+  # Moscow column
+  - [ *mos, *ros, 2, {color: *blue} ]
+  - [ *mos, *ros, 2, {color: *yellow} ]
+#  - [ *, {color: *} ]
+#  - [ *, {color: *} ]
