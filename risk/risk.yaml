@@ -1,0 +1,110 @@
+#meta:
+
+data:
+  - &na     North America
+  - &sa     South America
+  - &eu     Europe
+  - &af     Africa
+  - &as     Asia
+  - &au     Australia
+
+nodes:
+  # North America
+  - &ala   {label: Alaska,          deg: 3, labels: {continent: *na}}
+  - &nor   {label: Northwest Territory, deg: 4, labels: {continent: *na}}
+  - &gre   {label: Greenland,       deg: 4, labels: {continent: *na}}
+  - &alb   {label: Alberta,         deg: 4, labels: {continent: *na}}
+  - &ont   {label: Ontario,         deg: 6, labels: {continent: *na}}
+  - &que   {label: Quebec,          deg: 3, labels: {continent: *na}}
+  - &wus   {label: Western United States, deg: 4, labels: {continent: *na}}
+  - &eus   {label: Eastern United States, deg: 4, labels: {continent: *na}}
+  - &cam   {label: Central America, deg: 3, labels: {continent: *na}}
+  # South America
+  - &ven   {label: Venezuela,       deg: 3, labels: {continent: *sa}}
+  - &per   {label: Peru,            deg: 3, labels: {continent: *sa}}
+  - &bra   {label: Brazil,          deg: 4, labels: {continent: *sa}}
+  - &arg   {label: Argentina,       deg: 2, labels: {continent: *sa}}
+  # Europe
+  - &ice   {label: Iceland,         deg: 3, labels: {continent: *eu}}
+  - &sca   {label: Scandinavia,     deg: 4, labels: {continent: *eu}}
+  - &ukr   {label: Ukraine,         deg: 6, labels: {continent: *eu}}
+  - &gbr   {label: Great Britain,   deg: 4, labels: {continent: *eu}}
+  - &weu   {label: Western Europe,  deg: 4, labels: {continent: *eu}}
+  - &neu   {label: Northern Europe, deg: 5, labels: {continent: *eu}}
+  - &seu   {label: Southern Europe, deg: 4, labels: {continent: *eu}}
+  # Africa
+  - &naf   {label: North Africa,    deg: 6, labels: {continent: *af}}
+  - &egy   {label: Egypt,           deg: 4, labels: {continent: *af}}
+  - &eaf   {label: East Africa,     deg: 6, labels: {continent: *af}}
+  - &con   {label: Congo,           deg: 3, labels: {continent: *af}}
+  - &mad   {label: Madagascar,      deg: 2, labels: {continent: *af}}
+  - &saf   {label: South Africa,    deg: 6, labels: {continent: *af}}
+  # Asia
+  - &mea   {label: Middle East,     deg: 5, labels: {continent: *as}}
+  - &afg   {label: Afghanistan,     deg: 6, labels: {continent: *as}}
+  - &ura   {label: Ural,            deg: 4, labels: {continent: *as}}
+  - &ind   {label: India,           deg: 4, labels: {continent: *as}}
+  - &sib   {label: Siberia,         deg: 5, labels: {continent: *as}}
+  - &chi   {label: China,           deg: 6, labels: {continent: *as}}
+  - &sia   {label: Siam,            deg: 3, labels: {continent: *as}}
+  - &yak   {label: Yakutsk,         deg: 3, labels: {continent: *as}}
+  - &irk   {label: Irkutsk,         deg: 4, labels: {continent: *as}}
+  - &mon   {label: Mongolia,        deg: 5, labels: {continent: *as}}
+  - &kam   {label: Kamchatka,       deg: 5, labels: {continent: *as}}
+  - &jap   {label: Japan,           deg: 2, labels: {continent: *as}}
+  # Australia
+  - &ino   {label: Indonesia,       deg: 3, labels: {continent: *au}}
+  - &ngu   {label: New Guinea,      deg: 3, labels: {continent: *au}}
+  - &wau   {label: Western Australia, deg: 3, labels: {continent: *au}}
+  - &eau   {label: Eastern Australia, deg: 2, labels: {continent: *au}}
+
+
+adjacency:
+  # North America
+  - {src: *ala, dst: [*kam, *nor, *alb]}
+  - {src: *nor, dst: [*ala, *gre, *ont, *alb]}
+  - {src: *alb, dst: [*ala, *nor, *ont, *wus]}
+  - {src: *ont, dst: [*alb, *nor, *gre, *que, *eus, *wus]}
+  - {src: *que, dst: [*ont, *gre, *eus]}
+  - {src: *gre, dst: [*ice, *nor, *ont, *que]}
+  - {src: *wus, dst: [*alb, *ont, *eus, *cam]}
+  - {src: *eus, dst: [*que, *ont, *wus, *cam]}
+  - {src: *cam, dst: [*wus, *eus, *ven]}
+  # South America
+  - {src: *ven, dst: [*cam, *per, *bra]}
+  - {src: *per, dst: [*ven, *bra, *arg]}
+  - {src: *bra, dst: [*ven, *naf, *per, *arg]}
+  - {src: *arg, dst: [*per, *bra]}
+  # Europe
+  - {src: *ice, dst: [*gre, *sca, *gbr]}
+  - {src: *gbr, dst: [*ice, *sca, *neu, *weu]}
+  - {src: *sca, dst: [*ice, *gbr, *neu, *ukr]}
+  - {src: *weu, dst: [*gbr, *neu, *seu, *naf]}
+  - {src: *neu, dst: [*gbr, *sca, *ukr, *seu, *weu]}
+  - {src: *seu, dst: [*weu, *neu, *ukr, *mea, *egy, *naf]}
+  - {src: *ukr, dst: [*sca, *ura, *afg, *mea, *seu, *neu]}
+  # Africa
+  - {src: *naf, dst: [*bra, *weu, *seu, *egy, *eaf, *con]}
+  - {src: *egy, dst: [*naf, *seu, *mea, *eaf]}
+  - {src: *eaf, dst: [*naf, *egy, *mea, *mad, *saf, *con]}  #eaf-mea connected
+  - {src: *con, dst: [*naf, *eaf, *saf]}
+  - {src: *mad, dst: [*eaf, *saf]}
+  - {src: *saf, dst: [*con, *eaf, *mad]}
+  # Asia
+  - {src: *mea, dst: [*seu, *ukr, *afg, *ind, *eaf, *egy]}
+  - {src: *afg, dst: [*ukr, *ura, *chi, *ind, *mea]}
+  - {src: *ura, dst: [*ukr, *sib, *chi, *afg]}
+  - {src: *ind, dst: [*mea, *afg, *chi, *sia]}
+  - {src: *sib, dst: [*ura, *yak, *irk, *mon, *chi]}
+  - {src: *chi, dst: [*afg, *ura, *sib, *mon, *sia, *ind]}
+  - {src: *sia, dst: [*ind, *chi, *ino]}
+  - {src: *yak, dst: [*sib, *kam, *irk]}
+  - {src: *irk, dst: [*sib, *yak, *kam, *mon]}
+  - {src: *mon, dst: [*sib, *irk, *kam, *jap, *chi]}
+  - {src: *kam, dst: [*yak, *ala, *jap, *mon, *irk]}
+  - {src: *jap, dst: [*mon, *kam]}
+  # Australia
+  - {src: *ino, dst: [*sia, *ngu, *wau]}
+  - {src: *ngu, dst: [*ino, *eau, *wau]}
+  - {src: *wau, dst: [*ino, *ngu, *eau]}
+  - {src: *eau, dst: [*wau, *ngu]}
