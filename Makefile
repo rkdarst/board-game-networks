@@ -1,4 +1,4 @@
-INPUTS=$(wildcard */*.yaml)
+INPUTS=$(sort $(wildcard */*.yaml))
 EXTENSIONS=gml graphml edg
 OUTPUTS=$(INPUTS:.yaml=.gml) $(INPUTS:.yaml=.graphml)
 
