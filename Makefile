@@ -1,6 +1,6 @@
 INPUTS=$(sort $(wildcard */*.yaml))
-EXTENSIONS=gml graphml edg
-OUTPUTS=$(INPUTS:.yaml=.gml) $(INPUTS:.yaml=.graphml)
+EXTENSIONS=edg gexf gml graphml
+OUTPUTS=$(INPUTS:.yaml=.gml) $(INPUTS:.yaml=.graphml) $(INPUTS:.yaml=.edg) $(INPUTS:.yaml=.gexf)
 
 
 all: $(OUTPUTS)
@@ -34,7 +34,7 @@ finalization:
 gh-pages: clean setup all finalization
 	git br -D gh-pages && true
 	git checkout --orphan gh-pages
-	git add index.html *.yaml *.gml *.graphml *.edg
+	git add index.html *.yaml *.gexf *.gml *.graphml *.edg
 	git commit -m "gh-pages at $$(date)"
 	git push -u origin gh-pages -f
 	git checkout master
