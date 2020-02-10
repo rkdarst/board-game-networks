@@ -98,10 +98,13 @@ def main(argv):
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument('--stats', action='store_true')
+    parser.add_argument('--print', action='store_true')
     parser.add_argument('graph')
     args = parser.parse_args(argv[1:])
 
     G = generate(open(args.graph))
+    if args.print:
+        print('\n'.join(networkx.generate_gml(G)))
 
     if args.stats:
         print("nodes=%s"%len(G.nodes()))
