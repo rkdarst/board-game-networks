@@ -5,6 +5,7 @@ import yaml
 import networkx
 
 def generate(fname):
+    """Load yaml file, return networkx graph"""
     net = yaml.safe_load(fname)
     #print(net)
     #print(yaml.dump(net))
@@ -14,6 +15,7 @@ def generate(fname):
     else:
         G = networkx.Graph()
 
+    # Load nodes
     node_degrees = { }
     for i, node in enumerate(net['nodes']):
         label = node['label']
@@ -22,6 +24,10 @@ def generate(fname):
             node_degrees[label] = node['deg']
         G.add_node(label, id=i, **node.get('labels', {}))
 
+    # Load edges from 'adjacency' attribute.  Adjacency has source
+    # node, and all destination nodes.  Each edge is listed twice
+    # (once each way), and we check that this is true to ensure
+    # intregeity.
     if 'adjacency' in net:
         edges = collections.defaultdict(int)
         edges_weights = collections.defaultdict(list)
@@ -53,7 +59,6 @@ def generate(fname):
                     edges[frozenset((a['label'], b['label']))] += 1
 
         # Check the graph
-
         # Each edge is bi-directional
         for k, v in edges.items():
             if v != 2:
@@ -66,6 +71,8 @@ def generate(fname):
             if len(v) == 2 and v[0] != v[1]:
                 print("WARN: %s does not have the same weights both ways"%(k, ))
 
+    # Load edges from 'edges' attribute: edge list, each edge is there
+    # only once.
     elif 'edges' in net:
         for a, b, weight, labels in net['edges']:
             a_label = a['label']
@@ -82,7 +89,7 @@ def generate(fname):
         for node, expected_degree in node_degrees.items():
             assert G.degree(node) == expected_degree, "Node %s has wrong degree"%(node,)
 
-    # no self-loops
+    # Check for no self-loops
     assert len(list(G.nodes_with_selfloops())) == 0, "Self loops in %s"%list(G.nodes_with_selfloops())
 
     return G
@@ -95,7 +102,6 @@ def main(argv):
     args = parser.parse_args(argv[1:])
 
     G = generate(open(args.graph))
-    #print("\n".join(networkx.generate_gml(G)))
 
     if args.stats:
         print("nodes=%s"%len(G.nodes()))
@@ -118,6 +124,7 @@ def main(argv):
 
     #from ipdb import set_trace ; set_trace()
 
+    # Write graphs out to various formats
     def generate_edgelist_ids(G):
         """Generate an edgelist with IDs instead of labels"""
         labels_to_ids = networkx.get_node_attributes(G, 'id')
@@ -125,6 +132,7 @@ def main(argv):
         yield from networkx.generate_edgelist(G2, data=False)
 
     for ext, func in [
+            ('gexf', networkx.generate_gexf),
             ('gml', networkx.generate_gml),
             ('graphml', networkx.generate_graphml),
             ('edg', generate_edgelist_ids),
