@@ -5,175 +5,184 @@ data:
   - &yellow yellow
   - &black  black
   - &red    red
-  - &na     north_america
-  - &sa     south_america
-  - &europe europe
-  - &africa africa
-  - &asia   asia
-  - &pr     pacific_rim
+  - &hin    hinterlands
 
 nodes:
   - &san_francisco
     label: San Francisco
-    labels: {color: *blue, region: *na}
+    labels: {color: *blue}
   - &chicago
     label: Chicago
-    labels: {color: *blue, region: *na}
+    labels: {color: *blue}
   - &montreal
     label: Montreal
-    labels: {color: *blue, region: *na}
+    labels: {color: *blue}
   - &new_york
     label: New York
-    labels: {color: *blue, region: *na}
+    labels: {color: *blue}
   - &atlanta
     label: Atlanta
-    labels: {color: *blue, region: *na}
+    labels: {color: *blue}
   - &washington
     label: Washington
-    labels: {color: *blue, region: *na}
+    labels: {color: *blue}
   - &london
     label: London
-    labels: {color: *blue, region: *europe}
+    labels: {color: *blue}
   - &essen
     label: Essen
-    labels: {color: *blue, region: *europe}
+    labels: {color: *blue}
   - &st_petersburg
     label: St. Petersburg
-    labels: {color: *blue, region: *europe}
+    labels: {color: *blue}
   - &madrid
     label: Madrid
-    labels: {color: *blue, region: *europe}
+    labels: {color: *blue}
   - &paris
     label: Paris
-    labels: {color: *blue, region: *europe}
+    labels: {color: *blue}
   - &milan
     label: Milan
-    labels: {color: *blue, region: *europe}
+    labels: {color: *blue}
   - &los_angeles
     label: Los Angeles
-    labels: {color: *yellow, region: *na}
+    labels: {color: *yellow}
   - &mexico_city
     label: Mexico City
-    labels: {color: *yellow, region: *na}
+    labels: {color: *yellow}
   - &miami
     label: Miami
-    labels: {color: *yellow, region: *na}
+    labels: {color: *yellow}
   - &bogota
     label: Bogota
-    labels: {color: *yellow, region: *sa}
+    labels: {color: *yellow}
   - &lima
     label: Lima
-    labels: {color: *yellow, region: *sa}
+    labels: {color: *yellow}
   - &sao_paulo
     label: São Paulo
-    labels: {color: *yellow, region: *sa}
+    labels: {color: *yellow}
   - &santiago
     label: Santiago
-    labels: {color: *yellow, region: *sa}
+    labels: {color: *yellow}
   - &buenos_aires
     label: Buenos Aires
-    labels: {color: *yellow, region: *sa}
+    labels: {color: *yellow}
   - &lagos
     label: Lagos
-    labels: {color: *yellow, region: *africa}
+    labels: {color: *yellow}
   - &khartoum
     label: Khartoum
-    labels: {color: *yellow, region: *africa}
+    labels: {color: *yellow}
   - &kinshasa
     label: Kinshasa
-    labels: {color: *yellow, region: *africa}
+    labels: {color: *yellow}
   - &johannesburg
     label: Johannesburg
-    labels: {color: *yellow, region: *africa}
+    labels: {color: *yellow}
   - &moscow
     label: Moscow
-    labels: {color: *black, region: *europe}
+    labels: {color: *black}
   - &tehran
     label: Tehran
-    labels: {color: *black, region: *asia}
+    labels: {color: *black}
   - &delhi
     label: Delhi
-    labels: {color: *black, region: *asia}
+    labels: {color: *black}
   - &kolkata
     label: Kolkata
-    labels: {color: *black, region: *asia}
+    labels: {color: *black}
   - &istanbul
     label: Istanbul
-    labels: {color: *black, region: *asia}
+    labels: {color: *black}
   - &baghdad
     label: Baghdad
-    labels: {color: *black, region: *asia}
+    labels: {color: *black}
   - &karachi
     label: Karachi
-    labels: {color: *black, region: *asia}
+    labels: {color: *black}
   - &algiers
     label: Algiers
-    labels: {color: *black, region: *africa}
+    labels: {color: *black}
   - &cairo
     label: Cairo
-    labels: {color: *black, region: *africa}
+    labels: {color: *black}
   - &riyadh
     label: Riyadh
-    labels: {color: *black, region: *asia}
+    labels: {color: *black}
   - &mumbai
     label: Mumbai
-    labels: {color: *black, region: *asia}
+    labels: {color: *black}
   - &chennai
     label: Chennai
-    labels: {color: *black, region: *asia}
+    labels: {color: *black}
   - &beijing
     label: Beijing
-    labels: {color: *red, region: *asia}
+    labels: {color: *red}
   - &seoul
     label: Seoul
-    labels: {color: *red, region: *asia}
+    labels: {color: *red}
   - &shanghai
     label: Shanghai
-    labels: {color: *red, region: *asia}
+    labels: {color: *red}
   - &tokyo
     label: Tokyo
-    labels: {color: *red, region: *pr}
+    labels: {color: *red}
   - &hong_kong
     label: Hong Kong
-    labels: {color: *red, region: *asia}
+    labels: {color: *red}
   - &taipei
     label: Taipei
-    labels: {color: *red, region: *pr}
+    labels: {color: *red}
   - &osaka
     label: Osaka
-    labels: {color: *red, region: *pr}
+    labels: {color: *red}
   - &bangkok
     label: Bangkok
-    labels: {color: *red, region: *asia}
+    labels: {color: *red}
   - &jakarta
     label: Jakarta
-    labels: {color: *red, region: *pr}
+    labels: {color: *red}
   - &ho_chi_minh_city
     label: Ho Chi Minh City
-    labels: {color: *red, region: *pr}
+    labels: {color: *red}
   - &manila
     label: Manila
-    labels: {color: *red, region: *pr}
+    labels: {color: *red}
   - &sydney
     label: Sydney
-    labels: {color: *red, region: *pr}
+    labels: {color: *red}
+
+  # Hinterlands
+  - &hin-blue
+    label: Blue hinterlands
+    labels: {color: *blue, type: *hin}
+  - &hin-yellow
+    label: Yellow hinterlands
+    labels: {color: *yellow, type: *hin}
+  - &hin-black
+    label: Black hinterlands
+    labels: {color: *blue, type: *hin}
+  - &hin-red
+    label: Red hinterlands
+    labels: {color: *red, type: *hin}
 
 adjacency:
   # Blue
   - src: *san_francisco
-    dst: [*chicago, *los_angeles, *manila, *tokyo]
+    dst: [*chicago, *los_angeles, *manila, *tokyo, *hin-blue]
   - src: *chicago
-    dst: [*san_francisco, *montreal, *atlanta, *mexico_city, *los_angeles]
+    dst: [*san_francisco, *montreal, *atlanta, *mexico_city, *los_angeles, *hin-blue]
   - src: *montreal
     dst: [*chicago, *new_york, *washington]
   - src: *new_york
     dst: [*montreal, *london, *madrid, *washington]
   - src: *atlanta
-    dst: [*chicago, *washington, *miami]
+    dst: [*chicago, *washington, *miami, *hin-blue]
   - src: *washington
     dst: [*montreal, *new_york, *miami, *atlanta]
   - src: *london
-    dst: [*new_york, *essen, *paris, *madrid]
+    dst: [*new_york, *essen, *paris, *madrid, *hin-blue]
   - src: *essen
     dst: [*london, *st_petersburg, *milan, *paris]
   - src: *st_petersburg
@@ -186,7 +195,7 @@ adjacency:
     dst: [*paris, *essen, *istanbul]
   # Yellow
   - src: *los_angeles
-    dst: [*san_francisco, *chicago, *mexico_city, *sydney, *lima]
+    dst: [*san_francisco, *chicago, *mexico_city, *sydney]
   - src: *mexico_city
     dst: [*los_angeles, *chicago, *miami, *bogota, *lima]
   - src: *miami
@@ -194,36 +203,36 @@ adjacency:
   - src: *bogota
     dst: [*mexico_city, *miami, *sao_paulo, *buenos_aires, *lima]
   - src: *lima
-    dst: [*mexico_city, *bogota, *santiago, *los_angeles]
+    dst: [*mexico_city, *bogota, *santiago]
   - src: *sao_paulo
-    dst: [*bogota, *madrid, *lagos, *buenos_aires]
+    dst: [*bogota, *madrid, *lagos, *buenos_aires, *hin-yellow]
   - src: *santiago
-    dst: [*lima, *buenos_aires]
+    dst: [*lima]
   - src: *buenos_aires
-    dst: [*bogota, *sao_paulo, *santiago, *johannesburg]
+    dst: [*bogota, *sao_paulo]
   - src: *lagos
-    dst: [*khartoum, *kinshasa, *sao_paulo]
+    dst: [*khartoum, *kinshasa, *sao_paulo, *hin-yellow]
   - src: *khartoum
-    dst: [*lagos, *cairo, *johannesburg, *kinshasa]
+    dst: [*lagos, *cairo, *johannesburg, *kinshasa, *hin-yellow]
   - src: *kinshasa
-    dst: [*lagos, *khartoum, *johannesburg]
+    dst: [*lagos, *khartoum, *johannesburg, *hin-yellow]
   - src: *johannesburg
-    dst: [*kinshasa, *khartoum, *buenos_aires]
+    dst: [*kinshasa, *khartoum]
   # Black
   - src: *moscow
     dst: [*st_petersburg, *tehran, *istanbul]
   - src: *tehran
     dst: [*moscow, *delhi, *karachi, *baghdad]
   - src: *delhi
-    dst: [*tehran, *kolkata, *chennai, *mumbai, *karachi]
+    dst: [*tehran, *kolkata, *chennai, *mumbai, *karachi, *hin-black]
   - src: *kolkata
-    dst: [*delhi, *hong_kong, *bangkok, *chennai]
+    dst: [*delhi, *hong_kong, *bangkok, *chennai, *hin-black]
   - src: *istanbul
     dst: [*milan, *st_petersburg, *moscow, *baghdad, *cairo, *algiers]
   - src: *baghdad
-    dst: [*istanbul, *tehran, *riyadh, *cairo]
+    dst: [*istanbul, *tehran, *karachi, *riyadh, *cairo]
   - src: *karachi
-    dst: [*tehran, *delhi, *mumbai, *riyadh]
+    dst: [*baghdad, *tehran, *delhi, *mumbai, *riyadh, *hin-black]
   - src: *algiers
     dst: [*madrid, *paris, *istanbul, *cairo]
   - src: *cairo
@@ -231,22 +240,22 @@ adjacency:
   - src: *riyadh
     dst: [*cairo, *baghdad, *karachi]
   - src: *mumbai
-    dst: [*karachi, *delhi, *chennai]
+    dst: [*karachi, *delhi, *chennai, *hin-black]
   - src: *chennai
-    dst: [*mumbai, *delhi, *kolkata, *jakarta]
+    dst: [*mumbai, *delhi, *kolkata, *bangkok, *jakarta, *hin-black]
   # Red
   - src: *beijing
-    dst: [*seoul, *shanghai]
+    dst: [*seoul, *shanghai, *hin-red]
   - src: *seoul
     dst: [*beijing, *tokyo, *shanghai]
   - src: *shanghai
-    dst: [*beijing, *seoul, *tokyo, *taipei, *hong_kong]
+    dst: [*beijing, *seoul, *tokyo, *taipei, *hong_kong, *hin-red]
   - src: *tokyo
     dst: [*shanghai, *seoul, *san_francisco, *osaka]
   - src: *bangkok
-    dst: [*kolkata, *hong_kong, *ho_chi_minh_city, *jakarta]
+    dst: [*kolkata, *hong_kong, *ho_chi_minh_city, *jakarta, *chennai, *hin-red]
   - src: *hong_kong
-    dst: [*kolkata, *shanghai, *taipei, *manila, *ho_chi_minh_city, *bangkok]
+    dst: [*kolkata, *shanghai, *taipei, *manila, *ho_chi_minh_city, *bangkok, *hin-red]
   - src: *taipei
     dst: [*hong_kong, *shanghai, *osaka, *manila]
   - src: *osaka
@@ -254,8 +263,18 @@ adjacency:
   - src: *jakarta
     dst: [*chennai, *bangkok, *ho_chi_minh_city, *sydney]
   - src: *ho_chi_minh_city
-    dst: [*jakarta, *bangkok, *hong_kong, *manila]
+    dst: [*jakarta, *bangkok, *hong_kong, *manila, *hin-red]
   - src: *manila
     dst: [*ho_chi_minh_city, *hong_kong, *taipei, *san_francisco, *sydney]
   - src: *sydney
     dst: [*jakarta, *manila, *los_angeles]
+
+  # Hinterland nodes
+  - src: *hin-blue
+    dst: [*san_francisco, *chicago, *atlanta, *london]
+  - src: *hin-yellow
+    dst: [*sao_paulo, *lagos, *khartoum, *kinshasa]
+  - src: *hin-black
+    dst: [*karachi, *delhi, *kolkata, *mumbai, *chennai]
+  - src: *hin-red
+    dst: [*beijing, *shanghai, *hong_kong, *bangkok, *ho_chi_minh_city]
