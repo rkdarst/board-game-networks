@@ -9,6 +9,7 @@ My First Journey
 
 * Simplified kids game, based in Europe
 
+
 Ticket to Ride Europe
 ---------------------
 
@@ -25,3 +26,19 @@ Ticket to Ride Europe
 
 * ``locomotives``: edge attribute, value is number of wild
   (locomotives) needed to be played for this edge.
+
+
+New York
+--------
+
+Simplified version of base game.  A node can have a point value
+(``points`` node attribute), connecting to your routes gives you that
+many points (the values are all one).  If you connect more than once,
+you get the same bonus.
+
+London
+------
+
+Similar version to base game.  Each node has a ``district``
+attribute.  If you connect all nodes that have the same district, you
+get that points equal to the district number.
