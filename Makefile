@@ -10,12 +10,14 @@ clean:
 	rm -f $(OUTPUTS)
 
 setup:
-	echo 'Board game network dataset.  <a href="https://github.com/rkdarst/board-game-networks/">Information</a><br><br>' >> index.html
+	echo 'Board game network dataset.  <a href="https://github.com/rkdarst/board-game-networks/">Information, documentation, source, metadata, etc. are available on GitHub.</a><br><br>' >> index.html
+	echo 'Get all data: <tt>git clone https://github.com/rkdarst/board-game-networks --branch gh-pages</tt><br></br>'>> index.html
+	echo 'This dataset is under production and is not complete or well documented yet.<br></br>'>> index.html
 	echo >> index.html
 	echo >> index.html
 
 finalization:
-	echo 'Get all data: <tt>git clone https://github.com/rkdarst/board-game-networks --branch gh-pages</tt>'>> index.html
+	true
 
 %.gml: %.yaml parse.py
 	python3 parse.py $<
