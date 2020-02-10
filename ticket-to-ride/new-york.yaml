@@ -35,14 +35,14 @@ edges:
   # Top to bottom, left to right
   - [ *lin, *cen, 2, {color: *yel} ]
   - [ *lin, *tim, 2, {color: *blu} ]
-  - [ *lin, *tim, 2, {color: *gre} ]
+  - [ *lin, *tim, 2, {color: *grn} ]
   - [ *lin, *mid, 2, {color: *ora} ]
   - [ *cen, *uni, 3, {color: *pin} ]
   - [ *cen, *tim, 2, {color: *ora} ]
   - [ *cen, *tim, 2, {color: *bla} ]
   # Midtown west row
   - [ *mid, *tim, 1, {color: *gry} ]
-  - [ *mid, *emp, 2, {color: *gre} ]
+  - [ *mid, *emp, 2, {color: *grn} ]
   - [ *mid, *che, 2, {color: *blu} ]
   - [ *tim, *uni, 2, {color: *gry} ]
   - [ *tim, *emp, 1, {color: *pin} ]
