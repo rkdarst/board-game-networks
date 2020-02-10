@@ -1,3 +1,10 @@
+meta:
+  name: Pandemic
+  bgg: https://boardgamegeek.com/boardgame/30549/pandemic
+  rules: https://images.zmangames.com/filer_public/53/ed/53edbee8-adfb-4715-899f-dd381e1420d7/zm7101_rules_web.pdf
+  site: https://www.zmangames.com/en/products/pandemic/
+  year: 2008
+
 data:
   - &blue   blue
   - &yellow yellow

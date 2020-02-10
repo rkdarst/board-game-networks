@@ -1,5 +1,12 @@
 # This is a copy and paste of the Pandemic board, with modifications.
 # Keep both up to date with a graphical diff tool.
+
+meta:
+  bgg: https://boardgamegeek.com/boardgame/161936/pandemic-legacy-season-1
+  site: https://www.zmangames.com/en/products/pandemic-legacy-season-1/
+  rules: https://images.zmangames.com/filer_public/57/b9/57b99885-fd15-4c0d-a28a-4b938d6bf46c/zm7170_zm7171_rules_web.pdf
+  year: 2015
+
 data:
   - &blue   blue
   - &yellow yellow
