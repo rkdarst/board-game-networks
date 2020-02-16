@@ -1,0 +1,159 @@
+meta:
+  bgg: https://boardgamegeek.com/boardgame/5130/afrikan-tahti
+  site:
+  rules: https://en.wikipedia.org/wiki/Afrikan_t%C3%A4hti
+  year: 1951
+  graph-class: MultiGraph
+
+data:
+  - &c city
+  - &j junction
+  - &i initial
+  - &p ambush
+  - &l land
+  - &a air
+  - &s sea
+
+nodes:
+  - &can    { deg:  2, labels: {type: *c}, label: Canary Islands}
+  - &mor    { deg:  5, labels: {type: *c}, label: Morocco}
+  - &mortan { deg:  3, labels: {type: *j}, label: Junction Tangier-Morocco}
+  - &tan    { deg:  6, labels: {type: *i}, label: Tangier}
+  - &sah    { deg:  2, labels: {type: *c}, label: Sahara}
+  - &a-sah  { deg:  2, labels: {type: *p}, label: Ambush - Saraha}
+  - &tun    { deg:  4, labels: {type: *c}, label: Tunis}
+  - &tri    { deg:  6, labels: {type: *c}, label: Tripoli}
+  - &j-tri  { deg:  3, labels: {type: *j}, label: Junction - Tripoli}
+  - &egy    { deg:  3, labels: {type: *c}, label: Egypt}
+  - &cai    { deg:  4, labels: {type: *i}, label: Cairo}
+  # Row of cape verde
+  - &c-ver  { deg:  4, labels: {type: *c}, label: Cape Verde}
+  - &cvesie { deg:  3, labels: {type: *j}, label: Junction Cape Verde-Sierra Leone}
+  - &sie    { deg:  6, labels: {type: *c}, label: Sierra Leone}
+  - &sietim { deg:  3, labels: {type: *j}, label: Junction Sierra Leone-Timbuktu}
+  - &tim    { deg:  2, labels: {type: *c}, label: Timbuktu}
+  - &gol    { deg:  7, labels: {type: *c}, label: Gold Coast}
+  - &slacon { deg:  3, labels: {type: *j}, label: Junction Slave Coast-Congo}
+  - &sla    { deg:  3, labels: {type: *c}, label: Slave Coast}
+  - &sladar { deg:  4, labels: {type: *j}, label: Junction Slave Coast-Darfur}
+  - &ain    { deg:  2, labels: {type: *c}, label: Ain-Galaka}
+  - &darf   { deg:  9, labels: {type: *c}, label: Darfur}
+  - &sua    { deg:  7, labels: {type: *c}, label: Suakin}
+  # Equatorial Africa
+  - &con    { deg:  7, labels: {type: *c}, label: Congo}
+  - &kan    { deg:  2, labels: {type: *c}, label: Kandjama}
+  - &oco    { deg:  4, labels: {type: *c}, label: Ocomba}
+  - &bah    { deg:  2, labels: {type: *c}, label: Bahar el Ghasal}
+  - &lak    { deg:  7, labels: {type: *c}, label: Lake Victoria}
+  - &dare   { deg:  2, labels: {type: *c}, label: Daressalam}
+  - &darmoz { deg:  3, labels: {type: *j}, label: Junction Daressalam-Mozambique}
+  - &add    { deg:  3, labels: {type: *c}, label: Addis Abeba}
+  - &c-gua  { deg:  7, labels: {type: *c}, label: Cape Guadafui}
+  # South Africa
+  - &a-sthw { deg:  2, labels: {type: *p}, label: Pirate - St. Helena West}
+  - &sth    { deg:  4, labels: {type: *c}, label: St. Helena}
+  - &a-sthe { deg:  2, labels: {type: *p}, label: Pirate - St. Helena East}
+  - &wha    { deg:  7, labels: {type: *c}, label: Whalefish Bay}
+  - &whacap { deg:  3, labels: {type: *j}, label: Junction - Whalefish Bay-Capetown}
+  - &capet  { deg:  9, labels: {type: *c}, label: Capetown}
+  - &vic    { deg:  3, labels: {type: *c}, label: Victoria Falls}
+  - &dra    { deg:  4, labels: {type: *c}, label: Dragon Mountain}
+  - &j-dra  { deg:  3, labels: {type: *j}, label: Junction - Dragon Mountain}
+  - &j-moz  { deg:  3, labels: {type: *j}, label: Junction - Mozambique}
+  - &moz    { deg:  4, labels: {type: *c}, label: Mozambique}
+  - &c-stm  { deg:  4, labels: {type: *c}, label: Cape St. Marie}
+  - &tam    { deg:  4, labels: {type: *c}, label: Tamatave}
+
+edges:
+  # Mediterranean sea coast
+  - [*can   , *tan   , 3, {type: *s}]
+  - [*can   , *c-ver , 5, {type: *s}]
+  - [*mor   , *tan   , 1, {type: *a}]
+  - [*mor   , *mortan, 1, {type: *l}]
+  - [*mor   , *c-ver , 8, {type: *l}]
+  - [*mor   , *gol   , 1, {type: *a}]
+  - [*mor   , *sie   , 1, {type: *a}]
+  - [*mortan, *tan   , 1, {type: *l}]
+  - [*mortan, *sah   , 4, {type: *l}]
+  - [*tan   , *tun   , 3, {type: *s}]
+  - [*tan   , *tri   , 1, {type: *a}]
+  - [*tan   , *tun   , 5, {type: *l}]
+  - [*sah   , *a-sah , 2, {type: *l}]
+  - [*a-sah , *darf  , 8, {type: *l}]
+  - [*tun   , *j-tri , 2, {type: *s}]
+  - [*tun   , *tri   , 3, {type: *l}]
+  - [*tri   , *j-tri , 1, {type: *s}]
+  - [*tri   , *darf  , 1, {type: *a}]
+  - [*tri   , *egy   , 6, {type: *l}]
+  - [*tri   , *gol   , 1, {type: *a}]
+  - [*j-tri , *cai   , 3, {type: *s}]
+  - [*egy   , *cai   , 4, {type: *l}]
+  - [*egy   , *darf  , 3, {type: *l}]
+  - [*cai   , *sua   , 4, {type: *s}]
+  - [*cai   , *sua   , 1, {type: *a}]
+  - [*c-ver , *sie   , 4, {type: *l}]
+  - [*c-ver , *cvesie, 1, {type: *s}]
+  - [*cvesie, *sie   , 2, {type: *s}]
+  - [*cvesie, *a-sthw, 8, {type: *s}]
+  - [*sie   , *sietim, 3, {type: *l}]
+  - [*sie   , *gol   , 5, {type: *s}]
+  - [*sie   , *sth   , 1, {type: *a}]
+  - [*sietim, *tim   , 2, {type: *l}]
+  - [*sietim, *gol   , 2, {type: *l}]
+  - [*tim   , *sla   , 5, {type: *l}]
+  - [*gol   , *con   , 1, {type: *a}]
+  - [*gol   , *slacon, 3, {type: *s}]
+  - [*gol   , *wha   , 1, {type: *a}]
+  - [*slacon, *sla   , 1, {type: *s}]
+  - [*slacon, *con   , 4, {type: *s}]
+  - [*sla   , *sladar, 3, {type: *l}]
+  - [*sladar, *ain   , 4, {type: *l}]
+  - [*sladar, *darf  , 4, {type: *l}]
+  - [*sladar, *kan   , 2, {type: *l}]
+  - [*ain   , *darf  , 4, {type: *l}]
+  - [*darf  , *sua   , 1, {type: *a}]
+  - [*darf  , *sua   , 4, {type: *l}]
+  - [*darf  , *bah   , 2, {type: *l}]
+  - [*darf  , *oco   , 1, {type: *a}]
+  - [*sua   , *c-gua , 5, {type: *s}]
+  - [*sua   , *add   , 3, {type: *l}]
+  - [*sua   , *lak   , 1, {type: *a}]
+  - [*con   , *kan   , 3, {type: *l}]
+  - [*con   , *oco   , 4, {type: *l}]
+  - [*con   , *j-moz , 8, {type: *l}]
+  - [*con   , *wha   , 1, {type: *a}]
+  - [*con   , *wha   , 5, {type: *s}]
+  - [*oco   , *lak   , 4, {type: *l}]
+  - [*oco   , *capet , 1, {type: *a}]
+  - [*bah   , *lak   , 2, {type: *l}]
+  - [*lak   , *add   , 3, {type: *l}]
+  - [*lak   , *c-gua , 1, {type: *a}]
+  - [*lak   , *darmoz, 4, {type: *l}]
+  - [*lak   , *dra   , 1, {type: *a}]
+  - [*dare  , *c-gua , 6, {type: *l}]
+  - [*dare  , *darmoz, 1, {type: *l}]
+  - [*darmoz, *moz   , 2, {type: *l}]
+  - [*add   , *c-gua , 3, {type: *l}]
+  - [*c-gua , *tam   , 8, {type: *s}]
+  - [*c-gua , *moz   , 8, {type: *s}]
+  - [*c-gua , *tam   , 1, {type: *a}]
+  - [*a-sthw, *sth   , 1, {type: *s}]
+  - [*sth   , *capet , 1, {type: *a}]
+  - [*sth   , *a-sthe, 1, {type: *s}]
+  - [*a-sthe, *whacap, 7, {type: *s}]
+  - [*wha   , *vic   , 4, {type: *l}]
+  - [*wha   , *capet , 4, {type: *l}]
+  - [*wha   , *capet , 1, {type: *a}]
+  - [*wha   , *whacap, 3, {type: *s}]
+  - [*whacap, *capet , 2, {type: *s}]
+  - [*capet , *dra   , 1, {type: *a}]
+  - [*capet , *tam   , 1, {type: *a}]
+  - [*capet , *c-stm , 1, {type: *a}]
+  - [*capet , *c-stm , 8, {type: *s}]
+  - [*vic   , *j-dra , 2, {type: *l}]
+  - [*vic   , *dra   , 3, {type: *l}]
+  - [*dra   , *j-dra , 2, {type: *l}]
+  - [*j-dra , *j-moz , 1, {type: *l}]
+  - [*j-moz , *moz   , 2, {type: *l}]
+  - [*moz   , *c-stm , 3, {type: *s}]
+  - [*c-stm , *tam   , 4, {type: *l}]
