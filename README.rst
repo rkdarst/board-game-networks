@@ -1,9 +1,11 @@
 Board game networks dataset
 ===========================
 
-This dataset contains networks (as in graph theory) contained in board
+This dataset contains networks (as in `graph theory
+<https://en.wikipedia.org/wiki/Graph_theory>`_ or `complex networks
+<https://en.wikipedia.org/wiki/Complex_network>`_) contained in board
 games.  It is compiled for use in teaching, research, and to promote
-the concept of network-based games.
+the development of network-based games.
 
 Formatted data is downloadable `from github pages
 <https://rkdarst.github.io/board-game-networks/>`_, because this
