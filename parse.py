@@ -82,10 +82,10 @@ def generate(fname):
                 print(a, b)
             weight = None
             labels = { }
-            if len(rest) >= 3:
-                weight = rest[2]
-            if len(rest) >= 4:
-                labels = rest[3]
+            if len(rest) >= 1:
+                weight = rest[0]
+            if len(rest) >= 2:
+                labels = rest[1]
             a_label = a['label']
             b_label = b['label']
             if not isinstance(G, networkx.MultiGraph):
