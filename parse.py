@@ -73,6 +73,7 @@ def generate(fname):
 
     # Load edges from 'edges' attribute: edge list, each edge is there
     # only once.
+    # format:  [*a, *b, weight, {attr:value, ...} ]
     elif 'edges' in net:
         for a, b, weight, labels in net['edges']:
             a_label = a['label']
@@ -97,13 +98,32 @@ def generate(fname):
 def main(argv):
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--stats', action='store_true')
-    parser.add_argument('--print', action='store_true')
+    parser.add_argument('--metadata', action='store_true',
+                        help="Output metadata in html form")
+    parser.add_argument('--stats', action='store_true',
+                        help="Print stats")
+    parser.add_argument('--print', dest="print_", action='store_true',
+                        help="Print the network to console")
     parser.add_argument('graph')
     args = parser.parse_args(argv[1:])
 
     G = generate(open(args.graph))
-    if args.print:
+
+
+    if args.metadata:
+        data = yaml.safe_load(open(args.graph))
+        if 'meta' not in data:
+            exit(0)
+        for key, value in sorted(data['meta'].items()):
+            if value is None:
+                continue
+            if isinstance(value, str) and value.startswith('http'):
+                print('<a href="%s">%s</a>'%(value, key))
+            else:
+                print('%s=%s'%(key, value))
+        exit(0)
+
+    if args.print_:
         print('\n'.join(networkx.generate_gml(G)))
 
     if args.stats:

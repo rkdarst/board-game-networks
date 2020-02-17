@@ -21,6 +21,7 @@ finalization:
 
 %.gml: %.yaml parse.py
 	python3 parse.py $<
+	python3 parse.py --metadata $< >> index.html
 	python3 parse.py --stats $< >> index.html
 	echo "<br>" >> index.html
 	for ext in $(EXTENSIONS); do \

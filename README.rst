@@ -9,8 +9,9 @@ the development of network-based games.
 
 Formatted data is downloadable `from github pages
 <https://rkdarst.github.io/board-game-networks/>`_, because this
-repository contains only raw source files.  You can access all the
-compiled data from git directly::
+repository contains only raw source files.  However, you probably need
+to browse this repository for the readme files as well.  You can
+access all the compiled data from git directly::
 
   git clone https://github.com/rkdarst/board-game-networks --branch gh-pages
 
@@ -30,6 +31,38 @@ Data can be generated from the source with ``make all``.  The
 ``parse.py`` program converts the data to a graph format.
 
 
+Internal structure and metadata
+-------------------------------
+
+There is one directory per "game", though game is not strictly
+defined.  One game may include several boards (different networks),
+but also some expansions can be included in the same directory.
+Expansions/derivatives may be included in the same directory (and they
+usually are if the rules are fundamentally the same), while related
+games with significance differences in how the rules affect the
+network are in a different directory.  But this is a bit inconsistent.
+
+Each directory has a ``README.rst`` file with other information about
+the game(s) in the directory, usually including some information on
+the mechanics.
+
+Each ``.yaml`` file has a ``meta:`` structure in it, with the
+following keys.  Note that this includes hyperlinks, which will
+eventually break, but they are included here anyway for temporary
+convenience.  When one game has multiple boards, this metadata is
+redundant and thus is included in only one yaml file.  This should be
+improved later.
+
+* ``name``: name of the game
+* ``rules``: link to rules.
+* ``site``: official site for the game
+* ``year``: year the game was released
+* ``bgg``: a site to the board game geek page
+* ``type``: type of game (optional and unstructured)
+* ``graph-class``: if the graph is not an undirected simple graph,
+  define the graph class here.  Currently only ``MultiGraph`` is used here.
+
+
 Status
 ------
 
@@ -39,6 +72,7 @@ Graphs need more metadata.
 
 But new graphs are welcome.  Please give suggestions for games or
 add them yourself.
+
 
 License
 -------
