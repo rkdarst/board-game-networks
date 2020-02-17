@@ -4,6 +4,8 @@ import sys
 import yaml
 import networkx
 
+VERBOSE = False
+
 def generate(fname):
     """Load yaml file, return networkx graph"""
     net = yaml.safe_load(fname)
@@ -75,7 +77,15 @@ def generate(fname):
     # only once.
     # format:  [*a, *b, weight, {attr:value, ...} ]
     elif 'edges' in net:
-        for a, b, weight, labels in net['edges']:
+        for a, b, *rest in net['edges']:
+            if VERBOSE:
+                print(a, b)
+            weight = None
+            labels = { }
+            if len(rest) >= 3:
+                weight = rest[2]
+            if len(rest) >= 4:
+                labels = rest[3]
             a_label = a['label']
             b_label = b['label']
             if not isinstance(G, networkx.MultiGraph):
@@ -104,11 +114,16 @@ def main(argv):
                         help="Print stats")
     parser.add_argument('--print', dest="print_", action='store_true',
                         help="Print the network to console")
+    parser.add_argument('--verbose', '-v', action='store_true',
+                        help="Verbose mode")
     parser.add_argument('graph')
     args = parser.parse_args(argv[1:])
 
-    G = generate(open(args.graph))
+    if args.verbose:
+        global VERBOSE
+        VERBOSE = True
 
+    G = generate(open(args.graph))
 
     if args.metadata:
         data = yaml.safe_load(open(args.graph))
