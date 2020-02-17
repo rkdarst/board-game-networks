@@ -1,0 +1,127 @@
+meta:
+  name: Concordia
+  subname: Italia board
+  graph-class: MultiGraph
+
+data:
+  - &vene  Venetia
+  - &tran  Transpadana
+  - &ligv  Ligvria
+  - &amil  Æmilia
+  - &etrv  Etrvria
+  - &cors  Corsica
+  - &vmbr  Vmbria
+  - &camp  Campania
+  - &apvl  Apvlia
+  - &lvca  Lvcania
+  - &sici  Sicilia
+  - &a     A
+  - &b     B
+  - &c     C
+  - &l     land
+  - &s     sea
+
+nodes:
+  - &bavz  {deg: 2, labels: {region: *vene, letter: *a}, label: Bavzanvm}
+  - &aqvi  {deg: 5, labels: {region: *vene, letter: *a}, label: Aqvileia}
+  - &vero  {deg: 5, labels: {region: *vene, letter: *a}, label: Verona}
+  - &comv  {deg: 4, labels: {region: *tran, letter: *a}, label: Comv}
+  - &segv  {deg: 3, labels: {region: *tran, letter: *a}, label: Segvsio}
+  - &genv  {deg: 7, labels: {region: *ligv, letter: *a}, label: Genva}
+  - &nica  {deg: 4, labels: {region: *ligv, letter: *a}, label: Nicæa}
+  - &mvti  {deg: 4, labels: {region: *amil, letter: *b}, label: Mvtina}
+  - &rave  {deg: 7, labels: {region: *amil, letter: *b}, label: Ravenna}
+  - &flor  {deg: 5, labels: {region: *etrv, letter: *b}, label: Florentia}
+  - &cosa  {deg: 5, labels: {region: *etrv, letter: *b}, label: Cosa}
+  - &roma  {deg: 7, labels: {region: ""   , letter: ""}, label: Roma}
+  - &aler  {deg: 4, labels: {region: *cors, letter: *b}, label: Aleria}
+  - &olbi  {deg: 3, labels: {region: *cors, letter: *b}, label: Olbia}
+  - &anco  {deg: 6, labels: {region: *vmbr, letter: *c}, label: Ancona}
+  - &spol  {deg: 5, labels: {region: *vmbr, letter: *c}, label: Spoletvm}
+  - &hadr  {deg: 6, labels: {region: *vmbr, letter: *c}, label: Hadria}
+  - &casi  {deg: 5, labels: {region: *camp, letter: *b}, label: Casinvm}
+  - &neap  {deg: 5, labels: {region: *camp, letter: *b}, label: Neapolis}
+  - &lvce  {deg: 4, labels: {region: *apvl, letter: *c}, label: Lvceria}
+  - &brvn  {deg: 4, labels: {region: *apvl, letter: *c}, label: Brvndisivm}
+  - &pote  {deg: 4, labels: {region: *lvca, letter: *c}, label: Potentia}
+  - &crot  {deg: 5, labels: {region: *lvca, letter: *c}, label: Croton}
+  - &mess  {deg: 7, labels: {region: *sici, letter: *c}, label: Messana}
+  - &pano  {deg: 6, labels: {region: *sici, letter: *c}, label: Panormvs}
+  - &syra  {deg: 4, labels: {region: *sici, letter: *c}, label: Syracvsæ}
+
+edges:
+  # Venetia
+  - [*bavz, *aqvi, null, {type: *l }]
+  - [*bavz, *vero, null, {type: *l }]
+  - [*aqvi, *anco, null, {type: *s }]
+  - [*aqvi, *rave, null, {type: *s }]
+  - [*aqvi, *rave, null, {type: *l }]
+  - [*aqvi, *vero, null, {type: *l }]
+  - [*vero, *rave, null, {type: *l }]
+  - [*vero, *mvti, null, {type: *l }]
+  - [*vero, *comv, null, {type: *l }]
+  # Transpadana
+  - [*comv, *mvti, null, {type: *l }]
+  - [*comv, *genv, null, {type: *l }]
+  - [*comv, *segv, null, {type: *l }]
+  - [*segv, *genv, null, {type: *l }]
+  - [*segv, *nica, null, {type: *l }]
+  # Ligvria
+  - [*genv, *flor, null, {type: *l }]
+  - [*genv, *cosa, null, {type: *s }]
+  - [*genv, *aler, null, {type: *s }]
+  - [*genv, *nica, null, {type: *s }]
+  - [*genv, *nica, null, {type: *l }]
+  - [*nica, *aler, null, {type: *s }]
+  # Æmilia
+  - [*mvti, *rave, null, {type: *l }]
+  - [*mvti, *flor, null, {type: *l }]
+  - [*rave, *anco, null, {type: *s }]
+  - [*rave, *anco, null, {type: *l }]
+  - [*rave, *flor, null, {type: *l }]
+  # Etrvria
+  - [*flor, *spol, null, {type: *l }]
+  - [*flor, *cosa, null, {type: *l }]
+  - [*cosa, *roma, null, {type: *l }]
+  - [*cosa, *roma, null, {type: *s }]
+  - [*cosa, *aler, null, {type: *s }]
+  # Roma
+  - [*roma, *spol, null, {type: *l }]
+  - [*roma, *casi, null, {type: *l }]
+  - [*roma, *neap, null, {type: *s }]
+  - [*roma, *pano, null, {type: *s }]
+  - [*roma, *olbi, null, {type: *s }]
+  # Corsica
+  - [*aler, *olbi, null, {type: *s }]
+  - [*olbi, *pano, null, {type: *s }]
+  # Vmbria
+  - [*anco, *hadr, null, {type: *s }]
+  - [*anco, *hadr, null, {type: *l }]
+  - [*anco, *spol, null, {type: *l }]
+  - [*spol, *hadr, null, {type: *l }]
+  - [*spol, *casi, null, {type: *l }]
+  - [*hadr, *brvn, null, {type: *s }]
+  - [*hadr, *lvce, null, {type: *l }]
+  - [*hadr, *casi, null, {type: *l }]
+  # Campania
+  - [*casi, *lvce, null, {type: *l }]
+  - [*casi, *neap, null, {type: *l }]
+  - [*neap, *pote, null, {type: *l }]
+  - [*neap, *mess, null, {type: *s }]
+  - [*neap, *pano, null, {type: *s }]
+  # Apvlia
+  - [*lvce, *brvn, null, {type: *l }]
+  - [*lvce, *pote, null, {type: *l }]
+  - [*brvn, *crot, null, {type: *s }]
+  - [*brvn, *pote, null, {type: *l }]
+  # Lvcania
+  - [*pote, *crot, null, {type: *l }]
+  - [*crot, *syra, null, {type: *s }]
+  - [*crot, *mess, null, {type: *s }]
+  - [*crot, *mess, null, {type: *l }]
+  # Sicilia
+  - [*mess, *syra, null, {type: *s }]
+  - [*mess, *syra, null, {type: *l }]
+  - [*mess, *pano, null, {type: *l }]
+  - [*mess, *pano, null, {type: *s }]
+  - [*pano, *syra, null, {type: *l }]
