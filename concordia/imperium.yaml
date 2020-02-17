@@ -1,0 +1,161 @@
+meta:
+  name: Concordia
+  year: 2013
+  bgg: https://boardgamegeek.com/boardgame/124361/concordia
+  rules: http://riograndegames.com/getFile.php?id=1812
+  site:
+  graph-class: MultiGraph
+
+data:
+  - &brit  Britania
+  - &gall  Gallia
+  - &hisp  Hispania
+  - &germ  Germania
+  - &ital  Italia
+  - &mavr  Marvetania
+  - &daci  Dacia
+  - &hell  Hellas
+  - &lybi  Lybia
+  - &asia  Asia
+  - &syri  Syria
+  - &egyp  Ægyptvs
+  - &a     A
+  - &b     B
+  - &c     C
+  - &d     D
+  - &l     land
+  - &s     sea
+
+nodes:
+  - &isca  {deg: 4, labels: {region: *brit, letter: *a}, label: Isca D.}
+  - &lond  {deg: 4, labels: {region: *brit, letter: *a}, label: Londinivm}
+  - &lvte  {deg: 4, labels: {region: *gall, letter: *b}, label: Lvtetia}
+  - &bvrd  {deg: 5, labels: {region: *gall, letter: *b}, label: Bvrdigala}
+  - &mass  {deg: 7, labels: {region: *gall, letter: *b}, label: Massilia}
+  - &brig  {deg: 6, labels: {region: *hisp, letter: *b}, label: Brigantivm}
+  - &olis  {deg: 5, labels: {region: *hisp, letter: *b}, label: Olisipo}
+  - &vale  {deg: 7, labels: {region: *hisp, letter: *b}, label: Valentia}
+  - &colo  {deg: 4, labels: {region: *germ, letter: *a}, label: Colonia A.}
+  - &vind  {deg: 3, labels: {region: *germ, letter: *a}, label: Vindobona}
+  - &nova  {deg: 4, labels: {region: *ital, letter: *d}, label: Novaria}
+  - &aqvi  {deg: 5, labels: {region: *ital, letter: *d}, label: Aqveleia}
+  - &roma  {deg: 6, labels: {region: *ital, letter: ''}, label: Roma}
+  - &syra  {deg: 7, labels: {region: *ital, letter: *d}, label: Syracvsæ}
+  - &rvsa  {deg: 6, labels: {region: *mavr, letter: *b}, label: Rvsadir}
+  - &cart  {deg: 8, labels: {region: *mavr, letter: *b}, label: Carthago}
+  - &sirm  {deg: 5, labels: {region: *daci, letter: *a}, label: Sirmivm}
+  - &napo  {deg: 2, labels: {region: *daci, letter: *a}, label: Napoca}
+  - &tomi  {deg: 5, labels: {region: *daci, letter: *a}, label: Tomis}
+  - &dyrr  {deg: 5, labels: {region: *hell, letter: *d}, label: Dyrrhachivm}
+  - &athe  {deg: 6, labels: {region: *hell, letter: *d}, label: Athenæ}
+  - &lept  {deg: 5, labels: {region: *lybi, letter: *c}, label: Leptis Magna}
+  - &cyre  {deg: 7, labels: {region: *lybi, letter: *c}, label: Cyrene}
+  - &byca  {deg: 7, labels: {region: *asia, letter: *c}, label: Bycantivm}
+  - &atta  {deg: 5, labels: {region: *asia, letter: *c}, label: Attalia}
+  - &sino  {deg: 4, labels: {region: *asia, letter: *c}, label: Sinope}
+  - &tyro  {deg: 5, labels: {region: *syri, letter: *c}, label: Tyros}
+  - &anti  {deg: 5, labels: {region: *syri, letter: *c}, label: Antiochia}
+  - &alex  {deg: 7, labels: {region: *egyp, letter: *c}, label: Alexandria}
+  - &memp  {deg: 3, labels: {region: *egyp, letter: *c}, label: Memphis}
+  - &petr  {deg: 2, labels: {region: *egyp, letter: *c}, label: Petra}
+
+edges:
+  # Britannia
+  - [*isca, *lond, null, {type: *l}]
+  - [*isca, *lond, null, {type: *s}]
+  - [*isca, *bvrd, null, {type: *s}]
+  - [*isca, *brig, null, {type: *s}]
+  - [*lond, *colo, null, {type: *s}]
+  - [*lond, *lvte, null, {type: *l}]
+  - [*lvte, *colo, null, {type: *l}]
+  # Gallia
+  - [*lvte, *mass, null, {type: *l}]
+  - [*lvte, *bvrd, null, {type: *l}]
+  - [*bvrd, *mass, null, {type: *l}]
+  - [*bvrd, *brig, null, {type: *l}]
+  - [*bvrd, *brig, null, {type: *s}]
+  - [*mass, *nova, null, {type: *l}]
+  - [*mass, *roma, null, {type: *s}]
+  - [*mass, *cart, null, {type: *s}]
+  - [*mass, *vale, null, {type: *s}]
+  - [*mass, *vale, null, {type: *l}]
+  # Hispania
+  - [*brig, *vale, null, {type: *l}]
+  - [*brig, *olis, null, {type: *l}]
+  - [*brig, *olis, null, {type: *s}]
+  - [*olis, *vale, null, {type: *l}]
+  - [*olis, *rvsa, null, {type: *l}]
+  - [*olis, *rvsa, null, {type: *s}]
+  - [*vale, *cart, null, {type: *s}]
+  - [*vale, *rvsa, null, {type: *s}]
+  - [*vale, *rvsa, null, {type: *l}]
+  # Germania
+  - [*colo, *vind, null, {type: *l}]
+  - [*colo, *nova, null, {type: *l}]
+  - [*vind, *sirm, null, {type: *l}]
+  - [*vind, *aqvi, null, {type: *l}]
+  # Italia
+  - [*nova, *aqvi, null, {type: *l}]
+  - [*nova, *roma, null, {type: *l}]
+  - [*aqvi, *sirm, null, {type: *l}]
+  - [*aqvi, *dyrr, null, {type: *s}]
+  - [*aqvi, *roma, null, {type: *l}]
+  - [*roma, *syra, null, {type: *l}]
+  - [*roma, *syra, null, {type: *s}]
+  - [*roma, *cart, null, {type: *s}]
+  - [*syra, *dyrr, null, {type: *s}]
+  - [*syra, *athe, null, {type: *s}]
+  - [*syra, *cyre, null, {type: *s}]
+  - [*syra, *lept, null, {type: *s}]
+  - [*syra, *cart, null, {type: *s}]
+  # Mavretania
+  - [*rvsa, *cart, null, {type: *s}]
+  - [*rvsa, *cart, null, {type: *l}]
+  - [*cart, *lept, null, {type: *s}]
+  - [*cart, *lept, null, {type: *l}]
+  # Dacia
+  - [*sirm, *napo, null, {type: *l}]
+  - [*sirm, *tomi, null, {type: *l}]
+  - [*sirm, *dyrr, null, {type: *l}]
+  - [*napo, *tomi, null, {type: *l}]
+  - [*tomi, *sino, null, {type: *s}]
+  - [*tomi, *byca, null, {type: *s}]
+  - [*tomi, *byca, null, {type: *l}]
+  # Hellas
+  - [*dyrr, *byca, null, {type: *l}]
+  - [*dyrr, *athe, null, {type: *l}]
+  - [*athe, *byca, null, {type: *s}]
+  - [*athe, *atta, null, {type: *s}]
+  - [*athe, *alex, null, {type: *s}]
+  - [*athe, *cyre, null, {type: *s}]
+  # Lybia
+  - [*lept, *cyre, null, {type: *s}]
+  - [*lept, *cyre, null, {type: *l}]
+  - [*cyre, *alex, null, {type: *s}]
+  - [*cyre, *alex, null, {type: *l}]
+  - [*cyre, *memp, null, {type: *l}]
+  # Asia
+  - [*byca, *sino, null, {type: *s}]
+  - [*byca, *sino, null, {type: *l}]
+  - [*byca, *atta, null, {type: *l}]
+  - [*atta, *anti, null, {type: *l}]
+  - [*atta, *anti, null, {type: *s}]
+  - [*atta, *alex, null, {type: *s}]
+  - [*sino, *anti, null, {type: *l}]
+  # Syria
+  - [*anti, *tyro, null, {type: *l}]
+  - [*anti, *tyro, null, {type: *s}]
+  - [*tyro, *petr, null, {type: *l}]
+  - [*tyro, *alex, null, {type: *l}]
+  - [*tyro, *alex, null, {type: *s}]
+  # Æyptvs
+  - [*alex, *memp, null, {type: *l}]
+  - [*memp, *petr, null, {type: *l}]
+#  - [*    , *    , null, {type: * }]
+#  - [*    , *    , null, {type: * }]
+#  - [*    , *    , null, {type: * }]
+#  - [*    , *    , null, {type: * }]
+#  - [*    , *    , null, {type: * }]
+#  - [*    , *    , null, {type: * }]
+#  - [*    , *    , null, {type: * }]
+#  - [*    , *    , null, {type: * }]
