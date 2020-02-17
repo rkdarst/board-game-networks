@@ -84,3 +84,11 @@ Code: MIT
 Author and collector(s): Richard Darst
 
 Curator: Richard Darst
+
+
+**WARNING: no warranty about correctness of these networks is
+provided.  Unless otherwise indicated, these networks are made by one
+person and unverified.  Before using them for serious tasks, they must
+be checked.  If you do check them, file an issue and I can mark it as
+checked.  The entry procedure has redundancy to catch missing/excess
+links, but the node and edge attributes get much less verification.**
