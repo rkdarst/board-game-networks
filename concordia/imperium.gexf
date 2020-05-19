@@ -1,0 +1,600 @@
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="2" title="networkx_key" type="long" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="region" type="string" />
+      <attribute id="1" title="letter" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.2</creator>
+      <lastmodified>19/05/2020</lastmodified>
+    </meta>
+    <nodes>
+      <node id="0" label="Isca D.">
+        <attvalues>
+          <attvalue for="0" value="Britania" />
+          <attvalue for="1" value="A" />
+        </attvalues>
+      </node>
+      <node id="1" label="Londinivm">
+        <attvalues>
+          <attvalue for="0" value="Britania" />
+          <attvalue for="1" value="A" />
+        </attvalues>
+      </node>
+      <node id="2" label="Lvtetia">
+        <attvalues>
+          <attvalue for="0" value="Gallia" />
+          <attvalue for="1" value="B" />
+        </attvalues>
+      </node>
+      <node id="3" label="Bvrdigala">
+        <attvalues>
+          <attvalue for="0" value="Gallia" />
+          <attvalue for="1" value="B" />
+        </attvalues>
+      </node>
+      <node id="4" label="Massilia">
+        <attvalues>
+          <attvalue for="0" value="Gallia" />
+          <attvalue for="1" value="B" />
+        </attvalues>
+      </node>
+      <node id="5" label="Brigantivm">
+        <attvalues>
+          <attvalue for="0" value="Hispania" />
+          <attvalue for="1" value="B" />
+        </attvalues>
+      </node>
+      <node id="6" label="Olisipo">
+        <attvalues>
+          <attvalue for="0" value="Hispania" />
+          <attvalue for="1" value="B" />
+        </attvalues>
+      </node>
+      <node id="7" label="Valentia">
+        <attvalues>
+          <attvalue for="0" value="Hispania" />
+          <attvalue for="1" value="B" />
+        </attvalues>
+      </node>
+      <node id="8" label="Colonia A.">
+        <attvalues>
+          <attvalue for="0" value="Germania" />
+          <attvalue for="1" value="A" />
+        </attvalues>
+      </node>
+      <node id="9" label="Vindobona">
+        <attvalues>
+          <attvalue for="0" value="Germania" />
+          <attvalue for="1" value="A" />
+        </attvalues>
+      </node>
+      <node id="10" label="Novaria">
+        <attvalues>
+          <attvalue for="0" value="Italia" />
+          <attvalue for="1" value="D" />
+        </attvalues>
+      </node>
+      <node id="11" label="Aqveleia">
+        <attvalues>
+          <attvalue for="0" value="Italia" />
+          <attvalue for="1" value="D" />
+        </attvalues>
+      </node>
+      <node id="12" label="Roma">
+        <attvalues>
+          <attvalue for="0" value="Italia" />
+          <attvalue for="1" value="" />
+        </attvalues>
+      </node>
+      <node id="13" label="Syracvs&#230;">
+        <attvalues>
+          <attvalue for="0" value="Italia" />
+          <attvalue for="1" value="D" />
+        </attvalues>
+      </node>
+      <node id="14" label="Rvsadir">
+        <attvalues>
+          <attvalue for="0" value="Marvetania" />
+          <attvalue for="1" value="B" />
+        </attvalues>
+      </node>
+      <node id="15" label="Carthago">
+        <attvalues>
+          <attvalue for="0" value="Marvetania" />
+          <attvalue for="1" value="B" />
+        </attvalues>
+      </node>
+      <node id="16" label="Sirmivm">
+        <attvalues>
+          <attvalue for="0" value="Dacia" />
+          <attvalue for="1" value="A" />
+        </attvalues>
+      </node>
+      <node id="17" label="Napoca">
+        <attvalues>
+          <attvalue for="0" value="Dacia" />
+          <attvalue for="1" value="A" />
+        </attvalues>
+      </node>
+      <node id="18" label="Tomis">
+        <attvalues>
+          <attvalue for="0" value="Dacia" />
+          <attvalue for="1" value="A" />
+        </attvalues>
+      </node>
+      <node id="19" label="Dyrrhachivm">
+        <attvalues>
+          <attvalue for="0" value="Hellas" />
+          <attvalue for="1" value="D" />
+        </attvalues>
+      </node>
+      <node id="20" label="Athen&#230;">
+        <attvalues>
+          <attvalue for="0" value="Hellas" />
+          <attvalue for="1" value="D" />
+        </attvalues>
+      </node>
+      <node id="21" label="Leptis Magna">
+        <attvalues>
+          <attvalue for="0" value="Lybia" />
+          <attvalue for="1" value="C" />
+        </attvalues>
+      </node>
+      <node id="22" label="Cyrene">
+        <attvalues>
+          <attvalue for="0" value="Lybia" />
+          <attvalue for="1" value="C" />
+        </attvalues>
+      </node>
+      <node id="23" label="Bycantivm">
+        <attvalues>
+          <attvalue for="0" value="Asia" />
+          <attvalue for="1" value="C" />
+        </attvalues>
+      </node>
+      <node id="24" label="Attalia">
+        <attvalues>
+          <attvalue for="0" value="Asia" />
+          <attvalue for="1" value="C" />
+        </attvalues>
+      </node>
+      <node id="25" label="Sinope">
+        <attvalues>
+          <attvalue for="0" value="Asia" />
+          <attvalue for="1" value="C" />
+        </attvalues>
+      </node>
+      <node id="26" label="Tyros">
+        <attvalues>
+          <attvalue for="0" value="Syria" />
+          <attvalue for="1" value="C" />
+        </attvalues>
+      </node>
+      <node id="27" label="Antiochia">
+        <attvalues>
+          <attvalue for="0" value="Syria" />
+          <attvalue for="1" value="C" />
+        </attvalues>
+      </node>
+      <node id="28" label="Alexandria">
+        <attvalues>
+          <attvalue for="0" value="&#198;gyptvs" />
+          <attvalue for="1" value="C" />
+        </attvalues>
+      </node>
+      <node id="29" label="Memphis">
+        <attvalues>
+          <attvalue for="0" value="&#198;gyptvs" />
+          <attvalue for="1" value="C" />
+        </attvalues>
+      </node>
+      <node id="30" label="Petra">
+        <attvalues>
+          <attvalue for="0" value="&#198;gyptvs" />
+          <attvalue for="1" value="C" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="0" target="1" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="1" source="0" target="1" type="sea">
+        <attvalues>
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </edge>
+      <edge id="2" source="0" target="3" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="3" source="0" target="5" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="4" source="1" target="8" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="5" source="1" target="2" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="6" source="2" target="8" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="7" source="2" target="4" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="8" source="2" target="3" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="9" source="3" target="4" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="10" source="3" target="5" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="11" source="3" target="5" type="sea">
+        <attvalues>
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </edge>
+      <edge id="12" source="4" target="10" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="13" source="4" target="12" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="14" source="4" target="15" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="15" source="4" target="7" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="16" source="4" target="7" type="land">
+        <attvalues>
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </edge>
+      <edge id="17" source="5" target="7" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="18" source="5" target="6" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="19" source="5" target="6" type="sea">
+        <attvalues>
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </edge>
+      <edge id="20" source="6" target="7" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="21" source="6" target="14" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="22" source="6" target="14" type="sea">
+        <attvalues>
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </edge>
+      <edge id="23" source="7" target="15" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="24" source="7" target="14" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="25" source="7" target="14" type="land">
+        <attvalues>
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </edge>
+      <edge id="26" source="8" target="9" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="27" source="8" target="10" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="28" source="9" target="16" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="29" source="9" target="11" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="30" source="10" target="11" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="31" source="10" target="12" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="32" source="11" target="16" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="33" source="11" target="19" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="34" source="11" target="12" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="35" source="12" target="13" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="36" source="12" target="13" type="sea">
+        <attvalues>
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </edge>
+      <edge id="37" source="12" target="15" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="38" source="13" target="19" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="39" source="13" target="20" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="40" source="13" target="22" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="41" source="13" target="21" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="42" source="13" target="15" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="43" source="14" target="15" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="44" source="14" target="15" type="land">
+        <attvalues>
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </edge>
+      <edge id="45" source="15" target="21" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="46" source="15" target="21" type="land">
+        <attvalues>
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </edge>
+      <edge id="47" source="16" target="17" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="48" source="16" target="18" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="49" source="16" target="19" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="50" source="17" target="18" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="51" source="18" target="25" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="52" source="18" target="23" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="53" source="18" target="23" type="land">
+        <attvalues>
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </edge>
+      <edge id="54" source="19" target="23" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="55" source="19" target="20" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="56" source="20" target="23" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="57" source="20" target="24" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="58" source="20" target="28" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="59" source="20" target="22" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="60" source="21" target="22" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="61" source="21" target="22" type="land">
+        <attvalues>
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </edge>
+      <edge id="62" source="22" target="28" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="63" source="22" target="28" type="land">
+        <attvalues>
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </edge>
+      <edge id="64" source="22" target="29" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="65" source="23" target="25" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="66" source="23" target="25" type="land">
+        <attvalues>
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </edge>
+      <edge id="67" source="23" target="24" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="68" source="24" target="27" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="69" source="24" target="27" type="sea">
+        <attvalues>
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </edge>
+      <edge id="70" source="24" target="28" type="sea">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="71" source="25" target="27" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="72" source="26" target="27" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="73" source="26" target="27" type="sea">
+        <attvalues>
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </edge>
+      <edge id="74" source="26" target="30" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="75" source="26" target="28" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="76" source="26" target="28" type="sea">
+        <attvalues>
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </edge>
+      <edge id="77" source="28" target="29" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge id="78" source="29" target="30" type="land">
+        <attvalues>
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

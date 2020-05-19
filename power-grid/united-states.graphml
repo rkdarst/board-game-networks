@@ -1,0 +1,436 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="weight" attr.type="long" for="edge" id="d2" />
+  <key attr.name="color" attr.type="string" for="node" id="d1" />
+  <key attr.name="id" attr.type="long" for="node" id="d0" />
+  <graph edgedefault="undirected">
+    <node id="Seattle">
+      <data key="d0">0</data>
+      <data key="d1">purple</data>
+    </node>
+    <node id="Portland">
+      <data key="d0">1</data>
+      <data key="d1">purple</data>
+    </node>
+    <node id="Boise">
+      <data key="d0">2</data>
+      <data key="d1">purple</data>
+    </node>
+    <node id="Billings">
+      <data key="d0">3</data>
+      <data key="d1">purple</data>
+    </node>
+    <node id="Cheyenne">
+      <data key="d0">4</data>
+      <data key="d1">purple</data>
+    </node>
+    <node id="Omaha">
+      <data key="d0">5</data>
+      <data key="d1">purple</data>
+    </node>
+    <node id="Denver">
+      <data key="d0">6</data>
+      <data key="d1">purple</data>
+    </node>
+    <node id="Salt Lake City">
+      <data key="d0">7</data>
+      <data key="d1">cyan</data>
+    </node>
+    <node id="San Francisco">
+      <data key="d0">8</data>
+      <data key="d1">cyan</data>
+    </node>
+    <node id="Las Vegas">
+      <data key="d0">9</data>
+      <data key="d1">cyan</data>
+    </node>
+    <node id="Santa Fe">
+      <data key="d0">10</data>
+      <data key="d1">cyan</data>
+    </node>
+    <node id="Los Angeles">
+      <data key="d0">11</data>
+      <data key="d1">cyan</data>
+    </node>
+    <node id="Phoenix">
+      <data key="d0">12</data>
+      <data key="d1">cyan</data>
+    </node>
+    <node id="San Diego">
+      <data key="d0">13</data>
+      <data key="d1">cyan</data>
+    </node>
+    <node id="Duluth">
+      <data key="d0">14</data>
+      <data key="d1">yellow</data>
+    </node>
+    <node id="Fargo">
+      <data key="d0">15</data>
+      <data key="d1">yellow</data>
+    </node>
+    <node id="Minneapolis">
+      <data key="d0">16</data>
+      <data key="d1">yellow</data>
+    </node>
+    <node id="Chicago">
+      <data key="d0">17</data>
+      <data key="d1">yellow</data>
+    </node>
+    <node id="St. Louis">
+      <data key="d0">18</data>
+      <data key="d1">yellow</data>
+    </node>
+    <node id="Cincinnati">
+      <data key="d0">19</data>
+      <data key="d1">yellow</data>
+    </node>
+    <node id="Knoxville">
+      <data key="d0">20</data>
+      <data key="d1">yellow</data>
+    </node>
+    <node id="Kansas City">
+      <data key="d0">21</data>
+      <data key="d1">red</data>
+    </node>
+    <node id="Oklahoma City">
+      <data key="d0">22</data>
+      <data key="d1">red</data>
+    </node>
+    <node id="Memphis">
+      <data key="d0">23</data>
+      <data key="d1">red</data>
+    </node>
+    <node id="Dallas">
+      <data key="d0">24</data>
+      <data key="d1">red</data>
+    </node>
+    <node id="Birmingham">
+      <data key="d0">25</data>
+      <data key="d1">red</data>
+    </node>
+    <node id="Houston">
+      <data key="d0">26</data>
+      <data key="d1">red</data>
+    </node>
+    <node id="New Orleans">
+      <data key="d0">27</data>
+      <data key="d1">red</data>
+    </node>
+    <node id="Detroit">
+      <data key="d0">28</data>
+      <data key="d1">brown</data>
+    </node>
+    <node id="Buffalo">
+      <data key="d0">29</data>
+      <data key="d1">brown</data>
+    </node>
+    <node id="Pittsburgh">
+      <data key="d0">30</data>
+      <data key="d1">brown</data>
+    </node>
+    <node id="Washington">
+      <data key="d0">31</data>
+      <data key="d1">brown</data>
+    </node>
+    <node id="Philadelphia">
+      <data key="d0">32</data>
+      <data key="d1">brown</data>
+    </node>
+    <node id="New York">
+      <data key="d0">33</data>
+      <data key="d1">brown</data>
+    </node>
+    <node id="Boston">
+      <data key="d0">34</data>
+      <data key="d1">brown</data>
+    </node>
+    <node id="Norfolk">
+      <data key="d0">35</data>
+      <data key="d1">green</data>
+    </node>
+    <node id="Raleigh">
+      <data key="d0">36</data>
+      <data key="d1">green</data>
+    </node>
+    <node id="Atlanta">
+      <data key="d0">37</data>
+      <data key="d1">green</data>
+    </node>
+    <node id="Savannah">
+      <data key="d0">38</data>
+      <data key="d1">green</data>
+    </node>
+    <node id="Jacksonville">
+      <data key="d0">39</data>
+      <data key="d1">green</data>
+    </node>
+    <node id="Tampa">
+      <data key="d0">40</data>
+      <data key="d1">green</data>
+    </node>
+    <node id="Miami">
+      <data key="d0">41</data>
+      <data key="d1">green</data>
+    </node>
+    <edge source="Seattle" target="Portland">
+      <data key="d2">3</data>
+    </edge>
+    <edge source="Seattle" target="Boise">
+      <data key="d2">12</data>
+    </edge>
+    <edge source="Seattle" target="Billings">
+      <data key="d2">9</data>
+    </edge>
+    <edge source="Portland" target="Boise">
+      <data key="d2">13</data>
+    </edge>
+    <edge source="Portland" target="San Francisco">
+      <data key="d2">24</data>
+    </edge>
+    <edge source="Boise" target="Billings">
+      <data key="d2">12</data>
+    </edge>
+    <edge source="Boise" target="Cheyenne">
+      <data key="d2">24</data>
+    </edge>
+    <edge source="Boise" target="Salt Lake City">
+      <data key="d2">8</data>
+    </edge>
+    <edge source="Boise" target="San Francisco">
+      <data key="d2">23</data>
+    </edge>
+    <edge source="Billings" target="Fargo">
+      <data key="d2">17</data>
+    </edge>
+    <edge source="Billings" target="Minneapolis">
+      <data key="d2">18</data>
+    </edge>
+    <edge source="Billings" target="Cheyenne">
+      <data key="d2">9</data>
+    </edge>
+    <edge source="Cheyenne" target="Minneapolis">
+      <data key="d2">18</data>
+    </edge>
+    <edge source="Cheyenne" target="Omaha">
+      <data key="d2">14</data>
+    </edge>
+    <edge source="Cheyenne" target="Denver">
+      <data key="d2">0</data>
+    </edge>
+    <edge source="Omaha" target="Minneapolis">
+      <data key="d2">8</data>
+    </edge>
+    <edge source="Omaha" target="Chicago">
+      <data key="d2">13</data>
+    </edge>
+    <edge source="Omaha" target="Kansas City">
+      <data key="d2">5</data>
+    </edge>
+    <edge source="Denver" target="Salt Lake City">
+      <data key="d2">21</data>
+    </edge>
+    <edge source="Denver" target="Kansas City">
+      <data key="d2">16</data>
+    </edge>
+    <edge source="Denver" target="Santa Fe">
+      <data key="d2">13</data>
+    </edge>
+    <edge source="Salt Lake City" target="San Francisco">
+      <data key="d2">27</data>
+    </edge>
+    <edge source="Salt Lake City" target="Santa Fe">
+      <data key="d2">28</data>
+    </edge>
+    <edge source="Salt Lake City" target="Las Vegas">
+      <data key="d2">18</data>
+    </edge>
+    <edge source="San Francisco" target="Las Vegas">
+      <data key="d2">14</data>
+    </edge>
+    <edge source="San Francisco" target="Los Angeles">
+      <data key="d2">9</data>
+    </edge>
+    <edge source="Las Vegas" target="Santa Fe">
+      <data key="d2">27</data>
+    </edge>
+    <edge source="Las Vegas" target="Phoenix">
+      <data key="d2">15</data>
+    </edge>
+    <edge source="Las Vegas" target="San Diego">
+      <data key="d2">9</data>
+    </edge>
+    <edge source="Las Vegas" target="Los Angeles">
+      <data key="d2">9</data>
+    </edge>
+    <edge source="Santa Fe" target="Kansas City">
+      <data key="d2">16</data>
+    </edge>
+    <edge source="Santa Fe" target="Oklahoma City">
+      <data key="d2">15</data>
+    </edge>
+    <edge source="Santa Fe" target="Dallas">
+      <data key="d2">16</data>
+    </edge>
+    <edge source="Santa Fe" target="Houston">
+      <data key="d2">21</data>
+    </edge>
+    <edge source="Santa Fe" target="Phoenix">
+      <data key="d2">18</data>
+    </edge>
+    <edge source="Los Angeles" target="San Diego">
+      <data key="d2">3</data>
+    </edge>
+    <edge source="Phoenix" target="San Diego">
+      <data key="d2">14</data>
+    </edge>
+    <edge source="Duluth" target="Fargo">
+      <data key="d2">6</data>
+    </edge>
+    <edge source="Duluth" target="Minneapolis">
+      <data key="d2">5</data>
+    </edge>
+    <edge source="Duluth" target="Chicago">
+      <data key="d2">12</data>
+    </edge>
+    <edge source="Duluth" target="Detroit">
+      <data key="d2">15</data>
+    </edge>
+    <edge source="Fargo" target="Minneapolis">
+      <data key="d2">6</data>
+    </edge>
+    <edge source="Minneapolis" target="Chicago">
+      <data key="d2">8</data>
+    </edge>
+    <edge source="Chicago" target="Detroit">
+      <data key="d2">7</data>
+    </edge>
+    <edge source="Chicago" target="Cincinnati">
+      <data key="d2">7</data>
+    </edge>
+    <edge source="Chicago" target="St. Louis">
+      <data key="d2">10</data>
+    </edge>
+    <edge source="Chicago" target="Kansas City">
+      <data key="d2">8</data>
+    </edge>
+    <edge source="St. Louis" target="Kansas City">
+      <data key="d2">6</data>
+    </edge>
+    <edge source="St. Louis" target="Cincinnati">
+      <data key="d2">12</data>
+    </edge>
+    <edge source="St. Louis" target="Atlanta">
+      <data key="d2">12</data>
+    </edge>
+    <edge source="St. Louis" target="Memphis">
+      <data key="d2">7</data>
+    </edge>
+    <edge source="Cincinnati" target="Detroit">
+      <data key="d2">4</data>
+    </edge>
+    <edge source="Cincinnati" target="Pittsburgh">
+      <data key="d2">7</data>
+    </edge>
+    <edge source="Cincinnati" target="Raleigh">
+      <data key="d2">15</data>
+    </edge>
+    <edge source="Cincinnati" target="Knoxville">
+      <data key="d2">6</data>
+    </edge>
+    <edge source="Knoxville" target="Atlanta">
+      <data key="d2">5</data>
+    </edge>
+    <edge source="Kansas City" target="Memphis">
+      <data key="d2">12</data>
+    </edge>
+    <edge source="Kansas City" target="Oklahoma City">
+      <data key="d2">8</data>
+    </edge>
+    <edge source="Oklahoma City" target="Memphis">
+      <data key="d2">14</data>
+    </edge>
+    <edge source="Oklahoma City" target="Dallas">
+      <data key="d2">3</data>
+    </edge>
+    <edge source="Memphis" target="Birmingham">
+      <data key="d2">6</data>
+    </edge>
+    <edge source="Memphis" target="New Orleans">
+      <data key="d2">7</data>
+    </edge>
+    <edge source="Memphis" target="Dallas">
+      <data key="d2">12</data>
+    </edge>
+    <edge source="Dallas" target="New Orleans">
+      <data key="d2">12</data>
+    </edge>
+    <edge source="Dallas" target="Houston">
+      <data key="d2">5</data>
+    </edge>
+    <edge source="Birmingham" target="Atlanta">
+      <data key="d2">3</data>
+    </edge>
+    <edge source="Birmingham" target="Jacksonville">
+      <data key="d2">9</data>
+    </edge>
+    <edge source="Birmingham" target="New Orleans">
+      <data key="d2">11</data>
+    </edge>
+    <edge source="Houston" target="New Orleans">
+      <data key="d2">8</data>
+    </edge>
+    <edge source="New Orleans" target="Jacksonville">
+      <data key="d2">16</data>
+    </edge>
+    <edge source="Detroit" target="Buffalo">
+      <data key="d2">7</data>
+    </edge>
+    <edge source="Detroit" target="Pittsburgh">
+      <data key="d2">6</data>
+    </edge>
+    <edge source="Buffalo" target="New York">
+      <data key="d2">8</data>
+    </edge>
+    <edge source="Buffalo" target="Pittsburgh">
+      <data key="d2">7</data>
+    </edge>
+    <edge source="Pittsburgh" target="Washington">
+      <data key="d2">6</data>
+    </edge>
+    <edge source="Pittsburgh" target="Raleigh">
+      <data key="d2">7</data>
+    </edge>
+    <edge source="Washington" target="Philadelphia">
+      <data key="d2">3</data>
+    </edge>
+    <edge source="Washington" target="Norfolk">
+      <data key="d2">5</data>
+    </edge>
+    <edge source="Philadelphia" target="New York">
+      <data key="d2">0</data>
+    </edge>
+    <edge source="New York" target="Boston">
+      <data key="d2">3</data>
+    </edge>
+    <edge source="Norfolk" target="Raleigh">
+      <data key="d2">3</data>
+    </edge>
+    <edge source="Raleigh" target="Savannah">
+      <data key="d2">7</data>
+    </edge>
+    <edge source="Raleigh" target="Atlanta">
+      <data key="d2">7</data>
+    </edge>
+    <edge source="Atlanta" target="Savannah">
+      <data key="d2">7</data>
+    </edge>
+    <edge source="Savannah" target="Jacksonville">
+      <data key="d2">0</data>
+    </edge>
+    <edge source="Jacksonville" target="Tampa">
+      <data key="d2">4</data>
+    </edge>
+    <edge source="Tampa" target="Miami">
+      <data key="d2">4</data>
+    </edge>
+  </graph>
+</graphml>
