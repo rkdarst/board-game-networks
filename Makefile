@@ -2,12 +2,16 @@ INPUTS=$(sort $(wildcard */*.yaml))
 EXTENSIONS=edg gexf gml graphml
 OUTPUTS=$(INPUTS:.yaml=.gml) $(INPUTS:.yaml=.graphml) $(INPUTS:.yaml=.edg) $(INPUTS:.yaml=.gexf)
 
+default: all
 
-all: $(OUTPUTS)
+.PHONY: clean setup all finalization gh-pages default
 
 clean:
 	rm -f index.html
 	rm -f $(OUTPUTS)
+
+all: $(OUTPUTS)
+
 
 setup:
 	echo 'Board game network dataset.  <a href="https://github.com/rkdarst/board-game-networks/">Information, documentation, source, metadata, etc. are available on GitHub.</a><br><br>' >> index.html
