@@ -116,6 +116,8 @@ def main(argv):
                         help="Print the network to console")
     parser.add_argument('--verbose', '-v', action='store_true',
                         help="Verbose mode")
+    parser.add_argument('--output', '-o', default='.',
+                        help="Output directory")
     parser.add_argument('graph')
     args = parser.parse_args(argv[1:])
 
@@ -176,7 +178,7 @@ def main(argv):
             ('edg', generate_edgelist_ids),
         ]:
         output = os.path.splitext(args.graph)[0] + '.' + ext
-        open(output, 'w').write('\n'.join(func(G)))
+        open(os.path.join(args.output, output), 'w').write('\n'.join(func(G)))
 
 
 if __name__ == '__main__':
