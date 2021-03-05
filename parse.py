@@ -101,7 +101,8 @@ def generate(fname):
             assert G.degree(node) == expected_degree, "Node %s has wrong degree"%(node,)
 
     # Check for no self-loops
-    assert len(list(G.nodes_with_selfloops())) == 0, "Self loops in %s"%list(G.nodes_with_selfloops())
+    selfloops = list(networkx.nodes_with_selfloops(G))
+    assert len(selfloops) == 0, "Self loops in %s"%list(selfloops)
 
     return G
 
