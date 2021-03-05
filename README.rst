@@ -54,6 +54,11 @@ redundant and thus is included in only one yaml file.  This should be
 improved later.
 
 * ``name``: name of the game
+* ``subname``: Variant of the game.  Usually used for the name of the board
+* ``features``: Network features present in this graph.  List that
+  possibly includes [``multilayer``, ``weight``, ``note-attribute``,
+  ``edge-attribute``, ``node-weight``].  More could be added
+* ``image``: Link to image of the board (note: links may be unstable)
 * ``rules``: link to rules.
 * ``site``: official site for the game
 * ``year``: year the game was released
@@ -61,6 +66,7 @@ improved later.
 * ``type``: type of game (optional and unstructured)
 * ``graph-class``: if the graph is not an undirected simple graph,
   define the graph class here.  Currently only ``MultiGraph`` is used here.
+* ``fixme``: Data improvements that are needed
 
 
 Status
