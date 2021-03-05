@@ -1,9 +1,11 @@
 meta:
+  name: Afrikan Tahti
   bgg: https://boardgamegeek.com/boardgame/5130/afrikan-tahti
   site:
   rules: https://en.wikipedia.org/wiki/Afrikan_t%C3%A4hti
   year: 1951
   graph-class: MultiGraph
+  image: https://karkkainen-com.azureedge.net/tuotekuva/ZOOM/6416844711141.jpg
 
 data:
   - &c city

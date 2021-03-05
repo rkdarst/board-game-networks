@@ -6,6 +6,8 @@ meta:
   site: https://www.zmangames.com/en/products/pandemic-legacy-season-1/
   rules: https://images.zmangames.com/filer_public/57/b9/57b99885-fd15-4c0d-a28a-4b938d6bf46c/zm7170_zm7171_rules_web.pdf
   year: 2015
+  image: https://cf.geekdo-images.com/large/img/0Ddrd-mWsN3BVgIOYkyNA-Uwc4o=/fit-in/1024x1024/filters:no_upscale()/pic3476620.jpg
+  site: https://www.zmangames.com/en/games/pandemic/
 
 data:
   - &blue   blue

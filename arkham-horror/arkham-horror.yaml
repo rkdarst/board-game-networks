@@ -4,7 +4,7 @@ meta:
   bgg: https://boardgamegeek.com/boardgame/15987/arkham-horror
   rules: https://images-cdn.fantasyflightgames.com/ffg_content/Arkham_Horror/AH_Rules_internat.pdf
   site: https://www.fantasyflightgames.com/en/products/arkham-horror-third-edition/
-
+  image: https://vignette.wikia.nocookie.net/bgames/images/5/5a/Arkham_HorrorMap.jpg/revision/latest?cb=20120621002059
 
 data:
   - &northside  Northside

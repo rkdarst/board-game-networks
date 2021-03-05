@@ -1,3 +1,12 @@
+meta:
+  name: Power Grid
+  subname: Germany
+  image: https://i.pinimg.com/originals/92/1a/a5/921aa578ec786ffaa134da3909b43a8f.jpg
+  year: 2004
+  rules: https://www.riograndegames.com/wp-content/uploads/2018/12/Power-Grid-Recharged-Rules.pdf
+  bgg: https://boardgamegeek.com/boardgame/2651/power-grid
+  fixme: Power Grid vs Power Grid Rechanged - is the board the same?
+
 data:
   - &green  green
   - &brown  brown

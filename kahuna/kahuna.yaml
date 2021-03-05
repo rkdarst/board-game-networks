@@ -1,6 +1,8 @@
 meta:
   bgg: https://boardgamegeek.com/boardgame/394/kahuna
-
+  image: http://www.notjustgeeks.com/wp-content/uploads/2015/08/IMG_20150816_173240-1.jpg
+  rules: https://www.ultraboardgames.com/kahuna/game-rules.php
+  year: 1998
 
 nodes:
   - &a  {label: Aloa , deg: 3, }

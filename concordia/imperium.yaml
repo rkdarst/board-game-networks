@@ -6,6 +6,7 @@ meta:
   rules: http://riograndegames.com/getFile.php?id=1812
   site:
   graph-class: MultiGraph
+  image: http://www.pd-verlag.de/WebRoot/Store/Shops/es719366/5BC3/1FC1/1BDA/7C69/F79B/50ED/8965/B19E/Concordia_VENUS_Spielplan_VS_IMPERIUM_V3.jpg
 
 data:
   - &brit  Britania

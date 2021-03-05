@@ -4,6 +4,7 @@ meta:
   rules: https://images.zmangames.com/filer_public/53/ed/53edbee8-adfb-4715-899f-dd381e1420d7/zm7101_rules_web.pdf
   site: https://www.zmangames.com/en/products/pandemic/
   year: 2008
+  image: https://arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/UKY24N42YZAMJGPNAABQV7L2UE.jpg
 
 data:
   - &blue   blue

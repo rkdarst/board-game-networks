@@ -1,3 +1,11 @@
+meta:
+  name: Power Grid
+  subname: United States
+  image: https://dmsrus.files.wordpress.com/2015/02/pic173810.jpg
+  year: 2004
+  rules: https://www.riograndegames.com/wp-content/uploads/2018/12/Power-Grid-Recharged-Rules.pdf
+  bgg: https://boardgamegeek.com/boardgame/2651/power-grid
+
 data:
   - &purple purple
   - &cyan   cyan

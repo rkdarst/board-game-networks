@@ -2,6 +2,9 @@ meta:
   name: Concordia
   subname: Italia board
   graph-class: MultiGraph
+  bgg: https://boardgamegeek.com/boardgame/124361/concordia
+  image: http://www.pd-verlag.de/WebRoot/Store/Shops/es719366/5258/62DF/0889/D140/78BE/50ED/8961/557E/Concordia_ITALIA_2.jpg
+  year: 2013
 
 data:
   - &vene  Venetia

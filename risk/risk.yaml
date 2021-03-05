@@ -1,4 +1,9 @@
-#meta:
+meta:
+  name: Risk
+  bgg: https://boardgamegeek.com/boardgame/181/risk
+  image: https://cf.geekdo-images.com/Pcf6sHxECBEbOv5NjuI5_g__original/img/-MRk0V_Fi3co4JZcXL2zXSc28Wo=/0x0/filters:format(jpeg)/pic96737.jpg
+  year: 1959
+  rules: https://www.ultraboardgames.com/risk/game-rules.php
 
 data:
   - &na     North America
