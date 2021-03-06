@@ -39,7 +39,8 @@ finalization:
 gh-pages: clean setup all finalization
 	git branch -D gh-pages || true
 	git checkout --orphan gh-pages
-	git add index.html *.yaml *.gexf *.gml *.graphml *.edg
+	git add index.html
+	git add -f $(OUTPUTS)
 	git commit -m "gh-pages at $$(date)"
 	git push -u origin gh-pages -f
 	git checkout master
