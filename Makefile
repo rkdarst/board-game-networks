@@ -41,6 +41,6 @@ gh-pages: clean setup all finalization
 	git checkout --orphan gh-pages
 	git add index.html
 	git add -f $(OUTPUTS)
-	git commit -m "gh-pages at $$(date)"
+	git commit --author="gh-actions <noreply@example.com>" -m "gh-pages at $$(date)"
 	git push -u origin gh-pages -f
 	git checkout master
