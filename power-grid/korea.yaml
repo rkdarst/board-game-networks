@@ -1,0 +1,254 @@
+meta:
+  name: Power Grid
+  subname: Korea
+  image: http://www.boardgamer.ie/769-thickbox_default/power-grid-china-korea.jpg
+  year: 2008
+  site: https://www.riograndegames.com/games/power-grid-korea-china/
+  rules: https://www.riograndegames.com/wp-content/uploads/2013/02/Power-Grid-China-Korea-Rules.pdf
+  features: [node-attributes, regions, weights]
+  bgg: https://boardgamegeek.com/boardgameexpansion/37397/power-grid-chinakorea
+  notes: |
+    In this variant, you can either by resources from the North market or
+    the South market, but not both at the same time.  You can use any
+    resources to power any plant anywhere on the board.
+    The north/south divide has no effect on gameplay.  Sokcho appears
+    to be on the North side of the black line, but in the real world
+    it is in South Korea.
+
+data:
+  - &green  green
+  - &brown  brown
+  - &red    red
+  - &yellow yellow
+  - &pink   pink
+  - &purple purple
+  - &north  north
+  - &south  south
+
+nodes:
+  # Pink
+  - &gangg
+    label: Ganggye
+    labels: {color: *pink, region: *north}
+  - &sin
+    label: Sinuiju
+    labels: {color: *pink, region: *north}
+  - &anj
+    label: Anju
+    labels: {color: *pink, region: *north}
+  - &pye
+    label: Pyeongyang
+    labels: {color: *pink, region: *north}
+  - &nam
+    label: Nampo
+    labels: {color: *pink, region: *north}
+  - &hwa
+    label: Hwongju
+    labels: {color: *pink, region: *north}
+  - &hae
+    label: Haeju
+    labels: {color: *pink, region: *north}
+  # Red
+  - &ras
+    label: Rasun
+    labels: {color: *red, region: *north}
+  - &cheongji
+    label: Cheongjin
+    labels: {color: *red, region: *north}
+  - &gyeongs
+    label: Gyeongseong
+    labels: {color: *red, region: *north}
+  - &hye
+    label: Hyesan
+    labels: {color: *red, region: *north}
+  - &kim
+    label: "Kimch'aek"
+    labels: {color: *red, region: *north}
+  - &ham
+    label: Hamheung
+    labels: {color: *red, region: *north}
+  - &wons
+    label: Wonsan
+    labels: {color: *red, region: *north}
+  # Purple
+  - &gae
+    label: Gaesung
+    labels: {color: *purple, region: *north}
+  - &seo
+    label: Seoul
+    labels: {color: *purple, region: *south}
+  - &goy
+    label: Goyang
+    labels: {color: *purple, region: *south}
+  - &inc
+    label: Incheon
+    labels: {color: *purple, region: *south}
+  - &yon
+    label: Yongin
+    labels: {color: *purple, region: *south}
+  - &any
+    label: Anyang
+    labels: {color: *purple, region: *south}
+  - &suw
+    label: Suwon
+    labels: {color: *purple, region: *south}
+  # Brown
+  - &sok
+    label: Sokcho
+    labels: {color: *brown, region: *south}
+  - &chunc
+    label: Chuncheon
+    labels: {color: *brown, region: *south}
+  - &gangn
+    label: Gangneung
+    labels: {color: *brown, region: *south}
+  - &wonj
+    label: Wonju
+    labels: {color: *brown, region: *south}
+  - &don
+    label: Donghae
+    labels: {color: *brown, region: *south}
+  - &sam
+    label: Samcheok
+    labels: {color: *brown, region: *south}
+  - &tae
+    label: Taeraek
+    labels: {color: *brown, region: *south}
+  # Green
+  - &chung
+    label: Chungju
+    labels: {color: *green, region: *south}
+  - &cheongju
+    label: Cheongju
+    labels: {color: *green, region: *south}
+  - &daej
+    label: Daejon
+    labels: {color: *green, region: *south}
+  - &jeo
+    label: Jeonju
+    labels: {color: *green, region: *south}
+  - &gwa
+    label: Gwangju
+    labels: {color: *green, region: *south}
+  - &naj
+    label: Naju
+    labels: {color: *green, region: *south}
+  - &jej
+    label: Jeju
+    labels: {color: *green, region: *south}
+  # Yellow
+  - &and
+    label: Andong
+    labels: {color: *yellow, region: *south}
+  - &san
+    label: Sangju
+    labels: {color: *yellow, region: *south}
+  - &gyeongj
+    label: Gyeongju
+    labels: {color: *yellow, region: *south}
+  - &daeg
+    label: Daegu
+    labels: {color: *yellow, region: *south}
+  - &uls
+    label: Ulsan
+    labels: {color: *yellow, region: *south}
+  - &jin
+    label: Jinju
+    labels: {color: *yellow, region: *south}
+  - &bus
+    label: Busan
+    labels: {color: *yellow, region: *south}
+
+
+
+adjacency:
+  # Pink
+  - src: *gangg
+    dst: [[*hye, 20], [*ham, 19], [*anj, 22], [*sin, 25]]
+  - src: *sin
+    dst: [[*gangg, 25], [*anj, 13]]
+  - src: *anj
+    dst: [[*gangg, 22], [*ham, 20], [*pye, 7], [*nam, 10], [*sin, 13]]
+  - src: *pye
+    dst: [[*ham, 23], [*wons, 18], [*gae, 14], [*hwa, 4], [*nam, 5], [*anj, 7]]
+  - src: *nam
+    dst: [[*anj, 10], [*pye, 5], [*hwa, 4]]
+  - src: *hwa
+    dst: [[*pye, 4], [*hae, 8], [*nam, 4]]
+  - src: *hae
+    dst: [[*hwa, 8], [*gae, 8]]
+  # Red
+  - src: *ras
+    dst: [[*cheongji, 8]]
+  - src: *cheongji
+    dst: [[*ras, 8], [*gyeongs, 4]]
+  - src: *gyeongs
+    dst: [[*cheongji, 4], [*kim, 16], [*hye, 18]]
+  - src: *hye
+    dst: [[*gyeongs, 18], [*kim, 14], [*ham, 23], [*gangg, 20]]
+  - src: *kim
+    dst: [[*gyeongs, 16], [*ham, 17], [*hye, 14]]
+  - src: *ham
+    dst: [[*hye, 23], [*kim, 17], [*wons, 11], [*pye, 23], [*anj, 20], [*gangg, 19]]
+  - src: *wons
+    dst: [[*ham, 11], [*sok, 18], [*chunc, 19], [*gae, 18], [*pye, 18]]
+  # Purple
+  - src: *gae
+    dst: [[*wons, 18], [*chunc, 13], [*goy, 7], [*hae, 8], [*pye, 14]]
+  - src: *seo
+    dst: [[*chunc, 8], [*yon, 2], [*goy, 0]]
+  - src: *goy
+    dst: [[*seo, 0], [*any, 0], [*inc, 0], [*gae, 7]]
+  - src: *inc
+    dst: [[*goy, 0], [*any, 0]]
+  - src: *yon
+    dst: [[*chunc, 9], [*wonj, 8], [*chung, 10], [*cheongju, 10], [*suw, 2], [*seo, 2]]
+  - src: *any
+    dst: [[*goy, 0], [*suw, 3], [*inc, 0]]
+  - src: *suw
+    dst: [[*yon, 2], [*cheongju, 10], [*any, 3]]
+  # Brown
+  - src: *sok
+    dst: [[*gangn, 6,], [*wonj, 15], [*chunc, 10], [*wons, 18]]
+  - src: *chunc
+    dst: [[*sok, 10], [*wonj, 7], [*yon, 9], [*seo, 8], [*gae, 13], [*wons, 19]]
+  - src: *gangn
+    dst: [[*don, 4], [*wonj, 12], [*sok, 6]]
+  - src: *wonj
+    dst: [[*sok, 15], [*gangn, 12], [*don, 14], [*tae, 13], [*chung, 5], [*yon, 8], [*chunc, 7]]
+  - src: *don
+    dst: [[*sam, 0], [*wonj, 14], [*gangn, 4]]
+  - src: *sam
+    dst: [[*tae, 5], [*don, 0]]
+  - src: *tae
+    dst: [[*sam, 5], [*and, 8], [*chung, 13], [*wonj, 13]]
+  # Green
+  - src: *chung
+    dst: [[*wonj, 5], [*tae, 13], [*and, 11], [*san, 9], [*cheongju, 7], [*yon, 10]]
+  - src: *cheongju
+    dst: [[*chung, 7], [*san, 8], [*daej, 4], [*suw, 10], [*yon, 10]]
+  - src: *daej
+    dst: [[*cheongju, 4], [*san, 8], [*daeg, 15], [*jeo, 9]]
+  - src: *jeo
+    dst: [[*daej, 9], [*daeg, 16], [*jin, 15], [*gwa, 11]]
+  - src: *gwa
+    dst: [[*jeo, 11], [*jin, 14], [*naj, 2]]
+  - src: *naj
+    dst: [[*gwa, 2], [*jin, 15], [*jej, 19]]
+  - src: *jej
+    dst: [[*naj, 19]]
+  # Yellow
+  - src: *and
+    dst: [[*tae, 8], [*gyeongj, 11], [*daeg, 10], [*san, 6], [*chung, 11]]
+  - src: *san
+    dst: [[*and, 6], [*daeg, 9], [*daej, 8], [*cheongju, 8], [*chung, 9]]
+  - src: *gyeongj
+    dst: [[*uls, 3], [*daeg, 7], [*and, 11]]
+  - src: *daeg
+    dst: [[*and, 10], [*gyeongj, 7], [*uls, 10], [*bus, 12], [*jin, 11], [*jeo, 16], [*daej, 15], [*san, 9]]
+  - src: *uls
+    dst: [[*bus, 7], [*daeg, 10], [*gyeongj, 3]]
+  - src: *jin
+    dst: [[*daeg, 11], [*bus, 11], [*naj, 15], [*gwa, 14], [*jeo, 15]]
+  - src: *bus
+    dst: [[*uls, 7], [*jin, 11], [*daeg, 12]]
