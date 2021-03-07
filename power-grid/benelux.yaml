@@ -2,7 +2,7 @@ meta:
   name: Power Grid
   subname: Benelux
   image: https://www.ultraboardgames.com/power-grid/gfx/benelux-map.jpg
-  year: 2008
+  year: 2006
   site: https://www.riograndegames.com/games/power-grid-central-europe-benelux/
   rules: https://www.riograndegames.com/wp-content/uploads/2013/02/Power-Grid-Benelux-Central-Europe-Rules.pdf
   features: [node-attributes, regions, weights]
