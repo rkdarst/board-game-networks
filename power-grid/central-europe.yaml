@@ -1,0 +1,253 @@
+meta:
+  name: Power Grid
+  subname: Central Europe
+  image: https://cf.geekdo-images.com/2t_ctk7jHjTtZ8GaObmRUw__original/img/huGtpkmAP1_3B5X-WVtEUKqLSmE=/0x0/filters:format(jpeg)/pic154511.jpg
+  year: 2006
+  site: https://www.riograndegames.com/games/power-grid-central-europe-benelux/
+  rules: https://www.riograndegames.com/wp-content/uploads/2013/02/Power-Grid-Benelux-Central-Europe-Rules.pdf
+  features: [node-attributes, regions, weights]
+  bgg: https://boardgamegeek.com/boardgame/25031/power-grid-beneluxcentral-europe
+  notes: |
+    Several regions are such that, if you have only cities in those
+    regions, you can not buy nuclear power plans.  Anyone with a city
+    in Wien gets a discount on waste fuel.
+
+data:
+  - &green  green
+  - &blue   blue
+  - &red    red
+  - &yellow yellow
+  - &brown  brown
+  - &purple purple
+  - &pl     Poland
+  - &cz     Czech Republic
+  - &sk     Slovakia
+  - &at     Austria
+  - &hu     Hungary
+  - &no     no
+
+nodes:
+  # Red
+  - &gdy
+    label: Gdynia
+    labels: {color: *red, region: *pl, nuclear: *no}
+  - &gda
+    label: Gdańsk
+    labels: {color: *red, region: *pl, nuclear: *no}
+  - &byd
+    label: Bydgoszcz
+    labels: {color: *red, region: *pl, nuclear: *no}
+  - &szc
+    label: Szczecin
+    labels: {color: *red, region: *pl, nuclear: *no}
+  - &poz
+    label: Poznań
+    labels: {color: *red, region: *pl, nuclear: *no}
+  - &loo
+    label: Łóoź
+    labels: {color: *red, region: *pl, nuclear: *no}
+  - &wro
+    label: Wrocław
+    labels: {color: *red, region: *pl, nuclear: *no}
+  # Blue
+  - &bia
+    label: Białystok
+    labels: {color: *blue, region: *pl, nuclear: *no}
+  - &war
+    label: Warszawa
+    labels: {color: *blue, region: *pl, nuclear: *no}
+  - &lub
+    label: Lubin
+    labels: {color: *blue, region: *pl, nuclear: *no}
+  - &cze
+    label: Częstochowa
+    labels: {color: *blue, region: *pl, nuclear: *no}
+  - &kra
+    label: Kraków
+    labels: {color: *blue, region: *pl, nuclear: *no}
+  - &sos
+    label: Sosnowiec
+    labels: {color: *blue, region: *pl, nuclear: *no}
+  - &kat
+    label: Katowice
+    labels: {color: *blue, region: *pl, nuclear: *no}
+  # Green
+  - &ost
+    label: Ostrava
+    labels: {color: *green, region: *cz}
+  - &ust
+    label: Ústí nad Labem
+    labels: {color: *green, region: *cz}
+  - &hra
+    label: Hradec Králové
+    labels: {color: *green, region: *cz}
+  - &pra
+    label: Praha
+    labels: {color: *green, region: *cz}
+  - &brn
+    label: Brno
+    labels: {color: *green, region: *cz}
+  - &plz
+    label: Plzeń
+    labels: {color: *green, region: *cz}
+  - &ces
+    label: České Budějovice
+    labels: {color: *green, region: *cz}
+  # Brown
+  - &pre
+    label: Prešov
+    labels: {color: *brown, region: *sk}
+  - &pop
+    label: Poprad
+    labels: {color: *brown, region: *sk}
+  - &kos
+    label: Košice
+    labels: {color: *brown, region: *sk}
+  - &ban
+    label: Banská Bystrica
+    labels: {color: *brown, region: *sk}
+  - &zil
+    label: Žilina
+    labels: {color: *brown, region: *sk}
+  - &trn
+    label: Trnava
+    labels: {color: *brown, region: *sk}
+  - &bra
+    label: Bratislava
+    labels: {color: *brown, region: *sk}
+  # Yellow
+  - &wie
+    label: Wien
+    labels: {color: *yellow, region: *at, nuclear: *no, wastediscount: true}
+  - &lin
+    label: Linz
+    labels: {color: *yellow, region: *at, nuclear: *no}
+  - &sal
+    label: Salzburg
+    labels: {color: *yellow, region: *at, nuclear: *no}
+  - &gra
+    label: Graz
+    labels: {color: *yellow, region: *at, nuclear: *no}
+  - &kla
+    label: Klagenfurt
+    labels: {color: *yellow, region: *at, nuclear: *no}
+  - &inn
+    label: Innsbruck
+    labels: {color: *yellow, region: *at, nuclear: *no}
+  - &vil
+    label: Villach
+    labels: {color: *yellow, region: *at, nuclear: *no}
+  # Purple
+  - &nyi
+    label: Nyíregyháza
+    labels: {color: *purple, region: *hu}
+  - &mis
+    label: Miskolch
+    labels: {color: *purple, region: *hu}
+  - &bud
+    label: Budapest
+    labels: {color: *purple, region: *hu}
+  - &gyo
+    label: Győr
+    labels: {color: *purple, region: *hu}
+  - &kec
+    label: Kecskemét
+    labels: {color: *purple, region: *hu}
+  - &sze
+    label: Szegeo
+    labels: {color: *purple, region: *hu}
+  - &pec
+    label: Pécs
+    labels: {color: *purple, region: *hu}
+
+adjacency:
+  # Red
+  - src: *gdy
+    dst: [[*gda, 0], [*szc, 17]]
+  - src: *gda
+    dst: [[*bia, 20], [*byd, 8], [*gdy, 0]]
+  - src: *byd
+    dst: [[*war, 15], [*loo, 12], [*poz, 7], [*szc, 15], [*gda, 8]]
+  - src: *szc
+    dst: [[*gdy, 17], [*byd, 15], [*poz, 14], [*wro, 22]]
+  - src: *poz
+    dst: [[*byd, 7], [*loo, 13], [*wro, 9], [*szc, 14]]
+  - src: *loo
+    dst: [[*war, 7], [*lub, 16], [*cze, 7], [*wro, 12], [*poz, 13], [*byd, 12]]
+  - src: *wro
+    dst: [[*loo, 12], [*cze, 9], [*ost, 11], [*hra, 10], [*ust, 17], [*szc, 22], [*poz, 9]]
+  # Blue
+  - src: *bia
+    dst: [[*lub, 15], [*war, 14], [*gda, 20]]
+  - src: *war
+    dst: [[*bia, 14], [*lub, 10], [*loo, 7], [*byd, 15]]
+  - src: *lub
+    dst: [[*pre, 20], [*kra, 16], [*cze, 17], [*loo, 16], [*war, 10], [*bia, 15]]
+  - src: *cze
+    dst: [[*lub, 17], [*kra, 6], [*sos, 4], [*wro, 9], [*loo, 7]]
+  - src: *sos
+    dst: [[*kra, 4], [*kat, 0], [*cze, 4]]
+  - src: *kra
+    dst: [[*lub, 16], [*pre, 13], [*pop, 11], [*zil, 12], [*ost, 7], [*sos, 4], [*cze, 6]]
+  - src: *kat
+    dst: [[*sos, 0], [*ost, 4]]
+  # Green
+  - src: *ost
+    dst: [[*kat, 4], [*kra, 7], [*zil, 7], [*brn, 12], [*hra, 16], [*wro, 11]]
+  - src: *ust
+    dst: [[*wro, 17], [*hra, 10], [*pra, 6], [*plz, 9]]
+  - src: *hra
+    dst: [[*wro, 10], [*ost, 16], [*brn, 9], [*pra, 8], [*ust, 10]]
+  - src: *pra
+    dst: [[*hra, 8], [*brn, 13], [*ces, 10], [*plz, 7], [*ust, 6]]
+  - src: *brn
+    dst: [[*ost, 12], [*zil, 14], [*trn, 10], [*bra, 10], [*wie, 8], [*ces, 15], [*pra, 13], [*hra, 9]]
+  - src: *plz
+    dst: [[*ust, 9], [*pra, 7], [*ces, 11]]
+  - src: *ces
+    dst: [[*brn, 15], [*wie, 14], [*lin, 8], [*plz, 11], [*pra, 10]]
+  # Brown
+  - src: *pre
+    dst: [[*kos, 2], [*pop, 7], [*kra, 13], [*lub, 20]]
+  - src: *pop
+    dst: [[*pre, 7], [*kos, 6], [*mis, 9], [*ban, 11], [*zil, 11], [*kra, 11]]
+  - src: *kos
+    dst: [[*nyi, 8], [*mis, 4], [*pop, 6], [*pre, 2]]
+  - src: *zil
+    dst: [[*kra, 12], [*pop, 11], [*ban, 6], [*trn, 10], [*brn, 14], [*ost, 7]]
+  - src: *ban
+    dst: [[*pop, 11], [*mis, 11], [*bud, 12], [*trn, 10], [*zil, 6]]
+  - src: *trn
+    dst: [[*zil, 10], [*ban, 10], [*bud, 9], [*gyo, 5], [*bra, 2], [*brn, 10]]
+  - src: *bra
+    dst: [[*trn, 2], [*gyo, 6], [*wie, 3], [*brn, 10]]
+  # Yellow
+  - src: *wie
+    dst: [[*bra, 3], [*gyo, 8], [*gra, 12], [*lin, 11], [*ces, 14], [*brn, 8]]
+  - src: *lin
+    dst: [[*wie, 11], [*gra, 16], [*sal, 9], [*ces, 8]]
+  - src: *sal
+    dst: [[*lin, 9], [*gra, 22], [*kla, 20], [*inn, 15]]
+  - src: *gra
+    dst: [[*gyo, 14], [*pec, 19], [*kla, 10], [*sal, 22], [*lin, 16], [*wie, 12]]
+  - src: *kla
+    dst: [[*gra, 10], [*vil, 4], [*sal, 20]]
+  - src: *inn
+    dst: [[*sal, 15], [*vil, 22]]
+  - src: *vil
+    dst: [[*kla, 4], [*inn, 22]]
+  # Purple
+  - src: *nyi
+    dst: [[*sze, 16], [*mis, 7], [*kos, 8]]
+  - src: *mis
+    dst: [[*kos, 4], [*nyi, 7], [*kec, 10], [*bud, 9], [*ban, 11], [*pop, 9]]
+  - src: *bud
+    dst: [[*mis, 9], [*kec, 6], [*pec, 12], [*gyo, 5], [*trn, 9], [*ban, 12]]
+  - src: *gyo
+    dst: [[*bud, 5], [*pec, 15], [*gra, 14], [*wie, 8], [*bra, 6], [*trn, 5]]
+  - src: *kec
+    dst: [[*mis, 10], [*sze, 5], [*pec, 11], [*bud, 6]]
+  - src: *sze
+    dst: [[*nyi, 16], [*pec, 12], [*kec, 5]]
+  - src: *pec
+    dst: [[*kec, 11], [*sze, 12], [*gra, 19], [*gyo, 15], [*bud, 12]]
