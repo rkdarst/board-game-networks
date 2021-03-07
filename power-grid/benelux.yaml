@@ -1,0 +1,215 @@
+meta:
+  name: Power Grid
+  subname: Benelux
+  image: https://www.ultraboardgames.com/power-grid/gfx/benelux-map.jpg
+  year: 2008
+  site: https://www.riograndegames.com/games/power-grid-central-europe-benelux/
+  rules: https://www.riograndegames.com/wp-content/uploads/2013/02/Power-Grid-Benelux-Central-Europe-Rules.pdf
+  features: [node-attributes, regions, weights]
+  bgg: https://boardgamegeek.com/boardgame/25031/power-grid-beneluxcentral-europe
+  notes: |
+    This game has only five regions and generally shorter connection
+    distances.  The country is mostly aligned with the regions, but
+    Luxembourg is part of blue (Belgium, French-region) but a separate
+    country.
+
+data:
+  - &green  green
+  - &orange orange
+  - &red    red
+  - &yellow yellow
+  - &blue   blue
+  - &nl     Netherlands
+  - &be     Belgium
+  - &lu     Luxembourg
+
+nodes:
+  # Blue
+  - &lee
+    label: Leeuwarden
+    labels: {color: *blue, region: *nl}
+  - &gro
+    label: Groningen
+    labels: {color: *blue, region: *nl}
+  - &denhe
+    label: Den Helder
+    labels: {color: *blue, region: *nl}
+  - &ape
+    label: Apeldoorn
+    labels: {color: *blue, region: *nl}
+  - &ens
+    label: Enschede
+    labels: {color: *blue, region: *nl}
+  - &arn
+    label: Arnhem
+    labels: {color: *blue, region: *nl}
+  - &nij
+    label: Nijmegen
+    labels: {color: *blue, region: *nl}
+  # Orange
+  - &zaa
+    label: Zaanstad
+    labels: {color: *orange, region: *nl}
+  - &haa
+    label: Haarlem
+    labels: {color: *orange, region: *nl}
+  - &ams
+    label: Amsterdam
+    labels: {color: *orange, region: *nl}
+  - &leid
+    label: Leider
+    labels: {color: *orange, region: *nl}
+  - &denha
+    label: Den Haag
+    labels: {color: *orange, region: *nl}
+  - &utr
+    label: Utrecht
+    labels: {color: *orange, region: *nl}
+  - &rot
+    label: Rotterdam
+    labels: {color: *orange, region: *nl}
+  # Yellow
+  - &denb
+    label: Den Bosch
+    labels: {color: *yellow, region: *nl}
+  - &mid
+    label: Middelburg
+    labels: {color: *yellow, region: *nl}
+  - &bre
+    label: Breda
+    labels: {color: *yellow, region: *nl}
+  - &til
+    label: Tilburg
+    labels: {color: *yellow, region: *nl}
+  - &ven
+    label: Venlo
+    labels: {color: *yellow, region: *nl}
+  - &ein
+    label: Eindhoven
+    labels: {color: *yellow, region: *nl}
+  - &maa
+    label: Maastricht
+    labels: {color: *yellow, region: *nl}
+  # Red
+  - &oos
+   label: Oostende
+   labels: {color: *red, region: *be}
+  - &brug
+   label: Brugge
+   labels: {color: *red, region: *be}
+  - &ant
+   label: Antwerpen
+   labels: {color: *red, region: *be}
+  - &gen
+   label: Gent
+   labels: {color: *red, region: *be}
+  - &kor
+   label: Kortrijk
+   labels: {color: *red, region: *be}
+  - &brus
+   label: Brussel
+   labels: {color: *red, region: *be}
+  - &leu
+   label: Leuven
+   labels: {color: *red, region: *be}
+ # Blue
+  - &brux
+    label: Bruxelles
+    labels: {color: *blue, region: *be}
+  - &mon
+    label: Mons
+    labels: {color: *blue, region: *be}
+  - &leig
+    label: Leige
+    labels: {color: *blue, region: *be}
+  - &nam
+    label: Namur
+    labels: {color: *blue, region: *be}
+  - &cha
+    label: Charleroi
+    labels: {color: *blue, region: *be}
+  - &arl
+    label: Arlon
+    labels: {color: *blue, region: *be}
+  - &lux
+    label: Luxembourg
+    labels: {color: *blue, region: *lu}
+
+
+
+adjacency:
+  # Green
+  - src: *lee
+    dst: [[*gro, 6], [*ens, 13], [*ape, 15], [*denhe, 13]]
+  - src: *gro
+    dst: [[*ens, 12], [*lee, 6]]
+  - src: *denhe
+    dst: [[*lee, 13], [*zaa, 6], [*haa, 7]]
+  - src: *ape
+    dst: [[*lee, 15], [*ens, 9], [*arn, 3], [*utr, 6], [*ams, 7]]
+  - src: *ens
+    dst: [[*gro, 12], [*arn, 7], [*ape, 9], [*lee, 13]]
+  - src: *arn
+    dst: [[*ape, 3], [*ens, 7], [*nij, 2], [*utr, 6]]
+  - src: *nij
+    dst: [[*arn, 2], [*ven, 7], [*ein, 7], [*denb, 6]]
+  # Orange
+  - src: *zaa
+    dst: [[*ams, 1], [*haa, 2], [*denhe, 6]]
+  - src: *haa
+    dst: [[*denhe, 7], [*zaa, 2], [*ams, 2], [*leid, 3]]
+  - src: *ams
+    dst: [[*ape, 7], [*utr, 4], [*leid, 4], [*haa, 2], [*zaa, 1]]
+  - src: *leid
+    dst: [[*haa, 3], [*ams, 4], [*utr, 4], [*rot, 3], [*denha, 2]]
+  - src: *denha
+    dst: [[*leid, 2], [*rot, 3]]
+  - src: *utr
+    dst: [[*ams, 4], [*ape, 6], [*arn, 6], [*denb, 8], [*rot, 5], [*leid, 4]]
+  - src: *rot
+    dst: [[*leid, 3], [*utr, 5], [*denb, 11], [*bre, 8], [*denha, 3]]
+  # Yellow
+  - src: *denb
+    dst: [[*nij, 6], [*ein, 4], [*til, 3], [*bre, 5], [*rot, 11], [*utr, 8]]
+  - src: *mid
+    dst: [[*bre, 9], [*ant, 8]]
+  - src: *bre
+    dst: [[*denb, 5], [*til, 2], [*ant, 5], [*mid, 9], [*rot, 8]]
+  - src: *til
+    dst: [[*denb, 3], [*ein, 4], [*ant, 6], [*bre, 2]]
+  - src: *ven
+    dst: [[*maa, 10], [*ein, 5], [*nij, 7]]
+  - src: *ein
+    dst: [[*nij, 7], [*ven, 5], [*maa, 8], [*leu, 9], [*ant, 8], [*til, 4], [*denb, 4]]
+  - src: *maa
+    dst: [[*ven, 10], [*leig, 3], [*leu, 7], [*ein, 8]]
+  # Red
+  - src: *oos
+    dst: [[*brug, 2], [*kor, 5]]
+  - src: *brug
+    dst: [[*ant, 9], [*gen, 3], [*kor, 4], [*oos, 2]]
+  - src: *ant
+    dst: [[*bre, 5], [*til, 6], [*ein, 8], [*leu, 4], [*brus, 4], [*gen, 5], [*brug, 9], [*mid, 8]]
+  - src: *gen
+    dst: [[*ant, 5], [*brus, 7], [*kor, 4], [*brug, 3]]
+  - src: *kor
+    dst: [[*brug, 4], [*gen, 4], [*brux, 10], [*mon, 8], [*oos, 5]]
+  - src: *brus
+    dst: [[*ant, 4], [*leu, 2], [*brux, 0], [*gen, 7]]
+  - src: *leu
+    dst: [[*ein, 9], [*maa, 7], [*leig, 7], [*nam, 5], [*brus, 2], [*ant, 4]]
+  # Blue
+  - src: *brux
+    dst: [[*brus, 0], [*nam, 5], [*cha, 5], [*mon, 5], [*kor, 10]]
+  - src: *mon
+    dst: [[*brux, 5], [*cha, 4], [*kor, 8]]
+  - src: *leig
+    dst: [[*maa, 3], [*lux, 20], [*arl, 18], [*nam, 6], [*leu, 7]]
+  - src: *nam
+    dst: [[*leig, 6], [*arl, 16], [*cha, 3], [*brux, 5], [*leu, 5]]
+  - src: *cha
+    dst: [[*brux, 5], [*nam, 3], [*arl, 18], [*mon, 4]]
+  - src: *arl
+    dst: [[*leig, 18], [*lux, 5], [*cha, 18], [*nam, 16]]
+  - src: *lux
+    dst: [[*arl, 5], [*leig, 20]]
