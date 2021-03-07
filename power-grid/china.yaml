@@ -1,0 +1,246 @@
+meta:
+  name: Power Grid
+  subname: China
+  image: https://cf.geekdo-images.com/xBcrXnLlJpZxeKeuLNrRx0Ua0h8=/fit-in/1200x630/pic359282.jpg
+  year: 2008
+  site: https://www.riograndegames.com/games/power-grid-korea-china/
+  rules: https://www.riograndegames.com/wp-content/uploads/2013/02/Power-Grid-China-Korea-Rules.pdf
+  features: [node-attributes, regions, weights]
+  bgg: https://boardgamegeek.com/boardgameexpansion/37397/power-grid-chinakorea
+
+data:
+  - &green  green
+  - &brown  brown
+  - &red    red
+  - &yellow yellow
+  - &pink   pink
+  - &purple purple
+
+
+nodes:
+  # Purple
+  - &kar
+    label: Karamay
+    labels: {color: *purple}
+  - &wul
+    label: Wulumuqi
+    labels: {color: *purple}
+  - &kue
+    label: "Ku'erle"
+    labels: {color: *purple}
+  - &ham
+    label: Hami
+    labels: {color: *purple}
+  - &yin
+    label: Yinchuan
+    labels: {color: *purple}
+  - &xin
+    label: Xining
+    labels: {color: *purple}
+  - &lan
+    label: Lanzhou
+    labels: {color: *purple}
+  # Red
+  - &changc
+    label: Changchun
+    labels: {color: *red}
+  - &she
+    label: Shenyang
+    labels: {color: *red}
+  - &tan
+    label: Tangshan
+    labels: {color: *red}
+  - &bei
+    label: Beijing
+    labels: {color: *red}
+  - &bao
+    label: Baotou
+    labels: {color: *red}
+  - &taiy
+    label: Taiyuan
+    labels: {color: *red}
+  - &tian
+    label: Tianjin
+    labels: {color: *red}
+  # Pink
+  - &qiq
+    label: "Qiqha'er"
+    labels: {color: *pink}
+  - &heg
+    label: Hegang
+    labels: {color: *pink}
+  - &hae
+    label: Haerbin
+    labels: {color: *pink}
+  - &jil
+    label: Jilin
+    labels: {color: *pink}
+  - &fus
+    label: Fushun
+    labels: {color: *pink}
+  - &ans
+    label: Anshan
+    labels: {color: *pink}
+  - &dal
+    label: Dalian
+    labels: {color: *pink}
+  # Green
+  - &shi
+    label: Shijiazhuang
+    labels: {color: *green}
+  - &jin
+    label: Jinan
+    labels: {color: *green}
+  - &qin
+    label: Qingoao
+    labels: {color: *green}
+  - &zhe
+    label: Zhengzhou
+    labels: {color: *green}
+  - &nanj
+    label: Nanjing
+    labels: {color: *green}
+  - &sha
+    label: Shanghai
+    labels: {color: *green}
+  - &han
+    label: Hangzhou
+    labels: {color: *green}
+  # Brown
+  - &wuh
+    label: Wuhan
+    labels: {color: *brown}
+  - &nanc
+    label: Nanchang
+    labels: {color: *brown}
+  - &changs
+    label: Changsha
+    labels: {color: *brown}
+  - &fuz
+    label: Fuzhou
+    labels: {color: *brown}
+  - &chao
+    label: Chaozhou
+    labels: {color: *brown}
+  - &gua
+    label: Guangzhou
+    labels: {color: *brown}
+  - &hon
+    label: Hong Kong
+    labels: {color: *brown}
+  # Yellow
+  - &xia
+    label: "Xi'an"
+    labels: {color: *yellow}
+  - &che
+    label: Chengou
+    labels: {color: *yellow}
+  - &cho
+    label: Chongqing
+    labels: {color: *yellow}
+  - &gui
+    label: Guiyang
+    labels: {color: *yellow}
+  - &kun
+    label: Kunming
+    labels: {color: *yellow}
+  - &nann
+    label: Nanning
+    labels: {color: *yellow}
+  - &hai
+    label: Haikou
+    labels: {color: *yellow}
+
+
+
+adjacency:
+  # Green
+  - src: *kar
+    dst: [[*wul, 7], [*kue, 12], ]
+  - src: *wul
+    dst: [[*kar, 7], [*kue, 9], [*ham, 12]]
+  - src: *kue
+    dst: [[*kar, 12], [*wul, 9], [*ham, 15]]
+  - src: *ham
+    dst: [[*wul, 12], [*kue, 15], [*yin, 25], [*xin, 25], ]
+  - src: *yin
+    dst: [[*bao, 9], [*taiy, 14], [*lan, 9], [*xin, 11], [*ham, 25], ]
+  - src: *xin
+    dst: [[*yin, 11], [*lan, 6], [*che, 20], [*ham, 25], ]
+  - src: *lan
+    dst: [[*yin, 9], [*taiy, 18], [*xia, 15], [*che, 16], [*xin, 6], ]
+  # Red, southwest to northeast
+  - src: *bao
+    dst: [[*bei, 14], [*taiy, 9], [*yin, 9]]
+  - src: *taiy
+    dst: [[*bei, 10], [*shi, 5], [*zhe, 11], [*xia, 12], [*lan, 18], [*yin, 14], [*bao, 9], ]
+  - src: *bei
+    dst: [[*tan, 3], [*shi, 6], [*taiy, 10], [*bao, 14]]
+  - src: *tian
+    dst: [[*tan, 0], [*jin, 6], [*shi, 5]]
+  - src: *tan
+    dst: [[*she, 11], [*tian, 0], [*bei, 3]]
+  - src: *she
+    dst: [[*changc, 5], [*fus, 0], [*ans, 2], [*tan,11]]
+  - src: *changc
+    dst: [[*hae, 5], [*jil, 2], [*she, 5], [*qiq, 9]]
+  # Pink, top to bottom
+  - src: *qiq
+    dst: [[*heg, 11], [*hae, 6], [*changc, 9]]
+  - src: *heg
+    dst: [[*hae, 7], [*qiq, 11]]
+  - src: *hae
+    dst: [[*heg, 7], [*jil, 5], [*changc, 5], [*qiq, 6]]
+  - src: *jil
+    dst: [[*fus, 6], [*changc, 2], [*hae, 5]]
+  - src: *fus
+    dst: [[*jil, 6], [*she, 0]]
+  - src: *ans
+    dst: [[*dal, 6], [*she, 2]]
+  - src: *dal
+    dst: [[*ans, 6]]
+  # Green, top to bottom
+  - src: *shi
+    dst: [[*bei, 6], [*tian, 5], [*jin, 6], [*zhe, 9], [*taiy, 5]]
+  - src: *jin
+    dst: [[*tian, 6], [*qin, 6], [*nanj, 11], [*zhe, 7], [*shi, 6]]
+  - src: *qin
+    dst: [[*nanj, 12], [*jin, 6]]
+  - src: *zhe
+    dst: [[*shi, 9], [*jin, 7], [*nanj, 12], [*wuh, 10], [*xia, 10], [*taiy, 11]]
+  - src: *nanj
+    dst: [[*qin, 12], [*sha, 6], [*han, 5], [*wuh, 10], [*zhe, 12], [*jin, 11]]
+  - src: *sha
+    dst: [[*han, 4], [*nanj, 6]]
+  - src: *han
+    dst: [[*sha, 4], [*fuz, 13], [*nanc, 10], [*wuh, 13], [*nanj, 5]]
+  # Brown, top to bottom
+  - src: *wuh
+    dst: [[*nanj, 10], [*han, 13], [*nanc, 6], [*changs, 6], [*cho, 18], [*xia, 15], [*zhe, 10]]
+  - src: *nanc
+    dst: [[*han, 10], [*fuz, 13], [*chao, 14], [*gua, 16], [*changs, 7], [*wuh, 6]]
+  - src: *changs
+    dst: [[*wuh, 6], [*nanc, 7], [*gua, 14], [*gui, 15], [*cho, 16]]
+  - src: *fuz
+    dst: [[*han, 13], [*chao, 9], [*nanc, 13]]
+  - src: *chao
+    dst: [[*fuz, 9], [*hon, 7], [*gua, 7], [*nanc, 14]]
+  - src: *gua
+    dst: [[*nanc, 16], [*chao, 7], [*hon, 4], [*hai, 13], [*nann, 11], [*gui, 18], [*changs, 14]]
+  - src: *hon
+    dst: [[*chao, 7], [*gua, 4]]
+  # yellow, top to bottom
+  - src: *xia
+    dst: [[*taiy, 12], [*zhe, 10], [*wuh, 15], [*cho, 14], [*che, 14], [*lan, 15]]
+  - src: *che
+    dst: [[*lan, 16], [*xia, 14], [*cho, 6], [*gui, 13], [*kun, 16], [*xin, 20]]
+  - src: *cho
+    dst: [[*xia, 14], [*wuh, 18], [*changs, 16], [*gui, 9], [*che, 6]]
+  - src: *gui
+    dst: [[*cho, 9], [*changs, 15], [*gua, 18], [*nann, 12], [*kun, 12], [*che, 13]]
+  - src: *kun
+    dst: [[*gui, 12], [*che, 16]]
+  - src: *nann
+    dst: [[*gua, 11], [*hai, 10], [*gui, 12]]
+  - src: *hai
+    dst: [[*gua, 13], [*nann, 10]]
