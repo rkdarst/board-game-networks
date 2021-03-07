@@ -5,6 +5,14 @@ import yaml
 import networkx
 
 VERBOSE = False
+ALL_FEATURES = set([
+    'regions',
+    'weights',
+    'node-attributes',
+    'edge-attributes',
+    'node-weights',
+    'multilayer'])
+
 
 def generate(fname):
     """Load yaml file, return networkx graph"""
@@ -16,6 +24,13 @@ def generate(fname):
         G = networkx.MultiGraph()
     else:
         G = networkx.Graph()
+
+    # Check for unknown feature metadata
+    features = set(net.get('meta', {}).get('features', []))
+    unknown_features = features - ALL_FEATURES
+    if unknown_features:
+        print("meta.features has unknown values: %s"%unknown_features)
+        exit(1)
 
     # Load nodes
     node_degrees = { }

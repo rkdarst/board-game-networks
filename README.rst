@@ -56,8 +56,8 @@ improved later.
 * ``name``: name of the game
 * ``subname``: Variant of the game.  Usually used for the name of the board
 * ``features``: Network features present in this graph.  List that
-  possibly includes [``multilayer``, ``weight``, ``note-attribute``,
-  ``edge-attribute``, ``node-weight``].  More could be added
+  possibly includes [``multilayer``, ``weights``, ``note-attributes``,
+  ``edge-attributes``, ``node-weights``, ``regions``].  More could be added
 * ``image``: Link to image of the board (note: links may be unstable)
 * ``rules``: link to rules.
 * ``site``: official site for the game
