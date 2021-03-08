@@ -4,6 +4,8 @@ meta:
   site: https://www.zmangames.com/en/products/pandemic-rising-tide/
   rules: https://images.zmangames.com/filer_public/ef/d4/efd42a51-2537-4dba-8439-e4d8c7f72f04/rising_tide_rules.pdf
   type: area map
+  year: 2017
+  image: https://cf.geekdo-images.com/qyw0Gm2K0xHd7nugSASXqg__original/img/4it21NOmPdwk9uIDiTGBDZAKsZQ=/0x0/filters:format(png)/pic3728815.png
 
 data:
   - &p purple

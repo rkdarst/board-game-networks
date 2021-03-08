@@ -1,3 +1,12 @@
+meta:
+  name: Root
+  subname: White
+  year: 2018
+  bgg: https://boardgamegeek.com/boardgame/237182/root
+  image: https://cf.geekdo-images.com/5pALsh6BQkb0uVtOxqffXA__imagepagezoom/img/__pDDOWETlcRAxUvcpcMWk7CQ8c=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic5494879.jpg
+  site: https://ledergames.com/products/root-a-game-of-woodland-might-and-right
+  rules: https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Base_Law_of_Root_web_Oct_15_2020.pdf?v=1602798473
+
 data:
 
 # Node numbering scheme: top to bottom, left to right

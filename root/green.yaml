@@ -1,3 +1,12 @@
+meta:
+  name: Root
+  subname: Green
+  year: 2018
+  bgg: https://boardgamegeek.com/boardgame/237182/root
+  image: https://cf.geekdo-images.com/Y5-JnVtBgTGtXVYzmDI4Lg__imagepagezoom/img/qSe9Hd3Dh8JwhfGpdXhcPIZFhdI=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic3956476.jpg
+  site: https://ledergames.com/products/root-a-game-of-woodland-might-and-right
+  rules: https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Base_Law_of_Root_web_Oct_15_2020.pdf?v=1602798473
+
 data:
   - &red    red
   - &yellow yellow

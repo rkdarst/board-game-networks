@@ -6,6 +6,8 @@ meta:
   site: https://www.zmangames.com/en/products/pandemic-expansion-state-emergency/
   rules: https://images.zmangames.com/filer_public/50/b0/50b0ccf4-061c-442a-83a2-1cd7ba2cc0a7/zm7113_rules_web.pdf
   year: 2015
+  image: https://cf.geekdo-images.com/dBHCg_cUUr2AN4Mvfm5FzA__original/img/5x9HvYfYKQ4NnXbQ373ToAEgbnM=/0x0/filters:format(jpeg)/pic2616795.jpg
+  features: [node-attributes, regions]
 
 data:
   - &blue   blue
