@@ -242,7 +242,7 @@ def main(argv):
                         help="Print the network to console")
     parser.add_argument('--verbose', '-v', action='store_true',
                         help="Verbose mode")
-    parser.add_argument('--output', '-o', default='.',
+    parser.add_argument('--output', '-o', default='www',
                         help="Output directory")
     parser.add_argument('graph', nargs='+')
     args = parser.parse_args(argv[1:])
