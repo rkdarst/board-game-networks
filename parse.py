@@ -198,7 +198,11 @@ def process_network(graph, args):
             ('edg', generate_edgelist_ids),
         ]:
         output = os.path.splitext(graph)[0] + '.' + ext
-        open(os.path.join(args.output, output), 'w').write('\n'.join(func(G2)))
+        if output.startswith('data/'):
+            output = output[5:]
+        output = os.path.join(args.output, output)
+        os.makedirs(os.path.dirname(output), exist_ok=True)
+        open(output, 'w').write('\n'.join(func(G2)))
 
     return G, {}
 
@@ -250,7 +254,7 @@ def main(argv):
     for graph in args.graph:
         G, stats = process_network(graph, args)
         graphs.append(G)
-        G.graph['basename'] = os.path.basename(G.graph['filename'])
+        G.graph['basename'] = os.path.splitext(G.graph['filename'][5:])[0]
         #G.graph['data'] = [
         #    extension, basename,  ]
 
@@ -273,7 +277,7 @@ def main(argv):
     template = env.get_template('index.html.j2')
     page = template.render(**context)
     print(page)
-    open('index.html', 'w').write(page)
+    open(os.path.join(args.output, 'index.html'), 'w').write(page)
 
 
 if __name__ == '__main__':
