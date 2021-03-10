@@ -1,8 +1,5 @@
 _images
-*.edg
-*.gexf
-*.graphml
-*.gml
+www/
 /.snakemake
 www/
 tmp/
