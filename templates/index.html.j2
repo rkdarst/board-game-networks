@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Board game networks</title>
+  </head>
+  <body>
+    <h1>Board game networks</h1>
+
+    Board game network dataset.
+
+    </p><a href="https://github.com/rkdarst/board-game-networks/">Information,
+    documentation, source, metadata, etc. are available on
+    GitHub.</a>.  Or, you can clone this website that includes the
+    processed data (graph files you can import into other
+    tools): <tt>git clone
+    https://github.com/rkdarst/board-game-networks --branch
+    gh-pages</tt></p>
+
+    <p>This data is under production and is not complete or well
+    documented yet.</p>
+
+    {% for graph in graphs %}
+    <h1>{{graph.graph.filename}}</h1>
+
+    <table border="1">
+      {% for key, value in graph.graph.meta.items() %}
+      <tr>
+	<td>{{key}}</td>
+	<td>{{value|linkify}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <table border="1">
+      {% for key, value in graph.graph.stats.items() %}
+      <tr>
+	<td>{{key}}</td>
+	<td>{{value}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    Download:
+    {% for ext in download_exts %}
+      <a href={{graph.graph.basename}}.{{ext}}>{{ext}}</a>
+    {% endfor %}
+    {% endfor %}
+  </body>
+</html>
+

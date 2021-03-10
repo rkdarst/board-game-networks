@@ -2,6 +2,8 @@ import collections
 import os
 import sys
 import yaml
+
+import jinja2
 import networkx
 
 VERBOSE = False
@@ -121,30 +123,18 @@ def generate(fname):
 
     return G
 
-def main(argv):
-    import argparse
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--metadata', action='store_true',
-                        help="Output metadata in html form")
-    parser.add_argument('--stats', action='store_true',
-                        help="Print stats")
-    parser.add_argument('--print', dest="print_", action='store_true',
-                        help="Print the network to console")
-    parser.add_argument('--verbose', '-v', action='store_true',
-                        help="Verbose mode")
-    parser.add_argument('--output', '-o', default='.',
-                        help="Output directory")
-    parser.add_argument('graph')
-    args = parser.parse_args(argv[1:])
 
-    if args.verbose:
-        global VERBOSE
-        VERBOSE = True
 
-    G = generate(open(args.graph))
+
+def process_network(graph, args):
+    G = generate(open(graph))
+    G.graph['filename'] = graph
+
+    data = yaml.safe_load(open(graph))
+    if 'meta' in data:
+        G.graph['meta'] = data['meta']
 
     if args.metadata:
-        data = yaml.safe_load(open(args.graph))
         if 'meta' not in data:
             exit(0)
         for key, value in sorted(data['meta'].items()):
@@ -159,23 +149,34 @@ def main(argv):
     if args.print_:
         print('\n'.join(networkx.generate_gml(G)))
 
+    stats = {}
+    stats['nodes'] = len(G.nodes())
+    stats['edges'] = len(G.edges())
+    stats['avg_degree'] = len(G.edges())*2/len(G.nodes())
+    stats['density'] = networkx.density(G)
+    stats['transitivity'] = networkx.transitivity(networkx.Graph(G))
+    stats['avg_shortest_path_length'] = networkx.average_shortest_path_length(networkx.Graph(G))
+    stats['avg_shortest_path_length_weighted'] = networkx.average_shortest_path_length(networkx.Graph(G), weight='weight')
+    stats['diameter'] = networkx.diameter(networkx.Graph(G))
+    # This roundabout path is needed to compute diameter with weights
+    shortestpaths = networkx.shortest_path_length(G, weight='weight')
+    stats['diameter_weighted'] = max(max(x[1].values()) for x in shortestpaths)
+    stats['node_keys'] = set().union(*[list(x.keys()) for x in dict(G.nodes(data=True)).values()]) - set(['id'])
+    stats['edge_keys'] = set().union(*[list(x[2].keys()) for x in G.edges(data=True)])
+    G.graph['stats'] = stats
+
     if args.stats:
-        print("nodes=%s"%len(G.nodes()))
-        print("edges=%s"%len(G.edges()))
-        print("avg degree=%.2f"%(len(G.edges())*2/len(G.nodes())))
-        print("density=%.3g"%(networkx.density(G)))
-        print("transitivity=%.3g"%(networkx.transitivity(networkx.Graph(G))))
-        print("avg shortest path length=%.3g"%(networkx.average_shortest_path_length(networkx.Graph(G))))
-        print("avg shortest path length (weighted)=%.3g"%(networkx.average_shortest_path_length(networkx.Graph(G), weight='weight')))
-        print("diameter=%.3g"%(networkx.diameter(networkx.Graph(G))))
-        # This roundabout path is needed to compute diameter with weights
-        shortestpaths = networkx.shortest_path_length(G, weight='weight')
-        diameter = max(max(x[1].values()) for x in shortestpaths)
-        print("diameter (weighted)=%.3g"%(diameter, ))
-        node_keys = set().union(*[list(x.keys()) for x in dict(G.nodes(data=True)).values()])
-        print("node keys: %s"%(node_keys - set(['id']),))
-        edge_keys = set().union(*[list(x[2].keys()) for x in G.edges(data=True)])
-        print("edge keys: %s"%(edge_keys,))
+        print("nodes=%s"%stats['nodes'])
+        print("edges=%s"%stats['edges'])
+        print("avg degree=%.2f"%stats['avg_degree'])
+        print("density=%.3g"%stats['density'])
+        print("transitivity=%.3g"%stats['transitivity'])
+        print("avg shortest path length=%.3g"%stats['avg_shortest_path_length'])
+        print("avg shortest path length (weighted)=%.3g"%stats['avg_shortest_path_length_weighted'])
+        print("diameter=%.3g"%stats['diameter'])
+        print("diameter (weighted)=%.3g"%stats['diameter_weighted'])
+        print("node keys: %s"%stats['node_keys'])
+        print("edge keys: %s"%stats['edge_keys'])
         exit(0)
 
     #from ipdb import set_trace ; set_trace()
@@ -187,14 +188,92 @@ def main(argv):
         G2 = networkx.relabel_nodes(G, labels_to_ids, copy=True)
         yield from networkx.generate_edgelist(G2, data=False)
 
+    G2 = G.copy()
+    del G2.graph['meta']
+    del G2.graph['stats']
     for ext, func in [
             ('gexf', networkx.generate_gexf),
             ('gml', networkx.generate_gml),
             ('graphml', networkx.generate_graphml),
             ('edg', generate_edgelist_ids),
         ]:
-        output = os.path.splitext(args.graph)[0] + '.' + ext
-        open(os.path.join(args.output, output), 'w').write('\n'.join(func(G)))
+        output = os.path.splitext(graph)[0] + '.' + ext
+        open(os.path.join(args.output, output), 'w').write('\n'.join(func(G2)))
+
+    return G, {}
+
+#
+# Writing functions
+#
+def generate_edgelist_ids(G):
+    """Generate an edgelist with IDs instead of labels"""
+    labels_to_ids = networkx.get_node_attributes(G, 'id')
+    G2 = networkx.relabel_nodes(G, labels_to_ids, copy=True)
+    yield from networkx.generate_edgelist(G2, data=False)
+
+GRAPH_WRITERS = [
+    ('gexf', networkx.generate_gexf),
+    ('gml', networkx.generate_gml),
+    ('graphml', networkx.generate_graphml),
+    ('edg', generate_edgelist_ids),
+]
+
+
+def linkify(value):
+    if isinstance(value, str) and value.startswith('http'):
+        return jinja2.Markup('<a href="%s">%s</a>'%(jinja2.escape(value), jinja2.escape(value)))
+    return(value)
+
+
+
+def main(argv):
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--metadata', action='store_true',
+                        help="Output metadata in html form")
+    parser.add_argument('--stats', action='store_true',
+                        help="Print stats")
+    parser.add_argument('--print', dest="print_", action='store_true',
+                        help="Print the network to console")
+    parser.add_argument('--verbose', '-v', action='store_true',
+                        help="Verbose mode")
+    parser.add_argument('--output', '-o', default='.',
+                        help="Output directory")
+    parser.add_argument('graph', nargs='+')
+    args = parser.parse_args(argv[1:])
+
+    if args.verbose:
+        global VERBOSE
+        VERBOSE = True
+
+    graphs = [ ]
+    for graph in args.graph:
+        G, stats = process_network(graph, args)
+        graphs.append(G)
+        G.graph['basename'] = os.path.basename(G.graph['filename'])
+        #G.graph['data'] = [
+        #    extension, basename,  ]
+
+    import jinja2
+    from jinja2 import Environment, FileSystemLoader, select_autoescape
+    env = Environment(
+        #loader=PackageLoader('yourapplication', 'templates'),
+        loader=FileSystemLoader('./templates'),
+        autoescape=select_autoescape(['html', 'xml']),
+        undefined=jinja2.DebugUndefined,
+    )
+    env.filters['linkify'] = linkify
+
+    context = {
+        'graphs': graphs,
+        'download_exts': [x[0] for x in GRAPH_WRITERS],
+        'ignore_errors': False,
+        }
+    print(context)
+    template = env.get_template('index.html.j2')
+    page = template.render(**context)
+    print(page)
+    open('index.html', 'w').write(page)
 
 
 if __name__ == '__main__':
