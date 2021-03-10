@@ -1,4 +1,4 @@
-INPUTS=$(sort $(wildcard */*.yaml))
+INPUTS=$(sort $(wildcard data/*/*.yaml))
 EXTENSIONS=edg gexf gml graphml
 OUTPUTS=$(INPUTS:.yaml=.gml) $(INPUTS:.yaml=.graphml) $(INPUTS:.yaml=.edg) $(INPUTS:.yaml=.gexf)
 
@@ -10,18 +10,11 @@ clean:
 	rm -f index.html
 	rm -f $(OUTPUTS)
 
-all: $(OUTPUTS)
-
-
-setup:
-	echo 'Board game network dataset.  <a href="https://github.com/rkdarst/board-game-networks/">Information, documentation, source, metadata, etc. are available on GitHub.</a><br><br>' >> index.html
-	echo 'Get all data: <tt>git clone https://github.com/rkdarst/board-game-networks --branch gh-pages</tt><br></br>'>> index.html
-	echo 'This dataset is under production and is not complete or well documented yet.<br></br>'>> index.html
-	echo >> index.html
-	echo >> index.html
-
-finalization:
-	true
+all:
+	mkdir -p www/
+	rm -rf www/*
+	cd data ; cp -r --parents . ../www/
+	python3 parse.py $(INPUTS) --output www/
 
 %.gml: %.yaml parse.py
 	python3 parse.py $<
@@ -36,11 +29,11 @@ finalization:
 	echo >> index.html
 
 
-gh-pages: clean setup all finalization
-	git branch -D gh-pages || true
-	git checkout --orphan gh-pages
-	git add index.html
-	git add -f $(OUTPUTS)
-	git commit --author="gh-actions <noreply@example.com>" -m "gh-pages at $$(date)"
-	git push -u origin gh-pages -f
-	git checkout master
+gh-pages:
+	make all
+	cd www && git init
+	cd www && git add .
+	cd www && git commit --author="gh-actions <noreply@example.com>" -m "gh-pages at $$(date)"
+	cd www && git remote add origin $$(cd .. && git config remote.origin.url)
+	cd www && git push -u origin HEAD:gh-pages -f
+
