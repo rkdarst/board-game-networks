@@ -13,16 +13,20 @@
     processed data (graph files you can import into other
     tools): <tt>git clone
     https://github.com/rkdarst/board-game-networks --branch
-    gh-pages</tt></p>
+    gh-pages</tt> .</p>
 
     <p>This data is under production and is not complete or well
     documented yet.</p>
 
-    {% for graph in graphs %}
-    <h1>{{graph.graph.filename}}</h1>
+    <p>You can download metadata
+    at <a href="data.json">data.json</a>.</p>
+
+    {% for G in graphs %}
+    <h2>{% if G.graph.meta.name %}{{G.graph.meta.name}}{%if G.graph.meta.subname %} ({{G.graph.meta.subname}}){% endif %}{% else %}{{G.graph.filename}}{% endif %}</h2>
+    {% if G.graph.meta.name %}<p>{{G.graph.filename}}</p>{% endif %}
 
     <table border="1">
-      {% for key, value in graph.graph.meta.items() %}
+      {% for key, value in G.graph.meta.items() %}
       <tr>
 	<td>{{key}}</td>
 	<td>{{value|linkify}}</td>
@@ -31,7 +35,7 @@
     </table>
 
     <table border="1">
-      {% for key, value in graph.graph.stats.items() %}
+      {% for key, value in G.graph.stats.items() %}
       <tr>
 	<td>{{key}}</td>
 	<td>{{value}}</td>
@@ -41,7 +45,7 @@
 
     Download:
     {% for ext in download_exts %}
-      <a href={{graph.graph.basename}}.{{ext}}>{{ext}}</a>
+      <a href={{G.graph.basename}}.{{ext}}>{{ext}}</a>
     {% endfor %}
     {% endfor %}
   </body>

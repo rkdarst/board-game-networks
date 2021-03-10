@@ -12,7 +12,7 @@ clean:
 
 all:
 	mkdir -p www/
-	rm -rf www/*
+#	#rm -rf www/*
 	cd data ; cp -r --parents . ../www/
 	python3 parse.py $(INPUTS) --output www/
 

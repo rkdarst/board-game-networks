@@ -1,4 +1,5 @@
 import collections
+import json
 import os
 import sys
 import yaml
@@ -251,12 +252,28 @@ def main(argv):
         VERBOSE = True
 
     graphs = [ ]
+    data = [ ]
     for graph in args.graph:
         G, stats = process_network(graph, args)
         graphs.append(G)
         G.graph['basename'] = os.path.splitext(G.graph['filename'][5:])[0]
         #G.graph['data'] = [
         #    extension, basename,  ]
+        data.append(dict(
+            filename=G.graph['filename'][5:],
+            meta=G.graph['meta'],
+            stats=G.graph['stats']
+            ))
+
+    class JSONEncoder(json.JSONEncoder):
+        def default(self, o):
+            if isinstance(o, set):
+                return list(o)
+            return o
+    json.dump(data, open(os.path.join(args.output, 'data.json'), 'w'),
+              cls=JSONEncoder,
+              indent=2,
+              )
 
     import jinja2
     from jinja2 import Environment, FileSystemLoader, select_autoescape
