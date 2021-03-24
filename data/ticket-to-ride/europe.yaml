@@ -1,6 +1,10 @@
 meta:
   bgg: https://boardgamegeek.com/boardgame/14996/ticket-ride-europe
+  site: https://www.daysofwonder.com/tickettoride/en/europe/
+  rules: https://ncdn0.daysofwonder.com/tickettoride/en/img/7202-T2RE-Rules-EN-2019.pdf
   graph-class: MultiGraph
+  year: 2005
+  image: https://cf.geekdo-images.com/34etSTfl-aa9hsi1gd2MZw__original/img/nhBqtw6ISU8K544rFQ2jPuyBDtM=/0x0/filters:format(jpeg)/pic70732.jpg
 
 data:
   - &bla  black

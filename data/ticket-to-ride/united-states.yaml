@@ -1,5 +1,10 @@
 meta:
   graph-class: MultiGraph
+  bgg: https://boardgamegeek.com/image/38674/ticket-ride
+  image: https://cf.geekdo-images.com/U2eaeOCVGYFDhPgaIY6CmQ__original/img/HbB8LneSsfjCiXK-jhs3fx7hi0o=/0x0/filters:format(jpeg)/pic38674.jpg
+  rules: https://ncdn0.daysofwonder.com/tickettoride/en/img/7201-T2R-Rules-EN-2019.pdf
+  year: 2004
+  site: https://www.daysofwonder.com/tickettoride/en/usa/
 
 data:
   - &black  black

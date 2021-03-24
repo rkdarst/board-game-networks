@@ -1,5 +1,10 @@
 meta:
   graph-class: MultiGraph
+  bgg: https://boardgamegeek.com/boardgame/218208/ticket-ride-first-journey-europe
+  image: https://cf.geekdo-images.com/AhwUqbZyyk-BHG1Jlw8R6A__original/img/ikYrRSqPwgIujfOEKZa9DoQZSvk=/0x0/filters:format(jpeg)/pic3381773.jpg
+  rules: https://ncdn0.daysofwonder.com/tickettoride/en/img/tke_rules_en.pdf
+  site: https://www.daysofwonder.com/tickettoride/en/first-journey/?map=europe
+  year: 2017
 
 data:
   - &black  black

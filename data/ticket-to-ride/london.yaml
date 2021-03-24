@@ -4,6 +4,7 @@ meta:
   site: https://www.daysofwonder.com/tickettoride/en/london/
   rules: https://ncdn0.daysofwonder.com/tickettoride/en/img/tt_ln_en_rules_2019-04.pdf
   year: 2019
+  image: https://cf.geekdo-images.com/Hq8fyW-4X7LaSNv6TCtWVw__original/img/DH2vDdbfTK4XUPsNPw4B4ter-7g=/0x0/filters:format(jpeg)/pic4132195.jpg
 
 data:
   - &bla  black
