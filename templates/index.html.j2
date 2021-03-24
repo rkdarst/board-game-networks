@@ -26,7 +26,7 @@
     {% if G.graph.meta.name %}<p>{{G.graph.filename}}</p>{% endif %}
 
     <table border="1">
-      {% for key, value in G.graph.meta.items() %}
+      {% for key, value in G.graph.meta|dictsort %}
       <tr>
 	<td>{{key}}</td>
 	<td>{{value|linkify}}</td>
@@ -35,7 +35,7 @@
     </table>
 
     <table border="1">
-      {% for key, value in G.graph.stats.items() %}
+      {% for key, value in G.graph.stats|dictsort %}
       <tr>
 	<td>{{key}}</td>
 	<td>{{value}}</td>
