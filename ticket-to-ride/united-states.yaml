@@ -1,0 +1,169 @@
+meta:
+  graph-class: MultiGraph
+  bgg: https://boardgamegeek.com/image/38674/ticket-ride
+  image: https://cf.geekdo-images.com/U2eaeOCVGYFDhPgaIY6CmQ__original/img/HbB8LneSsfjCiXK-jhs3fx7hi0o=/0x0/filters:format(jpeg)/pic38674.jpg
+  rules: https://ncdn0.daysofwonder.com/tickettoride/en/img/7201-T2R-Rules-EN-2019.pdf
+  year: 2004
+  site: https://www.daysofwonder.com/tickettoride/en/usa/
+
+data:
+  - &black  black
+  - &yellow yellow
+  - &red    red
+  - &green  green
+  - &orange orange
+  - &purple purple
+  - &blue   blue
+  - &white  white
+  - &grey   grey
+
+nodes:
+  - &van   {label: Vancouver, deg: 3}
+  - &sea   {label: Seattle, deg: 6}
+  - &por   {label: Portland, deg: 5}
+  - &san-f {label: San Francisco, deg: 6}
+  - &los   {label: Los Angeles, deg: 5}
+  - &cal   {label: Calgary, deg: 4}
+  - &hel   {label: Helena, deg: 7}
+  - &sal   {label: Salt Lake City, deg: 7}
+  - &las   {label: Las Vegas, deg: 2}
+  - &pho   {label: Phoenix, deg: 4}
+  - &win   {label: Winnipeg, deg: 4}
+  - &dul   {label: Duluth, deg: 7}
+  - &oma   {label: Omaha, deg: 7}
+  - &den   {label: Denver, deg: 9}
+  - &kan   {label: Kansas City, deg: 8}
+  - &okl   {label: Oklahoma City, deg: 8}
+  - &sant  {label: Santa Fe, deg: 4}
+  - &elp   {label: El Paso, deg: 6}
+  - &dal   {label: Dallas, deg: 6}
+  - &hou   {label: Houston, deg: 4}
+  - &sau   {label: Sault St. Marie, deg: 4}
+  - &chi   {label: Chicago, deg: 7}
+  - &stl   {label: Saint Louis, deg: 7}
+  - &lit   {label: Little Rock, deg: 5}
+  - &new-o {label: New Orleans, deg: 5}
+  - &tor   {label: Toronto, deg: 5}
+  - &pit   {label: Pittsburgh, deg: 9}
+  - &nas   {label: Nashville, deg: 5}
+  - &atl   {label: Atlanta, deg: 7}
+  - &mon   {label: Montreal, deg: 5}
+  - &bos   {label: Boston, deg: 4}
+  - &new-y {label: New York, deg: 7}
+  - &was   {label: Washington, deg: 5}
+  - &ral   {label: Raleigh, deg: 7}
+  - &cha   {label: Charleston, deg: 3}
+  - &mia   {label: Miami, deg: 3}
+
+
+edges:
+  # West coast
+  - [ *van, *sea, 1, {color: *grey} ]
+  - [ *van, *sea, 1, {color: *grey} ]
+  - [ *sea, *por, 1, {color: *grey} ]
+  - [ *sea, *por, 1, {color: *grey} ]
+  - [ *por, *san-f, 5, {color: *green} ]
+  - [ *por, *san-f, 5, {color: *purple} ]
+  - [ *san-f, *los, 3, {color: *yellow} ]
+  - [ *san-f, *los, 3, {color: *purple} ]
+  # Column starting with Vancouver
+  - [ *van, *cal, 3, {color: *grey} ]
+  - [ *sea, *cal, 4, {color: *grey} ]
+  - [ *sea, *hel, 6, {color: *yellow} ]
+  - [ *por, *sal, 6, {color: *blue} ]
+  - [ *san-f, *sal, 5, {color: *orange} ]
+  - [ *san-f, *sal, 5, {color: *white} ]
+  - [ *los, *las, 2, {color: *grey} ]
+  - [ *los, *pho, 3, {color: *grey} ]
+  - [ *los, *elp, 6, {color: *black} ]
+  # Column starting with Calgary
+  - [ *cal, *win, 6, {color: *white} ]
+  - [ *cal, *hel, 4, {color: *grey} ]
+  - [ *sal, *hel, 3, {color: *purple} ]
+  - [ *sal, *den, 3, {color: *red} ]
+  - [ *sal, *den, 3, {color: *yellow} ]
+  - [ *las, *sal, 3, {color: *orange} ]
+  - [ *pho, *den, 5, {color: *white} ]
+  - [ *pho, *sant, 3, {color: *grey} ]
+  - [ *pho, *elp, 3, {color: *grey} ]
+  # Column starting with Helena
+  - [ *hel, *win, 4, {color: *blue} ]
+  - [ *hel, *dul, 6, {color: *orange} ]
+  - [ *hel, *oma, 5, {color: *red} ]
+  - [ *hel, *den, 4, {color: *green} ]
+  - [ *sant, *den, 2, {color: *grey} ]
+  - [ *elp, *sant, 2, {color: *grey} ]
+  # Column starting with Winnipeg
+  - [ *win, *sau, 6, {color: *grey} ]
+  - [ *win, *dul, 4, {color: *black} ]
+  - [ *oma, *dul, 2, {color: *grey} ]
+  - [ *oma, *dul, 2, {color: *grey} ]
+  - [ *oma, *chi, 4, {color: *blue} ]
+  - [ *oma, *kan, 1, {color: *grey} ]
+  - [ *oma, *kan, 1, {color: *grey} ]
+  - [ *den, *oma, 4, {color: *purple} ]
+  - [ *den, *kan, 4, {color: *black} ]
+  - [ *den, *kan, 4, {color: *orange} ]
+  - [ *den, *okl, 4, {color: *red} ]
+  - [ *sant, *okl, 3, {color: *blue} ]
+  - [ *elp, *okl, 5, {color: *yellow} ]
+  - [ *elp, *dal, 4, {color: *red} ]
+  - [ *elp, *hou, 6, {color: *grey} ]
+  # column starting with duluth
+  - [ *dul, *sau, 3, {color: *grey} ]
+  - [ *dul, *tor, 6, {color: *purple} ]
+  - [ *dul, *chi, 3, {color: *red} ]
+  - [ *kan, *stl, 2, {color: *blue} ]
+  - [ *kan, *stl, 2, {color: *purple} ]
+  - [ *okl, *kan, 2, {color: *grey} ]
+  - [ *okl, *kan, 2, {color: *grey} ]
+  - [ *okl, *lit, 2, {color: *grey} ]
+  - [ *okl, *dal, 2, {color: *grey} ]
+  - [ *okl, *dal, 2, {color: *grey} ]
+  - [ *dal, *lit, 2, {color: *grey} ]
+  - [ *dal, *hou, 1, {color: *grey} ]
+  - [ *dal, *hou, 1, {color: *grey} ]
+  - [ *hou, *new-o, 2, {color: *grey} ]
+  # Column starting with Sault st. marie
+  - [ *sau, *mon, 5, {color: *black} ]
+  - [ *sau, *tor, 2, {color: *grey} ]
+  - [ *chi, *tor, 4, {color: *white} ]
+  - [ *chi, *pit, 3, {color: *orange} ]
+  - [ *chi, *pit, 3, {color: *black} ]
+  - [ *stl, *chi, 2, {color: *green} ]
+  - [ *stl, *chi, 2, {color: *white} ]
+  - [ *stl, *pit, 5, {color: *green} ]
+  - [ *stl, *nas, 2, {color: *grey} ]
+  - [ *lit, *stl, 2, {color: *grey} ]
+  - [ *lit, *nas, 3, {color: *white} ]
+  - [ *lit, *new-o, 3, {color: *green} ]
+  # Column starting with Toronto
+  - [ *tor, *mon, 3, {color: *grey} ]
+  - [ *tor, *pit, 2, {color: *grey} ]
+  - [ *pit, *new-y, 2, {color: *white} ]
+  - [ *pit, *new-y, 2, {color: *green} ]
+  - [ *pit, *was, 2, {color: *grey} ]
+  - [ *pit, *ral, 2, {color: *grey} ]
+  - [ *nas, *pit, 4, {color: *yellow} ]
+  - [ *nas, *ral, 3, {color: *black} ]
+  - [ *nas, *atl, 1, {color: *grey} ]
+  - [ *new-o, *atl, 4, {color: *yellow} ]
+  - [ *new-o, *atl, 4, {color: *orange} ]
+  - [ *new-o, *mia, 6, {color: *red} ]
+  # Column starting with Montreal, excluding east coast
+  - [ *mon, *bos, 2, {color: *grey} ]
+  - [ *mon, *bos, 2, {color: *grey} ]
+  - [ *mon, *new-y, 3, {color: *blue} ]
+  - [ *atl, *ral, 2, {color: *grey} ]
+  - [ *atl, *ral, 2, {color: *grey} ]
+  - [ *atl, *cha, 2, {color: *grey} ]
+  - [ *atl, *mia, 5, {color: *blue} ]
+  # East coast
+  - [ *bos, *new-y, 2, {color: *yellow} ]
+  - [ *bos, *new-y, 2, {color: *red} ]
+  - [ *new-y, *was, 2, {color: *orange} ]
+  - [ *new-y, *was, 2, {color: *black} ]
+  - [ *was, *ral, 2, {color: *grey} ]
+  - [ *was, *ral, 2, {color: *grey} ]
+  - [ *ral, *cha, 1, {color: *grey} ]
+  - [ *cha, *mia, 4, {color: *purple} ]

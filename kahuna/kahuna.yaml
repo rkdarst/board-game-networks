@@ -1,0 +1,33 @@
+meta:
+  bgg: https://boardgamegeek.com/boardgame/394/kahuna
+  image: https://cf.geekdo-images.com/xGbYiUQBLVEAEdhA0Jvyzw__original/img/YJCG4O9ZbwmkusVsd8necVWRMzQ=/0x0/filters:format(jpeg)/pic221048.jpg
+  rules: https://www.ultraboardgames.com/kahuna/game-rules.php
+  year: 1998
+
+nodes:
+  - &a  {label: Aloa , deg: 3, }
+  - &b  {label: Bari , deg: 5, }
+  - &c  {label: Coco , deg: 4, }
+  - &d  {label: Duda , deg: 5, }
+  - &e  {label: Elai , deg: 6, }
+  - &f  {label: Faaa , deg: 5, }
+  - &g  {label: Gola , deg: 4, }
+  - &h  {label: Huna , deg: 4, }
+  - &i  {label: Iffi , deg: 5, }
+  - &j  {label: Jojo , deg: 5, }
+  - &k  {label: Kahu , deg: 5, }
+  - &l  {label: Lale , deg: 5, }
+
+adjacency:
+  - {src: *a, dst: [*b, *d, *h]}
+  - {src: *b, dst: [*a, *c, *d, *e, *f]}
+  - {src: *c, dst: [*b, *f, *g, *k]}
+  - {src: *d, dst: [*a, *b, *e, *h]}
+  - {src: *e, dst: [*b, *d, *f, *h, *i, *j]}
+  - {src: *f, dst: [*b, *c, *g, *j, *e]}
+  - {src: *g, dst: [*c, *f, *j, *k]}
+  - {src: *h, dst: [*a, *d, *e, *i, *l]}
+  - {src: *i, dst: [*e, *j, *k, *l, *h]}
+  - {src: *j, dst: [*f, *g, *k, *i, *e]}
+  - {src: *k, dst: [*c, *g, *i, *j, *l]}
+  - {src: *l, dst: [*h, *i, *k]}

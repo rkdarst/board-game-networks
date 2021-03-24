@@ -1,0 +1,517 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d3" for="edge" attr.name="weight" attr.type="int" />
+  <key id="d2" for="edge" attr.name="color" attr.type="string" />
+  <key id="d1" for="node" attr.name="id" attr.type="int" />
+  <key id="d0" for="graph" attr.name="filename" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Vancouver">
+      <data key="d1">0</data>
+    </node>
+    <node id="Seattle">
+      <data key="d1">1</data>
+    </node>
+    <node id="Portland">
+      <data key="d1">2</data>
+    </node>
+    <node id="San Francisco">
+      <data key="d1">3</data>
+    </node>
+    <node id="Los Angeles">
+      <data key="d1">4</data>
+    </node>
+    <node id="Calgary">
+      <data key="d1">5</data>
+    </node>
+    <node id="Helena">
+      <data key="d1">6</data>
+    </node>
+    <node id="Salt Lake City">
+      <data key="d1">7</data>
+    </node>
+    <node id="Las Vegas">
+      <data key="d1">8</data>
+    </node>
+    <node id="Phoenix">
+      <data key="d1">9</data>
+    </node>
+    <node id="Winnipeg">
+      <data key="d1">10</data>
+    </node>
+    <node id="Duluth">
+      <data key="d1">11</data>
+    </node>
+    <node id="Omaha">
+      <data key="d1">12</data>
+    </node>
+    <node id="Denver">
+      <data key="d1">13</data>
+    </node>
+    <node id="Kansas City">
+      <data key="d1">14</data>
+    </node>
+    <node id="Oklahoma City">
+      <data key="d1">15</data>
+    </node>
+    <node id="Santa Fe">
+      <data key="d1">16</data>
+    </node>
+    <node id="El Paso">
+      <data key="d1">17</data>
+    </node>
+    <node id="Dallas">
+      <data key="d1">18</data>
+    </node>
+    <node id="Houston">
+      <data key="d1">19</data>
+    </node>
+    <node id="Sault St. Marie">
+      <data key="d1">20</data>
+    </node>
+    <node id="Chicago">
+      <data key="d1">21</data>
+    </node>
+    <node id="Saint Louis">
+      <data key="d1">22</data>
+    </node>
+    <node id="Little Rock">
+      <data key="d1">23</data>
+    </node>
+    <node id="New Orleans">
+      <data key="d1">24</data>
+    </node>
+    <node id="Toronto">
+      <data key="d1">25</data>
+    </node>
+    <node id="Pittsburgh">
+      <data key="d1">26</data>
+    </node>
+    <node id="Nashville">
+      <data key="d1">27</data>
+    </node>
+    <node id="Atlanta">
+      <data key="d1">28</data>
+    </node>
+    <node id="Montreal">
+      <data key="d1">29</data>
+    </node>
+    <node id="Boston">
+      <data key="d1">30</data>
+    </node>
+    <node id="New York">
+      <data key="d1">31</data>
+    </node>
+    <node id="Washington">
+      <data key="d1">32</data>
+    </node>
+    <node id="Raleigh">
+      <data key="d1">33</data>
+    </node>
+    <node id="Charleston">
+      <data key="d1">34</data>
+    </node>
+    <node id="Miami">
+      <data key="d1">35</data>
+    </node>
+    <edge source="Vancouver" target="Seattle" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Vancouver" target="Seattle" id="1">
+      <data key="d2">grey</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Vancouver" target="Calgary" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Seattle" target="Portland" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Seattle" target="Portland" id="1">
+      <data key="d2">grey</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Seattle" target="Calgary" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Seattle" target="Helena" id="0">
+      <data key="d2">yellow</data>
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Portland" target="San Francisco" id="0">
+      <data key="d2">green</data>
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Portland" target="San Francisco" id="1">
+      <data key="d2">purple</data>
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Portland" target="Salt Lake City" id="0">
+      <data key="d2">blue</data>
+      <data key="d3">6</data>
+    </edge>
+    <edge source="San Francisco" target="Los Angeles" id="0">
+      <data key="d2">yellow</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="San Francisco" target="Los Angeles" id="1">
+      <data key="d2">purple</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="San Francisco" target="Salt Lake City" id="0">
+      <data key="d2">orange</data>
+      <data key="d3">5</data>
+    </edge>
+    <edge source="San Francisco" target="Salt Lake City" id="1">
+      <data key="d2">white</data>
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Los Angeles" target="Las Vegas" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Los Angeles" target="Phoenix" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Los Angeles" target="El Paso" id="0">
+      <data key="d2">black</data>
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Calgary" target="Winnipeg" id="0">
+      <data key="d2">white</data>
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Calgary" target="Helena" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Helena" target="Salt Lake City" id="0">
+      <data key="d2">purple</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Helena" target="Winnipeg" id="0">
+      <data key="d2">blue</data>
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Helena" target="Duluth" id="0">
+      <data key="d2">orange</data>
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Helena" target="Omaha" id="0">
+      <data key="d2">red</data>
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Helena" target="Denver" id="0">
+      <data key="d2">green</data>
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Salt Lake City" target="Denver" id="0">
+      <data key="d2">red</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Salt Lake City" target="Denver" id="1">
+      <data key="d2">yellow</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Salt Lake City" target="Las Vegas" id="0">
+      <data key="d2">orange</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Phoenix" target="Denver" id="0">
+      <data key="d2">white</data>
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Phoenix" target="Santa Fe" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Phoenix" target="El Paso" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Winnipeg" target="Sault St. Marie" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Winnipeg" target="Duluth" id="0">
+      <data key="d2">black</data>
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Duluth" target="Omaha" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Duluth" target="Omaha" id="1">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Duluth" target="Sault St. Marie" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Duluth" target="Toronto" id="0">
+      <data key="d2">purple</data>
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Duluth" target="Chicago" id="0">
+      <data key="d2">red</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Omaha" target="Chicago" id="0">
+      <data key="d2">blue</data>
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Omaha" target="Kansas City" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Omaha" target="Kansas City" id="1">
+      <data key="d2">grey</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Omaha" target="Denver" id="0">
+      <data key="d2">purple</data>
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Denver" target="Santa Fe" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Denver" target="Kansas City" id="0">
+      <data key="d2">black</data>
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Denver" target="Kansas City" id="1">
+      <data key="d2">orange</data>
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Denver" target="Oklahoma City" id="0">
+      <data key="d2">red</data>
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Kansas City" target="Saint Louis" id="0">
+      <data key="d2">blue</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Kansas City" target="Saint Louis" id="1">
+      <data key="d2">purple</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Kansas City" target="Oklahoma City" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Kansas City" target="Oklahoma City" id="1">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Oklahoma City" target="Santa Fe" id="0">
+      <data key="d2">blue</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Oklahoma City" target="El Paso" id="0">
+      <data key="d2">yellow</data>
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Oklahoma City" target="Little Rock" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Oklahoma City" target="Dallas" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Oklahoma City" target="Dallas" id="1">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Santa Fe" target="El Paso" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="El Paso" target="Dallas" id="0">
+      <data key="d2">red</data>
+      <data key="d3">4</data>
+    </edge>
+    <edge source="El Paso" target="Houston" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Dallas" target="Little Rock" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Dallas" target="Houston" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Dallas" target="Houston" id="1">
+      <data key="d2">grey</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Houston" target="New Orleans" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Sault St. Marie" target="Montreal" id="0">
+      <data key="d2">black</data>
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Sault St. Marie" target="Toronto" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Chicago" target="Toronto" id="0">
+      <data key="d2">white</data>
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Chicago" target="Pittsburgh" id="0">
+      <data key="d2">orange</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Chicago" target="Pittsburgh" id="1">
+      <data key="d2">black</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Chicago" target="Saint Louis" id="0">
+      <data key="d2">green</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Chicago" target="Saint Louis" id="1">
+      <data key="d2">white</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Saint Louis" target="Pittsburgh" id="0">
+      <data key="d2">green</data>
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Saint Louis" target="Nashville" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Saint Louis" target="Little Rock" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Little Rock" target="Nashville" id="0">
+      <data key="d2">white</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Little Rock" target="New Orleans" id="0">
+      <data key="d2">green</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="New Orleans" target="Atlanta" id="0">
+      <data key="d2">yellow</data>
+      <data key="d3">4</data>
+    </edge>
+    <edge source="New Orleans" target="Atlanta" id="1">
+      <data key="d2">orange</data>
+      <data key="d3">4</data>
+    </edge>
+    <edge source="New Orleans" target="Miami" id="0">
+      <data key="d2">red</data>
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Toronto" target="Montreal" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Toronto" target="Pittsburgh" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Pittsburgh" target="New York" id="0">
+      <data key="d2">white</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Pittsburgh" target="New York" id="1">
+      <data key="d2">green</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Pittsburgh" target="Washington" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Pittsburgh" target="Raleigh" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Pittsburgh" target="Nashville" id="0">
+      <data key="d2">yellow</data>
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Nashville" target="Raleigh" id="0">
+      <data key="d2">black</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Nashville" target="Atlanta" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Atlanta" target="Raleigh" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Atlanta" target="Raleigh" id="1">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Atlanta" target="Charleston" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Atlanta" target="Miami" id="0">
+      <data key="d2">blue</data>
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Montreal" target="Boston" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Montreal" target="Boston" id="1">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Montreal" target="New York" id="0">
+      <data key="d2">blue</data>
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Boston" target="New York" id="0">
+      <data key="d2">yellow</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Boston" target="New York" id="1">
+      <data key="d2">red</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="New York" target="Washington" id="0">
+      <data key="d2">orange</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="New York" target="Washington" id="1">
+      <data key="d2">black</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Washington" target="Raleigh" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Washington" target="Raleigh" id="1">
+      <data key="d2">grey</data>
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Raleigh" target="Charleston" id="0">
+      <data key="d2">grey</data>
+      <data key="d3">1</data>
+    </edge>
+    <edge source="Charleston" target="Miami" id="0">
+      <data key="d2">purple</data>
+      <data key="d3">4</data>
+    </edge>
+    <data key="d0">data/ticket-to-ride/united-states.yaml</data>
+  </graph>
+</graphml>

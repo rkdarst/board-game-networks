@@ -1,0 +1,299 @@
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2021-03-24">
+    <creator>NetworkX 2.5</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="color" type="string" />
+      <attribute id="1" title="region" type="string" />
+    </attributes>
+    <nodes>
+      <node id="0" label="Leeuwarden">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+          <attvalue for="1" value="Netherlands" />
+        </attvalues>
+      </node>
+      <node id="1" label="Groningen">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+          <attvalue for="1" value="Netherlands" />
+        </attvalues>
+      </node>
+      <node id="2" label="Den Helder">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+          <attvalue for="1" value="Netherlands" />
+        </attvalues>
+      </node>
+      <node id="3" label="Apeldoorn">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+          <attvalue for="1" value="Netherlands" />
+        </attvalues>
+      </node>
+      <node id="4" label="Enschede">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+          <attvalue for="1" value="Netherlands" />
+        </attvalues>
+      </node>
+      <node id="5" label="Arnhem">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+          <attvalue for="1" value="Netherlands" />
+        </attvalues>
+      </node>
+      <node id="6" label="Nijmegen">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+          <attvalue for="1" value="Netherlands" />
+        </attvalues>
+      </node>
+      <node id="7" label="Zaanstad">
+        <attvalues>
+          <attvalue for="0" value="orange" />
+          <attvalue for="1" value="Netherlands" />
+        </attvalues>
+      </node>
+      <node id="8" label="Haarlem">
+        <attvalues>
+          <attvalue for="0" value="orange" />
+          <attvalue for="1" value="Netherlands" />
+        </attvalues>
+      </node>
+      <node id="9" label="Amsterdam">
+        <attvalues>
+          <attvalue for="0" value="orange" />
+          <attvalue for="1" value="Netherlands" />
+        </attvalues>
+      </node>
+      <node id="10" label="Leider">
+        <attvalues>
+          <attvalue for="0" value="orange" />
+          <attvalue for="1" value="Netherlands" />
+        </attvalues>
+      </node>
+      <node id="11" label="Den Haag">
+        <attvalues>
+          <attvalue for="0" value="orange" />
+          <attvalue for="1" value="Netherlands" />
+        </attvalues>
+      </node>
+      <node id="12" label="Utrecht">
+        <attvalues>
+          <attvalue for="0" value="orange" />
+          <attvalue for="1" value="Netherlands" />
+        </attvalues>
+      </node>
+      <node id="13" label="Rotterdam">
+        <attvalues>
+          <attvalue for="0" value="orange" />
+          <attvalue for="1" value="Netherlands" />
+        </attvalues>
+      </node>
+      <node id="14" label="Den Bosch">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+          <attvalue for="1" value="Netherlands" />
+        </attvalues>
+      </node>
+      <node id="15" label="Middelburg">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+          <attvalue for="1" value="Netherlands" />
+        </attvalues>
+      </node>
+      <node id="16" label="Breda">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+          <attvalue for="1" value="Netherlands" />
+        </attvalues>
+      </node>
+      <node id="17" label="Tilburg">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+          <attvalue for="1" value="Netherlands" />
+        </attvalues>
+      </node>
+      <node id="18" label="Venlo">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+          <attvalue for="1" value="Netherlands" />
+        </attvalues>
+      </node>
+      <node id="19" label="Eindhoven">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+          <attvalue for="1" value="Netherlands" />
+        </attvalues>
+      </node>
+      <node id="20" label="Maastricht">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+          <attvalue for="1" value="Netherlands" />
+        </attvalues>
+      </node>
+      <node id="21" label="Oostende">
+        <attvalues>
+          <attvalue for="0" value="red" />
+          <attvalue for="1" value="Belgium" />
+        </attvalues>
+      </node>
+      <node id="22" label="Brugge">
+        <attvalues>
+          <attvalue for="0" value="red" />
+          <attvalue for="1" value="Belgium" />
+        </attvalues>
+      </node>
+      <node id="23" label="Antwerpen">
+        <attvalues>
+          <attvalue for="0" value="red" />
+          <attvalue for="1" value="Belgium" />
+        </attvalues>
+      </node>
+      <node id="24" label="Gent">
+        <attvalues>
+          <attvalue for="0" value="red" />
+          <attvalue for="1" value="Belgium" />
+        </attvalues>
+      </node>
+      <node id="25" label="Kortrijk">
+        <attvalues>
+          <attvalue for="0" value="red" />
+          <attvalue for="1" value="Belgium" />
+        </attvalues>
+      </node>
+      <node id="26" label="Brussel">
+        <attvalues>
+          <attvalue for="0" value="red" />
+          <attvalue for="1" value="Belgium" />
+        </attvalues>
+      </node>
+      <node id="27" label="Leuven">
+        <attvalues>
+          <attvalue for="0" value="red" />
+          <attvalue for="1" value="Belgium" />
+        </attvalues>
+      </node>
+      <node id="28" label="Bruxelles">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+          <attvalue for="1" value="Belgium" />
+        </attvalues>
+      </node>
+      <node id="29" label="Mons">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+          <attvalue for="1" value="Belgium" />
+        </attvalues>
+      </node>
+      <node id="30" label="Leige">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+          <attvalue for="1" value="Belgium" />
+        </attvalues>
+      </node>
+      <node id="31" label="Namur">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+          <attvalue for="1" value="Belgium" />
+        </attvalues>
+      </node>
+      <node id="32" label="Charleroi">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+          <attvalue for="1" value="Belgium" />
+        </attvalues>
+      </node>
+      <node id="33" label="Arlon">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+          <attvalue for="1" value="Belgium" />
+        </attvalues>
+      </node>
+      <node id="34" label="Luxembourg">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+          <attvalue for="1" value="Luxembourg" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="0" target="1" id="0" weight="6" />
+      <edge source="0" target="4" id="1" weight="13" />
+      <edge source="0" target="3" id="2" weight="15" />
+      <edge source="0" target="2" id="3" weight="13" />
+      <edge source="1" target="4" id="4" weight="12" />
+      <edge source="2" target="7" id="5" weight="6" />
+      <edge source="2" target="8" id="6" weight="7" />
+      <edge source="3" target="4" id="7" weight="9" />
+      <edge source="3" target="5" id="8" weight="3" />
+      <edge source="3" target="12" id="9" weight="6" />
+      <edge source="3" target="9" id="10" weight="7" />
+      <edge source="4" target="5" id="11" weight="7" />
+      <edge source="5" target="6" id="12" weight="2" />
+      <edge source="5" target="12" id="13" weight="6" />
+      <edge source="6" target="18" id="14" weight="7" />
+      <edge source="6" target="19" id="15" weight="7" />
+      <edge source="6" target="14" id="16" weight="6" />
+      <edge source="7" target="9" id="17" weight="1" />
+      <edge source="7" target="8" id="18" weight="2" />
+      <edge source="8" target="9" id="19" weight="2" />
+      <edge source="8" target="10" id="20" weight="3" />
+      <edge source="9" target="12" id="21" weight="4" />
+      <edge source="9" target="10" id="22" weight="4" />
+      <edge source="10" target="12" id="23" weight="4" />
+      <edge source="10" target="13" id="24" weight="3" />
+      <edge source="10" target="11" id="25" weight="2" />
+      <edge source="11" target="13" id="26" weight="3" />
+      <edge source="12" target="14" id="27" weight="8" />
+      <edge source="12" target="13" id="28" weight="5" />
+      <edge source="13" target="14" id="29" weight="11" />
+      <edge source="13" target="16" id="30" weight="8" />
+      <edge source="14" target="19" id="31" weight="4" />
+      <edge source="14" target="17" id="32" weight="3" />
+      <edge source="14" target="16" id="33" weight="5" />
+      <edge source="15" target="16" id="34" weight="9" />
+      <edge source="15" target="23" id="35" weight="8" />
+      <edge source="16" target="17" id="36" weight="2" />
+      <edge source="16" target="23" id="37" weight="5" />
+      <edge source="17" target="19" id="38" weight="4" />
+      <edge source="17" target="23" id="39" weight="6" />
+      <edge source="18" target="20" id="40" weight="10" />
+      <edge source="18" target="19" id="41" weight="5" />
+      <edge source="19" target="20" id="42" weight="8" />
+      <edge source="19" target="27" id="43" weight="9" />
+      <edge source="19" target="23" id="44" weight="8" />
+      <edge source="20" target="30" id="45" weight="3" />
+      <edge source="20" target="27" id="46" weight="7" />
+      <edge source="21" target="22" id="47" weight="2" />
+      <edge source="21" target="25" id="48" weight="5" />
+      <edge source="22" target="23" id="49" weight="9" />
+      <edge source="22" target="24" id="50" weight="3" />
+      <edge source="22" target="25" id="51" weight="4" />
+      <edge source="23" target="27" id="52" weight="4" />
+      <edge source="23" target="26" id="53" weight="4" />
+      <edge source="23" target="24" id="54" weight="5" />
+      <edge source="24" target="26" id="55" weight="7" />
+      <edge source="24" target="25" id="56" weight="4" />
+      <edge source="25" target="28" id="57" weight="10" />
+      <edge source="25" target="29" id="58" weight="8" />
+      <edge source="26" target="27" id="59" weight="2" />
+      <edge source="26" target="28" id="60" weight="0" />
+      <edge source="27" target="30" id="61" weight="7" />
+      <edge source="27" target="31" id="62" weight="5" />
+      <edge source="28" target="31" id="63" weight="5" />
+      <edge source="28" target="32" id="64" weight="5" />
+      <edge source="28" target="29" id="65" weight="5" />
+      <edge source="29" target="32" id="66" weight="4" />
+      <edge source="30" target="34" id="67" weight="20" />
+      <edge source="30" target="33" id="68" weight="18" />
+      <edge source="30" target="31" id="69" weight="6" />
+      <edge source="31" target="33" id="70" weight="16" />
+      <edge source="31" target="32" id="71" weight="3" />
+      <edge source="32" target="33" id="72" weight="18" />
+      <edge source="33" target="34" id="73" weight="5" />
+    </edges>
+  </graph>
+</gexf>

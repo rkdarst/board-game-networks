@@ -1,0 +1,402 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d4" for="edge" attr.name="type" attr.type="string" />
+  <key id="d3" for="node" attr.name="letter" attr.type="string" />
+  <key id="d2" for="node" attr.name="region" attr.type="string" />
+  <key id="d1" for="node" attr.name="id" attr.type="int" />
+  <key id="d0" for="graph" attr.name="filename" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Isca D.">
+      <data key="d1">0</data>
+      <data key="d2">Britania</data>
+      <data key="d3">A</data>
+    </node>
+    <node id="Londinivm">
+      <data key="d1">1</data>
+      <data key="d2">Britania</data>
+      <data key="d3">A</data>
+    </node>
+    <node id="Lvtetia">
+      <data key="d1">2</data>
+      <data key="d2">Gallia</data>
+      <data key="d3">B</data>
+    </node>
+    <node id="Bvrdigala">
+      <data key="d1">3</data>
+      <data key="d2">Gallia</data>
+      <data key="d3">B</data>
+    </node>
+    <node id="Massilia">
+      <data key="d1">4</data>
+      <data key="d2">Gallia</data>
+      <data key="d3">B</data>
+    </node>
+    <node id="Brigantivm">
+      <data key="d1">5</data>
+      <data key="d2">Hispania</data>
+      <data key="d3">B</data>
+    </node>
+    <node id="Olisipo">
+      <data key="d1">6</data>
+      <data key="d2">Hispania</data>
+      <data key="d3">B</data>
+    </node>
+    <node id="Valentia">
+      <data key="d1">7</data>
+      <data key="d2">Hispania</data>
+      <data key="d3">B</data>
+    </node>
+    <node id="Colonia A.">
+      <data key="d1">8</data>
+      <data key="d2">Germania</data>
+      <data key="d3">A</data>
+    </node>
+    <node id="Vindobona">
+      <data key="d1">9</data>
+      <data key="d2">Germania</data>
+      <data key="d3">A</data>
+    </node>
+    <node id="Novaria">
+      <data key="d1">10</data>
+      <data key="d2">Italia</data>
+      <data key="d3">D</data>
+    </node>
+    <node id="Aqveleia">
+      <data key="d1">11</data>
+      <data key="d2">Italia</data>
+      <data key="d3">D</data>
+    </node>
+    <node id="Roma">
+      <data key="d1">12</data>
+      <data key="d2">Italia</data>
+      <data key="d3" />
+    </node>
+    <node id="Syracvs&#230;">
+      <data key="d1">13</data>
+      <data key="d2">Italia</data>
+      <data key="d3">D</data>
+    </node>
+    <node id="Rvsadir">
+      <data key="d1">14</data>
+      <data key="d2">Marvetania</data>
+      <data key="d3">B</data>
+    </node>
+    <node id="Carthago">
+      <data key="d1">15</data>
+      <data key="d2">Marvetania</data>
+      <data key="d3">B</data>
+    </node>
+    <node id="Sirmivm">
+      <data key="d1">16</data>
+      <data key="d2">Dacia</data>
+      <data key="d3">A</data>
+    </node>
+    <node id="Napoca">
+      <data key="d1">17</data>
+      <data key="d2">Dacia</data>
+      <data key="d3">A</data>
+    </node>
+    <node id="Tomis">
+      <data key="d1">18</data>
+      <data key="d2">Dacia</data>
+      <data key="d3">A</data>
+    </node>
+    <node id="Dyrrhachivm">
+      <data key="d1">19</data>
+      <data key="d2">Hellas</data>
+      <data key="d3">D</data>
+    </node>
+    <node id="Athen&#230;">
+      <data key="d1">20</data>
+      <data key="d2">Hellas</data>
+      <data key="d3">D</data>
+    </node>
+    <node id="Leptis Magna">
+      <data key="d1">21</data>
+      <data key="d2">Lybia</data>
+      <data key="d3">C</data>
+    </node>
+    <node id="Cyrene">
+      <data key="d1">22</data>
+      <data key="d2">Lybia</data>
+      <data key="d3">C</data>
+    </node>
+    <node id="Bycantivm">
+      <data key="d1">23</data>
+      <data key="d2">Asia</data>
+      <data key="d3">C</data>
+    </node>
+    <node id="Attalia">
+      <data key="d1">24</data>
+      <data key="d2">Asia</data>
+      <data key="d3">C</data>
+    </node>
+    <node id="Sinope">
+      <data key="d1">25</data>
+      <data key="d2">Asia</data>
+      <data key="d3">C</data>
+    </node>
+    <node id="Tyros">
+      <data key="d1">26</data>
+      <data key="d2">Syria</data>
+      <data key="d3">C</data>
+    </node>
+    <node id="Antiochia">
+      <data key="d1">27</data>
+      <data key="d2">Syria</data>
+      <data key="d3">C</data>
+    </node>
+    <node id="Alexandria">
+      <data key="d1">28</data>
+      <data key="d2">&#198;gyptvs</data>
+      <data key="d3">C</data>
+    </node>
+    <node id="Memphis">
+      <data key="d1">29</data>
+      <data key="d2">&#198;gyptvs</data>
+      <data key="d3">C</data>
+    </node>
+    <node id="Petra">
+      <data key="d1">30</data>
+      <data key="d2">&#198;gyptvs</data>
+      <data key="d3">C</data>
+    </node>
+    <edge source="Isca D." target="Londinivm" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Isca D." target="Londinivm" id="1">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Isca D." target="Bvrdigala" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Isca D." target="Brigantivm" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Londinivm" target="Colonia A." id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Londinivm" target="Lvtetia" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Lvtetia" target="Colonia A." id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Lvtetia" target="Massilia" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Lvtetia" target="Bvrdigala" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Bvrdigala" target="Massilia" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Bvrdigala" target="Brigantivm" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Bvrdigala" target="Brigantivm" id="1">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Massilia" target="Novaria" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Massilia" target="Roma" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Massilia" target="Carthago" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Massilia" target="Valentia" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Massilia" target="Valentia" id="1">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Brigantivm" target="Valentia" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Brigantivm" target="Olisipo" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Brigantivm" target="Olisipo" id="1">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Olisipo" target="Valentia" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Olisipo" target="Rvsadir" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Olisipo" target="Rvsadir" id="1">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Valentia" target="Carthago" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Valentia" target="Rvsadir" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Valentia" target="Rvsadir" id="1">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Colonia A." target="Vindobona" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Colonia A." target="Novaria" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Vindobona" target="Sirmivm" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Vindobona" target="Aqveleia" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Novaria" target="Aqveleia" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Novaria" target="Roma" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Aqveleia" target="Sirmivm" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Aqveleia" target="Dyrrhachivm" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Aqveleia" target="Roma" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Roma" target="Syracvs&#230;" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Roma" target="Syracvs&#230;" id="1">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Roma" target="Carthago" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Syracvs&#230;" target="Dyrrhachivm" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Syracvs&#230;" target="Athen&#230;" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Syracvs&#230;" target="Cyrene" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Syracvs&#230;" target="Leptis Magna" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Syracvs&#230;" target="Carthago" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Rvsadir" target="Carthago" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Rvsadir" target="Carthago" id="1">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Carthago" target="Leptis Magna" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Carthago" target="Leptis Magna" id="1">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Sirmivm" target="Napoca" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Sirmivm" target="Tomis" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Sirmivm" target="Dyrrhachivm" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Napoca" target="Tomis" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Tomis" target="Sinope" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Tomis" target="Bycantivm" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Tomis" target="Bycantivm" id="1">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Dyrrhachivm" target="Bycantivm" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Dyrrhachivm" target="Athen&#230;" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Athen&#230;" target="Bycantivm" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Athen&#230;" target="Attalia" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Athen&#230;" target="Alexandria" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Athen&#230;" target="Cyrene" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Leptis Magna" target="Cyrene" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Leptis Magna" target="Cyrene" id="1">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Cyrene" target="Alexandria" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Cyrene" target="Alexandria" id="1">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Cyrene" target="Memphis" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Bycantivm" target="Sinope" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Bycantivm" target="Sinope" id="1">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Bycantivm" target="Attalia" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Attalia" target="Antiochia" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Attalia" target="Antiochia" id="1">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Attalia" target="Alexandria" id="0">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Sinope" target="Antiochia" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Tyros" target="Antiochia" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Tyros" target="Antiochia" id="1">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Tyros" target="Petra" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Tyros" target="Alexandria" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Tyros" target="Alexandria" id="1">
+      <data key="d4">sea</data>
+    </edge>
+    <edge source="Alexandria" target="Memphis" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <edge source="Memphis" target="Petra" id="0">
+      <data key="d4">land</data>
+    </edge>
+    <data key="d0">data/concordia/imperium.yaml</data>
+  </graph>
+</graphml>

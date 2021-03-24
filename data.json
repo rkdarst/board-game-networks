@@ -1,0 +1,1045 @@
+[
+  {
+    "filename": "afrikan-tahti/afrikan-tahti.yaml",
+    "meta": {
+      "name": "Afrikan Tahti",
+      "bgg": "https://boardgamegeek.com/boardgame/5130/afrikan-tahti",
+      "site": null,
+      "rules": "https://en.wikipedia.org/wiki/Afrikan_t%C3%A4hti",
+      "year": 1951,
+      "graph-class": "MultiGraph",
+      "image": "https://karkkainen-com.azureedge.net/tuotekuva/ZOOM/6416844711141.jpg"
+    },
+    "stats": {
+      "nodes": 45,
+      "edges": 91,
+      "avg_degree": 4.044444444444444,
+      "density": 0.09191919191919191,
+      "transitivity": 0.1875,
+      "avg_shortest_path_length": 3.2151515151515153,
+      "avg_shortest_path_length_weighted": 6.281818181818182,
+      "diameter": 6,
+      "diameter_weighted": 15,
+      "node_keys": [
+        "type"
+      ],
+      "edge_keys": [
+        "type",
+        "weight"
+      ],
+      "bgg-gamemechanics": [
+        "Point to Point Movement",
+        "Roll / Spin and Move"
+      ],
+      "bgg-gamecategory": [
+        "Children's Game",
+        "Exploration"
+      ]
+    }
+  },
+  {
+    "filename": "arkham-horror/arkham-horror.yaml",
+    "meta": {
+      "name": "Arkham Horror",
+      "year": 2005,
+      "bgg": "https://boardgamegeek.com/boardgame/15987/arkham-horror",
+      "rules": "https://images-cdn.fantasyflightgames.com/ffg_content/Arkham_Horror/AH_Rules_internat.pdf",
+      "site": "https://www.fantasyflightgames.com/en/products/arkham-horror-third-edition/",
+      "image": "https://vignette.wikia.nocookie.net/bgames/images/5/5a/Arkham_HorrorMap.jpg/revision/latest?cb=20120621002059"
+    },
+    "stats": {
+      "nodes": 35,
+      "edges": 38,
+      "avg_degree": 2.1714285714285713,
+      "density": 0.06386554621848739,
+      "transitivity": 0.02586206896551724,
+      "avg_shortest_path_length": 3.3747899159663866,
+      "avg_shortest_path_length_weighted": 3.3747899159663866,
+      "diameter": 6,
+      "diameter_weighted": 6,
+      "node_keys": [
+        "stable",
+        "region",
+        "order"
+      ],
+      "edge_keys": [],
+      "bgg-gamemechanics": [
+        "Cooperative Game",
+        "Dice Rolling",
+        "Hand Management",
+        "Point to Point Movement",
+        "Role Playing",
+        "Solo / Solitaire Game",
+        "Stat Check Resolution",
+        "Variable Player Powers"
+      ],
+      "bgg-gamecategory": [
+        "Adventure",
+        "Fantasy",
+        "Fighting",
+        "Horror",
+        "Novel-based"
+      ]
+    }
+  },
+  {
+    "filename": "concordia/imperium.yaml",
+    "meta": {
+      "name": "Concordia",
+      "subname": "Imperium board",
+      "year": 2013,
+      "bgg": "https://boardgamegeek.com/boardgame/124361/concordia",
+      "rules": "http://riograndegames.com/getFile.php?id=1812",
+      "site": null,
+      "graph-class": "MultiGraph",
+      "image": "http://www.pd-verlag.de/WebRoot/Store/Shops/es719366/5BC3/1FC1/1BDA/7C69/F79B/50ED/8965/B19E/Concordia_VENUS_Spielplan_VS_IMPERIUM_V3.jpg"
+    },
+    "stats": {
+      "nodes": 31,
+      "edges": 79,
+      "avg_degree": 5.096774193548387,
+      "density": 0.16989247311827957,
+      "transitivity": 0.3364485981308411,
+      "avg_shortest_path_length": 3.193548387096774,
+      "avg_shortest_path_length_weighted": 3.193548387096774,
+      "diameter": 7,
+      "diameter_weighted": 7,
+      "node_keys": [
+        "letter",
+        "region"
+      ],
+      "edge_keys": [
+        "type"
+      ],
+      "bgg-gamemechanics": [
+        "Action Retrieval",
+        "Advantage Token",
+        "Auction: Dutch",
+        "Card Drafting",
+        "Deck, Bag, and Pool Building",
+        "Hand Management",
+        "Movement Points",
+        "Point to Point Movement",
+        "Set Collection",
+        "Variable Set-up"
+      ],
+      "bgg-gamecategory": [
+        "Ancient",
+        "Economic",
+        "Nautical"
+      ]
+    }
+  },
+  {
+    "filename": "concordia/italia.yaml",
+    "meta": {
+      "name": "Concordia",
+      "subname": "Italia board",
+      "graph-class": "MultiGraph",
+      "bgg": "https://boardgamegeek.com/boardgame/124361/concordia",
+      "image": "http://www.pd-verlag.de/WebRoot/Store/Shops/es719366/5258/62DF/0889/D140/78BE/50ED/8961/557E/Concordia_ITALIA_2.jpg",
+      "year": 2013
+    },
+    "stats": {
+      "nodes": 26,
+      "edges": 63,
+      "avg_degree": 4.846153846153846,
+      "density": 0.19384615384615383,
+      "transitivity": 0.38095238095238093,
+      "avg_shortest_path_length": 2.855384615384615,
+      "avg_shortest_path_length_weighted": 2.855384615384615,
+      "diameter": 6,
+      "diameter_weighted": 6,
+      "node_keys": [
+        "letter",
+        "region"
+      ],
+      "edge_keys": [
+        "type"
+      ],
+      "bgg-gamemechanics": [
+        "Action Retrieval",
+        "Advantage Token",
+        "Auction: Dutch",
+        "Card Drafting",
+        "Deck, Bag, and Pool Building",
+        "Hand Management",
+        "Movement Points",
+        "Point to Point Movement",
+        "Set Collection",
+        "Variable Set-up"
+      ],
+      "bgg-gamecategory": [
+        "Ancient",
+        "Economic",
+        "Nautical"
+      ]
+    }
+  },
+  {
+    "filename": "kahuna/kahuna.yaml",
+    "meta": {
+      "bgg": "https://boardgamegeek.com/boardgame/394/kahuna",
+      "image": "https://cf.geekdo-images.com/xGbYiUQBLVEAEdhA0Jvyzw__original/img/YJCG4O9ZbwmkusVsd8necVWRMzQ=/0x0/filters:format(jpeg)/pic221048.jpg",
+      "rules": "https://www.ultraboardgames.com/kahuna/game-rules.php",
+      "year": 1998
+    },
+    "stats": {
+      "nodes": 12,
+      "edges": 27,
+      "avg_degree": 4.5,
+      "density": 0.4090909090909091,
+      "transitivity": 0.48484848484848486,
+      "avg_shortest_path_length": 1.7272727272727273,
+      "avg_shortest_path_length_weighted": 1.7272727272727273,
+      "diameter": 3,
+      "diameter_weighted": 3,
+      "node_keys": [],
+      "edge_keys": [],
+      "bgg-gamemechanics": [
+        "Area Majority / Influence",
+        "Card Drafting",
+        "Hand Management",
+        "Network and Route Building",
+        "Take That"
+      ],
+      "bgg-gamecategory": [
+        "Abstract Strategy"
+      ]
+    }
+  },
+  {
+    "filename": "narcos/narcos.yaml",
+    "meta": {
+      "name": "Narcos",
+      "bgg": "https://boardgamegeek.com/boardgame/253106/narcos-board-game",
+      "year": 2018,
+      "features": [
+        "node-attributes",
+        "regions"
+      ],
+      "rules": "https://cdn.1j1ju.com/medias/92/c4/6f-narcos-the-board-game-rulebook.pdf",
+      "site": "https://cmon.com/product/narcos/narcos",
+      "image": "https://www.queenofgames.be/wp-content/uploads/2019/06/Narcos-The-Board-Game-bordspellen-kopen-Oostende-prijs-05.jpg",
+      "fixme": "find a better image"
+    },
+    "stats": {
+      "nodes": 54,
+      "edges": 133,
+      "avg_degree": 4.925925925925926,
+      "density": 0.09294199860237597,
+      "transitivity": 0.41872791519434627,
+      "avg_shortest_path_length": 4.004891684136967,
+      "avg_shortest_path_length_weighted": 4.004891684136967,
+      "diameter": 9,
+      "diameter_weighted": 9,
+      "node_keys": [
+        "color",
+        "region",
+        "airport"
+      ],
+      "edge_keys": [],
+      "bgg-gamemechanics": [
+        "Hidden Movement",
+        "Pick-up and Deliver",
+        "Point to Point Movement",
+        "Secret Unit Deployment",
+        "Team-Based Game",
+        "Variable Player Powers"
+      ],
+      "bgg-gamecategory": [
+        "Deduction",
+        "Mafia",
+        "Movies / TV / Radio theme"
+      ]
+    }
+  },
+  {
+    "filename": "pandemic-reign-of-cthulhu/pandemic-reign-of-cthulhu.yaml",
+    "meta": {
+      "name": "Pandemic: Reign of Cthulhu",
+      "bgg": "https://boardgamegeek.com/boardgame/192153/pandemic-reign-cthulhu",
+      "rules": "https://images.zmangames.com/filer_public/a9/24/a9249cf7-1f8a-4575-a1a4-f33afc8162b3/en-pandemic-cthulhu-rule-v6.pdf",
+      "site": "https://www.zmangames.com/en/products/pandemic-reign-cthulhu/",
+      "year": 2016,
+      "image": "https://3.bp.blogspot.com/-N8ISBzAaNr8/V2G7PCVebmI/AAAAAAAAWN8/grMOBgk5OsoIvmGe_dHoseksJlqI0SzLwCLcB/s1600/pandemic-cthulhu-board.jpg",
+      "features": [
+        "regions",
+        "node-attributes"
+      ],
+      "note": "Gates (the node attributes) can connect to any other gate at\nthe cost of a sanity roll.  These links are not recorded as\nedges.  To/from a bus station (the node attribute), you can use\nplayer cards to make jumps (like charter/direct flights in\nPandemic).\n"
+    },
+    "stats": {
+      "nodes": 24,
+      "edges": 29,
+      "avg_degree": 2.4166666666666665,
+      "density": 0.10507246376811594,
+      "transitivity": 0.30612244897959184,
+      "avg_shortest_path_length": 4.713768115942029,
+      "avg_shortest_path_length_weighted": 4.713768115942029,
+      "diameter": 10,
+      "diameter_weighted": 10,
+      "node_keys": [
+        "color",
+        "focus",
+        "gate"
+      ],
+      "edge_keys": [],
+      "bgg-gamemechanics": [
+        "Action Points",
+        "Cooperative Game",
+        "Hand Management",
+        "Point to Point Movement",
+        "Set Collection",
+        "Trading",
+        "Variable Player Powers"
+      ],
+      "bgg-gamecategory": [
+        "Horror",
+        "Mythology",
+        "Novel-based"
+      ]
+    }
+  },
+  {
+    "filename": "pandemic-rising-tide/pandemic-rising-tide.yaml",
+    "meta": {
+      "name": "Pandemic: Rising tide",
+      "bgg": "https://www.boardgamegeek.com/boardgame/234671/pandemic-rising-tide",
+      "site": "https://www.zmangames.com/en/products/pandemic-rising-tide/",
+      "rules": "https://images.zmangames.com/filer_public/ef/d4/efd42a51-2537-4dba-8439-e4d8c7f72f04/rising_tide_rules.pdf",
+      "type": "area map",
+      "year": 2017,
+      "image": "https://cf.geekdo-images.com/qyw0Gm2K0xHd7nugSASXqg__original/img/4it21NOmPdwk9uIDiTGBDZAKsZQ=/0x0/filters:format(png)/pic3728815.png"
+    },
+    "stats": {
+      "nodes": 36,
+      "edges": 90,
+      "avg_degree": 5.0,
+      "density": 0.14285714285714285,
+      "transitivity": 0.3937947494033413,
+      "avg_shortest_path_length": 2.753968253968254,
+      "avg_shortest_path_length_weighted": 2.626984126984127,
+      "diameter": 6,
+      "diameter_weighted": 6,
+      "node_keys": [
+        "color"
+      ],
+      "edge_keys": [
+        "initial",
+        "weight"
+      ],
+      "bgg-gamemechanics": [
+        "Cooperative Game"
+      ],
+      "bgg-gamecategory": []
+    }
+  },
+  {
+    "filename": "pandemic/pandemic-hinterlands.yaml",
+    "meta": {
+      "bgg": "https://boardgamegeek.com/boardgameexpansion/168703/pandemic-state-emergency",
+      "site": "https://www.zmangames.com/en/products/pandemic-expansion-state-emergency/",
+      "rules": "https://images.zmangames.com/filer_public/50/b0/50b0ccf4-061c-442a-83a2-1cd7ba2cc0a7/zm7113_rules_web.pdf",
+      "year": 2015,
+      "image": "https://cf.geekdo-images.com/dBHCg_cUUr2AN4Mvfm5FzA__original/img/5x9HvYfYKQ4NnXbQ373ToAEgbnM=/0x0/filters:format(jpeg)/pic2616795.jpg",
+      "features": [
+        "node-attributes",
+        "regions"
+      ]
+    },
+    "stats": {
+      "nodes": 52,
+      "edges": 111,
+      "avg_degree": 4.269230769230769,
+      "density": 0.083710407239819,
+      "transitivity": 0.3880597014925373,
+      "avg_shortest_path_length": 4.013574660633484,
+      "avg_shortest_path_length_weighted": 4.013574660633484,
+      "diameter": 9,
+      "diameter_weighted": 9,
+      "node_keys": [
+        "color",
+        "type"
+      ],
+      "edge_keys": [],
+      "bgg-gamemechanics": [
+        "Action Points",
+        "Cooperative Game",
+        "Hand Management",
+        "Point to Point Movement",
+        "Set Collection",
+        "Trading",
+        "Variable Player Powers"
+      ],
+      "bgg-gamecategory": [
+        "Environmental",
+        "Expansion for Base-game",
+        "Medical"
+      ]
+    }
+  },
+  {
+    "filename": "pandemic/pandemic-legacy-season-1.yaml",
+    "meta": {
+      "bgg": "https://boardgamegeek.com/boardgame/161936/pandemic-legacy-season-1",
+      "site": "https://www.zmangames.com/en/games/pandemic/",
+      "rules": "https://images.zmangames.com/filer_public/57/b9/57b99885-fd15-4c0d-a28a-4b938d6bf46c/zm7170_zm7171_rules_web.pdf",
+      "year": 2015,
+      "image": "https://cf.geekdo-images.com/large/img/0Ddrd-mWsN3BVgIOYkyNA-Uwc4o=/fit-in/1024x1024/filters:no_upscale()/pic3476620.jpg"
+    },
+    "stats": {
+      "nodes": 48,
+      "edges": 94,
+      "avg_degree": 3.9166666666666665,
+      "density": 0.08333333333333333,
+      "transitivity": 0.3152542372881356,
+      "avg_shortest_path_length": 4.040780141843972,
+      "avg_shortest_path_length_weighted": 4.040780141843972,
+      "diameter": 9,
+      "diameter_weighted": 9,
+      "node_keys": [
+        "color",
+        "region"
+      ],
+      "edge_keys": [],
+      "bgg-gamemechanics": [
+        "Action Points",
+        "Cooperative Game",
+        "Hand Management",
+        "Legacy Game",
+        "Point to Point Movement",
+        "Set Collection",
+        "Trading",
+        "Variable Player Powers"
+      ],
+      "bgg-gamecategory": [
+        "Environmental",
+        "Medical"
+      ]
+    }
+  },
+  {
+    "filename": "pandemic/pandemic.yaml",
+    "meta": {
+      "name": "Pandemic",
+      "bgg": "https://boardgamegeek.com/boardgame/30549/pandemic",
+      "rules": "https://images.zmangames.com/filer_public/53/ed/53edbee8-adfb-4715-899f-dd381e1420d7/zm7101_rules_web.pdf",
+      "site": "https://www.zmangames.com/en/products/pandemic/",
+      "year": 2008,
+      "image": "https://arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/UKY24N42YZAMJGPNAABQV7L2UE.jpg"
+    },
+    "stats": {
+      "nodes": 48,
+      "edges": 93,
+      "avg_degree": 3.875,
+      "density": 0.08244680851063829,
+      "transitivity": 0.34459459459459457,
+      "avg_shortest_path_length": 4.140070921985815,
+      "avg_shortest_path_length_weighted": 4.140070921985815,
+      "diameter": 9,
+      "diameter_weighted": 9,
+      "node_keys": [
+        "color"
+      ],
+      "edge_keys": [],
+      "bgg-gamemechanics": [
+        "Action Points",
+        "Cooperative Game",
+        "Hand Management",
+        "Point to Point Movement",
+        "Set Collection",
+        "Trading",
+        "Variable Player Powers"
+      ],
+      "bgg-gamecategory": [
+        "Medical"
+      ]
+    }
+  },
+  {
+    "filename": "power-grid/benelux.yaml",
+    "meta": {
+      "name": "Power Grid",
+      "subname": "Benelux",
+      "image": "https://www.ultraboardgames.com/power-grid/gfx/benelux-map.jpg",
+      "year": 2006,
+      "site": "https://www.riograndegames.com/games/power-grid-central-europe-benelux/",
+      "rules": "https://www.riograndegames.com/wp-content/uploads/2013/02/Power-Grid-Benelux-Central-Europe-Rules.pdf",
+      "features": [
+        "node-attributes",
+        "regions",
+        "weights"
+      ],
+      "bgg": "https://boardgamegeek.com/boardgame/25031/power-grid-beneluxcentral-europe",
+      "notes": "This game has only five regions and generally shorter connection\ndistances.  The country is mostly aligned with the regions, but\nLuxembourg is part of blue (Belgium, French-region) but a separate\ncountry.\n"
+    },
+    "stats": {
+      "nodes": 35,
+      "edges": 74,
+      "avg_degree": 4.228571428571429,
+      "density": 0.12436974789915967,
+      "transitivity": 0.3956043956043956,
+      "avg_shortest_path_length": 3.495798319327731,
+      "avg_shortest_path_length_weighted": 19.932773109243698,
+      "diameter": 8,
+      "diameter_weighted": 59,
+      "node_keys": [
+        "color",
+        "region"
+      ],
+      "edge_keys": [
+        "weight"
+      ],
+      "bgg-gamemechanics": [
+        "Auction/Bidding",
+        "Income",
+        "Market",
+        "Network and Route Building"
+      ],
+      "bgg-gamecategory": [
+        "Economic",
+        "Expansion for Base-game",
+        "Industry / Manufacturing"
+      ]
+    }
+  },
+  {
+    "filename": "power-grid/central-europe.yaml",
+    "meta": {
+      "name": "Power Grid",
+      "subname": "Central Europe",
+      "image": "https://cf.geekdo-images.com/2t_ctk7jHjTtZ8GaObmRUw__original/img/huGtpkmAP1_3B5X-WVtEUKqLSmE=/0x0/filters:format(jpeg)/pic154511.jpg",
+      "year": 2006,
+      "site": "https://www.riograndegames.com/games/power-grid-central-europe-benelux/",
+      "rules": "https://www.riograndegames.com/wp-content/uploads/2013/02/Power-Grid-Benelux-Central-Europe-Rules.pdf",
+      "features": [
+        "node-attributes",
+        "regions",
+        "weights"
+      ],
+      "bgg": "https://boardgamegeek.com/boardgame/25031/power-grid-beneluxcentral-europe",
+      "notes": "Several regions are such that, if you have only cities in those\nregions, you can not buy nuclear power plans.  Anyone with a city\nin Wien gets a discount on waste fuel.\n"
+    },
+    "stats": {
+      "nodes": 42,
+      "edges": 96,
+      "avg_degree": 4.571428571428571,
+      "density": 0.11149825783972125,
+      "transitivity": 0.3769230769230769,
+      "avg_shortest_path_length": 3.483159117305459,
+      "avg_shortest_path_length_weighted": 32.97096399535424,
+      "diameter": 9,
+      "diameter_weighted": 91,
+      "node_keys": [
+        "nuclear",
+        "color",
+        "region",
+        "wastediscount"
+      ],
+      "edge_keys": [
+        "weight"
+      ],
+      "bgg-gamemechanics": [
+        "Auction/Bidding",
+        "Income",
+        "Market",
+        "Network and Route Building"
+      ],
+      "bgg-gamecategory": [
+        "Economic",
+        "Expansion for Base-game",
+        "Industry / Manufacturing"
+      ]
+    }
+  },
+  {
+    "filename": "power-grid/china.yaml",
+    "meta": {
+      "name": "Power Grid",
+      "subname": "China",
+      "image": "https://cf.geekdo-images.com/xBcrXnLlJpZxeKeuLNrRx0Ua0h8=/fit-in/1200x630/pic359282.jpg",
+      "year": 2008,
+      "site": "https://www.riograndegames.com/games/power-grid-korea-china/",
+      "rules": "https://www.riograndegames.com/wp-content/uploads/2013/02/Power-Grid-China-Korea-Rules.pdf",
+      "features": [
+        "node-attributes",
+        "regions",
+        "weights"
+      ],
+      "bgg": "https://boardgamegeek.com/boardgameexpansion/37397/power-grid-chinakorea"
+    },
+    "stats": {
+      "nodes": 42,
+      "edges": 83,
+      "avg_degree": 3.9523809523809526,
+      "density": 0.09639953542392567,
+      "transitivity": 0.39867109634551495,
+      "avg_shortest_path_length": 4.313588850174216,
+      "avg_shortest_path_length_weighted": 39.79442508710802,
+      "diameter": 11,
+      "diameter_weighted": 99,
+      "node_keys": [
+        "color"
+      ],
+      "edge_keys": [
+        "weight"
+      ],
+      "bgg-gamemechanics": [
+        "Auction/Bidding",
+        "Income",
+        "Market",
+        "Network and Route Building"
+      ],
+      "bgg-gamecategory": [
+        "Economic",
+        "Expansion for Base-game",
+        "Industry / Manufacturing"
+      ]
+    }
+  },
+  {
+    "filename": "power-grid/germany.yaml",
+    "meta": {
+      "name": "Power Grid",
+      "subname": "Germany",
+      "image": "https://i.pinimg.com/originals/92/1a/a5/921aa578ec786ffaa134da3909b43a8f.jpg",
+      "year": 2004,
+      "rules": "https://www.riograndegames.com/wp-content/uploads/2018/12/Power-Grid-Recharged-Rules.pdf",
+      "bgg": "https://boardgamegeek.com/boardgame/2651/power-grid",
+      "fixme": "Power Grid vs Power Grid Rechanged - is the board the same?"
+    },
+    "stats": {
+      "nodes": 42,
+      "edges": 83,
+      "avg_degree": 3.9523809523809526,
+      "density": 0.09639953542392567,
+      "transitivity": 0.3469387755102041,
+      "avg_shortest_path_length": 3.6167247386759582,
+      "avg_shortest_path_length_weighted": 40.72009291521486,
+      "diameter": 8,
+      "diameter_weighted": 92,
+      "node_keys": [
+        "color"
+      ],
+      "edge_keys": [
+        "weight"
+      ],
+      "bgg-gamemechanics": [
+        "Auction/Bidding",
+        "Auction: Turn Order Until Pass",
+        "Catch the Leader",
+        "Income",
+        "Market",
+        "Network and Route Building",
+        "Turn Order: Stat-Based"
+      ],
+      "bgg-gamecategory": [
+        "Economic",
+        "Industry / Manufacturing"
+      ]
+    }
+  },
+  {
+    "filename": "power-grid/korea.yaml",
+    "meta": {
+      "name": "Power Grid",
+      "subname": "Korea",
+      "image": "http://www.boardgamer.ie/769-thickbox_default/power-grid-china-korea.jpg",
+      "year": 2008,
+      "site": "https://www.riograndegames.com/games/power-grid-korea-china/",
+      "rules": "https://www.riograndegames.com/wp-content/uploads/2013/02/Power-Grid-China-Korea-Rules.pdf",
+      "features": [
+        "node-attributes",
+        "regions",
+        "weights"
+      ],
+      "bgg": "https://boardgamegeek.com/boardgameexpansion/37397/power-grid-chinakorea",
+      "notes": "In this variant, you can either by resources from the North market or\nthe South market, but not both at the same time.  You can use any\nresources to power any plant anywhere on the board.\nThe north/south divide has no effect on gameplay.  Sokcho appears\nto be on the North side of the black line, but in the real world\nit is in South Korea.\n"
+    },
+    "stats": {
+      "nodes": 42,
+      "edges": 81,
+      "avg_degree": 3.857142857142857,
+      "density": 0.09407665505226481,
+      "transitivity": 0.38162544169611307,
+      "avg_shortest_path_length": 4.351916376306621,
+      "avg_shortest_path_length_weighted": 41.4541231126597,
+      "diameter": 13,
+      "diameter_weighted": 138,
+      "node_keys": [
+        "color",
+        "region"
+      ],
+      "edge_keys": [
+        "weight"
+      ],
+      "bgg-gamemechanics": [
+        "Auction/Bidding",
+        "Income",
+        "Market",
+        "Network and Route Building"
+      ],
+      "bgg-gamecategory": [
+        "Economic",
+        "Expansion for Base-game",
+        "Industry / Manufacturing"
+      ]
+    }
+  },
+  {
+    "filename": "power-grid/united-states.yaml",
+    "meta": {
+      "name": "Power Grid",
+      "subname": "United States",
+      "image": "https://dmsrus.files.wordpress.com/2015/02/pic173810.jpg",
+      "year": 2004,
+      "rules": "https://www.riograndegames.com/wp-content/uploads/2018/12/Power-Grid-Recharged-Rules.pdf",
+      "bgg": "https://boardgamegeek.com/boardgame/2651/power-grid"
+    },
+    "stats": {
+      "nodes": 42,
+      "edges": 87,
+      "avg_degree": 4.142857142857143,
+      "density": 0.10104529616724739,
+      "transitivity": 0.3475609756097561,
+      "avg_shortest_path_length": 3.6504065040650406,
+      "avg_shortest_path_length_weighted": 34.444831591173056,
+      "diameter": 8,
+      "diameter_weighted": 90,
+      "node_keys": [
+        "color"
+      ],
+      "edge_keys": [
+        "weight"
+      ],
+      "bgg-gamemechanics": [
+        "Auction/Bidding",
+        "Auction: Turn Order Until Pass",
+        "Catch the Leader",
+        "Income",
+        "Market",
+        "Network and Route Building",
+        "Turn Order: Stat-Based"
+      ],
+      "bgg-gamecategory": [
+        "Economic",
+        "Industry / Manufacturing"
+      ]
+    }
+  },
+  {
+    "filename": "risk/risk.yaml",
+    "meta": {
+      "name": "Risk",
+      "bgg": "https://boardgamegeek.com/boardgame/181/risk",
+      "image": "https://cf.geekdo-images.com/Pcf6sHxECBEbOv5NjuI5_g__original/img/-MRk0V_Fi3co4JZcXL2zXSc28Wo=/0x0/filters:format(jpeg)/pic96737.jpg",
+      "year": 1959,
+      "rules": "https://www.ultraboardgames.com/risk/game-rules.php"
+    },
+    "stats": {
+      "nodes": 42,
+      "edges": 83,
+      "avg_degree": 3.9523809523809526,
+      "density": 0.09639953542392567,
+      "transitivity": 0.43478260869565216,
+      "avg_shortest_path_length": 4.091753774680604,
+      "avg_shortest_path_length_weighted": 4.091753774680604,
+      "diameter": 10,
+      "diameter_weighted": 10,
+      "node_keys": [
+        "continent"
+      ],
+      "edge_keys": [],
+      "bgg-gamemechanics": [
+        "Area Movement",
+        "Dice Rolling",
+        "Player Elimination",
+        "Set Collection"
+      ],
+      "bgg-gamecategory": [
+        "Territory Building",
+        "Wargame"
+      ]
+    }
+  },
+  {
+    "filename": "root/green.yaml",
+    "meta": {
+      "name": "Root",
+      "subname": "Green",
+      "year": 2018,
+      "bgg": "https://boardgamegeek.com/boardgame/237182/root",
+      "image": "https://cf.geekdo-images.com/Y5-JnVtBgTGtXVYzmDI4Lg__imagepagezoom/img/qSe9Hd3Dh8JwhfGpdXhcPIZFhdI=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic3956476.jpg",
+      "site": "https://ledergames.com/products/root-a-game-of-woodland-might-and-right",
+      "rules": "https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Base_Law_of_Root_web_Oct_15_2020.pdf?v=1602798473"
+    },
+    "stats": {
+      "nodes": 12,
+      "edges": 18,
+      "avg_degree": 3.0,
+      "density": 0.2727272727272727,
+      "transitivity": 0.15384615384615385,
+      "avg_shortest_path_length": 2.1363636363636362,
+      "avg_shortest_path_length_weighted": 2.1363636363636362,
+      "diameter": 4,
+      "diameter_weighted": 4,
+      "node_keys": [
+        "ruins",
+        "color",
+        "corner",
+        "buildings"
+      ],
+      "edge_keys": [],
+      "bgg-gamemechanics": [
+        "Action Queue",
+        "Action Retrieval",
+        "Area Majority / Influence",
+        "Area Movement",
+        "Dice Rolling",
+        "Hand Management",
+        "Point to Point Movement",
+        "Race",
+        "Variable Player Powers",
+        "Variable Set-up"
+      ],
+      "bgg-gamecategory": [
+        "Animals",
+        "Fantasy",
+        "Wargame"
+      ]
+    }
+  },
+  {
+    "filename": "root/white.yaml",
+    "meta": {
+      "name": "Root",
+      "subname": "White",
+      "year": 2018,
+      "bgg": "https://boardgamegeek.com/boardgame/237182/root",
+      "image": "https://cf.geekdo-images.com/5pALsh6BQkb0uVtOxqffXA__imagepagezoom/img/__pDDOWETlcRAxUvcpcMWk7CQ8c=/fit-in/1200x900/filters:no_upscale():strip_icc()/pic5494879.jpg",
+      "site": "https://ledergames.com/products/root-a-game-of-woodland-might-and-right",
+      "rules": "https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Base_Law_of_Root_web_Oct_15_2020.pdf?v=1602798473"
+    },
+    "stats": {
+      "nodes": 12,
+      "edges": 16,
+      "avg_degree": 2.6666666666666665,
+      "density": 0.24242424242424243,
+      "transitivity": 0.21428571428571427,
+      "avg_shortest_path_length": 2.484848484848485,
+      "avg_shortest_path_length_weighted": 2.484848484848485,
+      "diameter": 5,
+      "diameter_weighted": 5,
+      "node_keys": [
+        "ruins",
+        "corner",
+        "buildings"
+      ],
+      "edge_keys": [],
+      "bgg-gamemechanics": [
+        "Action Queue",
+        "Action Retrieval",
+        "Area Majority / Influence",
+        "Area Movement",
+        "Dice Rolling",
+        "Hand Management",
+        "Point to Point Movement",
+        "Race",
+        "Variable Player Powers",
+        "Variable Set-up"
+      ],
+      "bgg-gamecategory": [
+        "Animals",
+        "Fantasy",
+        "Wargame"
+      ]
+    }
+  },
+  {
+    "filename": "ticket-to-ride/europe.yaml",
+    "meta": {
+      "bgg": "https://boardgamegeek.com/boardgame/14996/ticket-ride-europe",
+      "site": "https://www.daysofwonder.com/tickettoride/en/europe/",
+      "rules": "https://ncdn0.daysofwonder.com/tickettoride/en/img/7202-T2RE-Rules-EN-2019.pdf",
+      "graph-class": "MultiGraph",
+      "year": 2005,
+      "image": "https://cf.geekdo-images.com/34etSTfl-aa9hsi1gd2MZw__original/img/nhBqtw6ISU8K544rFQ2jPuyBDtM=/0x0/filters:format(jpeg)/pic70732.jpg"
+    },
+    "stats": {
+      "nodes": 47,
+      "edges": 101,
+      "avg_degree": 4.297872340425532,
+      "density": 0.09343200740055504,
+      "transitivity": 0.2926829268292683,
+      "avg_shortest_path_length": 3.955596669750231,
+      "avg_shortest_path_length_weighted": 11.626271970397779,
+      "diameter": 9,
+      "diameter_weighted": 29,
+      "node_keys": [],
+      "edge_keys": [
+        "color",
+        "weight",
+        "locomotives",
+        "tunnel"
+      ],
+      "bgg-gamemechanics": [
+        "Card Drafting",
+        "Connections",
+        "Drafting",
+        "End Game Bonuses",
+        "Hand Management",
+        "Network and Route Building",
+        "Push Your Luck",
+        "Set Collection"
+      ],
+      "bgg-gamecategory": [
+        "Trains"
+      ]
+    }
+  },
+  {
+    "filename": "ticket-to-ride/first-journey-europe.yaml",
+    "meta": {
+      "graph-class": "MultiGraph",
+      "bgg": "https://boardgamegeek.com/boardgame/218208/ticket-ride-first-journey-europe",
+      "image": "https://cf.geekdo-images.com/AhwUqbZyyk-BHG1Jlw8R6A__original/img/ikYrRSqPwgIujfOEKZa9DoQZSvk=/0x0/filters:format(jpeg)/pic3381773.jpg",
+      "rules": "https://ncdn0.daysofwonder.com/tickettoride/en/img/tke_rules_en.pdf",
+      "site": "https://www.daysofwonder.com/tickettoride/en/first-journey/?map=europe",
+      "year": 2017
+    },
+    "stats": {
+      "nodes": 22,
+      "edges": 70,
+      "avg_degree": 6.363636363636363,
+      "density": 0.30303030303030304,
+      "transitivity": 0.39622641509433965,
+      "avg_shortest_path_length": 2.6147186147186146,
+      "avg_shortest_path_length_weighted": 4.0995670995671,
+      "diameter": 6,
+      "diameter_weighted": 9,
+      "node_keys": [],
+      "edge_keys": [
+        "color",
+        "weight"
+      ],
+      "bgg-gamemechanics": [
+        "Hand Management",
+        "Network and Route Building",
+        "Set Collection"
+      ],
+      "bgg-gamecategory": [
+        "Children's Game",
+        "Trains"
+      ]
+    }
+  },
+  {
+    "filename": "ticket-to-ride/london.yaml",
+    "meta": {
+      "graph-class": "MultiGraph",
+      "bgg": "https://boardgamegeek.com/boardgame/276894/ticket-ride-london",
+      "site": "https://www.daysofwonder.com/tickettoride/en/london/",
+      "rules": "https://ncdn0.daysofwonder.com/tickettoride/en/img/tt_ln_en_rules_2019-04.pdf",
+      "year": 2019,
+      "image": "https://cf.geekdo-images.com/Hq8fyW-4X7LaSNv6TCtWVw__original/img/DH2vDdbfTK4XUPsNPw4B4ter-7g=/0x0/filters:format(jpeg)/pic4132195.jpg"
+    },
+    "stats": {
+      "nodes": 17,
+      "edges": 44,
+      "avg_degree": 5.176470588235294,
+      "density": 0.3235294117647059,
+      "transitivity": 0.4396551724137931,
+      "avg_shortest_path_length": 2.2794117647058822,
+      "avg_shortest_path_length_weighted": 4.705882352941177,
+      "diameter": 5,
+      "diameter_weighted": 11,
+      "node_keys": [
+        "district"
+      ],
+      "edge_keys": [
+        "color",
+        "weight"
+      ],
+      "bgg-gamemechanics": [
+        "Card Drafting",
+        "Hand Management",
+        "Network and Route Building",
+        "Set Collection"
+      ],
+      "bgg-gamecategory": [
+        "Trains"
+      ]
+    }
+  },
+  {
+    "filename": "ticket-to-ride/new-york.yaml",
+    "meta": {
+      "bgg": "https://boardgamegeek.com/boardgame/253284/ticket-ride-new-york",
+      "graph-class": "MultiGraph",
+      "rules": "https://ncdn0.daysofwonder.com/tickettoride/en/img/tt_ny_en_rules_2018.pdf",
+      "site": "https://www.daysofwonder.com/tickettoride/en/new-york/",
+      "year": 2018,
+      "image": "https://cf.geekdo-images.com/Hq8fyW-4X7LaSNv6TCtWVw__original/img/DH2vDdbfTK4XUPsNPw4B4ter-7g=/0x0/filters:format(jpeg)/pic4132195.jpg"
+    },
+    "stats": {
+      "nodes": 15,
+      "edges": 41,
+      "avg_degree": 5.466666666666667,
+      "density": 0.3904761904761905,
+      "transitivity": 0.4639175257731959,
+      "avg_shortest_path_length": 2.3142857142857145,
+      "avg_shortest_path_length_weighted": 4.438095238095238,
+      "diameter": 5,
+      "diameter_weighted": 10,
+      "node_keys": [
+        "points"
+      ],
+      "edge_keys": [
+        "color",
+        "weight"
+      ],
+      "bgg-gamemechanics": [
+        "Card Drafting",
+        "Hand Management",
+        "Network and Route Building",
+        "Set Collection"
+      ],
+      "bgg-gamecategory": [
+        "Trains"
+      ]
+    }
+  },
+  {
+    "filename": "ticket-to-ride/united-states.yaml",
+    "meta": {
+      "graph-class": "MultiGraph",
+      "bgg": "https://boardgamegeek.com/image/38674/ticket-ride",
+      "image": "https://cf.geekdo-images.com/U2eaeOCVGYFDhPgaIY6CmQ__original/img/HbB8LneSsfjCiXK-jhs3fx7hi0o=/0x0/filters:format(jpeg)/pic38674.jpg",
+      "rules": "https://ncdn0.daysofwonder.com/tickettoride/en/img/7201-T2R-Rules-EN-2019.pdf",
+      "year": 2004,
+      "site": "https://www.daysofwonder.com/tickettoride/en/usa/"
+    },
+    "stats": {
+      "nodes": 36,
+      "edges": 100,
+      "avg_degree": 5.555555555555555,
+      "density": 0.15873015873015872,
+      "transitivity": 0.36082474226804123,
+      "avg_shortest_path_length": 3.215873015873016,
+      "avg_shortest_path_length_weighted": 10.03015873015873,
+      "diameter": 7,
+      "diameter_weighted": 23,
+      "node_keys": [],
+      "edge_keys": [
+        "color",
+        "weight"
+      ],
+      "bgg-gamemechanics": [],
+      "bgg-gamecategory": [
+        "Educational",
+        "Math"
+      ]
+    }
+  }
+]

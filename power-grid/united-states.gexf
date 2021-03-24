@@ -1,0 +1,311 @@
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2021-03-24">
+    <creator>NetworkX 2.5</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="color" type="string" />
+    </attributes>
+    <nodes>
+      <node id="0" label="Seattle">
+        <attvalues>
+          <attvalue for="0" value="purple" />
+        </attvalues>
+      </node>
+      <node id="1" label="Portland">
+        <attvalues>
+          <attvalue for="0" value="purple" />
+        </attvalues>
+      </node>
+      <node id="2" label="Boise">
+        <attvalues>
+          <attvalue for="0" value="purple" />
+        </attvalues>
+      </node>
+      <node id="3" label="Billings">
+        <attvalues>
+          <attvalue for="0" value="purple" />
+        </attvalues>
+      </node>
+      <node id="4" label="Cheyenne">
+        <attvalues>
+          <attvalue for="0" value="purple" />
+        </attvalues>
+      </node>
+      <node id="5" label="Omaha">
+        <attvalues>
+          <attvalue for="0" value="purple" />
+        </attvalues>
+      </node>
+      <node id="6" label="Denver">
+        <attvalues>
+          <attvalue for="0" value="purple" />
+        </attvalues>
+      </node>
+      <node id="7" label="Salt Lake City">
+        <attvalues>
+          <attvalue for="0" value="cyan" />
+        </attvalues>
+      </node>
+      <node id="8" label="San Francisco">
+        <attvalues>
+          <attvalue for="0" value="cyan" />
+        </attvalues>
+      </node>
+      <node id="9" label="Las Vegas">
+        <attvalues>
+          <attvalue for="0" value="cyan" />
+        </attvalues>
+      </node>
+      <node id="10" label="Santa Fe">
+        <attvalues>
+          <attvalue for="0" value="cyan" />
+        </attvalues>
+      </node>
+      <node id="11" label="Los Angeles">
+        <attvalues>
+          <attvalue for="0" value="cyan" />
+        </attvalues>
+      </node>
+      <node id="12" label="Phoenix">
+        <attvalues>
+          <attvalue for="0" value="cyan" />
+        </attvalues>
+      </node>
+      <node id="13" label="San Diego">
+        <attvalues>
+          <attvalue for="0" value="cyan" />
+        </attvalues>
+      </node>
+      <node id="14" label="Duluth">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+        </attvalues>
+      </node>
+      <node id="15" label="Fargo">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+        </attvalues>
+      </node>
+      <node id="16" label="Minneapolis">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+        </attvalues>
+      </node>
+      <node id="17" label="Chicago">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+        </attvalues>
+      </node>
+      <node id="18" label="St. Louis">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+        </attvalues>
+      </node>
+      <node id="19" label="Cincinnati">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+        </attvalues>
+      </node>
+      <node id="20" label="Knoxville">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+        </attvalues>
+      </node>
+      <node id="21" label="Kansas City">
+        <attvalues>
+          <attvalue for="0" value="red" />
+        </attvalues>
+      </node>
+      <node id="22" label="Oklahoma City">
+        <attvalues>
+          <attvalue for="0" value="red" />
+        </attvalues>
+      </node>
+      <node id="23" label="Memphis">
+        <attvalues>
+          <attvalue for="0" value="red" />
+        </attvalues>
+      </node>
+      <node id="24" label="Dallas">
+        <attvalues>
+          <attvalue for="0" value="red" />
+        </attvalues>
+      </node>
+      <node id="25" label="Birmingham">
+        <attvalues>
+          <attvalue for="0" value="red" />
+        </attvalues>
+      </node>
+      <node id="26" label="Houston">
+        <attvalues>
+          <attvalue for="0" value="red" />
+        </attvalues>
+      </node>
+      <node id="27" label="New Orleans">
+        <attvalues>
+          <attvalue for="0" value="red" />
+        </attvalues>
+      </node>
+      <node id="28" label="Detroit">
+        <attvalues>
+          <attvalue for="0" value="brown" />
+        </attvalues>
+      </node>
+      <node id="29" label="Buffalo">
+        <attvalues>
+          <attvalue for="0" value="brown" />
+        </attvalues>
+      </node>
+      <node id="30" label="Pittsburgh">
+        <attvalues>
+          <attvalue for="0" value="brown" />
+        </attvalues>
+      </node>
+      <node id="31" label="Washington">
+        <attvalues>
+          <attvalue for="0" value="brown" />
+        </attvalues>
+      </node>
+      <node id="32" label="Philadelphia">
+        <attvalues>
+          <attvalue for="0" value="brown" />
+        </attvalues>
+      </node>
+      <node id="33" label="New York">
+        <attvalues>
+          <attvalue for="0" value="brown" />
+        </attvalues>
+      </node>
+      <node id="34" label="Boston">
+        <attvalues>
+          <attvalue for="0" value="brown" />
+        </attvalues>
+      </node>
+      <node id="35" label="Norfolk">
+        <attvalues>
+          <attvalue for="0" value="green" />
+        </attvalues>
+      </node>
+      <node id="36" label="Raleigh">
+        <attvalues>
+          <attvalue for="0" value="green" />
+        </attvalues>
+      </node>
+      <node id="37" label="Atlanta">
+        <attvalues>
+          <attvalue for="0" value="green" />
+        </attvalues>
+      </node>
+      <node id="38" label="Savannah">
+        <attvalues>
+          <attvalue for="0" value="green" />
+        </attvalues>
+      </node>
+      <node id="39" label="Jacksonville">
+        <attvalues>
+          <attvalue for="0" value="green" />
+        </attvalues>
+      </node>
+      <node id="40" label="Tampa">
+        <attvalues>
+          <attvalue for="0" value="green" />
+        </attvalues>
+      </node>
+      <node id="41" label="Miami">
+        <attvalues>
+          <attvalue for="0" value="green" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="0" target="1" id="0" weight="3" />
+      <edge source="0" target="2" id="1" weight="12" />
+      <edge source="0" target="3" id="2" weight="9" />
+      <edge source="1" target="2" id="3" weight="13" />
+      <edge source="1" target="8" id="4" weight="24" />
+      <edge source="2" target="3" id="5" weight="12" />
+      <edge source="2" target="4" id="6" weight="24" />
+      <edge source="2" target="7" id="7" weight="8" />
+      <edge source="2" target="8" id="8" weight="23" />
+      <edge source="3" target="15" id="9" weight="17" />
+      <edge source="3" target="16" id="10" weight="18" />
+      <edge source="3" target="4" id="11" weight="9" />
+      <edge source="4" target="16" id="12" weight="18" />
+      <edge source="4" target="5" id="13" weight="14" />
+      <edge source="4" target="6" id="14" weight="0" />
+      <edge source="5" target="16" id="15" weight="8" />
+      <edge source="5" target="17" id="16" weight="13" />
+      <edge source="5" target="21" id="17" weight="5" />
+      <edge source="6" target="7" id="18" weight="21" />
+      <edge source="6" target="21" id="19" weight="16" />
+      <edge source="6" target="10" id="20" weight="13" />
+      <edge source="7" target="8" id="21" weight="27" />
+      <edge source="7" target="10" id="22" weight="28" />
+      <edge source="7" target="9" id="23" weight="18" />
+      <edge source="8" target="9" id="24" weight="14" />
+      <edge source="8" target="11" id="25" weight="9" />
+      <edge source="9" target="10" id="26" weight="27" />
+      <edge source="9" target="12" id="27" weight="15" />
+      <edge source="9" target="13" id="28" weight="9" />
+      <edge source="9" target="11" id="29" weight="9" />
+      <edge source="10" target="21" id="30" weight="16" />
+      <edge source="10" target="22" id="31" weight="15" />
+      <edge source="10" target="24" id="32" weight="16" />
+      <edge source="10" target="26" id="33" weight="21" />
+      <edge source="10" target="12" id="34" weight="18" />
+      <edge source="11" target="13" id="35" weight="3" />
+      <edge source="12" target="13" id="36" weight="14" />
+      <edge source="14" target="15" id="37" weight="6" />
+      <edge source="14" target="16" id="38" weight="5" />
+      <edge source="14" target="17" id="39" weight="12" />
+      <edge source="14" target="28" id="40" weight="15" />
+      <edge source="15" target="16" id="41" weight="6" />
+      <edge source="16" target="17" id="42" weight="8" />
+      <edge source="17" target="28" id="43" weight="7" />
+      <edge source="17" target="19" id="44" weight="7" />
+      <edge source="17" target="18" id="45" weight="10" />
+      <edge source="17" target="21" id="46" weight="8" />
+      <edge source="18" target="21" id="47" weight="6" />
+      <edge source="18" target="19" id="48" weight="12" />
+      <edge source="18" target="37" id="49" weight="12" />
+      <edge source="18" target="23" id="50" weight="7" />
+      <edge source="19" target="28" id="51" weight="4" />
+      <edge source="19" target="30" id="52" weight="7" />
+      <edge source="19" target="36" id="53" weight="15" />
+      <edge source="19" target="20" id="54" weight="6" />
+      <edge source="20" target="37" id="55" weight="5" />
+      <edge source="21" target="23" id="56" weight="12" />
+      <edge source="21" target="22" id="57" weight="8" />
+      <edge source="22" target="23" id="58" weight="14" />
+      <edge source="22" target="24" id="59" weight="3" />
+      <edge source="23" target="25" id="60" weight="6" />
+      <edge source="23" target="27" id="61" weight="7" />
+      <edge source="23" target="24" id="62" weight="12" />
+      <edge source="24" target="27" id="63" weight="12" />
+      <edge source="24" target="26" id="64" weight="5" />
+      <edge source="25" target="37" id="65" weight="3" />
+      <edge source="25" target="39" id="66" weight="9" />
+      <edge source="25" target="27" id="67" weight="11" />
+      <edge source="26" target="27" id="68" weight="8" />
+      <edge source="27" target="39" id="69" weight="16" />
+      <edge source="28" target="29" id="70" weight="7" />
+      <edge source="28" target="30" id="71" weight="6" />
+      <edge source="29" target="33" id="72" weight="8" />
+      <edge source="29" target="30" id="73" weight="7" />
+      <edge source="30" target="31" id="74" weight="6" />
+      <edge source="30" target="36" id="75" weight="7" />
+      <edge source="31" target="32" id="76" weight="3" />
+      <edge source="31" target="35" id="77" weight="5" />
+      <edge source="32" target="33" id="78" weight="0" />
+      <edge source="33" target="34" id="79" weight="3" />
+      <edge source="35" target="36" id="80" weight="3" />
+      <edge source="36" target="38" id="81" weight="7" />
+      <edge source="36" target="37" id="82" weight="7" />
+      <edge source="37" target="38" id="83" weight="7" />
+      <edge source="38" target="39" id="84" weight="0" />
+      <edge source="39" target="40" id="85" weight="4" />
+      <edge source="40" target="41" id="86" weight="4" />
+    </edges>
+  </graph>
+</gexf>

@@ -1,0 +1,245 @@
+meta:
+  name: Power Grid
+  subname: Germany
+  image: https://i.pinimg.com/originals/92/1a/a5/921aa578ec786ffaa134da3909b43a8f.jpg
+  year: 2004
+  rules: https://www.riograndegames.com/wp-content/uploads/2018/12/Power-Grid-Recharged-Rules.pdf
+  bgg: https://boardgamegeek.com/boardgame/2651/power-grid
+  fixme: Power Grid vs Power Grid Rechanged - is the board the same?
+
+data:
+  - &green  green
+  - &brown  brown
+  - &red    red
+  - &yellow yellow
+  - &blue   blue
+  - &purple purple
+
+
+nodes:
+  # Green
+  - &fle
+    label: Flensburg
+    labels: {color: *green}
+  - &kie
+    label: Kiel
+    labels: {color: *green}
+  - &cux
+    label: Cuxhaven
+    labels: {color: *green}
+  - &ham
+    label: Hamburg
+    labels: {color: *green}
+  - &wil
+    label: Wilhelmshaven
+    labels: {color: *green}
+  - &bre
+    label: Bremen
+    labels: {color: *green}
+  - &han
+    label: Hanover
+    labels: {color: *green}
+  # Brown
+  - &lub
+    label: Lubeck
+    labels: {color: *brown}
+  - &ros
+    label: Rostock
+    labels: {color: *brown}
+  - &sch
+    label: Schwerin
+    labels: {color: *brown}
+  - &tor
+    label: Torgelow
+    labels: {color: *brown}
+  - &mag
+    label: Magdeburg
+    labels: {color: *brown}
+  - &ber
+    label: Berlin
+    labels: {color: *brown}
+  - &fra-o
+    label: Frankfurt-O
+    labels: {color: *brown}
+  # Red
+  - &osn
+    label: Osnabrück
+    labels: {color: *red}
+  - &muns
+    label: Münster
+    labels: {color: *red}
+  - &dui
+    label: Duisburg
+    labels: {color: *red}
+  - &ess
+    label: Essen
+    labels: {color: *red}
+  - &dor
+    label: Dortmund
+    labels: {color: *red}
+  - &kas
+    label: Kassel
+    labels: {color: *red}
+  - &dus
+    label: Dusseldorf
+    labels: {color: *red}
+  # Yellow
+  - &hal
+    label: Halle
+    labels: {color: *yellow}
+  - &lei
+    label: Leipzig
+    labels: {color: *yellow}
+  - &erf
+    label: Erfurt
+    labels: {color: *yellow}
+  - &dre
+    label: Dressen
+    labels: {color: *yellow}
+  - &ful
+    label: Fulda
+    labels: {color: *yellow}
+  - &wur
+    label: Würzburg
+    labels: {color: *yellow}
+  - &nur
+    label: Nürnberg
+    labels: {color: *yellow}
+  # Blue
+  - &aac
+    label: Aachen
+    labels: {color: *blue}
+  - &kol
+    label: Köln
+    labels: {color: *blue}
+  - &tri
+    label: Trier
+    labels: {color: *blue}
+  - &wie
+    label: Wiesbaden
+    labels: {color: *blue}
+  - &fra-m
+    label: Frankfurt-M
+    labels: {color: *blue}
+  - &saa
+    label: Saarbrücken
+    labels: {color: *blue}
+  - &man
+    label: Mannheim
+    labels: {color: *blue}
+  # Purple
+  - &stu
+    label: Stuttgart
+    labels: {color: *blue}
+  - &aug
+    label: Augsburg
+    labels: {color: *blue}
+  - &reg
+    label: Regensburg
+    labels: {color: *blue}
+  - &fre
+    label: Freiburg
+    labels: {color: *blue}
+  - &kon
+    label: Konstanz
+    labels: {color: *blue}
+  - &munc
+    label: München
+    labels: {color: *blue}
+  - &pas
+    label: Passau
+    labels: {color: *blue}
+
+
+
+adjacency:
+  # Green
+  - src: *fle
+    dst: [[*kie, 4]]
+  - src: *kie
+    dst: [[*fle, 4], [*lub, 4], [*ham, 8], ]
+  - src: *cux
+    dst: [[*ham, 11], [*bre, 8]]
+  - src: *ham
+    dst: [[*cux, 11], [*kie, 8], [*lub, 6], [*sch, 8], [*han, 17], [*bre, 11]]
+  - src: *wil
+    dst: [[*bre, 11], [*osn, 14]]
+  - src: *bre
+    dst: [[*wil, 11], [*cux, 8], [*ham, 11], [*han, 10], [*osn, 11]]
+  - src: *han
+    dst: [[*osn, 16], [*bre, 10], [*ham, 17], [*sch, 19], [*mag, 15], [*erf, 19], [*kas, 15]]
+  # Brown
+  - src: *lub
+    dst: [[*kie, 4], [*sch, 6], [*ham, 6]]
+  - src: *ros
+    dst: [[*sch, 6], [*tor, 19]]
+  - src: *sch
+    dst: [[*ham, 8], [*lub, 6], [*ros, 6], [*tor, 19], [*ber, 18], [*mag, 16], [*han, 19]]
+  - src: *tor
+    dst: [[*sch, 19], [*ros, 19], [*ber, 15]]
+  - src: *mag
+    dst: [[*han, 15], [*sch, 16], [*ber, 10], [*hal, 11]]
+  - src: *ber
+    dst: [[*mag, 10], [*sch, 18], [*tor, 15], [*fra-o, 6], [*hal, 17]]
+  - src: *fra-o
+    dst: [[*ber, 6], [*dre, 16], [*lei, 21]]
+  # Red
+  - src: *osn
+    dst: [[*wil, 14], [*bre, 11], [*han, 16], [*kas, 20], [*muns, 7]]
+  - src: *muns
+    dst: [[*osn, 7], [*dor, 2], [*ess, 6]]
+  - src: *dui
+    dst: [[*ess, 0]]
+  - src: *ess
+    dst: [[*dui, 0], [*muns, 6], [*dor, 4], [*dus, 2]]
+  - src: *dor
+    dst: [[*ess, 4], [*muns, 2], [*kas, 18], [*fra-m, 20], [*kol, 10]]
+  - src: *kas
+    dst: [[*dor, 18], [*osn, 20], [*han, 15], [*erf, 15], [*ful, 8], [*fra-m, 13]]
+  - src: *dus
+    dst: [[*ess, 2], [*kol, 4], [*aac, 9]]
+  # Yellow
+  - src: *hal
+    dst: [[*mag, 11], [*ber, 17], [*lei, 0], [*erf, 6]]
+  - src: *lei
+    dst: [[*hal, 0], [*fra-o, 21], [*dre, 13]]
+  - src: *erf
+    dst: [[*kas, 15], [*han, 19], [*hal, 6], [*dre, 19], [*nur, 21], [*ful, 13]]
+  - src: *dre
+    dst: [[*erf, 19], [*lei, 13], [*fra-o, 16]]
+  - src: *ful
+    dst: [[*kas, 8], [*erf, 13], [*wur, 11], [*fra-m, 8]]
+  - src: *wur
+    dst: [[*fra-m, 13], [*ful, 11], [*nur, 8], [*aug, 19], [*stu, 12], [*man, 10]]
+  - src: *nur
+    dst: [[*wur, 8], [*erf, 21], [*reg, 12], [*aug, 18]]
+  # Blue
+  - src: *aac
+    dst: [[*dus, 9], [*kol, 7], [*tri, 19]]
+  - src: *kol
+    dst: [[*aac, 7], [*dus, 4], [*dor, 10], [*wie, 21], [*tri, 20]]
+  - src: *tri
+    dst: [[*aac, 19], [*kol, 20], [*wie, 18], [*saa, 11]]
+  - src: *wie
+    dst: [[*tri, 18], [*kol, 21], [*fra-m, 0], [*man, 11], [*saa, 10]]
+  - src: *fra-m
+    dst: [[*wie, 0], [*dor, 20], [*kas, 13], [*ful, 8], [*wur, 13]]
+  - src: *saa
+    dst: [[*tri, 11], [*wie, 10], [*man, 11], [*stu, 17]]
+  - src: *man
+    dst: [[*saa, 11], [*wie, 11], [*wur, 10], [*stu, 6]]
+  # Purple
+  - src: *stu
+    dst: [[*saa, 17], [*man, 6], [*wur, 12], [*aug, 15], [*kon, 16], [*fre, 16]]
+  - src: *aug
+    dst: [[*stu, 15], [*wur, 19], [*nur, 18], [*reg, 13], [*munc, 6], [*kon, 17]]
+  - src: *reg
+    dst: [[*nur, 12], [*pas, 12], [*munc, 10], [*aug, 13]]
+  - src: *fre
+    dst: [[*stu, 16], [*kon, 14]]
+  - src: *kon
+    dst: [[*fre, 14], [*stu, 16], [*aug, 17]]
+  - src: *munc
+    dst: [[*aug, 6], [*reg, 10], [*pas, 14]]
+  - src: *pas
+    dst: [[*reg, 12], [*munc, 14]]

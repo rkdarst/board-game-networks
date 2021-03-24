@@ -1,0 +1,88 @@
+meta:
+  graph-class: MultiGraph
+  bgg: https://boardgamegeek.com/boardgame/276894/ticket-ride-london
+  site: https://www.daysofwonder.com/tickettoride/en/london/
+  rules: https://ncdn0.daysofwonder.com/tickettoride/en/img/tt_ln_en_rules_2019-04.pdf
+  year: 2019
+  image: https://cf.geekdo-images.com/Hq8fyW-4X7LaSNv6TCtWVw__original/img/DH2vDdbfTK4XUPsNPw4B4ter-7g=/0x0/filters:format(jpeg)/pic4132195.jpg
+
+data:
+  - &bla  black
+  - &yel  yellow
+  - &grn  green
+  - &ora  orange
+  - &pin   pink
+  - &blu   blue
+  - &gry   grey
+
+nodes:
+  # Regent's park row
+  - &reg   {deg:  3, label: "Regent's Park", labels: {district: 5}}
+  - &kin   {deg:  3, label: "King's Cross", labels: {district: 5}}
+  # Baker Street row
+  - &bak   {deg:  4, label: Baker Street, labels: {district: 5}}
+  - &brm   {deg:  7, label: British Museum, labels: {district: 1}}
+  - &cha   {deg:  4, label: The Charterhouse, labels: {district: 4}}
+  - &brl   {deg:  3, label: Brick Lane, labels: {district: 4}}
+  # Piccadilly Circus row
+  - &pic   {deg:  9, label: Piccadilly Circus, labels: {district: 2}}
+  - &tra   {deg:  7, label: Trafalgar Square, labels: {district: 2}}
+  - &cov   {deg:  8, label: Covent Garden, labels: {district: 1}}
+  - &stp   {deg:  8, label: "St. Paul's", labels: {district: 4}}
+  - &tow   {deg:  5, label: Tower of London, labels: {district: 4}}
+  # Hyde park row
+  - &hyd   {deg:  5, label: Hyde Park, labels: {district: 5}}
+  - &buc   {deg:  5, label: Buckingham Palace, labels: {district: 2}}
+  - &big   {deg:  4, label: Big Ben, labels: {district: 2}}
+  - &wat   {deg:  4, label: Waterloo, labels: {district: 3}}
+  - &glo   {deg:  5, label: Globe Theatre, labels: {district: 3}}
+  - &ele   {deg:  4, label: "Elephant & Castle", labels: {district: 3}}
+
+edges:
+  # Top to bottom, left to right
+  - [ *reg, *kin, 3, {color: *grn}]
+  - [ *reg, *brm, 3, {color: *yel} ]
+  - [ *reg, *bak, 2, {color: *blu} ]
+  - [ *kin, *cha, 3, {color: *pin} ]
+  - [ *kin, *brm, 2, {color: *bla} ]
+  - [ *bak, *brm, 4, {color: *ora} ]
+  - [ *bak, *pic, 4, {color: *gry} ]
+  - [ *bak, *hyd, 4, {color: *bla} ]
+  - [ *brm, *cha, 4, {color: *blu} ]
+  - [ *brm, *cov, 1, {color: *gry} ]
+  - [ *brm, *cov, 1, {color: *gry} ]
+  - [ *brm, *pic, 2, {color: *gry} ]
+  - [ *cha, *brl, 3, {color: *grn} ]
+  - [ *cha, *stp, 1, {color: *bla} ]
+  - [ *brl, *tow, 3, {color: *blu} ]
+  - [ *brl, *stp, 3, {color: *ora} ]
+  # Piccadilly circus row
+  - [ *pic, *cov, 1, {color: *grn} ]
+  - [ *pic, *cov, 1, {color: *yel} ]
+  - [ *pic, *tra, 1, {color: *blu} ]
+  - [ *pic, *tra, 1, {color: *ora} ]
+  - [ *pic, *buc, 2, {color: *pin} ]
+  - [ *pic, *hyd, 2, {color: *gry} ]
+  - [ *pic, *hyd, 2, {color: *gry} ]
+  - [ *tra, *cov, 2, {color: *bla} ]
+  - [ *tra, *cov, 2, {color: *pin} ]
+  - [ *tra, *wat, 2, {color: *gry} ]
+  - [ *tra, *big, 1, {color: *gry} ]
+  - [ *tra, *buc, 2, {color: *gry} ]
+  - [ *cov, *stp, 3, {color: *gry} ]
+  - [ *cov, *stp, 3, {color: *gry} ]
+  - [ *stp, *tow, 3, {color: *yel} ]
+  - [ *stp, *tow, 3, {color: *pin} ]
+  - [ *stp, *glo, 1, {color: *gry} ]
+  - [ *stp, *glo, 1, {color: *gry} ]
+  - [ *tow, *ele, 4, {color: *bla} ]
+  - [ *tow, *glo, 3, {color: *gry} ]
+  # Hyde park row
+  - [ *hyd, *buc, 1, {color: *yel} ]
+  - [ *hyd, *buc, 1, {color: *ora} ]
+  - [ *buc, *big, 1, {color: *grn} ]
+  - [ *big, *wat, 1, {color: *blu} ]
+  - [ *big, *ele, 3, {color: *yel} ]
+  - [ *wat, *glo, 2, {color: *pin} ]
+  - [ *wat, *ele, 2, {color: *ora} ]
+  - [ *glo, *ele, 2, {color: *grn} ]

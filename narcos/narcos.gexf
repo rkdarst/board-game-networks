@@ -1,0 +1,527 @@
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2021-03-24">
+    <creator>NetworkX 2.5</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="color" type="string" />
+      <attribute id="1" title="region" type="string" />
+      <attribute id="2" title="airport" type="long" />
+    </attributes>
+    <nodes>
+      <node id="0" label="C1 Cartagena">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="caribe" />
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </node>
+      <node id="1" label="C2">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="caribe" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="2" label="C3">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="caribe" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="3" label="C4">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="caribe" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="4" label="C5">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="caribe" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="5" label="C6">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="caribe" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="6" label="C7">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="caribe" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="7" label="C8 Barranquilla">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="caribe" />
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </node>
+      <node id="8" label="C9">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="caribe" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="9" label="C10">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="caribe" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="10" label="C11">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="caribe" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="11" label="C12">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="caribe" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="12" label="C13">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="caribe" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="13" label="C14">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="caribe" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="14" label="C15">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="caribe" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="15" label="C16">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="caribe" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="16" label="C17">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="caribe" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="17" label="C18">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="caribe" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="18" label="A1">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="andina" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="19" label="A2">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="andina" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="20" label="A3">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="andina" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="21" label="A4 Medell&#205;n">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="andina" />
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </node>
+      <node id="22" label="A5">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="andina" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="23" label="A6">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="andina" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="24" label="A7">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="andina" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="25" label="A8">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="andina" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="26" label="A9">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="andina" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="27" label="A10">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="andina" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="28" label="A11">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="andina" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="29" label="A12">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="andina" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="30" label="A13">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="andina" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="31" label="A14 Cali">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="andina" />
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </node>
+      <node id="32" label="A15">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="andina" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="33" label="A16">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="andina" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="34" label="A17">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="andina" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="35" label="A18">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="andina" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="36" label="O1">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="orinoqu&#237;a" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="37" label="O2 Bucaramanga">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="orinoqu&#237;a" />
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </node>
+      <node id="38" label="O3">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="orinoqu&#237;a" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="39" label="O4">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="orinoqu&#237;a" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="40" label="O5">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="orinoqu&#237;a" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="41" label="O6">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="orinoqu&#237;a" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="42" label="O7">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="orinoqu&#237;a" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="43" label="O8">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="orinoqu&#237;a" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="44" label="O9">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="orinoqu&#237;a" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="45" label="O10">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="orinoqu&#237;a" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="46" label="O11">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="orinoqu&#237;a" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="47" label="O12 Bogot&#225;">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="orinoqu&#237;a" />
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </node>
+      <node id="48" label="O13">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="orinoqu&#237;a" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="49" label="O14">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="orinoqu&#237;a" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="50" label="O15">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="orinoqu&#237;a" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="51" label="O16">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="orinoqu&#237;a" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="52" label="O17">
+        <attvalues>
+          <attvalue for="0" value="green" />
+          <attvalue for="1" value="orinoqu&#237;a" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="53" label="O18">
+        <attvalues>
+          <attvalue for="0" value="white" />
+          <attvalue for="1" value="orinoqu&#237;a" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="0" target="1" id="0" />
+      <edge source="0" target="4" id="1" />
+      <edge source="0" target="3" id="2" />
+      <edge source="1" target="4" id="3" />
+      <edge source="1" target="5" id="4" />
+      <edge source="1" target="2" id="5" />
+      <edge source="2" target="5" id="6" />
+      <edge source="2" target="6" id="7" />
+      <edge source="3" target="4" id="8" />
+      <edge source="3" target="8" id="9" />
+      <edge source="3" target="10" id="10" />
+      <edge source="3" target="7" id="11" />
+      <edge source="4" target="5" id="12" />
+      <edge source="4" target="8" id="13" />
+      <edge source="5" target="6" id="14" />
+      <edge source="5" target="9" id="15" />
+      <edge source="5" target="11" id="16" />
+      <edge source="5" target="8" id="17" />
+      <edge source="6" target="9" id="18" />
+      <edge source="7" target="10" id="19" />
+      <edge source="7" target="12" id="20" />
+      <edge source="8" target="10" id="21" />
+      <edge source="8" target="11" id="22" />
+      <edge source="8" target="13" id="23" />
+      <edge source="9" target="11" id="24" />
+      <edge source="9" target="36" id="25" />
+      <edge source="10" target="13" id="26" />
+      <edge source="10" target="14" id="27" />
+      <edge source="10" target="12" id="28" />
+      <edge source="11" target="18" id="29" />
+      <edge source="11" target="13" id="30" />
+      <edge source="12" target="14" id="31" />
+      <edge source="12" target="15" id="32" />
+      <edge source="13" target="14" id="33" />
+      <edge source="13" target="18" id="34" />
+      <edge source="13" target="19" id="35" />
+      <edge source="13" target="20" id="36" />
+      <edge source="14" target="15" id="37" />
+      <edge source="14" target="20" id="38" />
+      <edge source="14" target="21" id="39" />
+      <edge source="15" target="16" id="40" />
+      <edge source="15" target="21" id="41" />
+      <edge source="16" target="17" id="42" />
+      <edge source="16" target="21" id="43" />
+      <edge source="17" target="21" id="44" />
+      <edge source="17" target="24" id="45" />
+      <edge source="17" target="27" id="46" />
+      <edge source="18" target="19" id="47" />
+      <edge source="18" target="36" id="48" />
+      <edge source="18" target="37" id="49" />
+      <edge source="19" target="20" id="50" />
+      <edge source="19" target="22" id="51" />
+      <edge source="19" target="37" id="52" />
+      <edge source="19" target="40" id="53" />
+      <edge source="20" target="21" id="54" />
+      <edge source="20" target="22" id="55" />
+      <edge source="20" target="25" id="56" />
+      <edge source="21" target="24" id="57" />
+      <edge source="21" target="25" id="58" />
+      <edge source="22" target="23" id="59" />
+      <edge source="22" target="25" id="60" />
+      <edge source="22" target="26" id="61" />
+      <edge source="22" target="40" id="62" />
+      <edge source="23" target="26" id="63" />
+      <edge source="23" target="40" id="64" />
+      <edge source="23" target="41" id="65" />
+      <edge source="23" target="43" id="66" />
+      <edge source="23" target="44" id="67" />
+      <edge source="24" target="25" id="68" />
+      <edge source="24" target="27" id="69" />
+      <edge source="24" target="28" id="70" />
+      <edge source="25" target="26" id="71" />
+      <edge source="25" target="28" id="72" />
+      <edge source="25" target="29" id="73" />
+      <edge source="26" target="29" id="74" />
+      <edge source="26" target="44" id="75" />
+      <edge source="26" target="46" id="76" />
+      <edge source="27" target="28" id="77" />
+      <edge source="27" target="31" id="78" />
+      <edge source="27" target="30" id="79" />
+      <edge source="28" target="29" id="80" />
+      <edge source="28" target="31" id="81" />
+      <edge source="28" target="32" id="82" />
+      <edge source="29" target="32" id="83" />
+      <edge source="29" target="46" id="84" />
+      <edge source="30" target="31" id="85" />
+      <edge source="30" target="33" id="86" />
+      <edge source="30" target="34" id="87" />
+      <edge source="31" target="33" id="88" />
+      <edge source="31" target="32" id="89" />
+      <edge source="32" target="33" id="90" />
+      <edge source="32" target="46" id="91" />
+      <edge source="32" target="49" id="92" />
+      <edge source="32" target="52" id="93" />
+      <edge source="33" target="34" id="94" />
+      <edge source="33" target="35" id="95" />
+      <edge source="33" target="52" id="96" />
+      <edge source="34" target="35" id="97" />
+      <edge source="35" target="52" id="98" />
+      <edge source="36" target="37" id="99" />
+      <edge source="37" target="38" id="100" />
+      <edge source="37" target="40" id="101" />
+      <edge source="38" target="39" id="102" />
+      <edge source="38" target="40" id="103" />
+      <edge source="38" target="41" id="104" />
+      <edge source="39" target="41" id="105" />
+      <edge source="39" target="42" id="106" />
+      <edge source="40" target="41" id="107" />
+      <edge source="41" target="42" id="108" />
+      <edge source="41" target="43" id="109" />
+      <edge source="42" target="43" id="110" />
+      <edge source="42" target="45" id="111" />
+      <edge source="43" target="44" id="112" />
+      <edge source="43" target="45" id="113" />
+      <edge source="44" target="45" id="114" />
+      <edge source="44" target="46" id="115" />
+      <edge source="44" target="47" id="116" />
+      <edge source="45" target="47" id="117" />
+      <edge source="45" target="48" id="118" />
+      <edge source="46" target="47" id="119" />
+      <edge source="46" target="49" id="120" />
+      <edge source="46" target="50" id="121" />
+      <edge source="47" target="48" id="122" />
+      <edge source="47" target="50" id="123" />
+      <edge source="47" target="51" id="124" />
+      <edge source="48" target="51" id="125" />
+      <edge source="49" target="50" id="126" />
+      <edge source="49" target="53" id="127" />
+      <edge source="49" target="52" id="128" />
+      <edge source="50" target="51" id="129" />
+      <edge source="50" target="53" id="130" />
+      <edge source="51" target="53" id="131" />
+      <edge source="52" target="53" id="132" />
+    </edges>
+  </graph>
+</gexf>

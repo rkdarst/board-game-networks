@@ -1,0 +1,228 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d4" for="edge" attr.name="weight" attr.type="int" />
+  <key id="d3" for="edge" attr.name="color" attr.type="string" />
+  <key id="d2" for="node" attr.name="points" attr.type="int" />
+  <key id="d1" for="node" attr.name="id" attr.type="int" />
+  <key id="d0" for="graph" attr.name="filename" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Lincoln Center">
+      <data key="d1">0</data>
+    </node>
+    <node id="Central Park">
+      <data key="d1">1</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="Midtown West">
+      <data key="d1">2</data>
+    </node>
+    <node id="Times Square">
+      <data key="d1">3</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="United Nations">
+      <data key="d1">4</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="Empire State Building">
+      <data key="d1">5</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="Chelsea">
+      <data key="d1">6</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="Gramercy Park">
+      <data key="d1">7</data>
+    </node>
+    <node id="Greenwich Village">
+      <data key="d1">8</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="East Village">
+      <data key="d1">9</data>
+    </node>
+    <node id="Soho">
+      <data key="d1">10</data>
+    </node>
+    <node id="Chinatown">
+      <data key="d1">11</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="Lower East Side">
+      <data key="d1">12</data>
+    </node>
+    <node id="Wall Street">
+      <data key="d1">13</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="Brooklyn">
+      <data key="d1">14</data>
+      <data key="d2">1</data>
+    </node>
+    <edge source="Lincoln Center" target="Central Park" id="0">
+      <data key="d3">yellow</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Lincoln Center" target="Times Square" id="0">
+      <data key="d3">blue</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Lincoln Center" target="Times Square" id="1">
+      <data key="d3">green</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Lincoln Center" target="Midtown West" id="0">
+      <data key="d3">orange</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Central Park" target="United Nations" id="0">
+      <data key="d3">pink</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Central Park" target="Times Square" id="0">
+      <data key="d3">orange</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Central Park" target="Times Square" id="1">
+      <data key="d3">black</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Midtown West" target="Times Square" id="0">
+      <data key="d3">grey</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Midtown West" target="Empire State Building" id="0">
+      <data key="d3">green</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Midtown West" target="Chelsea" id="0">
+      <data key="d3">blue</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Times Square" target="United Nations" id="0">
+      <data key="d3">grey</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Times Square" target="Empire State Building" id="0">
+      <data key="d3">pink</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Times Square" target="Empire State Building" id="1">
+      <data key="d3">yellow</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="United Nations" target="Gramercy Park" id="0">
+      <data key="d3">green</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="United Nations" target="Empire State Building" id="0">
+      <data key="d3">black</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Empire State Building" target="Gramercy Park" id="0">
+      <data key="d3">blue</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Empire State Building" target="Gramercy Park" id="1">
+      <data key="d3">orange</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Empire State Building" target="Chelsea" id="0">
+      <data key="d3">grey</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Empire State Building" target="Chelsea" id="1">
+      <data key="d3">grey</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Chelsea" target="Gramercy Park" id="0">
+      <data key="d3">yellow</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Chelsea" target="Greenwich Village" id="0">
+      <data key="d3">orange</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Chelsea" target="Greenwich Village" id="1">
+      <data key="d3">green</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Chelsea" target="Soho" id="0">
+      <data key="d3">pink</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Gramercy Park" target="East Village" id="0">
+      <data key="d3">grey</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Gramercy Park" target="Greenwich Village" id="0">
+      <data key="d3">pink</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Gramercy Park" target="Greenwich Village" id="1">
+      <data key="d3">black</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Greenwich Village" target="East Village" id="0">
+      <data key="d3">blue</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Greenwich Village" target="Lower East Side" id="0">
+      <data key="d3">grey</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Greenwich Village" target="Chinatown" id="0">
+      <data key="d3">grey</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Greenwich Village" target="Chinatown" id="1">
+      <data key="d3">grey</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Greenwich Village" target="Soho" id="0">
+      <data key="d3">yellow</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="East Village" target="Lower East Side" id="0">
+      <data key="d3">black</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Soho" target="Wall Street" id="0">
+      <data key="d3">grey</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Chinatown" target="Lower East Side" id="0">
+      <data key="d3">blue</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Chinatown" target="Brooklyn" id="0">
+      <data key="d3">yellow</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Chinatown" target="Brooklyn" id="1">
+      <data key="d3">orange</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Chinatown" target="Wall Street" id="0">
+      <data key="d3">pink</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Chinatown" target="Wall Street" id="1">
+      <data key="d3">green</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Lower East Side" target="Brooklyn" id="0">
+      <data key="d3">grey</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Wall Street" target="Brooklyn" id="0">
+      <data key="d3">blue</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Wall Street" target="Brooklyn" id="1">
+      <data key="d3">black</data>
+      <data key="d4">3</data>
+    </edge>
+    <data key="d0">data/ticket-to-ride/new-york.yaml</data>
+  </graph>
+</graphml>

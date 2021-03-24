@@ -1,0 +1,144 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d4" for="node" attr.name="focus" attr.type="boolean" />
+  <key id="d3" for="node" attr.name="gate" attr.type="boolean" />
+  <key id="d2" for="node" attr.name="color" attr.type="string" />
+  <key id="d1" for="node" attr.name="id" attr.type="int" />
+  <key id="d0" for="graph" attr.name="filename" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Train station">
+      <data key="d1">0</data>
+      <data key="d2">green</data>
+      <data key="d3">True</data>
+    </node>
+    <node id="University">
+      <data key="d1">1</data>
+      <data key="d2">green</data>
+    </node>
+    <node id="Police station">
+      <data key="d1">2</data>
+      <data key="d2">green</data>
+    </node>
+    <node id="Park">
+      <data key="d1">3</data>
+      <data key="d2">green</data>
+      <data key="d4">True</data>
+    </node>
+    <node id="Secret lodge">
+      <data key="d1">4</data>
+      <data key="d2">green</data>
+    </node>
+    <node id="Diner">
+      <data key="d1">5</data>
+      <data key="d2">green</data>
+      <data key="d3">True</data>
+    </node>
+    <node id="Junkyard">
+      <data key="d1">6</data>
+      <data key="d2">blue</data>
+    </node>
+    <node id="Pawn shop">
+      <data key="d1">7</data>
+      <data key="d2">blue</data>
+    </node>
+    <node id="hospital">
+      <data key="d1">8</data>
+      <data key="d2">blue</data>
+      <data key="d4">True</data>
+    </node>
+    <node id="Factory">
+      <data key="d1">9</data>
+      <data key="d2">blue</data>
+      <data key="d3">True</data>
+    </node>
+    <node id="Boardwalk">
+      <data key="d1">10</data>
+      <data key="d2">blue</data>
+    </node>
+    <node id="Docks">
+      <data key="d1">11</data>
+      <data key="d2">blue</data>
+    </node>
+    <node id="Old mill">
+      <data key="d1">12</data>
+      <data key="d2">yellow</data>
+      <data key="d4">True</data>
+    </node>
+    <node id="Cafe">
+      <data key="d1">13</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Church">
+      <data key="d1">14</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Farmstead">
+      <data key="d1">15</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Swamp">
+      <data key="d1">16</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Historic inn">
+      <data key="d1">17</data>
+      <data key="d2">yellow</data>
+      <data key="d3">True</data>
+    </node>
+    <node id="Great hall">
+      <data key="d1">18</data>
+      <data key="d2">red</data>
+    </node>
+    <node id="Woods">
+      <data key="d1">19</data>
+      <data key="d2">red</data>
+    </node>
+    <node id="Market">
+      <data key="d1">20</data>
+      <data key="d2">red</data>
+      <data key="d3">True</data>
+    </node>
+    <node id="Theater">
+      <data key="d1">21</data>
+      <data key="d2">red</data>
+    </node>
+    <node id="Graveyard">
+      <data key="d1">22</data>
+      <data key="d2">red</data>
+      <data key="d4">True</data>
+    </node>
+    <node id="Whard">
+      <data key="d1">23</data>
+      <data key="d2">red</data>
+    </node>
+    <edge source="Train station" target="University" />
+    <edge source="Train station" target="Cafe" />
+    <edge source="University" target="Police station" />
+    <edge source="University" target="Park" />
+    <edge source="Police station" target="Park" />
+    <edge source="Police station" target="Secret lodge" />
+    <edge source="Park" target="Secret lodge" />
+    <edge source="Secret lodge" target="Diner" />
+    <edge source="Diner" target="Junkyard" />
+    <edge source="Junkyard" target="Pawn shop" />
+    <edge source="Pawn shop" target="hospital" />
+    <edge source="Pawn shop" target="Factory" />
+    <edge source="hospital" target="Factory" />
+    <edge source="Factory" target="Boardwalk" />
+    <edge source="Boardwalk" target="Docks" />
+    <edge source="Docks" target="Woods" />
+    <edge source="Old mill" target="Church" />
+    <edge source="Cafe" target="Church" />
+    <edge source="Church" target="Historic inn" />
+    <edge source="Church" target="Farmstead" />
+    <edge source="Farmstead" target="Historic inn" />
+    <edge source="Farmstead" target="Swamp" />
+    <edge source="Swamp" target="Great hall" />
+    <edge source="Great hall" target="Woods" />
+    <edge source="Great hall" target="Market" />
+    <edge source="Woods" target="Market" />
+    <edge source="Market" target="Whard" />
+    <edge source="Market" target="Theater" />
+    <edge source="Graveyard" target="Whard" />
+    <data key="d0">data/pandemic-reign-of-cthulhu/pandemic-reign-of-cthulhu.yaml</data>
+  </graph>
+</graphml>

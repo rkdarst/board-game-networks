@@ -1,0 +1,270 @@
+# This is a copy and paste of the Pandemic board, with modifications.
+# Keep both up to date with a graphical diff tool.
+
+meta:
+  bgg: https://boardgamegeek.com/boardgame/161936/pandemic-legacy-season-1
+  site: https://www.zmangames.com/en/products/pandemic-legacy-season-1/
+  rules: https://images.zmangames.com/filer_public/57/b9/57b99885-fd15-4c0d-a28a-4b938d6bf46c/zm7170_zm7171_rules_web.pdf
+  year: 2015
+  image: https://cf.geekdo-images.com/large/img/0Ddrd-mWsN3BVgIOYkyNA-Uwc4o=/fit-in/1024x1024/filters:no_upscale()/pic3476620.jpg
+  site: https://www.zmangames.com/en/games/pandemic/
+
+data:
+  - &blue   blue
+  - &yellow yellow
+  - &black  black
+  - &red    red
+  - &na     north_america
+  - &sa     south_america
+  - &europe europe
+  - &africa africa
+  - &asia   asia
+  - &pr     pacific_rim
+
+nodes:
+  - &san_francisco
+    label: San Francisco
+    labels: {color: *blue, region: *na}
+  - &chicago
+    label: Chicago
+    labels: {color: *blue, region: *na}
+  - &montreal
+    label: Montreal
+    labels: {color: *blue, region: *na}
+  - &new_york
+    label: New York
+    labels: {color: *blue, region: *na}
+  - &atlanta
+    label: Atlanta
+    labels: {color: *blue, region: *na}
+  - &washington
+    label: Washington
+    labels: {color: *blue, region: *na}
+  - &london
+    label: London
+    labels: {color: *blue, region: *europe}
+  - &essen
+    label: Essen
+    labels: {color: *blue, region: *europe}
+  - &st_petersburg
+    label: St. Petersburg
+    labels: {color: *blue, region: *europe}
+  - &madrid
+    label: Madrid
+    labels: {color: *blue, region: *europe}
+  - &paris
+    label: Paris
+    labels: {color: *blue, region: *europe}
+  - &milan
+    label: Milan
+    labels: {color: *blue, region: *europe}
+  - &los_angeles
+    label: Los Angeles
+    labels: {color: *yellow, region: *na}
+  - &mexico_city
+    label: Mexico City
+    labels: {color: *yellow, region: *na}
+  - &miami
+    label: Miami
+    labels: {color: *yellow, region: *na}
+  - &bogota
+    label: Bogota
+    labels: {color: *yellow, region: *sa}
+  - &lima
+    label: Lima
+    labels: {color: *yellow, region: *sa}
+  - &sao_paulo
+    label: São Paulo
+    labels: {color: *yellow, region: *sa}
+  - &santiago
+    label: Santiago
+    labels: {color: *yellow, region: *sa}
+  - &buenos_aires
+    label: Buenos Aires
+    labels: {color: *yellow, region: *sa}
+  - &lagos
+    label: Lagos
+    labels: {color: *yellow, region: *africa}
+  - &khartoum
+    label: Khartoum
+    labels: {color: *yellow, region: *africa}
+  - &kinshasa
+    label: Kinshasa
+    labels: {color: *yellow, region: *africa}
+  - &johannesburg
+    label: Johannesburg
+    labels: {color: *yellow, region: *africa}
+  - &moscow
+    label: Moscow
+    labels: {color: *black, region: *europe}
+  - &tehran
+    label: Tehran
+    labels: {color: *black, region: *asia}
+  - &delhi
+    label: Delhi
+    labels: {color: *black, region: *asia}
+  - &kolkata
+    label: Kolkata
+    labels: {color: *black, region: *asia}
+  - &istanbul
+    label: Istanbul
+    labels: {color: *black, region: *asia}
+  - &baghdad
+    label: Baghdad
+    labels: {color: *black, region: *asia}
+  - &karachi
+    label: Karachi
+    labels: {color: *black, region: *asia}
+  - &algiers
+    label: Algiers
+    labels: {color: *black, region: *africa}
+  - &cairo
+    label: Cairo
+    labels: {color: *black, region: *africa}
+  - &riyadh
+    label: Riyadh
+    labels: {color: *black, region: *asia}
+  - &mumbai
+    label: Mumbai
+    labels: {color: *black, region: *asia}
+  - &chennai
+    label: Chennai
+    labels: {color: *black, region: *asia}
+  - &beijing
+    label: Beijing
+    labels: {color: *red, region: *asia}
+  - &seoul
+    label: Seoul
+    labels: {color: *red, region: *asia}
+  - &shanghai
+    label: Shanghai
+    labels: {color: *red, region: *asia}
+  - &tokyo
+    label: Tokyo
+    labels: {color: *red, region: *pr}
+  - &hong_kong
+    label: Hong Kong
+    labels: {color: *red, region: *asia}
+  - &taipei
+    label: Taipei
+    labels: {color: *red, region: *pr}
+  - &osaka
+    label: Osaka
+    labels: {color: *red, region: *pr}
+  - &bangkok
+    label: Bangkok
+    labels: {color: *red, region: *asia}
+  - &jakarta
+    label: Jakarta
+    labels: {color: *red, region: *pr}
+  - &ho_chi_minh_city
+    label: Ho Chi Minh City
+    labels: {color: *red, region: *pr}
+  - &manila
+    label: Manila
+    labels: {color: *red, region: *pr}
+  - &sydney
+    label: Sydney
+    labels: {color: *red, region: *pr}
+
+adjacency:
+  # Blue
+  - src: *san_francisco
+    dst: [*chicago, *los_angeles, *manila, *tokyo]
+  - src: *chicago
+    dst: [*san_francisco, *montreal, *atlanta, *mexico_city, *los_angeles]
+  - src: *montreal
+    dst: [*chicago, *new_york, *washington]
+  - src: *new_york
+    dst: [*montreal, *london, *madrid, *washington]
+  - src: *atlanta
+    dst: [*chicago, *washington, *miami]
+  - src: *washington
+    dst: [*montreal, *new_york, *miami, *atlanta]
+  - src: *london
+    dst: [*new_york, *essen, *paris, *madrid]
+  - src: *essen
+    dst: [*london, *st_petersburg, *milan, *paris]
+  - src: *st_petersburg
+    dst: [*essen, *moscow, *istanbul]
+  - src: *madrid
+    dst: [*new_york, *london, *paris, *algiers, *sao_paulo]
+  - src: *paris
+    dst: [*london, *essen, *milan, *algiers, *madrid]
+  - src: *milan
+    dst: [*paris, *essen, *istanbul]
+  # Yellow
+  - src: *los_angeles
+    dst: [*san_francisco, *chicago, *mexico_city, *sydney, *lima]
+  - src: *mexico_city
+    dst: [*los_angeles, *chicago, *miami, *bogota, *lima]
+  - src: *miami
+    dst: [*mexico_city, *atlanta, *washington, *bogota]
+  - src: *bogota
+    dst: [*mexico_city, *miami, *sao_paulo, *buenos_aires, *lima]
+  - src: *lima
+    dst: [*mexico_city, *bogota, *santiago, *los_angeles]
+  - src: *sao_paulo
+    dst: [*bogota, *madrid, *lagos, *buenos_aires]
+  - src: *santiago
+    dst: [*lima, *buenos_aires]
+  - src: *buenos_aires
+    dst: [*bogota, *sao_paulo, *santiago, *johannesburg]
+  - src: *lagos
+    dst: [*khartoum, *kinshasa, *sao_paulo]
+  - src: *khartoum
+    dst: [*lagos, *cairo, *johannesburg, *kinshasa]
+  - src: *kinshasa
+    dst: [*lagos, *khartoum, *johannesburg]
+  - src: *johannesburg
+    dst: [*kinshasa, *khartoum, *buenos_aires]
+  # Black
+  - src: *moscow
+    dst: [*st_petersburg, *tehran, *istanbul]
+  - src: *tehran
+    dst: [*moscow, *delhi, *karachi, *baghdad]
+  - src: *delhi
+    dst: [*tehran, *kolkata, *chennai, *mumbai, *karachi]
+  - src: *kolkata
+    dst: [*delhi, *hong_kong, *bangkok, *chennai]
+  - src: *istanbul
+    dst: [*milan, *st_petersburg, *moscow, *baghdad, *cairo, *algiers]
+  - src: *baghdad
+    dst: [*istanbul, *tehran, *riyadh, *cairo]
+  - src: *karachi
+    dst: [*tehran, *delhi, *mumbai, *riyadh]
+  - src: *algiers
+    dst: [*madrid, *paris, *istanbul, *cairo]
+  - src: *cairo
+    dst: [*algiers, *istanbul, *baghdad, *riyadh, *khartoum]
+  - src: *riyadh
+    dst: [*cairo, *baghdad, *karachi]
+  - src: *mumbai
+    dst: [*karachi, *delhi, *chennai]
+  - src: *chennai
+    dst: [*mumbai, *delhi, *kolkata, *jakarta]
+  # Red
+  - src: *beijing
+    dst: [*seoul, *shanghai]
+  - src: *seoul
+    dst: [*beijing, *tokyo, *shanghai]
+  - src: *shanghai
+    dst: [*beijing, *seoul, *tokyo, *taipei, *hong_kong]
+  - src: *tokyo
+    dst: [*shanghai, *seoul, *san_francisco, *osaka]
+  - src: *bangkok
+    dst: [*kolkata, *hong_kong, *ho_chi_minh_city, *jakarta]
+  - src: *hong_kong
+    dst: [*kolkata, *shanghai, *taipei, *manila, *ho_chi_minh_city, *bangkok]
+  - src: *taipei
+    dst: [*hong_kong, *shanghai, *osaka, *manila]
+  - src: *osaka
+    dst: [*tokyo, *taipei]
+  - src: *jakarta
+    dst: [*chennai, *bangkok, *ho_chi_minh_city, *sydney]
+  - src: *ho_chi_minh_city
+    dst: [*jakarta, *bangkok, *hong_kong, *manila]
+  - src: *manila
+    dst: [*ho_chi_minh_city, *hong_kong, *taipei, *san_francisco, *sydney]
+  - src: *sydney
+    dst: [*jakarta, *manila, *los_angeles]

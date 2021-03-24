@@ -1,0 +1,467 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d4" for="node" attr.name="airport" attr.type="int" />
+  <key id="d3" for="node" attr.name="region" attr.type="string" />
+  <key id="d2" for="node" attr.name="color" attr.type="string" />
+  <key id="d1" for="node" attr.name="id" attr.type="int" />
+  <key id="d0" for="graph" attr.name="filename" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="C1 Cartagena">
+      <data key="d1">0</data>
+      <data key="d2">white</data>
+      <data key="d3">caribe</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="C2">
+      <data key="d1">1</data>
+      <data key="d2">white</data>
+      <data key="d3">caribe</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="C3">
+      <data key="d1">2</data>
+      <data key="d2">green</data>
+      <data key="d3">caribe</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="C4">
+      <data key="d1">3</data>
+      <data key="d2">green</data>
+      <data key="d3">caribe</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="C5">
+      <data key="d1">4</data>
+      <data key="d2">green</data>
+      <data key="d3">caribe</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="C6">
+      <data key="d1">5</data>
+      <data key="d2">green</data>
+      <data key="d3">caribe</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="C7">
+      <data key="d1">6</data>
+      <data key="d2">white</data>
+      <data key="d3">caribe</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="C8 Barranquilla">
+      <data key="d1">7</data>
+      <data key="d2">white</data>
+      <data key="d3">caribe</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="C9">
+      <data key="d1">8</data>
+      <data key="d2">white</data>
+      <data key="d3">caribe</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="C10">
+      <data key="d1">9</data>
+      <data key="d2">white</data>
+      <data key="d3">caribe</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="C11">
+      <data key="d1">10</data>
+      <data key="d2">white</data>
+      <data key="d3">caribe</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="C12">
+      <data key="d1">11</data>
+      <data key="d2">green</data>
+      <data key="d3">caribe</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="C13">
+      <data key="d1">12</data>
+      <data key="d2">green</data>
+      <data key="d3">caribe</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="C14">
+      <data key="d1">13</data>
+      <data key="d2">green</data>
+      <data key="d3">caribe</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="C15">
+      <data key="d1">14</data>
+      <data key="d2">white</data>
+      <data key="d3">caribe</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="C16">
+      <data key="d1">15</data>
+      <data key="d2">green</data>
+      <data key="d3">caribe</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="C17">
+      <data key="d1">16</data>
+      <data key="d2">white</data>
+      <data key="d3">caribe</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="C18">
+      <data key="d1">17</data>
+      <data key="d2">green</data>
+      <data key="d3">caribe</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="A1">
+      <data key="d1">18</data>
+      <data key="d2">white</data>
+      <data key="d3">andina</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="A2">
+      <data key="d1">19</data>
+      <data key="d2">green</data>
+      <data key="d3">andina</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="A3">
+      <data key="d1">20</data>
+      <data key="d2">white</data>
+      <data key="d3">andina</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="A4 Medell&#205;n">
+      <data key="d1">21</data>
+      <data key="d2">white</data>
+      <data key="d3">andina</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="A5">
+      <data key="d1">22</data>
+      <data key="d2">green</data>
+      <data key="d3">andina</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="A6">
+      <data key="d1">23</data>
+      <data key="d2">green</data>
+      <data key="d3">andina</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="A7">
+      <data key="d1">24</data>
+      <data key="d2">white</data>
+      <data key="d3">andina</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="A8">
+      <data key="d1">25</data>
+      <data key="d2">green</data>
+      <data key="d3">andina</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="A9">
+      <data key="d1">26</data>
+      <data key="d2">white</data>
+      <data key="d3">andina</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="A10">
+      <data key="d1">27</data>
+      <data key="d2">green</data>
+      <data key="d3">andina</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="A11">
+      <data key="d1">28</data>
+      <data key="d2">white</data>
+      <data key="d3">andina</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="A12">
+      <data key="d1">29</data>
+      <data key="d2">green</data>
+      <data key="d3">andina</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="A13">
+      <data key="d1">30</data>
+      <data key="d2">green</data>
+      <data key="d3">andina</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="A14 Cali">
+      <data key="d1">31</data>
+      <data key="d2">white</data>
+      <data key="d3">andina</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="A15">
+      <data key="d1">32</data>
+      <data key="d2">green</data>
+      <data key="d3">andina</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="A16">
+      <data key="d1">33</data>
+      <data key="d2">white</data>
+      <data key="d3">andina</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="A17">
+      <data key="d1">34</data>
+      <data key="d2">white</data>
+      <data key="d3">andina</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="A18">
+      <data key="d1">35</data>
+      <data key="d2">green</data>
+      <data key="d3">andina</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="O1">
+      <data key="d1">36</data>
+      <data key="d2">green</data>
+      <data key="d3">orinoqu&#237;a</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="O2 Bucaramanga">
+      <data key="d1">37</data>
+      <data key="d2">white</data>
+      <data key="d3">orinoqu&#237;a</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="O3">
+      <data key="d1">38</data>
+      <data key="d2">green</data>
+      <data key="d3">orinoqu&#237;a</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="O4">
+      <data key="d1">39</data>
+      <data key="d2">green</data>
+      <data key="d3">orinoqu&#237;a</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="O5">
+      <data key="d1">40</data>
+      <data key="d2">white</data>
+      <data key="d3">orinoqu&#237;a</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="O6">
+      <data key="d1">41</data>
+      <data key="d2">green</data>
+      <data key="d3">orinoqu&#237;a</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="O7">
+      <data key="d1">42</data>
+      <data key="d2">white</data>
+      <data key="d3">orinoqu&#237;a</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="O8">
+      <data key="d1">43</data>
+      <data key="d2">white</data>
+      <data key="d3">orinoqu&#237;a</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="O9">
+      <data key="d1">44</data>
+      <data key="d2">green</data>
+      <data key="d3">orinoqu&#237;a</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="O10">
+      <data key="d1">45</data>
+      <data key="d2">green</data>
+      <data key="d3">orinoqu&#237;a</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="O11">
+      <data key="d1">46</data>
+      <data key="d2">white</data>
+      <data key="d3">orinoqu&#237;a</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="O12 Bogot&#225;">
+      <data key="d1">47</data>
+      <data key="d2">white</data>
+      <data key="d3">orinoqu&#237;a</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="O13">
+      <data key="d1">48</data>
+      <data key="d2">white</data>
+      <data key="d3">orinoqu&#237;a</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="O14">
+      <data key="d1">49</data>
+      <data key="d2">white</data>
+      <data key="d3">orinoqu&#237;a</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="O15">
+      <data key="d1">50</data>
+      <data key="d2">green</data>
+      <data key="d3">orinoqu&#237;a</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="O16">
+      <data key="d1">51</data>
+      <data key="d2">green</data>
+      <data key="d3">orinoqu&#237;a</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="O17">
+      <data key="d1">52</data>
+      <data key="d2">green</data>
+      <data key="d3">orinoqu&#237;a</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="O18">
+      <data key="d1">53</data>
+      <data key="d2">white</data>
+      <data key="d3">orinoqu&#237;a</data>
+      <data key="d4">0</data>
+    </node>
+    <edge source="C1 Cartagena" target="C2" />
+    <edge source="C1 Cartagena" target="C5" />
+    <edge source="C1 Cartagena" target="C4" />
+    <edge source="C2" target="C5" />
+    <edge source="C2" target="C6" />
+    <edge source="C2" target="C3" />
+    <edge source="C3" target="C6" />
+    <edge source="C3" target="C7" />
+    <edge source="C4" target="C5" />
+    <edge source="C4" target="C9" />
+    <edge source="C4" target="C11" />
+    <edge source="C4" target="C8 Barranquilla" />
+    <edge source="C5" target="C6" />
+    <edge source="C5" target="C9" />
+    <edge source="C6" target="C7" />
+    <edge source="C6" target="C10" />
+    <edge source="C6" target="C12" />
+    <edge source="C6" target="C9" />
+    <edge source="C7" target="C10" />
+    <edge source="C8 Barranquilla" target="C11" />
+    <edge source="C8 Barranquilla" target="C13" />
+    <edge source="C9" target="C11" />
+    <edge source="C9" target="C12" />
+    <edge source="C9" target="C14" />
+    <edge source="C10" target="C12" />
+    <edge source="C10" target="O1" />
+    <edge source="C11" target="C14" />
+    <edge source="C11" target="C15" />
+    <edge source="C11" target="C13" />
+    <edge source="C12" target="A1" />
+    <edge source="C12" target="C14" />
+    <edge source="C13" target="C15" />
+    <edge source="C13" target="C16" />
+    <edge source="C14" target="C15" />
+    <edge source="C14" target="A1" />
+    <edge source="C14" target="A2" />
+    <edge source="C14" target="A3" />
+    <edge source="C15" target="C16" />
+    <edge source="C15" target="A3" />
+    <edge source="C15" target="A4 Medell&#205;n" />
+    <edge source="C16" target="C17" />
+    <edge source="C16" target="A4 Medell&#205;n" />
+    <edge source="C17" target="C18" />
+    <edge source="C17" target="A4 Medell&#205;n" />
+    <edge source="C18" target="A4 Medell&#205;n" />
+    <edge source="C18" target="A7" />
+    <edge source="C18" target="A10" />
+    <edge source="A1" target="A2" />
+    <edge source="A1" target="O1" />
+    <edge source="A1" target="O2 Bucaramanga" />
+    <edge source="A2" target="A3" />
+    <edge source="A2" target="A5" />
+    <edge source="A2" target="O2 Bucaramanga" />
+    <edge source="A2" target="O5" />
+    <edge source="A3" target="A4 Medell&#205;n" />
+    <edge source="A3" target="A5" />
+    <edge source="A3" target="A8" />
+    <edge source="A4 Medell&#205;n" target="A7" />
+    <edge source="A4 Medell&#205;n" target="A8" />
+    <edge source="A5" target="A6" />
+    <edge source="A5" target="A8" />
+    <edge source="A5" target="A9" />
+    <edge source="A5" target="O5" />
+    <edge source="A6" target="A9" />
+    <edge source="A6" target="O5" />
+    <edge source="A6" target="O6" />
+    <edge source="A6" target="O8" />
+    <edge source="A6" target="O9" />
+    <edge source="A7" target="A8" />
+    <edge source="A7" target="A10" />
+    <edge source="A7" target="A11" />
+    <edge source="A8" target="A9" />
+    <edge source="A8" target="A11" />
+    <edge source="A8" target="A12" />
+    <edge source="A9" target="A12" />
+    <edge source="A9" target="O9" />
+    <edge source="A9" target="O11" />
+    <edge source="A10" target="A11" />
+    <edge source="A10" target="A14 Cali" />
+    <edge source="A10" target="A13" />
+    <edge source="A11" target="A12" />
+    <edge source="A11" target="A14 Cali" />
+    <edge source="A11" target="A15" />
+    <edge source="A12" target="A15" />
+    <edge source="A12" target="O11" />
+    <edge source="A13" target="A14 Cali" />
+    <edge source="A13" target="A16" />
+    <edge source="A13" target="A17" />
+    <edge source="A14 Cali" target="A16" />
+    <edge source="A14 Cali" target="A15" />
+    <edge source="A15" target="A16" />
+    <edge source="A15" target="O11" />
+    <edge source="A15" target="O14" />
+    <edge source="A15" target="O17" />
+    <edge source="A16" target="A17" />
+    <edge source="A16" target="A18" />
+    <edge source="A16" target="O17" />
+    <edge source="A17" target="A18" />
+    <edge source="A18" target="O17" />
+    <edge source="O1" target="O2 Bucaramanga" />
+    <edge source="O2 Bucaramanga" target="O3" />
+    <edge source="O2 Bucaramanga" target="O5" />
+    <edge source="O3" target="O4" />
+    <edge source="O3" target="O5" />
+    <edge source="O3" target="O6" />
+    <edge source="O4" target="O6" />
+    <edge source="O4" target="O7" />
+    <edge source="O5" target="O6" />
+    <edge source="O6" target="O7" />
+    <edge source="O6" target="O8" />
+    <edge source="O7" target="O8" />
+    <edge source="O7" target="O10" />
+    <edge source="O8" target="O9" />
+    <edge source="O8" target="O10" />
+    <edge source="O9" target="O10" />
+    <edge source="O9" target="O11" />
+    <edge source="O9" target="O12 Bogot&#225;" />
+    <edge source="O10" target="O12 Bogot&#225;" />
+    <edge source="O10" target="O13" />
+    <edge source="O11" target="O12 Bogot&#225;" />
+    <edge source="O11" target="O14" />
+    <edge source="O11" target="O15" />
+    <edge source="O12 Bogot&#225;" target="O13" />
+    <edge source="O12 Bogot&#225;" target="O15" />
+    <edge source="O12 Bogot&#225;" target="O16" />
+    <edge source="O13" target="O16" />
+    <edge source="O14" target="O15" />
+    <edge source="O14" target="O18" />
+    <edge source="O14" target="O17" />
+    <edge source="O15" target="O16" />
+    <edge source="O15" target="O18" />
+    <edge source="O16" target="O18" />
+    <edge source="O17" target="O18" />
+    <data key="d0">data/narcos/narcos.yaml</data>
+  </graph>
+</graphml>

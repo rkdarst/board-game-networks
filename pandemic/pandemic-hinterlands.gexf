@@ -1,0 +1,390 @@
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2021-03-24">
+    <creator>NetworkX 2.5</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="color" type="string" />
+      <attribute id="1" title="type" type="string" />
+    </attributes>
+    <nodes>
+      <node id="0" label="San Francisco">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+        </attvalues>
+      </node>
+      <node id="1" label="Chicago">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+        </attvalues>
+      </node>
+      <node id="2" label="Montreal">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+        </attvalues>
+      </node>
+      <node id="3" label="New York">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+        </attvalues>
+      </node>
+      <node id="4" label="Atlanta">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+        </attvalues>
+      </node>
+      <node id="5" label="Washington">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+        </attvalues>
+      </node>
+      <node id="6" label="London">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+        </attvalues>
+      </node>
+      <node id="7" label="Essen">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+        </attvalues>
+      </node>
+      <node id="8" label="St. Petersburg">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+        </attvalues>
+      </node>
+      <node id="9" label="Madrid">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+        </attvalues>
+      </node>
+      <node id="10" label="Paris">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+        </attvalues>
+      </node>
+      <node id="11" label="Milan">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+        </attvalues>
+      </node>
+      <node id="12" label="Los Angeles">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+        </attvalues>
+      </node>
+      <node id="13" label="Mexico City">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+        </attvalues>
+      </node>
+      <node id="14" label="Miami">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+        </attvalues>
+      </node>
+      <node id="15" label="Bogota">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+        </attvalues>
+      </node>
+      <node id="16" label="Lima">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+        </attvalues>
+      </node>
+      <node id="17" label="S&#227;o Paulo">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+        </attvalues>
+      </node>
+      <node id="18" label="Santiago">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+        </attvalues>
+      </node>
+      <node id="19" label="Buenos Aires">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+        </attvalues>
+      </node>
+      <node id="20" label="Lagos">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+        </attvalues>
+      </node>
+      <node id="21" label="Khartoum">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+        </attvalues>
+      </node>
+      <node id="22" label="Kinshasa">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+        </attvalues>
+      </node>
+      <node id="23" label="Johannesburg">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+        </attvalues>
+      </node>
+      <node id="24" label="Moscow">
+        <attvalues>
+          <attvalue for="0" value="black" />
+        </attvalues>
+      </node>
+      <node id="25" label="Tehran">
+        <attvalues>
+          <attvalue for="0" value="black" />
+        </attvalues>
+      </node>
+      <node id="26" label="Delhi">
+        <attvalues>
+          <attvalue for="0" value="black" />
+        </attvalues>
+      </node>
+      <node id="27" label="Kolkata">
+        <attvalues>
+          <attvalue for="0" value="black" />
+        </attvalues>
+      </node>
+      <node id="28" label="Istanbul">
+        <attvalues>
+          <attvalue for="0" value="black" />
+        </attvalues>
+      </node>
+      <node id="29" label="Baghdad">
+        <attvalues>
+          <attvalue for="0" value="black" />
+        </attvalues>
+      </node>
+      <node id="30" label="Karachi">
+        <attvalues>
+          <attvalue for="0" value="black" />
+        </attvalues>
+      </node>
+      <node id="31" label="Algiers">
+        <attvalues>
+          <attvalue for="0" value="black" />
+        </attvalues>
+      </node>
+      <node id="32" label="Cairo">
+        <attvalues>
+          <attvalue for="0" value="black" />
+        </attvalues>
+      </node>
+      <node id="33" label="Riyadh">
+        <attvalues>
+          <attvalue for="0" value="black" />
+        </attvalues>
+      </node>
+      <node id="34" label="Mumbai">
+        <attvalues>
+          <attvalue for="0" value="black" />
+        </attvalues>
+      </node>
+      <node id="35" label="Chennai">
+        <attvalues>
+          <attvalue for="0" value="black" />
+        </attvalues>
+      </node>
+      <node id="36" label="Beijing">
+        <attvalues>
+          <attvalue for="0" value="red" />
+        </attvalues>
+      </node>
+      <node id="37" label="Seoul">
+        <attvalues>
+          <attvalue for="0" value="red" />
+        </attvalues>
+      </node>
+      <node id="38" label="Shanghai">
+        <attvalues>
+          <attvalue for="0" value="red" />
+        </attvalues>
+      </node>
+      <node id="39" label="Tokyo">
+        <attvalues>
+          <attvalue for="0" value="red" />
+        </attvalues>
+      </node>
+      <node id="40" label="Hong Kong">
+        <attvalues>
+          <attvalue for="0" value="red" />
+        </attvalues>
+      </node>
+      <node id="41" label="Taipei">
+        <attvalues>
+          <attvalue for="0" value="red" />
+        </attvalues>
+      </node>
+      <node id="42" label="Osaka">
+        <attvalues>
+          <attvalue for="0" value="red" />
+        </attvalues>
+      </node>
+      <node id="43" label="Bangkok">
+        <attvalues>
+          <attvalue for="0" value="red" />
+        </attvalues>
+      </node>
+      <node id="44" label="Jakarta">
+        <attvalues>
+          <attvalue for="0" value="red" />
+        </attvalues>
+      </node>
+      <node id="45" label="Ho Chi Minh City">
+        <attvalues>
+          <attvalue for="0" value="red" />
+        </attvalues>
+      </node>
+      <node id="46" label="Manila">
+        <attvalues>
+          <attvalue for="0" value="red" />
+        </attvalues>
+      </node>
+      <node id="47" label="Sydney">
+        <attvalues>
+          <attvalue for="0" value="red" />
+        </attvalues>
+      </node>
+      <node id="48" label="Blue hinterlands">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+          <attvalue for="1" value="hinterlands" />
+        </attvalues>
+      </node>
+      <node id="49" label="Yellow hinterlands">
+        <attvalues>
+          <attvalue for="0" value="yellow" />
+          <attvalue for="1" value="hinterlands" />
+        </attvalues>
+      </node>
+      <node id="50" label="Black hinterlands">
+        <attvalues>
+          <attvalue for="0" value="blue" />
+          <attvalue for="1" value="hinterlands" />
+        </attvalues>
+      </node>
+      <node id="51" label="Red hinterlands">
+        <attvalues>
+          <attvalue for="0" value="red" />
+          <attvalue for="1" value="hinterlands" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="0" target="1" id="0" />
+      <edge source="0" target="12" id="1" />
+      <edge source="0" target="46" id="2" />
+      <edge source="0" target="39" id="3" />
+      <edge source="0" target="48" id="4" />
+      <edge source="1" target="2" id="5" />
+      <edge source="1" target="4" id="6" />
+      <edge source="1" target="13" id="7" />
+      <edge source="1" target="12" id="8" />
+      <edge source="1" target="48" id="9" />
+      <edge source="2" target="3" id="10" />
+      <edge source="2" target="5" id="11" />
+      <edge source="3" target="6" id="12" />
+      <edge source="3" target="9" id="13" />
+      <edge source="3" target="5" id="14" />
+      <edge source="4" target="5" id="15" />
+      <edge source="4" target="14" id="16" />
+      <edge source="4" target="48" id="17" />
+      <edge source="5" target="14" id="18" />
+      <edge source="6" target="7" id="19" />
+      <edge source="6" target="10" id="20" />
+      <edge source="6" target="9" id="21" />
+      <edge source="6" target="48" id="22" />
+      <edge source="7" target="8" id="23" />
+      <edge source="7" target="11" id="24" />
+      <edge source="7" target="10" id="25" />
+      <edge source="8" target="24" id="26" />
+      <edge source="8" target="28" id="27" />
+      <edge source="9" target="10" id="28" />
+      <edge source="9" target="31" id="29" />
+      <edge source="9" target="17" id="30" />
+      <edge source="10" target="11" id="31" />
+      <edge source="10" target="31" id="32" />
+      <edge source="11" target="28" id="33" />
+      <edge source="12" target="13" id="34" />
+      <edge source="12" target="47" id="35" />
+      <edge source="13" target="14" id="36" />
+      <edge source="13" target="15" id="37" />
+      <edge source="13" target="16" id="38" />
+      <edge source="14" target="15" id="39" />
+      <edge source="15" target="17" id="40" />
+      <edge source="15" target="19" id="41" />
+      <edge source="15" target="16" id="42" />
+      <edge source="16" target="18" id="43" />
+      <edge source="17" target="20" id="44" />
+      <edge source="17" target="19" id="45" />
+      <edge source="17" target="49" id="46" />
+      <edge source="20" target="21" id="47" />
+      <edge source="20" target="22" id="48" />
+      <edge source="20" target="49" id="49" />
+      <edge source="21" target="32" id="50" />
+      <edge source="21" target="23" id="51" />
+      <edge source="21" target="22" id="52" />
+      <edge source="21" target="49" id="53" />
+      <edge source="22" target="23" id="54" />
+      <edge source="22" target="49" id="55" />
+      <edge source="24" target="25" id="56" />
+      <edge source="24" target="28" id="57" />
+      <edge source="25" target="26" id="58" />
+      <edge source="25" target="30" id="59" />
+      <edge source="25" target="29" id="60" />
+      <edge source="26" target="27" id="61" />
+      <edge source="26" target="35" id="62" />
+      <edge source="26" target="34" id="63" />
+      <edge source="26" target="30" id="64" />
+      <edge source="26" target="50" id="65" />
+      <edge source="27" target="40" id="66" />
+      <edge source="27" target="43" id="67" />
+      <edge source="27" target="35" id="68" />
+      <edge source="27" target="50" id="69" />
+      <edge source="28" target="29" id="70" />
+      <edge source="28" target="32" id="71" />
+      <edge source="28" target="31" id="72" />
+      <edge source="29" target="30" id="73" />
+      <edge source="29" target="33" id="74" />
+      <edge source="29" target="32" id="75" />
+      <edge source="30" target="34" id="76" />
+      <edge source="30" target="33" id="77" />
+      <edge source="30" target="50" id="78" />
+      <edge source="31" target="32" id="79" />
+      <edge source="32" target="33" id="80" />
+      <edge source="34" target="35" id="81" />
+      <edge source="34" target="50" id="82" />
+      <edge source="35" target="43" id="83" />
+      <edge source="35" target="44" id="84" />
+      <edge source="35" target="50" id="85" />
+      <edge source="36" target="37" id="86" />
+      <edge source="36" target="38" id="87" />
+      <edge source="36" target="51" id="88" />
+      <edge source="37" target="39" id="89" />
+      <edge source="37" target="38" id="90" />
+      <edge source="38" target="39" id="91" />
+      <edge source="38" target="41" id="92" />
+      <edge source="38" target="40" id="93" />
+      <edge source="38" target="51" id="94" />
+      <edge source="39" target="42" id="95" />
+      <edge source="40" target="43" id="96" />
+      <edge source="40" target="41" id="97" />
+      <edge source="40" target="46" id="98" />
+      <edge source="40" target="45" id="99" />
+      <edge source="40" target="51" id="100" />
+      <edge source="41" target="42" id="101" />
+      <edge source="41" target="46" id="102" />
+      <edge source="43" target="45" id="103" />
+      <edge source="43" target="44" id="104" />
+      <edge source="43" target="51" id="105" />
+      <edge source="44" target="45" id="106" />
+      <edge source="44" target="47" id="107" />
+      <edge source="45" target="46" id="108" />
+      <edge source="45" target="51" id="109" />
+      <edge source="46" target="47" id="110" />
+    </edges>
+  </graph>
+</gexf>

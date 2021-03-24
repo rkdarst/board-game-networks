@@ -1,0 +1,554 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d4" for="edge" attr.name="weight" attr.type="int" />
+  <key id="d3" for="edge" attr.name="type" attr.type="string" />
+  <key id="d2" for="node" attr.name="type" attr.type="string" />
+  <key id="d1" for="node" attr.name="id" attr.type="int" />
+  <key id="d0" for="graph" attr.name="filename" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Canary Islands">
+      <data key="d1">0</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Morocco">
+      <data key="d1">1</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Junction Tangier-Morocco">
+      <data key="d1">2</data>
+      <data key="d2">junction</data>
+    </node>
+    <node id="Tangier">
+      <data key="d1">3</data>
+      <data key="d2">initial</data>
+    </node>
+    <node id="Sahara">
+      <data key="d1">4</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Ambush - Saraha">
+      <data key="d1">5</data>
+      <data key="d2">ambush</data>
+    </node>
+    <node id="Tunis">
+      <data key="d1">6</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Tripoli">
+      <data key="d1">7</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Junction - Tripoli">
+      <data key="d1">8</data>
+      <data key="d2">junction</data>
+    </node>
+    <node id="Egypt">
+      <data key="d1">9</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Cairo">
+      <data key="d1">10</data>
+      <data key="d2">initial</data>
+    </node>
+    <node id="Cape Verde">
+      <data key="d1">11</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Junction Cape Verde-Sierra Leone">
+      <data key="d1">12</data>
+      <data key="d2">junction</data>
+    </node>
+    <node id="Sierra Leone">
+      <data key="d1">13</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Junction Sierra Leone-Timbuktu">
+      <data key="d1">14</data>
+      <data key="d2">junction</data>
+    </node>
+    <node id="Timbuktu">
+      <data key="d1">15</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Gold Coast">
+      <data key="d1">16</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Junction Slave Coast-Congo">
+      <data key="d1">17</data>
+      <data key="d2">junction</data>
+    </node>
+    <node id="Slave Coast">
+      <data key="d1">18</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Junction Slave Coast-Darfur">
+      <data key="d1">19</data>
+      <data key="d2">junction</data>
+    </node>
+    <node id="Ain-Galaka">
+      <data key="d1">20</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Darfur">
+      <data key="d1">21</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Suakin">
+      <data key="d1">22</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Congo">
+      <data key="d1">23</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Kandjama">
+      <data key="d1">24</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Ocomba">
+      <data key="d1">25</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Bahar el Ghasal">
+      <data key="d1">26</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Lake Victoria">
+      <data key="d1">27</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Daressalam">
+      <data key="d1">28</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Junction Daressalam-Mozambique">
+      <data key="d1">29</data>
+      <data key="d2">junction</data>
+    </node>
+    <node id="Addis Abeba">
+      <data key="d1">30</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Cape Guadafui">
+      <data key="d1">31</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Pirate - St. Helena West">
+      <data key="d1">32</data>
+      <data key="d2">ambush</data>
+    </node>
+    <node id="St. Helena">
+      <data key="d1">33</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Pirate - St. Helena East">
+      <data key="d1">34</data>
+      <data key="d2">ambush</data>
+    </node>
+    <node id="Whalefish Bay">
+      <data key="d1">35</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Junction - Whalefish Bay-Capetown">
+      <data key="d1">36</data>
+      <data key="d2">junction</data>
+    </node>
+    <node id="Capetown">
+      <data key="d1">37</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Victoria Falls">
+      <data key="d1">38</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Dragon Mountain">
+      <data key="d1">39</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Junction - Dragon Mountain">
+      <data key="d1">40</data>
+      <data key="d2">junction</data>
+    </node>
+    <node id="Junction - Mozambique">
+      <data key="d1">41</data>
+      <data key="d2">junction</data>
+    </node>
+    <node id="Mozambique">
+      <data key="d1">42</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Cape St. Marie">
+      <data key="d1">43</data>
+      <data key="d2">city</data>
+    </node>
+    <node id="Tamatave">
+      <data key="d1">44</data>
+      <data key="d2">city</data>
+    </node>
+    <edge source="Canary Islands" target="Tangier" id="0">
+      <data key="d3">sea</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Canary Islands" target="Cape Verde" id="0">
+      <data key="d3">sea</data>
+      <data key="d4">5</data>
+    </edge>
+    <edge source="Morocco" target="Tangier" id="0">
+      <data key="d3">air</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Morocco" target="Junction Tangier-Morocco" id="0">
+      <data key="d3">land</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Morocco" target="Cape Verde" id="0">
+      <data key="d3">land</data>
+      <data key="d4">8</data>
+    </edge>
+    <edge source="Morocco" target="Gold Coast" id="0">
+      <data key="d3">air</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Morocco" target="Sierra Leone" id="0">
+      <data key="d3">air</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Junction Tangier-Morocco" target="Tangier" id="0">
+      <data key="d3">land</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Junction Tangier-Morocco" target="Sahara" id="0">
+      <data key="d3">land</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Tangier" target="Tunis" id="0">
+      <data key="d3">sea</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Tangier" target="Tunis" id="1">
+      <data key="d3">land</data>
+      <data key="d4">5</data>
+    </edge>
+    <edge source="Tangier" target="Tripoli" id="0">
+      <data key="d3">air</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Sahara" target="Ambush - Saraha" id="0">
+      <data key="d3">land</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Ambush - Saraha" target="Darfur" id="0">
+      <data key="d3">land</data>
+      <data key="d4">8</data>
+    </edge>
+    <edge source="Tunis" target="Junction - Tripoli" id="0">
+      <data key="d3">sea</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Tunis" target="Tripoli" id="0">
+      <data key="d3">land</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Tripoli" target="Junction - Tripoli" id="0">
+      <data key="d3">sea</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Tripoli" target="Darfur" id="0">
+      <data key="d3">air</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Tripoli" target="Egypt" id="0">
+      <data key="d3">land</data>
+      <data key="d4">6</data>
+    </edge>
+    <edge source="Tripoli" target="Gold Coast" id="0">
+      <data key="d3">air</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Junction - Tripoli" target="Cairo" id="0">
+      <data key="d3">sea</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Egypt" target="Cairo" id="0">
+      <data key="d3">land</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Egypt" target="Darfur" id="0">
+      <data key="d3">land</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Cairo" target="Suakin" id="0">
+      <data key="d3">sea</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Cairo" target="Suakin" id="1">
+      <data key="d3">air</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Cape Verde" target="Sierra Leone" id="0">
+      <data key="d3">land</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Cape Verde" target="Junction Cape Verde-Sierra Leone" id="0">
+      <data key="d3">sea</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Junction Cape Verde-Sierra Leone" target="Sierra Leone" id="0">
+      <data key="d3">sea</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Junction Cape Verde-Sierra Leone" target="Pirate - St. Helena West" id="0">
+      <data key="d3">sea</data>
+      <data key="d4">8</data>
+    </edge>
+    <edge source="Sierra Leone" target="Junction Sierra Leone-Timbuktu" id="0">
+      <data key="d3">land</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Sierra Leone" target="Gold Coast" id="0">
+      <data key="d3">sea</data>
+      <data key="d4">5</data>
+    </edge>
+    <edge source="Sierra Leone" target="St. Helena" id="0">
+      <data key="d3">air</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Junction Sierra Leone-Timbuktu" target="Timbuktu" id="0">
+      <data key="d3">land</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Junction Sierra Leone-Timbuktu" target="Gold Coast" id="0">
+      <data key="d3">land</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Timbuktu" target="Slave Coast" id="0">
+      <data key="d3">land</data>
+      <data key="d4">5</data>
+    </edge>
+    <edge source="Gold Coast" target="Congo" id="0">
+      <data key="d3">air</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Gold Coast" target="Junction Slave Coast-Congo" id="0">
+      <data key="d3">sea</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Gold Coast" target="Whalefish Bay" id="0">
+      <data key="d3">air</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Junction Slave Coast-Congo" target="Slave Coast" id="0">
+      <data key="d3">sea</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Junction Slave Coast-Congo" target="Congo" id="0">
+      <data key="d3">sea</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Slave Coast" target="Junction Slave Coast-Darfur" id="0">
+      <data key="d3">land</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Junction Slave Coast-Darfur" target="Ain-Galaka" id="0">
+      <data key="d3">land</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Junction Slave Coast-Darfur" target="Darfur" id="0">
+      <data key="d3">land</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Junction Slave Coast-Darfur" target="Kandjama" id="0">
+      <data key="d3">land</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Ain-Galaka" target="Darfur" id="0">
+      <data key="d3">land</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Darfur" target="Suakin" id="0">
+      <data key="d3">air</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Darfur" target="Suakin" id="1">
+      <data key="d3">land</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Darfur" target="Bahar el Ghasal" id="0">
+      <data key="d3">land</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Darfur" target="Ocomba" id="0">
+      <data key="d3">air</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Suakin" target="Cape Guadafui" id="0">
+      <data key="d3">sea</data>
+      <data key="d4">5</data>
+    </edge>
+    <edge source="Suakin" target="Addis Abeba" id="0">
+      <data key="d3">land</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Suakin" target="Lake Victoria" id="0">
+      <data key="d3">air</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Congo" target="Kandjama" id="0">
+      <data key="d3">land</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Congo" target="Ocomba" id="0">
+      <data key="d3">land</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Congo" target="Junction - Mozambique" id="0">
+      <data key="d3">land</data>
+      <data key="d4">8</data>
+    </edge>
+    <edge source="Congo" target="Whalefish Bay" id="0">
+      <data key="d3">air</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Congo" target="Whalefish Bay" id="1">
+      <data key="d3">sea</data>
+      <data key="d4">5</data>
+    </edge>
+    <edge source="Ocomba" target="Lake Victoria" id="0">
+      <data key="d3">land</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Ocomba" target="Capetown" id="0">
+      <data key="d3">air</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Bahar el Ghasal" target="Lake Victoria" id="0">
+      <data key="d3">land</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Lake Victoria" target="Addis Abeba" id="0">
+      <data key="d3">land</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Lake Victoria" target="Cape Guadafui" id="0">
+      <data key="d3">air</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Lake Victoria" target="Junction Daressalam-Mozambique" id="0">
+      <data key="d3">land</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Lake Victoria" target="Dragon Mountain" id="0">
+      <data key="d3">air</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Daressalam" target="Cape Guadafui" id="0">
+      <data key="d3">land</data>
+      <data key="d4">6</data>
+    </edge>
+    <edge source="Daressalam" target="Junction Daressalam-Mozambique" id="0">
+      <data key="d3">land</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Junction Daressalam-Mozambique" target="Mozambique" id="0">
+      <data key="d3">land</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Addis Abeba" target="Cape Guadafui" id="0">
+      <data key="d3">land</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Cape Guadafui" target="Tamatave" id="0">
+      <data key="d3">sea</data>
+      <data key="d4">8</data>
+    </edge>
+    <edge source="Cape Guadafui" target="Tamatave" id="1">
+      <data key="d3">air</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Cape Guadafui" target="Mozambique" id="0">
+      <data key="d3">sea</data>
+      <data key="d4">8</data>
+    </edge>
+    <edge source="Pirate - St. Helena West" target="St. Helena" id="0">
+      <data key="d3">sea</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="St. Helena" target="Capetown" id="0">
+      <data key="d3">air</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="St. Helena" target="Pirate - St. Helena East" id="0">
+      <data key="d3">sea</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Pirate - St. Helena East" target="Junction - Whalefish Bay-Capetown" id="0">
+      <data key="d3">sea</data>
+      <data key="d4">7</data>
+    </edge>
+    <edge source="Whalefish Bay" target="Victoria Falls" id="0">
+      <data key="d3">land</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Whalefish Bay" target="Capetown" id="0">
+      <data key="d3">land</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Whalefish Bay" target="Capetown" id="1">
+      <data key="d3">air</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Whalefish Bay" target="Junction - Whalefish Bay-Capetown" id="0">
+      <data key="d3">sea</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Junction - Whalefish Bay-Capetown" target="Capetown" id="0">
+      <data key="d3">sea</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Capetown" target="Dragon Mountain" id="0">
+      <data key="d3">air</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Capetown" target="Tamatave" id="0">
+      <data key="d3">air</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Capetown" target="Cape St. Marie" id="0">
+      <data key="d3">air</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Capetown" target="Cape St. Marie" id="1">
+      <data key="d3">sea</data>
+      <data key="d4">8</data>
+    </edge>
+    <edge source="Victoria Falls" target="Junction - Dragon Mountain" id="0">
+      <data key="d3">land</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Victoria Falls" target="Dragon Mountain" id="0">
+      <data key="d3">land</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Dragon Mountain" target="Junction - Dragon Mountain" id="0">
+      <data key="d3">land</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Junction - Dragon Mountain" target="Junction - Mozambique" id="0">
+      <data key="d3">land</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Junction - Mozambique" target="Mozambique" id="0">
+      <data key="d3">land</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Mozambique" target="Cape St. Marie" id="0">
+      <data key="d3">sea</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Cape St. Marie" target="Tamatave" id="0">
+      <data key="d3">land</data>
+      <data key="d4">4</data>
+    </edge>
+    <data key="d0">data/afrikan-tahti/afrikan-tahti.yaml</data>
+  </graph>
+</graphml>

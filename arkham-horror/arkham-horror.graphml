@@ -1,0 +1,232 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d4" for="node" attr.name="order" attr.type="int" />
+  <key id="d3" for="node" attr.name="stable" attr.type="int" />
+  <key id="d2" for="node" attr.name="region" attr.type="string" />
+  <key id="d1" for="node" attr.name="id" attr.type="int" />
+  <key id="d0" for="graph" attr.name="filename" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Northside">
+      <data key="d1">0</data>
+      <data key="d2">Northside</data>
+      <data key="d3">1</data>
+      <data key="d4">0</data>
+    </node>
+    <node id="Curiosite Shoppe">
+      <data key="d1">1</data>
+      <data key="d2">Northside</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="Newspaper">
+      <data key="d1">2</data>
+      <data key="d2">Northside</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="Train Station">
+      <data key="d1">3</data>
+      <data key="d2">Northside</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="Downtown">
+      <data key="d1">4</data>
+      <data key="d2">Downtown</data>
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </node>
+    <node id="Bank of Arkham">
+      <data key="d1">5</data>
+      <data key="d2">Downtown</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="Arkham Asylum">
+      <data key="d1">6</data>
+      <data key="d2">Downtown</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="Independence Square">
+      <data key="d1">7</data>
+      <data key="d2">Downtown</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="Easttown">
+      <data key="d1">8</data>
+      <data key="d2">Easttown</data>
+      <data key="d3">1</data>
+      <data key="d4">2</data>
+    </node>
+    <node id="Hibb's Roadhouse">
+      <data key="d1">9</data>
+      <data key="d2">Easttown</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="Velma's Diner">
+      <data key="d1">10</data>
+      <data key="d2">Easttown</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="Police Station">
+      <data key="d1">11</data>
+      <data key="d2">Easttown</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="Rivertown">
+      <data key="d1">12</data>
+      <data key="d2">Rivertown</data>
+      <data key="d3">1</data>
+      <data key="d4">3</data>
+    </node>
+    <node id="Graveyard">
+      <data key="d1">13</data>
+      <data key="d2">Rivertown</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="Black Cave">
+      <data key="d1">14</data>
+      <data key="d2">Rivertown</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="General Store">
+      <data key="d1">15</data>
+      <data key="d2">Rivertown</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="French Hill">
+      <data key="d1">16</data>
+      <data key="d2">French Hill</data>
+      <data key="d3">1</data>
+      <data key="d4">4</data>
+    </node>
+    <node id="The Witch House">
+      <data key="d1">17</data>
+      <data key="d2">French Hill</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="Silver Twilight Lodge">
+      <data key="d1">18</data>
+      <data key="d2">French Hill</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="Southside">
+      <data key="d1">19</data>
+      <data key="d2">Southside</data>
+      <data key="d3">1</data>
+      <data key="d4">5</data>
+    </node>
+    <node id="Ma's Boarding House">
+      <data key="d1">20</data>
+      <data key="d2">Southside</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="South Church">
+      <data key="d1">21</data>
+      <data key="d2">Southside</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="Historical Society">
+      <data key="d1">22</data>
+      <data key="d2">Southside</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="Uptown">
+      <data key="d1">23</data>
+      <data key="d2">Uptown</data>
+      <data key="d3">1</data>
+      <data key="d4">6</data>
+    </node>
+    <node id="Woods">
+      <data key="d1">24</data>
+      <data key="d2">Uptown</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="Ye Olde Magick Shoppe">
+      <data key="d1">25</data>
+      <data key="d2">Uptown</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="St. Mary's Hospital">
+      <data key="d1">26</data>
+      <data key="d2">Uptown</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="Miskatonic University">
+      <data key="d1">27</data>
+      <data key="d2">Miskatonic University</data>
+      <data key="d3">1</data>
+      <data key="d4">7</data>
+    </node>
+    <node id="Library">
+      <data key="d1">28</data>
+      <data key="d2">Miskatonic University</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="Administration">
+      <data key="d1">29</data>
+      <data key="d2">Miskatonic University</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="Science Building">
+      <data key="d1">30</data>
+      <data key="d2">Miskatonic University</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="Merchant District">
+      <data key="d1">31</data>
+      <data key="d2">Merchant District</data>
+      <data key="d3">1</data>
+      <data key="d4">8</data>
+    </node>
+    <node id="The Unnamable">
+      <data key="d1">32</data>
+      <data key="d2">Merchant District</data>
+      <data key="d3">0</data>
+    </node>
+    <node id="River Docks">
+      <data key="d1">33</data>
+      <data key="d2">Merchant District</data>
+      <data key="d3">1</data>
+    </node>
+    <node id="Unvisited Isle">
+      <data key="d1">34</data>
+      <data key="d2">Merchant District</data>
+      <data key="d3">0</data>
+    </node>
+    <edge source="Northside" target="Downtown" />
+    <edge source="Northside" target="Merchant District" />
+    <edge source="Northside" target="Curiosite Shoppe" />
+    <edge source="Northside" target="Newspaper" />
+    <edge source="Northside" target="Train Station" />
+    <edge source="Downtown" target="Easttown" />
+    <edge source="Downtown" target="Merchant District" />
+    <edge source="Downtown" target="Bank of Arkham" />
+    <edge source="Downtown" target="Arkham Asylum" />
+    <edge source="Downtown" target="Independence Square" />
+    <edge source="Easttown" target="Rivertown" />
+    <edge source="Easttown" target="Hibb's Roadhouse" />
+    <edge source="Easttown" target="Velma's Diner" />
+    <edge source="Easttown" target="Police Station" />
+    <edge source="Rivertown" target="French Hill" />
+    <edge source="Rivertown" target="Merchant District" />
+    <edge source="Rivertown" target="Graveyard" />
+    <edge source="Rivertown" target="Black Cave" />
+    <edge source="Rivertown" target="General Store" />
+    <edge source="French Hill" target="Southside" />
+    <edge source="French Hill" target="Miskatonic University" />
+    <edge source="French Hill" target="The Witch House" />
+    <edge source="French Hill" target="Silver Twilight Lodge" />
+    <edge source="Southside" target="Uptown" />
+    <edge source="Southside" target="Ma's Boarding House" />
+    <edge source="Southside" target="South Church" />
+    <edge source="Southside" target="Historical Society" />
+    <edge source="Uptown" target="Miskatonic University" />
+    <edge source="Uptown" target="Woods" />
+    <edge source="Uptown" target="Ye Olde Magick Shoppe" />
+    <edge source="Uptown" target="St. Mary's Hospital" />
+    <edge source="Miskatonic University" target="Merchant District" />
+    <edge source="Miskatonic University" target="Library" />
+    <edge source="Miskatonic University" target="Administration" />
+    <edge source="Miskatonic University" target="Science Building" />
+    <edge source="Merchant District" target="The Unnamable" />
+    <edge source="Merchant District" target="River Docks" />
+    <edge source="Merchant District" target="Unvisited Isle" />
+    <data key="d0">data/arkham-horror/arkham-horror.yaml</data>
+  </graph>
+</graphml>

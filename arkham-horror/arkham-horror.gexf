@@ -1,0 +1,273 @@
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2021-03-24">
+    <creator>NetworkX 2.5</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="region" type="string" />
+      <attribute id="1" title="stable" type="long" />
+      <attribute id="2" title="order" type="long" />
+    </attributes>
+    <nodes>
+      <node id="0" label="Northside">
+        <attvalues>
+          <attvalue for="0" value="Northside" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </node>
+      <node id="1" label="Curiosite Shoppe">
+        <attvalues>
+          <attvalue for="0" value="Northside" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="2" label="Newspaper">
+        <attvalues>
+          <attvalue for="0" value="Northside" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="3" label="Train Station">
+        <attvalues>
+          <attvalue for="0" value="Northside" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="4" label="Downtown">
+        <attvalues>
+          <attvalue for="0" value="Downtown" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </node>
+      <node id="5" label="Bank of Arkham">
+        <attvalues>
+          <attvalue for="0" value="Downtown" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="6" label="Arkham Asylum">
+        <attvalues>
+          <attvalue for="0" value="Downtown" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="7" label="Independence Square">
+        <attvalues>
+          <attvalue for="0" value="Downtown" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </node>
+      <node id="8" label="Easttown">
+        <attvalues>
+          <attvalue for="0" value="Easttown" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="2" />
+        </attvalues>
+      </node>
+      <node id="9" label="Hibb's Roadhouse">
+        <attvalues>
+          <attvalue for="0" value="Easttown" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </node>
+      <node id="10" label="Velma's Diner">
+        <attvalues>
+          <attvalue for="0" value="Easttown" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="11" label="Police Station">
+        <attvalues>
+          <attvalue for="0" value="Easttown" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="12" label="Rivertown">
+        <attvalues>
+          <attvalue for="0" value="Rivertown" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="3" />
+        </attvalues>
+      </node>
+      <node id="13" label="Graveyard">
+        <attvalues>
+          <attvalue for="0" value="Rivertown" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </node>
+      <node id="14" label="Black Cave">
+        <attvalues>
+          <attvalue for="0" value="Rivertown" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </node>
+      <node id="15" label="General Store">
+        <attvalues>
+          <attvalue for="0" value="Rivertown" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="16" label="French Hill">
+        <attvalues>
+          <attvalue for="0" value="French Hill" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="4" />
+        </attvalues>
+      </node>
+      <node id="17" label="The Witch House">
+        <attvalues>
+          <attvalue for="0" value="French Hill" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </node>
+      <node id="18" label="Silver Twilight Lodge">
+        <attvalues>
+          <attvalue for="0" value="French Hill" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </node>
+      <node id="19" label="Southside">
+        <attvalues>
+          <attvalue for="0" value="Southside" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="5" />
+        </attvalues>
+      </node>
+      <node id="20" label="Ma's Boarding House">
+        <attvalues>
+          <attvalue for="0" value="Southside" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="21" label="South Church">
+        <attvalues>
+          <attvalue for="0" value="Southside" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="22" label="Historical Society">
+        <attvalues>
+          <attvalue for="0" value="Southside" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </node>
+      <node id="23" label="Uptown">
+        <attvalues>
+          <attvalue for="0" value="Uptown" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="6" />
+        </attvalues>
+      </node>
+      <node id="24" label="Woods">
+        <attvalues>
+          <attvalue for="0" value="Uptown" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </node>
+      <node id="25" label="Ye Olde Magick Shoppe">
+        <attvalues>
+          <attvalue for="0" value="Uptown" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="26" label="St. Mary's Hospital">
+        <attvalues>
+          <attvalue for="0" value="Uptown" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="27" label="Miskatonic University">
+        <attvalues>
+          <attvalue for="0" value="Miskatonic University" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="7" />
+        </attvalues>
+      </node>
+      <node id="28" label="Library">
+        <attvalues>
+          <attvalue for="0" value="Miskatonic University" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="29" label="Administration">
+        <attvalues>
+          <attvalue for="0" value="Miskatonic University" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="30" label="Science Building">
+        <attvalues>
+          <attvalue for="0" value="Miskatonic University" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </node>
+      <node id="31" label="Merchant District">
+        <attvalues>
+          <attvalue for="0" value="Merchant District" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="8" />
+        </attvalues>
+      </node>
+      <node id="32" label="The Unnamable">
+        <attvalues>
+          <attvalue for="0" value="Merchant District" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </node>
+      <node id="33" label="River Docks">
+        <attvalues>
+          <attvalue for="0" value="Merchant District" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="34" label="Unvisited Isle">
+        <attvalues>
+          <attvalue for="0" value="Merchant District" />
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="0" target="4" id="0" />
+      <edge source="0" target="31" id="1" />
+      <edge source="0" target="1" id="2" />
+      <edge source="0" target="2" id="3" />
+      <edge source="0" target="3" id="4" />
+      <edge source="4" target="8" id="5" />
+      <edge source="4" target="31" id="6" />
+      <edge source="4" target="5" id="7" />
+      <edge source="4" target="6" id="8" />
+      <edge source="4" target="7" id="9" />
+      <edge source="8" target="12" id="10" />
+      <edge source="8" target="9" id="11" />
+      <edge source="8" target="10" id="12" />
+      <edge source="8" target="11" id="13" />
+      <edge source="12" target="16" id="14" />
+      <edge source="12" target="31" id="15" />
+      <edge source="12" target="13" id="16" />
+      <edge source="12" target="14" id="17" />
+      <edge source="12" target="15" id="18" />
+      <edge source="16" target="19" id="19" />
+      <edge source="16" target="27" id="20" />
+      <edge source="16" target="17" id="21" />
+      <edge source="16" target="18" id="22" />
+      <edge source="19" target="23" id="23" />
+      <edge source="19" target="20" id="24" />
+      <edge source="19" target="21" id="25" />
+      <edge source="19" target="22" id="26" />
+      <edge source="23" target="27" id="27" />
+      <edge source="23" target="24" id="28" />
+      <edge source="23" target="25" id="29" />
+      <edge source="23" target="26" id="30" />
+      <edge source="27" target="31" id="31" />
+      <edge source="27" target="28" id="32" />
+      <edge source="27" target="29" id="33" />
+      <edge source="27" target="30" id="34" />
+      <edge source="31" target="32" id="35" />
+      <edge source="31" target="33" id="36" />
+      <edge source="31" target="34" id="37" />
+    </edges>
+  </graph>
+</gexf>

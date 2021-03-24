@@ -1,0 +1,332 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d3" for="node" attr.name="type" attr.type="string" />
+  <key id="d2" for="node" attr.name="color" attr.type="string" />
+  <key id="d1" for="node" attr.name="id" attr.type="int" />
+  <key id="d0" for="graph" attr.name="filename" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="San Francisco">
+      <data key="d1">0</data>
+      <data key="d2">blue</data>
+    </node>
+    <node id="Chicago">
+      <data key="d1">1</data>
+      <data key="d2">blue</data>
+    </node>
+    <node id="Montreal">
+      <data key="d1">2</data>
+      <data key="d2">blue</data>
+    </node>
+    <node id="New York">
+      <data key="d1">3</data>
+      <data key="d2">blue</data>
+    </node>
+    <node id="Atlanta">
+      <data key="d1">4</data>
+      <data key="d2">blue</data>
+    </node>
+    <node id="Washington">
+      <data key="d1">5</data>
+      <data key="d2">blue</data>
+    </node>
+    <node id="London">
+      <data key="d1">6</data>
+      <data key="d2">blue</data>
+    </node>
+    <node id="Essen">
+      <data key="d1">7</data>
+      <data key="d2">blue</data>
+    </node>
+    <node id="St. Petersburg">
+      <data key="d1">8</data>
+      <data key="d2">blue</data>
+    </node>
+    <node id="Madrid">
+      <data key="d1">9</data>
+      <data key="d2">blue</data>
+    </node>
+    <node id="Paris">
+      <data key="d1">10</data>
+      <data key="d2">blue</data>
+    </node>
+    <node id="Milan">
+      <data key="d1">11</data>
+      <data key="d2">blue</data>
+    </node>
+    <node id="Los Angeles">
+      <data key="d1">12</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Mexico City">
+      <data key="d1">13</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Miami">
+      <data key="d1">14</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Bogota">
+      <data key="d1">15</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Lima">
+      <data key="d1">16</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="S&#227;o Paulo">
+      <data key="d1">17</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Santiago">
+      <data key="d1">18</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Buenos Aires">
+      <data key="d1">19</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Lagos">
+      <data key="d1">20</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Khartoum">
+      <data key="d1">21</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Kinshasa">
+      <data key="d1">22</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Johannesburg">
+      <data key="d1">23</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Moscow">
+      <data key="d1">24</data>
+      <data key="d2">black</data>
+    </node>
+    <node id="Tehran">
+      <data key="d1">25</data>
+      <data key="d2">black</data>
+    </node>
+    <node id="Delhi">
+      <data key="d1">26</data>
+      <data key="d2">black</data>
+    </node>
+    <node id="Kolkata">
+      <data key="d1">27</data>
+      <data key="d2">black</data>
+    </node>
+    <node id="Istanbul">
+      <data key="d1">28</data>
+      <data key="d2">black</data>
+    </node>
+    <node id="Baghdad">
+      <data key="d1">29</data>
+      <data key="d2">black</data>
+    </node>
+    <node id="Karachi">
+      <data key="d1">30</data>
+      <data key="d2">black</data>
+    </node>
+    <node id="Algiers">
+      <data key="d1">31</data>
+      <data key="d2">black</data>
+    </node>
+    <node id="Cairo">
+      <data key="d1">32</data>
+      <data key="d2">black</data>
+    </node>
+    <node id="Riyadh">
+      <data key="d1">33</data>
+      <data key="d2">black</data>
+    </node>
+    <node id="Mumbai">
+      <data key="d1">34</data>
+      <data key="d2">black</data>
+    </node>
+    <node id="Chennai">
+      <data key="d1">35</data>
+      <data key="d2">black</data>
+    </node>
+    <node id="Beijing">
+      <data key="d1">36</data>
+      <data key="d2">red</data>
+    </node>
+    <node id="Seoul">
+      <data key="d1">37</data>
+      <data key="d2">red</data>
+    </node>
+    <node id="Shanghai">
+      <data key="d1">38</data>
+      <data key="d2">red</data>
+    </node>
+    <node id="Tokyo">
+      <data key="d1">39</data>
+      <data key="d2">red</data>
+    </node>
+    <node id="Hong Kong">
+      <data key="d1">40</data>
+      <data key="d2">red</data>
+    </node>
+    <node id="Taipei">
+      <data key="d1">41</data>
+      <data key="d2">red</data>
+    </node>
+    <node id="Osaka">
+      <data key="d1">42</data>
+      <data key="d2">red</data>
+    </node>
+    <node id="Bangkok">
+      <data key="d1">43</data>
+      <data key="d2">red</data>
+    </node>
+    <node id="Jakarta">
+      <data key="d1">44</data>
+      <data key="d2">red</data>
+    </node>
+    <node id="Ho Chi Minh City">
+      <data key="d1">45</data>
+      <data key="d2">red</data>
+    </node>
+    <node id="Manila">
+      <data key="d1">46</data>
+      <data key="d2">red</data>
+    </node>
+    <node id="Sydney">
+      <data key="d1">47</data>
+      <data key="d2">red</data>
+    </node>
+    <node id="Blue hinterlands">
+      <data key="d1">48</data>
+      <data key="d2">blue</data>
+      <data key="d3">hinterlands</data>
+    </node>
+    <node id="Yellow hinterlands">
+      <data key="d1">49</data>
+      <data key="d2">yellow</data>
+      <data key="d3">hinterlands</data>
+    </node>
+    <node id="Black hinterlands">
+      <data key="d1">50</data>
+      <data key="d2">blue</data>
+      <data key="d3">hinterlands</data>
+    </node>
+    <node id="Red hinterlands">
+      <data key="d1">51</data>
+      <data key="d2">red</data>
+      <data key="d3">hinterlands</data>
+    </node>
+    <edge source="San Francisco" target="Chicago" />
+    <edge source="San Francisco" target="Los Angeles" />
+    <edge source="San Francisco" target="Manila" />
+    <edge source="San Francisco" target="Tokyo" />
+    <edge source="San Francisco" target="Blue hinterlands" />
+    <edge source="Chicago" target="Montreal" />
+    <edge source="Chicago" target="Atlanta" />
+    <edge source="Chicago" target="Mexico City" />
+    <edge source="Chicago" target="Los Angeles" />
+    <edge source="Chicago" target="Blue hinterlands" />
+    <edge source="Montreal" target="New York" />
+    <edge source="Montreal" target="Washington" />
+    <edge source="New York" target="London" />
+    <edge source="New York" target="Madrid" />
+    <edge source="New York" target="Washington" />
+    <edge source="Atlanta" target="Washington" />
+    <edge source="Atlanta" target="Miami" />
+    <edge source="Atlanta" target="Blue hinterlands" />
+    <edge source="Washington" target="Miami" />
+    <edge source="London" target="Essen" />
+    <edge source="London" target="Paris" />
+    <edge source="London" target="Madrid" />
+    <edge source="London" target="Blue hinterlands" />
+    <edge source="Essen" target="St. Petersburg" />
+    <edge source="Essen" target="Milan" />
+    <edge source="Essen" target="Paris" />
+    <edge source="St. Petersburg" target="Moscow" />
+    <edge source="St. Petersburg" target="Istanbul" />
+    <edge source="Madrid" target="Paris" />
+    <edge source="Madrid" target="Algiers" />
+    <edge source="Madrid" target="S&#227;o Paulo" />
+    <edge source="Paris" target="Milan" />
+    <edge source="Paris" target="Algiers" />
+    <edge source="Milan" target="Istanbul" />
+    <edge source="Los Angeles" target="Mexico City" />
+    <edge source="Los Angeles" target="Sydney" />
+    <edge source="Mexico City" target="Miami" />
+    <edge source="Mexico City" target="Bogota" />
+    <edge source="Mexico City" target="Lima" />
+    <edge source="Miami" target="Bogota" />
+    <edge source="Bogota" target="S&#227;o Paulo" />
+    <edge source="Bogota" target="Buenos Aires" />
+    <edge source="Bogota" target="Lima" />
+    <edge source="Lima" target="Santiago" />
+    <edge source="S&#227;o Paulo" target="Lagos" />
+    <edge source="S&#227;o Paulo" target="Buenos Aires" />
+    <edge source="S&#227;o Paulo" target="Yellow hinterlands" />
+    <edge source="Lagos" target="Khartoum" />
+    <edge source="Lagos" target="Kinshasa" />
+    <edge source="Lagos" target="Yellow hinterlands" />
+    <edge source="Khartoum" target="Cairo" />
+    <edge source="Khartoum" target="Johannesburg" />
+    <edge source="Khartoum" target="Kinshasa" />
+    <edge source="Khartoum" target="Yellow hinterlands" />
+    <edge source="Kinshasa" target="Johannesburg" />
+    <edge source="Kinshasa" target="Yellow hinterlands" />
+    <edge source="Moscow" target="Tehran" />
+    <edge source="Moscow" target="Istanbul" />
+    <edge source="Tehran" target="Delhi" />
+    <edge source="Tehran" target="Karachi" />
+    <edge source="Tehran" target="Baghdad" />
+    <edge source="Delhi" target="Kolkata" />
+    <edge source="Delhi" target="Chennai" />
+    <edge source="Delhi" target="Mumbai" />
+    <edge source="Delhi" target="Karachi" />
+    <edge source="Delhi" target="Black hinterlands" />
+    <edge source="Kolkata" target="Hong Kong" />
+    <edge source="Kolkata" target="Bangkok" />
+    <edge source="Kolkata" target="Chennai" />
+    <edge source="Kolkata" target="Black hinterlands" />
+    <edge source="Istanbul" target="Baghdad" />
+    <edge source="Istanbul" target="Cairo" />
+    <edge source="Istanbul" target="Algiers" />
+    <edge source="Baghdad" target="Karachi" />
+    <edge source="Baghdad" target="Riyadh" />
+    <edge source="Baghdad" target="Cairo" />
+    <edge source="Karachi" target="Mumbai" />
+    <edge source="Karachi" target="Riyadh" />
+    <edge source="Karachi" target="Black hinterlands" />
+    <edge source="Algiers" target="Cairo" />
+    <edge source="Cairo" target="Riyadh" />
+    <edge source="Mumbai" target="Chennai" />
+    <edge source="Mumbai" target="Black hinterlands" />
+    <edge source="Chennai" target="Bangkok" />
+    <edge source="Chennai" target="Jakarta" />
+    <edge source="Chennai" target="Black hinterlands" />
+    <edge source="Beijing" target="Seoul" />
+    <edge source="Beijing" target="Shanghai" />
+    <edge source="Beijing" target="Red hinterlands" />
+    <edge source="Seoul" target="Tokyo" />
+    <edge source="Seoul" target="Shanghai" />
+    <edge source="Shanghai" target="Tokyo" />
+    <edge source="Shanghai" target="Taipei" />
+    <edge source="Shanghai" target="Hong Kong" />
+    <edge source="Shanghai" target="Red hinterlands" />
+    <edge source="Tokyo" target="Osaka" />
+    <edge source="Hong Kong" target="Bangkok" />
+    <edge source="Hong Kong" target="Taipei" />
+    <edge source="Hong Kong" target="Manila" />
+    <edge source="Hong Kong" target="Ho Chi Minh City" />
+    <edge source="Hong Kong" target="Red hinterlands" />
+    <edge source="Taipei" target="Osaka" />
+    <edge source="Taipei" target="Manila" />
+    <edge source="Bangkok" target="Ho Chi Minh City" />
+    <edge source="Bangkok" target="Jakarta" />
+    <edge source="Bangkok" target="Red hinterlands" />
+    <edge source="Jakarta" target="Ho Chi Minh City" />
+    <edge source="Jakarta" target="Sydney" />
+    <edge source="Ho Chi Minh City" target="Manila" />
+    <edge source="Ho Chi Minh City" target="Red hinterlands" />
+    <edge source="Manila" target="Sydney" />
+    <data key="d0">data/pandemic/pandemic-hinterlands.yaml</data>
+  </graph>
+</graphml>

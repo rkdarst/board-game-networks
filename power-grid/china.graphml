@@ -1,0 +1,426 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d3" for="edge" attr.name="weight" attr.type="int" />
+  <key id="d2" for="node" attr.name="color" attr.type="string" />
+  <key id="d1" for="node" attr.name="id" attr.type="int" />
+  <key id="d0" for="graph" attr.name="filename" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Karamay">
+      <data key="d1">0</data>
+      <data key="d2">purple</data>
+    </node>
+    <node id="Wulumuqi">
+      <data key="d1">1</data>
+      <data key="d2">purple</data>
+    </node>
+    <node id="Ku'erle">
+      <data key="d1">2</data>
+      <data key="d2">purple</data>
+    </node>
+    <node id="Hami">
+      <data key="d1">3</data>
+      <data key="d2">purple</data>
+    </node>
+    <node id="Yinchuan">
+      <data key="d1">4</data>
+      <data key="d2">purple</data>
+    </node>
+    <node id="Xining">
+      <data key="d1">5</data>
+      <data key="d2">purple</data>
+    </node>
+    <node id="Lanzhou">
+      <data key="d1">6</data>
+      <data key="d2">purple</data>
+    </node>
+    <node id="Changchun">
+      <data key="d1">7</data>
+      <data key="d2">red</data>
+    </node>
+    <node id="Shenyang">
+      <data key="d1">8</data>
+      <data key="d2">red</data>
+    </node>
+    <node id="Tangshan">
+      <data key="d1">9</data>
+      <data key="d2">red</data>
+    </node>
+    <node id="Beijing">
+      <data key="d1">10</data>
+      <data key="d2">red</data>
+    </node>
+    <node id="Baotou">
+      <data key="d1">11</data>
+      <data key="d2">red</data>
+    </node>
+    <node id="Taiyuan">
+      <data key="d1">12</data>
+      <data key="d2">red</data>
+    </node>
+    <node id="Tianjin">
+      <data key="d1">13</data>
+      <data key="d2">red</data>
+    </node>
+    <node id="Qiqha'er">
+      <data key="d1">14</data>
+      <data key="d2">pink</data>
+    </node>
+    <node id="Hegang">
+      <data key="d1">15</data>
+      <data key="d2">pink</data>
+    </node>
+    <node id="Haerbin">
+      <data key="d1">16</data>
+      <data key="d2">pink</data>
+    </node>
+    <node id="Jilin">
+      <data key="d1">17</data>
+      <data key="d2">pink</data>
+    </node>
+    <node id="Fushun">
+      <data key="d1">18</data>
+      <data key="d2">pink</data>
+    </node>
+    <node id="Anshan">
+      <data key="d1">19</data>
+      <data key="d2">pink</data>
+    </node>
+    <node id="Dalian">
+      <data key="d1">20</data>
+      <data key="d2">pink</data>
+    </node>
+    <node id="Shijiazhuang">
+      <data key="d1">21</data>
+      <data key="d2">green</data>
+    </node>
+    <node id="Jinan">
+      <data key="d1">22</data>
+      <data key="d2">green</data>
+    </node>
+    <node id="Qingoao">
+      <data key="d1">23</data>
+      <data key="d2">green</data>
+    </node>
+    <node id="Zhengzhou">
+      <data key="d1">24</data>
+      <data key="d2">green</data>
+    </node>
+    <node id="Nanjing">
+      <data key="d1">25</data>
+      <data key="d2">green</data>
+    </node>
+    <node id="Shanghai">
+      <data key="d1">26</data>
+      <data key="d2">green</data>
+    </node>
+    <node id="Hangzhou">
+      <data key="d1">27</data>
+      <data key="d2">green</data>
+    </node>
+    <node id="Wuhan">
+      <data key="d1">28</data>
+      <data key="d2">brown</data>
+    </node>
+    <node id="Nanchang">
+      <data key="d1">29</data>
+      <data key="d2">brown</data>
+    </node>
+    <node id="Changsha">
+      <data key="d1">30</data>
+      <data key="d2">brown</data>
+    </node>
+    <node id="Fuzhou">
+      <data key="d1">31</data>
+      <data key="d2">brown</data>
+    </node>
+    <node id="Chaozhou">
+      <data key="d1">32</data>
+      <data key="d2">brown</data>
+    </node>
+    <node id="Guangzhou">
+      <data key="d1">33</data>
+      <data key="d2">brown</data>
+    </node>
+    <node id="Hong Kong">
+      <data key="d1">34</data>
+      <data key="d2">brown</data>
+    </node>
+    <node id="Xi'an">
+      <data key="d1">35</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Chengou">
+      <data key="d1">36</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Chongqing">
+      <data key="d1">37</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Guiyang">
+      <data key="d1">38</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Kunming">
+      <data key="d1">39</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Nanning">
+      <data key="d1">40</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Haikou">
+      <data key="d1">41</data>
+      <data key="d2">yellow</data>
+    </node>
+    <edge source="Karamay" target="Wulumuqi">
+      <data key="d3">7</data>
+    </edge>
+    <edge source="Karamay" target="Ku'erle">
+      <data key="d3">12</data>
+    </edge>
+    <edge source="Wulumuqi" target="Ku'erle">
+      <data key="d3">9</data>
+    </edge>
+    <edge source="Wulumuqi" target="Hami">
+      <data key="d3">12</data>
+    </edge>
+    <edge source="Ku'erle" target="Hami">
+      <data key="d3">15</data>
+    </edge>
+    <edge source="Hami" target="Yinchuan">
+      <data key="d3">25</data>
+    </edge>
+    <edge source="Hami" target="Xining">
+      <data key="d3">25</data>
+    </edge>
+    <edge source="Yinchuan" target="Baotou">
+      <data key="d3">9</data>
+    </edge>
+    <edge source="Yinchuan" target="Taiyuan">
+      <data key="d3">14</data>
+    </edge>
+    <edge source="Yinchuan" target="Lanzhou">
+      <data key="d3">9</data>
+    </edge>
+    <edge source="Yinchuan" target="Xining">
+      <data key="d3">11</data>
+    </edge>
+    <edge source="Xining" target="Lanzhou">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Xining" target="Chengou">
+      <data key="d3">20</data>
+    </edge>
+    <edge source="Lanzhou" target="Taiyuan">
+      <data key="d3">18</data>
+    </edge>
+    <edge source="Lanzhou" target="Xi'an">
+      <data key="d3">15</data>
+    </edge>
+    <edge source="Lanzhou" target="Chengou">
+      <data key="d3">16</data>
+    </edge>
+    <edge source="Changchun" target="Shenyang">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Changchun" target="Haerbin">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Changchun" target="Jilin">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Changchun" target="Qiqha'er">
+      <data key="d3">9</data>
+    </edge>
+    <edge source="Shenyang" target="Tangshan">
+      <data key="d3">11</data>
+    </edge>
+    <edge source="Shenyang" target="Fushun">
+      <data key="d3">0</data>
+    </edge>
+    <edge source="Shenyang" target="Anshan">
+      <data key="d3">2</data>
+    </edge>
+    <edge source="Tangshan" target="Beijing">
+      <data key="d3">3</data>
+    </edge>
+    <edge source="Tangshan" target="Tianjin">
+      <data key="d3">0</data>
+    </edge>
+    <edge source="Beijing" target="Baotou">
+      <data key="d3">14</data>
+    </edge>
+    <edge source="Beijing" target="Taiyuan">
+      <data key="d3">10</data>
+    </edge>
+    <edge source="Beijing" target="Shijiazhuang">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Baotou" target="Taiyuan">
+      <data key="d3">9</data>
+    </edge>
+    <edge source="Taiyuan" target="Shijiazhuang">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Taiyuan" target="Zhengzhou">
+      <data key="d3">11</data>
+    </edge>
+    <edge source="Taiyuan" target="Xi'an">
+      <data key="d3">12</data>
+    </edge>
+    <edge source="Tianjin" target="Jinan">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Tianjin" target="Shijiazhuang">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Qiqha'er" target="Hegang">
+      <data key="d3">11</data>
+    </edge>
+    <edge source="Qiqha'er" target="Haerbin">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Hegang" target="Haerbin">
+      <data key="d3">7</data>
+    </edge>
+    <edge source="Haerbin" target="Jilin">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Jilin" target="Fushun">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Anshan" target="Dalian">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Shijiazhuang" target="Jinan">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Shijiazhuang" target="Zhengzhou">
+      <data key="d3">9</data>
+    </edge>
+    <edge source="Jinan" target="Qingoao">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Jinan" target="Nanjing">
+      <data key="d3">11</data>
+    </edge>
+    <edge source="Jinan" target="Zhengzhou">
+      <data key="d3">7</data>
+    </edge>
+    <edge source="Qingoao" target="Nanjing">
+      <data key="d3">12</data>
+    </edge>
+    <edge source="Zhengzhou" target="Nanjing">
+      <data key="d3">12</data>
+    </edge>
+    <edge source="Zhengzhou" target="Wuhan">
+      <data key="d3">10</data>
+    </edge>
+    <edge source="Zhengzhou" target="Xi'an">
+      <data key="d3">10</data>
+    </edge>
+    <edge source="Nanjing" target="Shanghai">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Nanjing" target="Hangzhou">
+      <data key="d3">5</data>
+    </edge>
+    <edge source="Nanjing" target="Wuhan">
+      <data key="d3">10</data>
+    </edge>
+    <edge source="Shanghai" target="Hangzhou">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Hangzhou" target="Fuzhou">
+      <data key="d3">13</data>
+    </edge>
+    <edge source="Hangzhou" target="Nanchang">
+      <data key="d3">10</data>
+    </edge>
+    <edge source="Hangzhou" target="Wuhan">
+      <data key="d3">13</data>
+    </edge>
+    <edge source="Wuhan" target="Nanchang">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Wuhan" target="Changsha">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Wuhan" target="Chongqing">
+      <data key="d3">18</data>
+    </edge>
+    <edge source="Wuhan" target="Xi'an">
+      <data key="d3">15</data>
+    </edge>
+    <edge source="Nanchang" target="Fuzhou">
+      <data key="d3">13</data>
+    </edge>
+    <edge source="Nanchang" target="Chaozhou">
+      <data key="d3">14</data>
+    </edge>
+    <edge source="Nanchang" target="Guangzhou">
+      <data key="d3">16</data>
+    </edge>
+    <edge source="Nanchang" target="Changsha">
+      <data key="d3">7</data>
+    </edge>
+    <edge source="Changsha" target="Guangzhou">
+      <data key="d3">14</data>
+    </edge>
+    <edge source="Changsha" target="Guiyang">
+      <data key="d3">15</data>
+    </edge>
+    <edge source="Changsha" target="Chongqing">
+      <data key="d3">16</data>
+    </edge>
+    <edge source="Fuzhou" target="Chaozhou">
+      <data key="d3">9</data>
+    </edge>
+    <edge source="Chaozhou" target="Hong Kong">
+      <data key="d3">7</data>
+    </edge>
+    <edge source="Chaozhou" target="Guangzhou">
+      <data key="d3">7</data>
+    </edge>
+    <edge source="Guangzhou" target="Hong Kong">
+      <data key="d3">4</data>
+    </edge>
+    <edge source="Guangzhou" target="Haikou">
+      <data key="d3">13</data>
+    </edge>
+    <edge source="Guangzhou" target="Nanning">
+      <data key="d3">11</data>
+    </edge>
+    <edge source="Guangzhou" target="Guiyang">
+      <data key="d3">18</data>
+    </edge>
+    <edge source="Xi'an" target="Chongqing">
+      <data key="d3">14</data>
+    </edge>
+    <edge source="Xi'an" target="Chengou">
+      <data key="d3">14</data>
+    </edge>
+    <edge source="Chengou" target="Chongqing">
+      <data key="d3">6</data>
+    </edge>
+    <edge source="Chengou" target="Guiyang">
+      <data key="d3">13</data>
+    </edge>
+    <edge source="Chengou" target="Kunming">
+      <data key="d3">16</data>
+    </edge>
+    <edge source="Chongqing" target="Guiyang">
+      <data key="d3">9</data>
+    </edge>
+    <edge source="Guiyang" target="Nanning">
+      <data key="d3">12</data>
+    </edge>
+    <edge source="Guiyang" target="Kunming">
+      <data key="d3">12</data>
+    </edge>
+    <edge source="Nanning" target="Haikou">
+      <data key="d3">10</data>
+    </edge>
+    <data key="d0">data/power-grid/china.yaml</data>
+  </graph>
+</graphml>

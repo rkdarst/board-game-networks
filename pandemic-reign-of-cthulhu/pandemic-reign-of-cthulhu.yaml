@@ -1,0 +1,152 @@
+meta:
+  name: "Pandemic: Reign of Cthulhu"
+  bgg: https://boardgamegeek.com/boardgame/192153/pandemic-reign-cthulhu
+  rules: https://images.zmangames.com/filer_public/a9/24/a9249cf7-1f8a-4575-a1a4-f33afc8162b3/en-pandemic-cthulhu-rule-v6.pdf
+  site: https://www.zmangames.com/en/products/pandemic-reign-cthulhu/
+  year: 2016
+  image: https://3.bp.blogspot.com/-N8ISBzAaNr8/V2G7PCVebmI/AAAAAAAAWN8/grMOBgk5OsoIvmGe_dHoseksJlqI0SzLwCLcB/s1600/pandemic-cthulhu-board.jpg
+  features: [regions, node-attributes]
+  note: |
+    Gates (the node attributes) can connect to any other gate at
+    the cost of a sanity roll.  These links are not recorded as
+    edges.  To/from a bus station (the node attribute), you can use
+    player cards to make jumps (like charter/direct flights in
+    Pandemic).
+
+data:
+  - &ark    green
+  - &inn    blue
+  - &dun    yellow
+  - &kin    red
+
+nodes:
+  # Arkham
+  - &tra
+    label: Train station
+    labels: {color: *ark, gate: yes}
+  - &uni
+    label: University
+    labels: {color: *ark}
+  - &pol
+    label: Police station
+    labels: {color: *ark}
+  - &par
+    label: Park
+    labels: {color: *ark, focus: yes}
+  - &sec
+    label: Secret lodge
+    labels: {color: *ark}
+  - &din
+    label: Diner
+    labels: {color: *ark, gate: yes}
+  # Innsmouth
+  - &jun
+    label: Junkyard
+    labels: {color: *inn}
+  - &paw
+    label: Pawn shop
+    labels: {color: *inn}
+  - &hos
+    label: hospital
+    labels: {color: *inn, focus: yes}
+  - &fac
+    label: Factory
+    labels: {color: *inn, gate: yes}
+  - &boa
+    label: Boardwalk
+    labels: {color: *inn}
+  - &doc
+    label: Docks
+    labels: {color: *inn}
+  # Dunwich
+  - &old
+    label: Old mill
+    labels: {color: *dun, focus: yes}
+  - &caf
+    label: Cafe
+    labels: {color: *dun}
+  - &chu
+    label: Church
+    labels: {color: *dun}
+  - &far
+    label: Farmstead
+    labels: {color: *dun}
+  - &swa
+    label: Swamp
+    labels: {color: *dun}
+  - &his
+    label: Historic inn
+    labels: {color: *dun, gate: yes}
+  # Kingsport
+  - &gre
+    label: Great hall
+    labels: {color: *kin}
+  - &woo
+    label: Woods
+    labels: {color: *kin}
+  - &mar
+    label: Market
+    labels: {color: *kin, gate: yes}
+  - &the
+    label: Theater
+    labels: {color: *kin}
+  - &gra
+    label: Graveyard
+    labels: {color: *kin, focus: yes}
+  - &wha
+    label: Whard
+    labels: {color: *kin}
+
+adjacency:
+  # Arkham
+  - src: *tra
+    dst: [*uni, *caf]
+  - src: *uni
+    dst: [*pol, *par, *tra]
+  - src: *par
+    dst: [*pol, *sec, *uni]
+  - src: *sec
+    dst: [*pol, *din, *par]
+  - src: *pol
+    dst: [*sec, *par, *uni]
+  - src: *din
+    dst: [*jun, *sec]
+  # Innsmouth
+  - src: *jun
+    dst: [*paw, *din]
+  - src: *paw
+    dst: [*hos, *fac, *jun]
+  - src: *hos
+    dst: [*fac, *paw]
+  - src: *doc
+    dst: [*boa, *woo]
+  - src: *fac
+    dst: [*boa, *paw, *hos]
+  - src: *boa
+    dst: [*doc, *fac]
+  # Dun
+  - src: *old
+    dst: [*chu]
+  - src: *caf
+    dst: [*chu, *tra]
+  - src: *chu
+    dst: [*his, *far, *old, *caf]
+  - src: *far
+    dst: [*his, *swa, *chu]
+  - src: *swa
+    dst: [*gre, *far]
+  - src: *his
+    dst: [*far, *chu]
+  # Kingsport
+  - src: *gre
+    dst: [*woo, *mar, *swa]
+  - src: *woo
+    dst: [*doc, *mar, *gre]
+  - src: *mar
+    dst: [*wha, *the, *gre, *woo]
+  - src: *the
+    dst: [*mar]
+  - src: *gra
+    dst: [*wha]
+  - src: *wha
+    dst: [*gra, *mar]

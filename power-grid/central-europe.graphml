@@ -1,0 +1,532 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="weight" attr.type="int" />
+  <key id="d5" for="node" attr.name="wastediscount" attr.type="boolean" />
+  <key id="d4" for="node" attr.name="nuclear" attr.type="boolean" />
+  <key id="d3" for="node" attr.name="region" attr.type="string" />
+  <key id="d2" for="node" attr.name="color" attr.type="string" />
+  <key id="d1" for="node" attr.name="id" attr.type="int" />
+  <key id="d0" for="graph" attr.name="filename" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Gdynia">
+      <data key="d1">0</data>
+      <data key="d2">red</data>
+      <data key="d3">Poland</data>
+      <data key="d4">False</data>
+    </node>
+    <node id="Gda&#324;sk">
+      <data key="d1">1</data>
+      <data key="d2">red</data>
+      <data key="d3">Poland</data>
+      <data key="d4">False</data>
+    </node>
+    <node id="Bydgoszcz">
+      <data key="d1">2</data>
+      <data key="d2">red</data>
+      <data key="d3">Poland</data>
+      <data key="d4">False</data>
+    </node>
+    <node id="Szczecin">
+      <data key="d1">3</data>
+      <data key="d2">red</data>
+      <data key="d3">Poland</data>
+      <data key="d4">False</data>
+    </node>
+    <node id="Pozna&#324;">
+      <data key="d1">4</data>
+      <data key="d2">red</data>
+      <data key="d3">Poland</data>
+      <data key="d4">False</data>
+    </node>
+    <node id="&#321;&#243;o&#378;">
+      <data key="d1">5</data>
+      <data key="d2">red</data>
+      <data key="d3">Poland</data>
+      <data key="d4">False</data>
+    </node>
+    <node id="Wroc&#322;aw">
+      <data key="d1">6</data>
+      <data key="d2">red</data>
+      <data key="d3">Poland</data>
+      <data key="d4">False</data>
+    </node>
+    <node id="Bia&#322;ystok">
+      <data key="d1">7</data>
+      <data key="d2">blue</data>
+      <data key="d3">Poland</data>
+      <data key="d4">False</data>
+    </node>
+    <node id="Warszawa">
+      <data key="d1">8</data>
+      <data key="d2">blue</data>
+      <data key="d3">Poland</data>
+      <data key="d4">False</data>
+    </node>
+    <node id="Lubin">
+      <data key="d1">9</data>
+      <data key="d2">blue</data>
+      <data key="d3">Poland</data>
+      <data key="d4">False</data>
+    </node>
+    <node id="Cz&#281;stochowa">
+      <data key="d1">10</data>
+      <data key="d2">blue</data>
+      <data key="d3">Poland</data>
+      <data key="d4">False</data>
+    </node>
+    <node id="Krak&#243;w">
+      <data key="d1">11</data>
+      <data key="d2">blue</data>
+      <data key="d3">Poland</data>
+      <data key="d4">False</data>
+    </node>
+    <node id="Sosnowiec">
+      <data key="d1">12</data>
+      <data key="d2">blue</data>
+      <data key="d3">Poland</data>
+      <data key="d4">False</data>
+    </node>
+    <node id="Katowice">
+      <data key="d1">13</data>
+      <data key="d2">blue</data>
+      <data key="d3">Poland</data>
+      <data key="d4">False</data>
+    </node>
+    <node id="Ostrava">
+      <data key="d1">14</data>
+      <data key="d2">green</data>
+      <data key="d3">Czech Republic</data>
+    </node>
+    <node id="&#218;st&#237; nad Labem">
+      <data key="d1">15</data>
+      <data key="d2">green</data>
+      <data key="d3">Czech Republic</data>
+    </node>
+    <node id="Hradec Kr&#225;lov&#233;">
+      <data key="d1">16</data>
+      <data key="d2">green</data>
+      <data key="d3">Czech Republic</data>
+    </node>
+    <node id="Praha">
+      <data key="d1">17</data>
+      <data key="d2">green</data>
+      <data key="d3">Czech Republic</data>
+    </node>
+    <node id="Brno">
+      <data key="d1">18</data>
+      <data key="d2">green</data>
+      <data key="d3">Czech Republic</data>
+    </node>
+    <node id="Plze&#324;">
+      <data key="d1">19</data>
+      <data key="d2">green</data>
+      <data key="d3">Czech Republic</data>
+    </node>
+    <node id="&#268;esk&#233; Bud&#283;jovice">
+      <data key="d1">20</data>
+      <data key="d2">green</data>
+      <data key="d3">Czech Republic</data>
+    </node>
+    <node id="Pre&#353;ov">
+      <data key="d1">21</data>
+      <data key="d2">brown</data>
+      <data key="d3">Slovakia</data>
+    </node>
+    <node id="Poprad">
+      <data key="d1">22</data>
+      <data key="d2">brown</data>
+      <data key="d3">Slovakia</data>
+    </node>
+    <node id="Ko&#353;ice">
+      <data key="d1">23</data>
+      <data key="d2">brown</data>
+      <data key="d3">Slovakia</data>
+    </node>
+    <node id="Bansk&#225; Bystrica">
+      <data key="d1">24</data>
+      <data key="d2">brown</data>
+      <data key="d3">Slovakia</data>
+    </node>
+    <node id="&#381;ilina">
+      <data key="d1">25</data>
+      <data key="d2">brown</data>
+      <data key="d3">Slovakia</data>
+    </node>
+    <node id="Trnava">
+      <data key="d1">26</data>
+      <data key="d2">brown</data>
+      <data key="d3">Slovakia</data>
+    </node>
+    <node id="Bratislava">
+      <data key="d1">27</data>
+      <data key="d2">brown</data>
+      <data key="d3">Slovakia</data>
+    </node>
+    <node id="Wien">
+      <data key="d1">28</data>
+      <data key="d2">yellow</data>
+      <data key="d3">Austria</data>
+      <data key="d4">False</data>
+      <data key="d5">True</data>
+    </node>
+    <node id="Linz">
+      <data key="d1">29</data>
+      <data key="d2">yellow</data>
+      <data key="d3">Austria</data>
+      <data key="d4">False</data>
+    </node>
+    <node id="Salzburg">
+      <data key="d1">30</data>
+      <data key="d2">yellow</data>
+      <data key="d3">Austria</data>
+      <data key="d4">False</data>
+    </node>
+    <node id="Graz">
+      <data key="d1">31</data>
+      <data key="d2">yellow</data>
+      <data key="d3">Austria</data>
+      <data key="d4">False</data>
+    </node>
+    <node id="Klagenfurt">
+      <data key="d1">32</data>
+      <data key="d2">yellow</data>
+      <data key="d3">Austria</data>
+      <data key="d4">False</data>
+    </node>
+    <node id="Innsbruck">
+      <data key="d1">33</data>
+      <data key="d2">yellow</data>
+      <data key="d3">Austria</data>
+      <data key="d4">False</data>
+    </node>
+    <node id="Villach">
+      <data key="d1">34</data>
+      <data key="d2">yellow</data>
+      <data key="d3">Austria</data>
+      <data key="d4">False</data>
+    </node>
+    <node id="Ny&#237;regyh&#225;za">
+      <data key="d1">35</data>
+      <data key="d2">purple</data>
+      <data key="d3">Hungary</data>
+    </node>
+    <node id="Miskolch">
+      <data key="d1">36</data>
+      <data key="d2">purple</data>
+      <data key="d3">Hungary</data>
+    </node>
+    <node id="Budapest">
+      <data key="d1">37</data>
+      <data key="d2">purple</data>
+      <data key="d3">Hungary</data>
+    </node>
+    <node id="Gy&#337;r">
+      <data key="d1">38</data>
+      <data key="d2">purple</data>
+      <data key="d3">Hungary</data>
+    </node>
+    <node id="Kecskem&#233;t">
+      <data key="d1">39</data>
+      <data key="d2">purple</data>
+      <data key="d3">Hungary</data>
+    </node>
+    <node id="Szegeo">
+      <data key="d1">40</data>
+      <data key="d2">purple</data>
+      <data key="d3">Hungary</data>
+    </node>
+    <node id="P&#233;cs">
+      <data key="d1">41</data>
+      <data key="d2">purple</data>
+      <data key="d3">Hungary</data>
+    </node>
+    <edge source="Gdynia" target="Gda&#324;sk">
+      <data key="d6">0</data>
+    </edge>
+    <edge source="Gdynia" target="Szczecin">
+      <data key="d6">17</data>
+    </edge>
+    <edge source="Gda&#324;sk" target="Bia&#322;ystok">
+      <data key="d6">20</data>
+    </edge>
+    <edge source="Gda&#324;sk" target="Bydgoszcz">
+      <data key="d6">8</data>
+    </edge>
+    <edge source="Bydgoszcz" target="Warszawa">
+      <data key="d6">15</data>
+    </edge>
+    <edge source="Bydgoszcz" target="&#321;&#243;o&#378;">
+      <data key="d6">12</data>
+    </edge>
+    <edge source="Bydgoszcz" target="Pozna&#324;">
+      <data key="d6">7</data>
+    </edge>
+    <edge source="Bydgoszcz" target="Szczecin">
+      <data key="d6">15</data>
+    </edge>
+    <edge source="Szczecin" target="Pozna&#324;">
+      <data key="d6">14</data>
+    </edge>
+    <edge source="Szczecin" target="Wroc&#322;aw">
+      <data key="d6">22</data>
+    </edge>
+    <edge source="Pozna&#324;" target="&#321;&#243;o&#378;">
+      <data key="d6">13</data>
+    </edge>
+    <edge source="Pozna&#324;" target="Wroc&#322;aw">
+      <data key="d6">9</data>
+    </edge>
+    <edge source="&#321;&#243;o&#378;" target="Warszawa">
+      <data key="d6">7</data>
+    </edge>
+    <edge source="&#321;&#243;o&#378;" target="Lubin">
+      <data key="d6">16</data>
+    </edge>
+    <edge source="&#321;&#243;o&#378;" target="Cz&#281;stochowa">
+      <data key="d6">7</data>
+    </edge>
+    <edge source="&#321;&#243;o&#378;" target="Wroc&#322;aw">
+      <data key="d6">12</data>
+    </edge>
+    <edge source="Wroc&#322;aw" target="Cz&#281;stochowa">
+      <data key="d6">9</data>
+    </edge>
+    <edge source="Wroc&#322;aw" target="Ostrava">
+      <data key="d6">11</data>
+    </edge>
+    <edge source="Wroc&#322;aw" target="Hradec Kr&#225;lov&#233;">
+      <data key="d6">10</data>
+    </edge>
+    <edge source="Wroc&#322;aw" target="&#218;st&#237; nad Labem">
+      <data key="d6">17</data>
+    </edge>
+    <edge source="Bia&#322;ystok" target="Lubin">
+      <data key="d6">15</data>
+    </edge>
+    <edge source="Bia&#322;ystok" target="Warszawa">
+      <data key="d6">14</data>
+    </edge>
+    <edge source="Warszawa" target="Lubin">
+      <data key="d6">10</data>
+    </edge>
+    <edge source="Lubin" target="Pre&#353;ov">
+      <data key="d6">20</data>
+    </edge>
+    <edge source="Lubin" target="Krak&#243;w">
+      <data key="d6">16</data>
+    </edge>
+    <edge source="Lubin" target="Cz&#281;stochowa">
+      <data key="d6">17</data>
+    </edge>
+    <edge source="Cz&#281;stochowa" target="Krak&#243;w">
+      <data key="d6">6</data>
+    </edge>
+    <edge source="Cz&#281;stochowa" target="Sosnowiec">
+      <data key="d6">4</data>
+    </edge>
+    <edge source="Krak&#243;w" target="Sosnowiec">
+      <data key="d6">4</data>
+    </edge>
+    <edge source="Krak&#243;w" target="Pre&#353;ov">
+      <data key="d6">13</data>
+    </edge>
+    <edge source="Krak&#243;w" target="Poprad">
+      <data key="d6">11</data>
+    </edge>
+    <edge source="Krak&#243;w" target="&#381;ilina">
+      <data key="d6">12</data>
+    </edge>
+    <edge source="Krak&#243;w" target="Ostrava">
+      <data key="d6">7</data>
+    </edge>
+    <edge source="Sosnowiec" target="Katowice">
+      <data key="d6">0</data>
+    </edge>
+    <edge source="Katowice" target="Ostrava">
+      <data key="d6">4</data>
+    </edge>
+    <edge source="Ostrava" target="&#381;ilina">
+      <data key="d6">7</data>
+    </edge>
+    <edge source="Ostrava" target="Brno">
+      <data key="d6">12</data>
+    </edge>
+    <edge source="Ostrava" target="Hradec Kr&#225;lov&#233;">
+      <data key="d6">16</data>
+    </edge>
+    <edge source="&#218;st&#237; nad Labem" target="Hradec Kr&#225;lov&#233;">
+      <data key="d6">10</data>
+    </edge>
+    <edge source="&#218;st&#237; nad Labem" target="Praha">
+      <data key="d6">6</data>
+    </edge>
+    <edge source="&#218;st&#237; nad Labem" target="Plze&#324;">
+      <data key="d6">9</data>
+    </edge>
+    <edge source="Hradec Kr&#225;lov&#233;" target="Brno">
+      <data key="d6">9</data>
+    </edge>
+    <edge source="Hradec Kr&#225;lov&#233;" target="Praha">
+      <data key="d6">8</data>
+    </edge>
+    <edge source="Praha" target="Brno">
+      <data key="d6">13</data>
+    </edge>
+    <edge source="Praha" target="&#268;esk&#233; Bud&#283;jovice">
+      <data key="d6">10</data>
+    </edge>
+    <edge source="Praha" target="Plze&#324;">
+      <data key="d6">7</data>
+    </edge>
+    <edge source="Brno" target="&#381;ilina">
+      <data key="d6">14</data>
+    </edge>
+    <edge source="Brno" target="Trnava">
+      <data key="d6">10</data>
+    </edge>
+    <edge source="Brno" target="Bratislava">
+      <data key="d6">10</data>
+    </edge>
+    <edge source="Brno" target="Wien">
+      <data key="d6">8</data>
+    </edge>
+    <edge source="Brno" target="&#268;esk&#233; Bud&#283;jovice">
+      <data key="d6">15</data>
+    </edge>
+    <edge source="Plze&#324;" target="&#268;esk&#233; Bud&#283;jovice">
+      <data key="d6">11</data>
+    </edge>
+    <edge source="&#268;esk&#233; Bud&#283;jovice" target="Wien">
+      <data key="d6">14</data>
+    </edge>
+    <edge source="&#268;esk&#233; Bud&#283;jovice" target="Linz">
+      <data key="d6">8</data>
+    </edge>
+    <edge source="Pre&#353;ov" target="Ko&#353;ice">
+      <data key="d6">2</data>
+    </edge>
+    <edge source="Pre&#353;ov" target="Poprad">
+      <data key="d6">7</data>
+    </edge>
+    <edge source="Poprad" target="Ko&#353;ice">
+      <data key="d6">6</data>
+    </edge>
+    <edge source="Poprad" target="Miskolch">
+      <data key="d6">9</data>
+    </edge>
+    <edge source="Poprad" target="Bansk&#225; Bystrica">
+      <data key="d6">11</data>
+    </edge>
+    <edge source="Poprad" target="&#381;ilina">
+      <data key="d6">11</data>
+    </edge>
+    <edge source="Ko&#353;ice" target="Ny&#237;regyh&#225;za">
+      <data key="d6">8</data>
+    </edge>
+    <edge source="Ko&#353;ice" target="Miskolch">
+      <data key="d6">4</data>
+    </edge>
+    <edge source="Bansk&#225; Bystrica" target="&#381;ilina">
+      <data key="d6">6</data>
+    </edge>
+    <edge source="Bansk&#225; Bystrica" target="Miskolch">
+      <data key="d6">11</data>
+    </edge>
+    <edge source="Bansk&#225; Bystrica" target="Budapest">
+      <data key="d6">12</data>
+    </edge>
+    <edge source="Bansk&#225; Bystrica" target="Trnava">
+      <data key="d6">10</data>
+    </edge>
+    <edge source="&#381;ilina" target="Trnava">
+      <data key="d6">10</data>
+    </edge>
+    <edge source="Trnava" target="Budapest">
+      <data key="d6">9</data>
+    </edge>
+    <edge source="Trnava" target="Gy&#337;r">
+      <data key="d6">5</data>
+    </edge>
+    <edge source="Trnava" target="Bratislava">
+      <data key="d6">2</data>
+    </edge>
+    <edge source="Bratislava" target="Gy&#337;r">
+      <data key="d6">6</data>
+    </edge>
+    <edge source="Bratislava" target="Wien">
+      <data key="d6">3</data>
+    </edge>
+    <edge source="Wien" target="Gy&#337;r">
+      <data key="d6">8</data>
+    </edge>
+    <edge source="Wien" target="Graz">
+      <data key="d6">12</data>
+    </edge>
+    <edge source="Wien" target="Linz">
+      <data key="d6">11</data>
+    </edge>
+    <edge source="Linz" target="Graz">
+      <data key="d6">16</data>
+    </edge>
+    <edge source="Linz" target="Salzburg">
+      <data key="d6">9</data>
+    </edge>
+    <edge source="Salzburg" target="Graz">
+      <data key="d6">22</data>
+    </edge>
+    <edge source="Salzburg" target="Klagenfurt">
+      <data key="d6">20</data>
+    </edge>
+    <edge source="Salzburg" target="Innsbruck">
+      <data key="d6">15</data>
+    </edge>
+    <edge source="Graz" target="Gy&#337;r">
+      <data key="d6">14</data>
+    </edge>
+    <edge source="Graz" target="P&#233;cs">
+      <data key="d6">19</data>
+    </edge>
+    <edge source="Graz" target="Klagenfurt">
+      <data key="d6">10</data>
+    </edge>
+    <edge source="Klagenfurt" target="Villach">
+      <data key="d6">4</data>
+    </edge>
+    <edge source="Innsbruck" target="Villach">
+      <data key="d6">22</data>
+    </edge>
+    <edge source="Ny&#237;regyh&#225;za" target="Szegeo">
+      <data key="d6">16</data>
+    </edge>
+    <edge source="Ny&#237;regyh&#225;za" target="Miskolch">
+      <data key="d6">7</data>
+    </edge>
+    <edge source="Miskolch" target="Kecskem&#233;t">
+      <data key="d6">10</data>
+    </edge>
+    <edge source="Miskolch" target="Budapest">
+      <data key="d6">9</data>
+    </edge>
+    <edge source="Budapest" target="Kecskem&#233;t">
+      <data key="d6">6</data>
+    </edge>
+    <edge source="Budapest" target="P&#233;cs">
+      <data key="d6">12</data>
+    </edge>
+    <edge source="Budapest" target="Gy&#337;r">
+      <data key="d6">5</data>
+    </edge>
+    <edge source="Gy&#337;r" target="P&#233;cs">
+      <data key="d6">15</data>
+    </edge>
+    <edge source="Kecskem&#233;t" target="Szegeo">
+      <data key="d6">5</data>
+    </edge>
+    <edge source="Kecskem&#233;t" target="P&#233;cs">
+      <data key="d6">11</data>
+    </edge>
+    <edge source="Szegeo" target="P&#233;cs">
+      <data key="d6">12</data>
+    </edge>
+    <data key="d0">data/power-grid/central-europe.yaml</data>
+  </graph>
+</graphml>

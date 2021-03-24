@@ -1,0 +1,254 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d4" for="edge" attr.name="weight" attr.type="int" />
+  <key id="d3" for="edge" attr.name="color" attr.type="string" />
+  <key id="d2" for="node" attr.name="district" attr.type="int" />
+  <key id="d1" for="node" attr.name="id" attr.type="int" />
+  <key id="d0" for="graph" attr.name="filename" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Regent's Park">
+      <data key="d1">0</data>
+      <data key="d2">5</data>
+    </node>
+    <node id="King's Cross">
+      <data key="d1">1</data>
+      <data key="d2">5</data>
+    </node>
+    <node id="Baker Street">
+      <data key="d1">2</data>
+      <data key="d2">5</data>
+    </node>
+    <node id="British Museum">
+      <data key="d1">3</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="The Charterhouse">
+      <data key="d1">4</data>
+      <data key="d2">4</data>
+    </node>
+    <node id="Brick Lane">
+      <data key="d1">5</data>
+      <data key="d2">4</data>
+    </node>
+    <node id="Piccadilly Circus">
+      <data key="d1">6</data>
+      <data key="d2">2</data>
+    </node>
+    <node id="Trafalgar Square">
+      <data key="d1">7</data>
+      <data key="d2">2</data>
+    </node>
+    <node id="Covent Garden">
+      <data key="d1">8</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="St. Paul's">
+      <data key="d1">9</data>
+      <data key="d2">4</data>
+    </node>
+    <node id="Tower of London">
+      <data key="d1">10</data>
+      <data key="d2">4</data>
+    </node>
+    <node id="Hyde Park">
+      <data key="d1">11</data>
+      <data key="d2">5</data>
+    </node>
+    <node id="Buckingham Palace">
+      <data key="d1">12</data>
+      <data key="d2">2</data>
+    </node>
+    <node id="Big Ben">
+      <data key="d1">13</data>
+      <data key="d2">2</data>
+    </node>
+    <node id="Waterloo">
+      <data key="d1">14</data>
+      <data key="d2">3</data>
+    </node>
+    <node id="Globe Theatre">
+      <data key="d1">15</data>
+      <data key="d2">3</data>
+    </node>
+    <node id="Elephant &amp; Castle">
+      <data key="d1">16</data>
+      <data key="d2">3</data>
+    </node>
+    <edge source="Regent's Park" target="King's Cross" id="0">
+      <data key="d3">green</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Regent's Park" target="British Museum" id="0">
+      <data key="d3">yellow</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Regent's Park" target="Baker Street" id="0">
+      <data key="d3">blue</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="King's Cross" target="The Charterhouse" id="0">
+      <data key="d3">pink</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="King's Cross" target="British Museum" id="0">
+      <data key="d3">black</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Baker Street" target="British Museum" id="0">
+      <data key="d3">orange</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Baker Street" target="Piccadilly Circus" id="0">
+      <data key="d3">grey</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Baker Street" target="Hyde Park" id="0">
+      <data key="d3">black</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="British Museum" target="The Charterhouse" id="0">
+      <data key="d3">blue</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="British Museum" target="Covent Garden" id="0">
+      <data key="d3">grey</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="British Museum" target="Covent Garden" id="1">
+      <data key="d3">grey</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="British Museum" target="Piccadilly Circus" id="0">
+      <data key="d3">grey</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="The Charterhouse" target="Brick Lane" id="0">
+      <data key="d3">green</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="The Charterhouse" target="St. Paul's" id="0">
+      <data key="d3">black</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Brick Lane" target="Tower of London" id="0">
+      <data key="d3">blue</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Brick Lane" target="St. Paul's" id="0">
+      <data key="d3">orange</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Piccadilly Circus" target="Covent Garden" id="0">
+      <data key="d3">green</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Piccadilly Circus" target="Covent Garden" id="1">
+      <data key="d3">yellow</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Piccadilly Circus" target="Trafalgar Square" id="0">
+      <data key="d3">blue</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Piccadilly Circus" target="Trafalgar Square" id="1">
+      <data key="d3">orange</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Piccadilly Circus" target="Buckingham Palace" id="0">
+      <data key="d3">pink</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Piccadilly Circus" target="Hyde Park" id="0">
+      <data key="d3">grey</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Piccadilly Circus" target="Hyde Park" id="1">
+      <data key="d3">grey</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Trafalgar Square" target="Covent Garden" id="0">
+      <data key="d3">black</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Trafalgar Square" target="Covent Garden" id="1">
+      <data key="d3">pink</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Trafalgar Square" target="Waterloo" id="0">
+      <data key="d3">grey</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Trafalgar Square" target="Big Ben" id="0">
+      <data key="d3">grey</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Trafalgar Square" target="Buckingham Palace" id="0">
+      <data key="d3">grey</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Covent Garden" target="St. Paul's" id="0">
+      <data key="d3">grey</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Covent Garden" target="St. Paul's" id="1">
+      <data key="d3">grey</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="St. Paul's" target="Tower of London" id="0">
+      <data key="d3">yellow</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="St. Paul's" target="Tower of London" id="1">
+      <data key="d3">pink</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="St. Paul's" target="Globe Theatre" id="0">
+      <data key="d3">grey</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="St. Paul's" target="Globe Theatre" id="1">
+      <data key="d3">grey</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Tower of London" target="Elephant &amp; Castle" id="0">
+      <data key="d3">black</data>
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Tower of London" target="Globe Theatre" id="0">
+      <data key="d3">grey</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Hyde Park" target="Buckingham Palace" id="0">
+      <data key="d3">yellow</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Hyde Park" target="Buckingham Palace" id="1">
+      <data key="d3">orange</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Buckingham Palace" target="Big Ben" id="0">
+      <data key="d3">green</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Big Ben" target="Waterloo" id="0">
+      <data key="d3">blue</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Big Ben" target="Elephant &amp; Castle" id="0">
+      <data key="d3">yellow</data>
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Waterloo" target="Globe Theatre" id="0">
+      <data key="d3">pink</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Waterloo" target="Elephant &amp; Castle" id="0">
+      <data key="d3">orange</data>
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Globe Theatre" target="Elephant &amp; Castle" id="0">
+      <data key="d3">green</data>
+      <data key="d4">2</data>
+    </edge>
+    <data key="d0">data/ticket-to-ride/london.yaml</data>
+  </graph>
+</graphml>

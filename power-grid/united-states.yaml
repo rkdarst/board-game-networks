@@ -1,0 +1,243 @@
+meta:
+  name: Power Grid
+  subname: United States
+  image: https://dmsrus.files.wordpress.com/2015/02/pic173810.jpg
+  year: 2004
+  rules: https://www.riograndegames.com/wp-content/uploads/2018/12/Power-Grid-Recharged-Rules.pdf
+  bgg: https://boardgamegeek.com/boardgame/2651/power-grid
+
+data:
+  - &purple purple
+  - &cyan   cyan
+  - &yellow yellow
+  - &red    red
+  - &brown  brown
+  - &green  green
+
+
+nodes:
+  # Green
+  - &sea
+    label: Seattle
+    labels: {color: *purple}
+  - &por
+    label: Portland
+    labels: {color: *purple}
+  - &boi
+    label: Boise
+    labels: {color: *purple}
+  - &bil
+    label: Billings
+    labels: {color: *purple}
+  - &che
+    label: Cheyenne
+    labels: {color: *purple}
+  - &oma
+    label: Omaha
+    labels: {color: *purple}
+  - &den
+    label: Denver
+    labels: {color: *purple}
+  # Cyan
+  - &sal
+    label: Salt Lake City
+    labels: {color: *cyan}
+  - &san-f
+    label: San Francisco
+    labels: {color: *cyan}
+  - &las
+    label: Las Vegas
+    labels: {color: *cyan}
+  - &sant
+    label: Santa Fe
+    labels: {color: *cyan}
+  - &los
+    label: Los Angeles
+    labels: {color: *cyan}
+  - &pho
+    label: Phoenix
+    labels: {color: *cyan}
+  - &san-d
+    label: San Diego
+    labels: {color: *cyan}
+  # Yellow
+  - &dul
+    label: Duluth
+    labels: {color: *yellow}
+  - &far
+    label: Fargo
+    labels: {color: *yellow}
+  - &min
+    label: Minneapolis
+    labels: {color: *yellow}
+  - &chi
+    label: Chicago
+    labels: {color: *yellow}
+  - &stl
+    label: St. Louis
+    labels: {color: *yellow}
+  - &cin
+    label: Cincinnati
+    labels: {color: *yellow}
+  - &kno
+    label: Knoxville
+    labels: {color: *yellow}
+  # Red
+  - &kan
+    label: Kansas City
+    labels: {color: *red}
+  - &okl
+    label: Oklahoma City
+    labels: {color: *red}
+  - &mem
+    label: Memphis
+    labels: {color: *red}
+  - &dal
+    label: Dallas
+    labels: {color: *red}
+  - &bir
+    label: Birmingham
+    labels: {color: *red}
+  - &hou
+    label: Houston
+    labels: {color: *red}
+  - &new-o
+    label: New Orleans
+    labels: {color: *red}
+  # Brown
+  - &det
+    label: Detroit
+    labels: {color: *brown}
+  - &buf
+    label: Buffalo
+    labels: {color: *brown}
+  - &pit
+    label: Pittsburgh
+    labels: {color: *brown}
+  - &was
+    label: Washington
+    labels: {color: *brown}
+  - &phi
+    label: Philadelphia
+    labels: {color: *brown}
+  - &new-y
+    label: New York
+    labels: {color: *brown}
+  - &bos
+    label: Boston
+    labels: {color: *brown}
+  # Green
+  - &nor
+    label: Norfolk
+    labels: {color: *green}
+  - &ral
+    label: Raleigh
+    labels: {color: *green}
+  - &atl
+    label: Atlanta
+    labels: {color: *green}
+  - &sav
+    label: Savannah
+    labels: {color: *green}
+  - &jac
+    label: Jacksonville
+    labels: {color: *green}
+  - &tam
+    label: Tampa
+    labels: {color: *green}
+  - &mia
+    label: Miami
+    labels: {color: *green}
+
+
+adjacency:
+  # Purple
+  - src: *sea
+    dst: [[*por, 3], [*boi, 12], [*bil, 9]]
+  - src: *por
+    dst: [[*sea, 3], [*boi, 13], [*san-f, 24]]
+  - src: *bil
+    dst: [[*sea, 9], [*far, 17], [*min, 18], [*che, 9], [*boi, 12]]
+  - src: *boi
+    dst: [[*por, 13], [*sea, 12], [*bil, 12], [*che, 24], [*sal, 8], [*san-f, 23]]
+  - src: *che
+    dst: [[*boi, 24], [*bil, 9], [*min, 18], [*oma, 14], [*den, 0]]
+  - src: *oma
+    dst: [[*che, 14], [*min, 8], [*chi, 13], [*kan, 5]]
+  - src: *den
+    dst: [[*sal, 21], [*che, 0], [*kan, 16], [*sant, 13]]
+  # Cyan
+  - src: *san-f
+    dst: [[*por, 24], [*boi, 23], [*sal, 27], [*las, 14], [*los, 9]]
+  - src: *sal
+    dst: [[*boi, 8], [*den, 21], [*sant, 28], [*las, 18], [*san-f, 27]]
+  - src: *las
+    dst: [[*san-f, 14], [*sal, 18], [*sant, 27], [*pho, 15], [*san-d, 9], [*los, 9]]
+  - src: *sant
+    dst: [[*las, 27], [*sal, 28], [*den, 13], [*kan, 16], [*okl, 15], [*dal, 16], [*hou, 21], [*pho, 18]]
+  - src: *los
+    dst: [[*san-f, 9], [*las, 9], [*san-d, 3]]
+  - src: *pho
+    dst: [[*las, 15], [*sant, 18], [*san-d, 14]]
+  - src: *san-d
+    dst: [[*los, 3], [*las, 9], [*pho, 14]]
+  # Yellow
+  - src: *dul
+    dst: [[*far, 6], [*min, 5], [*chi, 12], [*det, 15]]
+  - src: *far
+    dst: [[*bil, 17], [*dul, 6], [*min, 6]]
+  - src: *min
+    dst: [[*bil, 18], [*far, 6], [*dul, 5], [*chi, 8], [*oma, 8], [*che, 18]]
+  - src: *chi
+    dst: [[*min, 8], [*dul, 12], [*det, 7], [*cin, 7], [*stl, 10], [*kan, 8], [*oma, 13]]
+  - src: *stl
+    dst: [[*kan, 6], [*chi, 10], [*cin, 12], [*atl, 12], [*mem, 7]]
+  - src: *cin
+    dst: [[*stl, 12], [*chi, 7], [*det, 4], [*pit, 7], [*ral, 15], [*kno, 6]]
+  - src: *kno
+    dst: [[*cin, 6], [*atl, 5]]
+  # Red
+  - src: *kan
+    dst: [[*den, 16], [*oma, 5], [*chi, 8], [*stl, 6], [*mem, 12], [*okl, 8], [*sant, 16]]
+  - src: *okl
+    dst: [[*sant, 15], [*kan, 8], [*mem, 14], [*dal, 3]]
+  - src: *mem
+    dst: [[*okl, 14], [*kan, 12], [*stl, 7], [*bir, 6], [*new-o, 7], [*dal, 12]]
+  - src: *bir
+    dst: [[*mem, 6], [*atl, 3], [*jac, 9], [*new-o, 11]]
+  - src: *dal
+    dst: [[*sant, 16], [*okl, 3], [*mem, 12], [*new-o, 12], [*hou, 5]]
+  - src: *hou
+    dst: [[*sant, 21], [*dal, 5], [*new-o, 8]]
+  - src: *new-o
+    dst: [[*hou, 8], [*dal, 12], [*mem, 7], [*bir, 11], [*jac, 16]]
+  # Brown
+  - src: *buf
+    dst: [[*det, 7], [*new-y, 8], [*pit, 7]]
+  - src: *det
+    dst: [[*dul, 15], [*buf, 7], [*pit, 6], [*cin, 4], [*chi, 7]]
+  - src: *bos
+    dst: [[*new-y, 3]]
+  - src: *new-y
+    dst: [[*buf, 8], [*bos, 3], [*phi, 0]]
+  - src: *pit
+    dst: [[*det, 6], [*buf, 7], [*was, 6], [*ral, 7], [*cin, 7]]
+  - src: *phi
+    dst: [[*new-y, 0], [*was, 3]]
+  - src: *was
+    dst: [[*pit, 6], [*phi, 3], [*nor, 5]]
+  # Green
+  - src: *nor
+    dst: [[*was, 5], [*ral, 3]]
+  - src: *ral
+    dst: [[*cin, 15], [*pit, 7], [*nor, 3], [*sav, 7], [*atl, 7]]
+  - src: *atl
+    dst: [[*bir, 3], [*stl, 12], [*kno, 5], [*ral, 7], [*sav, 7]]
+  - src: *sav
+    dst: [[*atl, 7], [*ral, 7], [*jac, 0]]
+  - src: *jac
+    dst: [[*new-o, 16], [*bir, 9], [*sav, 0], [*tam, 4]]
+  - src: *tam
+    dst: [[*jac, 4], [*mia, 4]]
+  - src: *mia
+    dst: [[*tam, 4]]

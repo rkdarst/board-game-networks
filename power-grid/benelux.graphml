@@ -1,0 +1,407 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d4" for="edge" attr.name="weight" attr.type="int" />
+  <key id="d3" for="node" attr.name="region" attr.type="string" />
+  <key id="d2" for="node" attr.name="color" attr.type="string" />
+  <key id="d1" for="node" attr.name="id" attr.type="int" />
+  <key id="d0" for="graph" attr.name="filename" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Leeuwarden">
+      <data key="d1">0</data>
+      <data key="d2">blue</data>
+      <data key="d3">Netherlands</data>
+    </node>
+    <node id="Groningen">
+      <data key="d1">1</data>
+      <data key="d2">blue</data>
+      <data key="d3">Netherlands</data>
+    </node>
+    <node id="Den Helder">
+      <data key="d1">2</data>
+      <data key="d2">blue</data>
+      <data key="d3">Netherlands</data>
+    </node>
+    <node id="Apeldoorn">
+      <data key="d1">3</data>
+      <data key="d2">blue</data>
+      <data key="d3">Netherlands</data>
+    </node>
+    <node id="Enschede">
+      <data key="d1">4</data>
+      <data key="d2">blue</data>
+      <data key="d3">Netherlands</data>
+    </node>
+    <node id="Arnhem">
+      <data key="d1">5</data>
+      <data key="d2">blue</data>
+      <data key="d3">Netherlands</data>
+    </node>
+    <node id="Nijmegen">
+      <data key="d1">6</data>
+      <data key="d2">blue</data>
+      <data key="d3">Netherlands</data>
+    </node>
+    <node id="Zaanstad">
+      <data key="d1">7</data>
+      <data key="d2">orange</data>
+      <data key="d3">Netherlands</data>
+    </node>
+    <node id="Haarlem">
+      <data key="d1">8</data>
+      <data key="d2">orange</data>
+      <data key="d3">Netherlands</data>
+    </node>
+    <node id="Amsterdam">
+      <data key="d1">9</data>
+      <data key="d2">orange</data>
+      <data key="d3">Netherlands</data>
+    </node>
+    <node id="Leider">
+      <data key="d1">10</data>
+      <data key="d2">orange</data>
+      <data key="d3">Netherlands</data>
+    </node>
+    <node id="Den Haag">
+      <data key="d1">11</data>
+      <data key="d2">orange</data>
+      <data key="d3">Netherlands</data>
+    </node>
+    <node id="Utrecht">
+      <data key="d1">12</data>
+      <data key="d2">orange</data>
+      <data key="d3">Netherlands</data>
+    </node>
+    <node id="Rotterdam">
+      <data key="d1">13</data>
+      <data key="d2">orange</data>
+      <data key="d3">Netherlands</data>
+    </node>
+    <node id="Den Bosch">
+      <data key="d1">14</data>
+      <data key="d2">yellow</data>
+      <data key="d3">Netherlands</data>
+    </node>
+    <node id="Middelburg">
+      <data key="d1">15</data>
+      <data key="d2">yellow</data>
+      <data key="d3">Netherlands</data>
+    </node>
+    <node id="Breda">
+      <data key="d1">16</data>
+      <data key="d2">yellow</data>
+      <data key="d3">Netherlands</data>
+    </node>
+    <node id="Tilburg">
+      <data key="d1">17</data>
+      <data key="d2">yellow</data>
+      <data key="d3">Netherlands</data>
+    </node>
+    <node id="Venlo">
+      <data key="d1">18</data>
+      <data key="d2">yellow</data>
+      <data key="d3">Netherlands</data>
+    </node>
+    <node id="Eindhoven">
+      <data key="d1">19</data>
+      <data key="d2">yellow</data>
+      <data key="d3">Netherlands</data>
+    </node>
+    <node id="Maastricht">
+      <data key="d1">20</data>
+      <data key="d2">yellow</data>
+      <data key="d3">Netherlands</data>
+    </node>
+    <node id="Oostende">
+      <data key="d1">21</data>
+      <data key="d2">red</data>
+      <data key="d3">Belgium</data>
+    </node>
+    <node id="Brugge">
+      <data key="d1">22</data>
+      <data key="d2">red</data>
+      <data key="d3">Belgium</data>
+    </node>
+    <node id="Antwerpen">
+      <data key="d1">23</data>
+      <data key="d2">red</data>
+      <data key="d3">Belgium</data>
+    </node>
+    <node id="Gent">
+      <data key="d1">24</data>
+      <data key="d2">red</data>
+      <data key="d3">Belgium</data>
+    </node>
+    <node id="Kortrijk">
+      <data key="d1">25</data>
+      <data key="d2">red</data>
+      <data key="d3">Belgium</data>
+    </node>
+    <node id="Brussel">
+      <data key="d1">26</data>
+      <data key="d2">red</data>
+      <data key="d3">Belgium</data>
+    </node>
+    <node id="Leuven">
+      <data key="d1">27</data>
+      <data key="d2">red</data>
+      <data key="d3">Belgium</data>
+    </node>
+    <node id="Bruxelles">
+      <data key="d1">28</data>
+      <data key="d2">blue</data>
+      <data key="d3">Belgium</data>
+    </node>
+    <node id="Mons">
+      <data key="d1">29</data>
+      <data key="d2">blue</data>
+      <data key="d3">Belgium</data>
+    </node>
+    <node id="Leige">
+      <data key="d1">30</data>
+      <data key="d2">blue</data>
+      <data key="d3">Belgium</data>
+    </node>
+    <node id="Namur">
+      <data key="d1">31</data>
+      <data key="d2">blue</data>
+      <data key="d3">Belgium</data>
+    </node>
+    <node id="Charleroi">
+      <data key="d1">32</data>
+      <data key="d2">blue</data>
+      <data key="d3">Belgium</data>
+    </node>
+    <node id="Arlon">
+      <data key="d1">33</data>
+      <data key="d2">blue</data>
+      <data key="d3">Belgium</data>
+    </node>
+    <node id="Luxembourg">
+      <data key="d1">34</data>
+      <data key="d2">blue</data>
+      <data key="d3">Luxembourg</data>
+    </node>
+    <edge source="Leeuwarden" target="Groningen">
+      <data key="d4">6</data>
+    </edge>
+    <edge source="Leeuwarden" target="Enschede">
+      <data key="d4">13</data>
+    </edge>
+    <edge source="Leeuwarden" target="Apeldoorn">
+      <data key="d4">15</data>
+    </edge>
+    <edge source="Leeuwarden" target="Den Helder">
+      <data key="d4">13</data>
+    </edge>
+    <edge source="Groningen" target="Enschede">
+      <data key="d4">12</data>
+    </edge>
+    <edge source="Den Helder" target="Zaanstad">
+      <data key="d4">6</data>
+    </edge>
+    <edge source="Den Helder" target="Haarlem">
+      <data key="d4">7</data>
+    </edge>
+    <edge source="Apeldoorn" target="Enschede">
+      <data key="d4">9</data>
+    </edge>
+    <edge source="Apeldoorn" target="Arnhem">
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Apeldoorn" target="Utrecht">
+      <data key="d4">6</data>
+    </edge>
+    <edge source="Apeldoorn" target="Amsterdam">
+      <data key="d4">7</data>
+    </edge>
+    <edge source="Enschede" target="Arnhem">
+      <data key="d4">7</data>
+    </edge>
+    <edge source="Arnhem" target="Nijmegen">
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Arnhem" target="Utrecht">
+      <data key="d4">6</data>
+    </edge>
+    <edge source="Nijmegen" target="Venlo">
+      <data key="d4">7</data>
+    </edge>
+    <edge source="Nijmegen" target="Eindhoven">
+      <data key="d4">7</data>
+    </edge>
+    <edge source="Nijmegen" target="Den Bosch">
+      <data key="d4">6</data>
+    </edge>
+    <edge source="Zaanstad" target="Amsterdam">
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Zaanstad" target="Haarlem">
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Haarlem" target="Amsterdam">
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Haarlem" target="Leider">
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Amsterdam" target="Utrecht">
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Amsterdam" target="Leider">
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Leider" target="Utrecht">
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Leider" target="Rotterdam">
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Leider" target="Den Haag">
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Den Haag" target="Rotterdam">
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Utrecht" target="Den Bosch">
+      <data key="d4">8</data>
+    </edge>
+    <edge source="Utrecht" target="Rotterdam">
+      <data key="d4">5</data>
+    </edge>
+    <edge source="Rotterdam" target="Den Bosch">
+      <data key="d4">11</data>
+    </edge>
+    <edge source="Rotterdam" target="Breda">
+      <data key="d4">8</data>
+    </edge>
+    <edge source="Den Bosch" target="Eindhoven">
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Den Bosch" target="Tilburg">
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Den Bosch" target="Breda">
+      <data key="d4">5</data>
+    </edge>
+    <edge source="Middelburg" target="Breda">
+      <data key="d4">9</data>
+    </edge>
+    <edge source="Middelburg" target="Antwerpen">
+      <data key="d4">8</data>
+    </edge>
+    <edge source="Breda" target="Tilburg">
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Breda" target="Antwerpen">
+      <data key="d4">5</data>
+    </edge>
+    <edge source="Tilburg" target="Eindhoven">
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Tilburg" target="Antwerpen">
+      <data key="d4">6</data>
+    </edge>
+    <edge source="Venlo" target="Maastricht">
+      <data key="d4">10</data>
+    </edge>
+    <edge source="Venlo" target="Eindhoven">
+      <data key="d4">5</data>
+    </edge>
+    <edge source="Eindhoven" target="Maastricht">
+      <data key="d4">8</data>
+    </edge>
+    <edge source="Eindhoven" target="Leuven">
+      <data key="d4">9</data>
+    </edge>
+    <edge source="Eindhoven" target="Antwerpen">
+      <data key="d4">8</data>
+    </edge>
+    <edge source="Maastricht" target="Leige">
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Maastricht" target="Leuven">
+      <data key="d4">7</data>
+    </edge>
+    <edge source="Oostende" target="Brugge">
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Oostende" target="Kortrijk">
+      <data key="d4">5</data>
+    </edge>
+    <edge source="Brugge" target="Antwerpen">
+      <data key="d4">9</data>
+    </edge>
+    <edge source="Brugge" target="Gent">
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Brugge" target="Kortrijk">
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Antwerpen" target="Leuven">
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Antwerpen" target="Brussel">
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Antwerpen" target="Gent">
+      <data key="d4">5</data>
+    </edge>
+    <edge source="Gent" target="Brussel">
+      <data key="d4">7</data>
+    </edge>
+    <edge source="Gent" target="Kortrijk">
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Kortrijk" target="Bruxelles">
+      <data key="d4">10</data>
+    </edge>
+    <edge source="Kortrijk" target="Mons">
+      <data key="d4">8</data>
+    </edge>
+    <edge source="Brussel" target="Leuven">
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Brussel" target="Bruxelles">
+      <data key="d4">0</data>
+    </edge>
+    <edge source="Leuven" target="Leige">
+      <data key="d4">7</data>
+    </edge>
+    <edge source="Leuven" target="Namur">
+      <data key="d4">5</data>
+    </edge>
+    <edge source="Bruxelles" target="Namur">
+      <data key="d4">5</data>
+    </edge>
+    <edge source="Bruxelles" target="Charleroi">
+      <data key="d4">5</data>
+    </edge>
+    <edge source="Bruxelles" target="Mons">
+      <data key="d4">5</data>
+    </edge>
+    <edge source="Mons" target="Charleroi">
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Leige" target="Luxembourg">
+      <data key="d4">20</data>
+    </edge>
+    <edge source="Leige" target="Arlon">
+      <data key="d4">18</data>
+    </edge>
+    <edge source="Leige" target="Namur">
+      <data key="d4">6</data>
+    </edge>
+    <edge source="Namur" target="Arlon">
+      <data key="d4">16</data>
+    </edge>
+    <edge source="Namur" target="Charleroi">
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Charleroi" target="Arlon">
+      <data key="d4">18</data>
+    </edge>
+    <edge source="Arlon" target="Luxembourg">
+      <data key="d4">5</data>
+    </edge>
+    <data key="d0">data/power-grid/benelux.yaml</data>
+  </graph>
+</graphml>

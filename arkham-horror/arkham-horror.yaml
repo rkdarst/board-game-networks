@@ -1,0 +1,99 @@
+meta:
+  name: Arkham Horror
+  year: 2005
+  bgg: https://boardgamegeek.com/boardgame/15987/arkham-horror
+  rules: https://images-cdn.fantasyflightgames.com/ffg_content/Arkham_Horror/AH_Rules_internat.pdf
+  site: https://www.fantasyflightgames.com/en/products/arkham-horror-third-edition/
+  image: https://vignette.wikia.nocookie.net/bgames/images/5/5a/Arkham_HorrorMap.jpg/revision/latest?cb=20120621002059
+
+data:
+  - &northside  Northside
+  - &downtown   Downtown
+  - &easttown   Easttown
+  - &rivertown  Rivertown
+  - &frenchhill French Hill
+  - &southside  Southside
+  - &uptown     Uptown
+  - &miskatonic Miskatonic University
+  - &merchant   Merchant District
+
+nodes:
+  - &north        {deg: 5, labels: {region: *northside , stable: 1, order: 0}, label: *northside}
+  - &curiositie   {deg: 1, labels: {region: *northside , stable: 1,         }, label: Curiosite Shoppe}
+  - &newspaper    {deg: 1, labels: {region: *northside , stable: 1,         }, label: Newspaper}
+  - &train        {deg: 1, labels: {region: *northside , stable: 1,         }, label: Train Station}
+  - &down         {deg: 6, labels: {region: *downtown  , stable: 1, order: 1}, label: *downtown}
+  - &bank         {deg: 1, labels: {region: *downtown  , stable: 1,         }, label: Bank of Arkham}
+  - &asylum       {deg: 1, labels: {region: *downtown  , stable: 1,         }, label: Arkham Asylum}
+  - &square       {deg: 1, labels: {region: *downtown  , stable: 0,         }, label: Independence Square}
+  - &east         {deg: 5, labels: {region: *easttown  , stable: 1, order: 2}, label: *easttown}
+  - &roadhouse    {deg: 1, labels: {region: *easttown  , stable: 0,         }, label: "Hibb's Roadhouse"}
+  - &diner        {deg: 1, labels: {region: *easttown  , stable: 1,         }, label: "Velma's Diner"}
+  - &police       {deg: 1, labels: {region: *easttown  , stable: 1,         }, label: Police Station}
+  - &river        {deg: 6, labels: {region: *rivertown , stable: 1, order: 3}, label: *rivertown}
+  - &graveyard    {deg: 1, labels: {region: *rivertown , stable: 0,         }, label: Graveyard}
+  - &cave         {deg: 1, labels: {region: *rivertown , stable: 0,         }, label: Black Cave}
+  - &store        {deg: 1, labels: {region: *rivertown , stable: 1,         }, label: General Store}
+  - &french       {deg: 5, labels: {region: *frenchhill, stable: 1, order: 4}, label: *frenchhill}
+  - &witchhouse   {deg: 1, labels: {region: *frenchhill, stable: 0,         }, label: The Witch House}
+  - &lodge        {deg: 1, labels: {region: *frenchhill, stable: 0,         }, label: Silver Twilight Lodge}
+  - &south        {deg: 5, labels: {region: *southside , stable: 1, order: 5}, label: *southside}
+  - &boarding     {deg: 1, labels: {region: *southside , stable: 1,         }, label: "Ma's Boarding House"}
+  - &church       {deg: 1, labels: {region: *southside , stable: 1,         }, label: "South Church"}
+  - &histsociety  {deg: 1, labels: {region: *southside , stable: 0,         }, label: "Historical Society"}
+  - &up           {deg: 5, labels: {region: *uptown    , stable: 1, order: 6}, label: *uptown}
+  - &woods        {deg: 1, labels: {region: *uptown    , stable: 0,         }, label: Woods}
+  - &magickshoppe {deg: 1, labels: {region: *uptown    , stable: 1,         }, label: Ye Olde Magick Shoppe}
+  - &hospital     {deg: 1, labels: {region: *uptown    , stable: 1,         }, label: "St. Mary's Hospital"}
+  - &miska        {deg: 6, labels: {region: *miskatonic, stable: 1, order: 7}, label: *miskatonic}
+  - &library      {deg: 1, labels: {region: *miskatonic, stable: 1,         }, label: Library}
+  - &admin        {deg: 1, labels: {region: *miskatonic, stable: 1,         }, label: Administration}
+  - &science      {deg: 1, labels: {region: *miskatonic, stable: 0,         }, label: Science Building}
+  - &merch        {deg: 7, labels: {region: *merchant  , stable: 1, order: 8}, label: *merchant}
+  - &unnamable    {deg: 1, labels: {region: *merchant  , stable: 0,         }, label: The Unnamable}
+  - &docks        {deg: 1, labels: {region: *merchant  , stable: 1,         }, label: River Docks}
+  - &isle         {deg: 1, labels: {region: *merchant  , stable: 0,         }, label: Unvisited Isle}
+
+
+edges:
+  # Connecting the core nodes (loop)
+  - [*north, *down]
+  - [*down, *east]
+  - [*east, *river]
+  - [*river, *french]
+  - [*french, *south]
+  - [*south, *up]
+  - [*up, *miska]
+  - [*miska, *merch]
+  - [*merch, *north]
+  # ... (connectors between regions)
+  - [*down, *merch]
+  - [*river, *merch]
+  - [*french, *miska]
+  # Leaf nodes to locations
+  - [*north, *curiositie]
+  - [*north, *newspaper]
+  - [*north, *train]
+  - [*down, *bank]
+  - [*down, *asylum]
+  - [*down, *square]
+  - [*east, *roadhouse]
+  - [*east, *diner]
+  - [*east, *police]
+  - [*river, *graveyard]
+  - [*river, *cave]
+  - [*river, *store]
+  - [*french, *witchhouse]
+  - [*french, *lodge]
+  - [*south, *boarding]
+  - [*south, *church]
+  - [*south, *histsociety]
+  - [*up, *woods]
+  - [*up, *magickshoppe]
+  - [*up, *hospital]
+  - [*miska, *library]
+  - [*miska, *admin]
+  - [*miska, *science]
+  - [*merch, *unnamable]
+  - [*merch, *docks]
+  - [*merch, *isle]

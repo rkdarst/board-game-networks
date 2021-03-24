@@ -1,0 +1,259 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d2" for="node" attr.name="continent" attr.type="string" />
+  <key id="d1" for="node" attr.name="id" attr.type="int" />
+  <key id="d0" for="graph" attr.name="filename" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Alaska">
+      <data key="d1">0</data>
+      <data key="d2">North America</data>
+    </node>
+    <node id="Northwest Territory">
+      <data key="d1">1</data>
+      <data key="d2">North America</data>
+    </node>
+    <node id="Greenland">
+      <data key="d1">2</data>
+      <data key="d2">North America</data>
+    </node>
+    <node id="Alberta">
+      <data key="d1">3</data>
+      <data key="d2">North America</data>
+    </node>
+    <node id="Ontario">
+      <data key="d1">4</data>
+      <data key="d2">North America</data>
+    </node>
+    <node id="Quebec">
+      <data key="d1">5</data>
+      <data key="d2">North America</data>
+    </node>
+    <node id="Western United States">
+      <data key="d1">6</data>
+      <data key="d2">North America</data>
+    </node>
+    <node id="Eastern United States">
+      <data key="d1">7</data>
+      <data key="d2">North America</data>
+    </node>
+    <node id="Central America">
+      <data key="d1">8</data>
+      <data key="d2">North America</data>
+    </node>
+    <node id="Venezuela">
+      <data key="d1">9</data>
+      <data key="d2">South America</data>
+    </node>
+    <node id="Peru">
+      <data key="d1">10</data>
+      <data key="d2">South America</data>
+    </node>
+    <node id="Brazil">
+      <data key="d1">11</data>
+      <data key="d2">South America</data>
+    </node>
+    <node id="Argentina">
+      <data key="d1">12</data>
+      <data key="d2">South America</data>
+    </node>
+    <node id="Iceland">
+      <data key="d1">13</data>
+      <data key="d2">Europe</data>
+    </node>
+    <node id="Scandinavia">
+      <data key="d1">14</data>
+      <data key="d2">Europe</data>
+    </node>
+    <node id="Ukraine">
+      <data key="d1">15</data>
+      <data key="d2">Europe</data>
+    </node>
+    <node id="Great Britain">
+      <data key="d1">16</data>
+      <data key="d2">Europe</data>
+    </node>
+    <node id="Western Europe">
+      <data key="d1">17</data>
+      <data key="d2">Europe</data>
+    </node>
+    <node id="Northern Europe">
+      <data key="d1">18</data>
+      <data key="d2">Europe</data>
+    </node>
+    <node id="Southern Europe">
+      <data key="d1">19</data>
+      <data key="d2">Europe</data>
+    </node>
+    <node id="North Africa">
+      <data key="d1">20</data>
+      <data key="d2">Africa</data>
+    </node>
+    <node id="Egypt">
+      <data key="d1">21</data>
+      <data key="d2">Africa</data>
+    </node>
+    <node id="East Africa">
+      <data key="d1">22</data>
+      <data key="d2">Africa</data>
+    </node>
+    <node id="Congo">
+      <data key="d1">23</data>
+      <data key="d2">Africa</data>
+    </node>
+    <node id="Madagascar">
+      <data key="d1">24</data>
+      <data key="d2">Africa</data>
+    </node>
+    <node id="South Africa">
+      <data key="d1">25</data>
+      <data key="d2">Africa</data>
+    </node>
+    <node id="Middle East">
+      <data key="d1">26</data>
+      <data key="d2">Asia</data>
+    </node>
+    <node id="Afghanistan">
+      <data key="d1">27</data>
+      <data key="d2">Asia</data>
+    </node>
+    <node id="Ural">
+      <data key="d1">28</data>
+      <data key="d2">Asia</data>
+    </node>
+    <node id="India">
+      <data key="d1">29</data>
+      <data key="d2">Asia</data>
+    </node>
+    <node id="Siberia">
+      <data key="d1">30</data>
+      <data key="d2">Asia</data>
+    </node>
+    <node id="China">
+      <data key="d1">31</data>
+      <data key="d2">Asia</data>
+    </node>
+    <node id="Siam">
+      <data key="d1">32</data>
+      <data key="d2">Asia</data>
+    </node>
+    <node id="Yakutsk">
+      <data key="d1">33</data>
+      <data key="d2">Asia</data>
+    </node>
+    <node id="Irkutsk">
+      <data key="d1">34</data>
+      <data key="d2">Asia</data>
+    </node>
+    <node id="Mongolia">
+      <data key="d1">35</data>
+      <data key="d2">Asia</data>
+    </node>
+    <node id="Kamchatka">
+      <data key="d1">36</data>
+      <data key="d2">Asia</data>
+    </node>
+    <node id="Japan">
+      <data key="d1">37</data>
+      <data key="d2">Asia</data>
+    </node>
+    <node id="Indonesia">
+      <data key="d1">38</data>
+      <data key="d2">Australia</data>
+    </node>
+    <node id="New Guinea">
+      <data key="d1">39</data>
+      <data key="d2">Australia</data>
+    </node>
+    <node id="Western Australia">
+      <data key="d1">40</data>
+      <data key="d2">Australia</data>
+    </node>
+    <node id="Eastern Australia">
+      <data key="d1">41</data>
+      <data key="d2">Australia</data>
+    </node>
+    <edge source="Alaska" target="Kamchatka" />
+    <edge source="Alaska" target="Northwest Territory" />
+    <edge source="Alaska" target="Alberta" />
+    <edge source="Northwest Territory" target="Greenland" />
+    <edge source="Northwest Territory" target="Ontario" />
+    <edge source="Northwest Territory" target="Alberta" />
+    <edge source="Greenland" target="Ontario" />
+    <edge source="Greenland" target="Quebec" />
+    <edge source="Greenland" target="Iceland" />
+    <edge source="Alberta" target="Ontario" />
+    <edge source="Alberta" target="Western United States" />
+    <edge source="Ontario" target="Quebec" />
+    <edge source="Ontario" target="Eastern United States" />
+    <edge source="Ontario" target="Western United States" />
+    <edge source="Quebec" target="Eastern United States" />
+    <edge source="Western United States" target="Eastern United States" />
+    <edge source="Western United States" target="Central America" />
+    <edge source="Eastern United States" target="Central America" />
+    <edge source="Central America" target="Venezuela" />
+    <edge source="Venezuela" target="Peru" />
+    <edge source="Venezuela" target="Brazil" />
+    <edge source="Peru" target="Brazil" />
+    <edge source="Peru" target="Argentina" />
+    <edge source="Brazil" target="North Africa" />
+    <edge source="Brazil" target="Argentina" />
+    <edge source="Iceland" target="Scandinavia" />
+    <edge source="Iceland" target="Great Britain" />
+    <edge source="Scandinavia" target="Great Britain" />
+    <edge source="Scandinavia" target="Northern Europe" />
+    <edge source="Scandinavia" target="Ukraine" />
+    <edge source="Ukraine" target="Northern Europe" />
+    <edge source="Ukraine" target="Southern Europe" />
+    <edge source="Ukraine" target="Ural" />
+    <edge source="Ukraine" target="Afghanistan" />
+    <edge source="Ukraine" target="Middle East" />
+    <edge source="Great Britain" target="Northern Europe" />
+    <edge source="Great Britain" target="Western Europe" />
+    <edge source="Western Europe" target="Northern Europe" />
+    <edge source="Western Europe" target="Southern Europe" />
+    <edge source="Western Europe" target="North Africa" />
+    <edge source="Northern Europe" target="Southern Europe" />
+    <edge source="Southern Europe" target="Middle East" />
+    <edge source="Southern Europe" target="Egypt" />
+    <edge source="Southern Europe" target="North Africa" />
+    <edge source="North Africa" target="Egypt" />
+    <edge source="North Africa" target="East Africa" />
+    <edge source="North Africa" target="Congo" />
+    <edge source="Egypt" target="Middle East" />
+    <edge source="Egypt" target="East Africa" />
+    <edge source="East Africa" target="Middle East" />
+    <edge source="East Africa" target="Madagascar" />
+    <edge source="East Africa" target="South Africa" />
+    <edge source="East Africa" target="Congo" />
+    <edge source="Congo" target="South Africa" />
+    <edge source="Madagascar" target="South Africa" />
+    <edge source="Middle East" target="Afghanistan" />
+    <edge source="Middle East" target="India" />
+    <edge source="Afghanistan" target="Ural" />
+    <edge source="Afghanistan" target="China" />
+    <edge source="Afghanistan" target="India" />
+    <edge source="Ural" target="Siberia" />
+    <edge source="Ural" target="China" />
+    <edge source="India" target="China" />
+    <edge source="India" target="Siam" />
+    <edge source="Siberia" target="Yakutsk" />
+    <edge source="Siberia" target="Irkutsk" />
+    <edge source="Siberia" target="Mongolia" />
+    <edge source="Siberia" target="China" />
+    <edge source="China" target="Mongolia" />
+    <edge source="China" target="Siam" />
+    <edge source="Siam" target="Indonesia" />
+    <edge source="Yakutsk" target="Kamchatka" />
+    <edge source="Yakutsk" target="Irkutsk" />
+    <edge source="Irkutsk" target="Kamchatka" />
+    <edge source="Irkutsk" target="Mongolia" />
+    <edge source="Mongolia" target="Kamchatka" />
+    <edge source="Mongolia" target="Japan" />
+    <edge source="Kamchatka" target="Japan" />
+    <edge source="Indonesia" target="New Guinea" />
+    <edge source="Indonesia" target="Western Australia" />
+    <edge source="New Guinea" target="Eastern Australia" />
+    <edge source="New Guinea" target="Western Australia" />
+    <edge source="Western Australia" target="Eastern Australia" />
+    <data key="d0">data/risk/risk.yaml</data>
+  </graph>
+</graphml>

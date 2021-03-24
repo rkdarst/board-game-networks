@@ -1,0 +1,83 @@
+meta:
+  bgg: https://boardgamegeek.com/boardgame/253284/ticket-ride-new-york
+  graph-class: MultiGraph
+  rules: https://ncdn0.daysofwonder.com/tickettoride/en/img/tt_ny_en_rules_2018.pdf
+  site: https://www.daysofwonder.com/tickettoride/en/new-york/
+  year: 2018
+  image: https://cf.geekdo-images.com/Hq8fyW-4X7LaSNv6TCtWVw__original/img/DH2vDdbfTK4XUPsNPw4B4ter-7g=/0x0/filters:format(jpeg)/pic4132195.jpg
+
+data:
+  - &bla  black
+  - &yel  yellow
+  - &grn  green
+  - &ora  orange
+  - &pin   pink
+  - &blu   blue
+  - &gry   grey
+
+nodes:
+  - &lin   {deg:  4, label: Lincoln Center}
+  - &cen   {deg:  4, label: Central Park, labels: {points: 1}}
+  - &mid   {deg:  4, label: Midtown West}
+  - &tim   {deg:  8, label: Times Square, labels: {points: 1}}
+  - &uni   {deg:  4, label: United Nations, labels: {points: 1}}
+  - &emp   {deg:  8, label: Empire State Building, labels: {points: 1}}
+  - &che   {deg:  7, label: Chelsea, labels: {points: 1}}
+  - &gra   {deg:  7, label: Gramercy Park}
+  - &gre   {deg:  9, label: Greenwich Village, labels: {points: 1}}
+  - &eas   {deg:  3, label: East Village}
+  - &soh   {deg:  3, label: Soho}
+  - &chi   {deg:  7, label: Chinatown, labels: {points: 1}}
+  - &low   {deg:  4, label: Lower East Side}
+  - &wal   {deg:  5, label: Wall Street, labels: {points: 1}}
+  - &bro   {deg:  5, label: Brooklyn, labels: {points: 1}}
+
+edges:
+  # Top to bottom, left to right
+  - [ *lin, *cen, 2, {color: *yel} ]
+  - [ *lin, *tim, 2, {color: *blu} ]
+  - [ *lin, *tim, 2, {color: *grn} ]
+  - [ *lin, *mid, 2, {color: *ora} ]
+  - [ *cen, *uni, 3, {color: *pin} ]
+  - [ *cen, *tim, 2, {color: *ora} ]
+  - [ *cen, *tim, 2, {color: *bla} ]
+  # Midtown west row
+  - [ *mid, *tim, 1, {color: *gry} ]
+  - [ *mid, *emp, 2, {color: *grn} ]
+  - [ *mid, *che, 2, {color: *blu} ]
+  - [ *tim, *uni, 2, {color: *gry} ]
+  - [ *tim, *emp, 1, {color: *pin} ]
+  - [ *tim, *emp, 1, {color: *yel} ]
+  - [ *uni, *gra, 3, {color: *grn} ]
+  - [ *uni, *emp, 2, {color: *bla} ]
+  # Empire State building row
+  - [ *emp, *gra, 1, {color: *blu} ]
+  - [ *emp, *gra, 1, {color: *ora} ]
+  - [ *emp, *che, 2, {color: *gry} ]
+  - [ *emp, *che, 2, {color: *gry} ]
+  # Chelsea row
+  - [ *che, *gra, 2, {color: *yel} ]
+  - [ *che, *gre, 3, {color: *ora} ]
+  - [ *che, *gre, 3, {color: *grn} ]
+  - [ *che, *soh, 4, {color: *pin} ]
+  - [ *gra, *eas, 2, {color: *gry} ]
+  - [ *gra, *gre, 2, {color: *pin} ]
+  - [ *gra, *gre, 2, {color: *bla} ]
+  # Greenwich village row
+  - [ *gre, *eas, 2, {color: *blu} ]
+  - [ *gre, *low, 2, {color: *gry} ]
+  - [ *gre, *chi, 2, {color: *gry} ]
+  - [ *gre, *chi, 2, {color: *gry} ]
+  - [ *gre, *soh, 2, {color: *yel} ]
+  - [ *eas, *low, 1, {color: *bla} ]
+  # Soho-chinatown-lower east side row
+  - [ *soh, *wal, 2, {color: *gry} ]
+  - [ *chi, *low, 1, {color: *blu} ]
+  - [ *chi, *bro, 3, {color: *yel} ]
+  - [ *chi, *bro, 3, {color: *ora} ]
+  - [ *chi, *wal, 1, {color: *pin} ]
+  - [ *chi, *wal, 1, {color: *grn} ]
+  - [ *low, *bro, 3, {color: *gry} ]
+  # Wall Street row
+  - [ *wal, *bro, 3, {color: *blu} ]
+  - [ *wal, *bro, 3, {color: *bla} ]

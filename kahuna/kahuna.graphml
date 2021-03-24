@@ -1,0 +1,70 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d1" for="node" attr.name="id" attr.type="int" />
+  <key id="d0" for="graph" attr.name="filename" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Aloa">
+      <data key="d1">0</data>
+    </node>
+    <node id="Bari">
+      <data key="d1">1</data>
+    </node>
+    <node id="Coco">
+      <data key="d1">2</data>
+    </node>
+    <node id="Duda">
+      <data key="d1">3</data>
+    </node>
+    <node id="Elai">
+      <data key="d1">4</data>
+    </node>
+    <node id="Faaa">
+      <data key="d1">5</data>
+    </node>
+    <node id="Gola">
+      <data key="d1">6</data>
+    </node>
+    <node id="Huna">
+      <data key="d1">7</data>
+    </node>
+    <node id="Iffi">
+      <data key="d1">8</data>
+    </node>
+    <node id="Jojo">
+      <data key="d1">9</data>
+    </node>
+    <node id="Kahu">
+      <data key="d1">10</data>
+    </node>
+    <node id="Lale">
+      <data key="d1">11</data>
+    </node>
+    <edge source="Aloa" target="Bari" />
+    <edge source="Aloa" target="Duda" />
+    <edge source="Aloa" target="Huna" />
+    <edge source="Bari" target="Coco" />
+    <edge source="Bari" target="Duda" />
+    <edge source="Bari" target="Elai" />
+    <edge source="Bari" target="Faaa" />
+    <edge source="Coco" target="Faaa" />
+    <edge source="Coco" target="Gola" />
+    <edge source="Coco" target="Kahu" />
+    <edge source="Duda" target="Elai" />
+    <edge source="Duda" target="Huna" />
+    <edge source="Elai" target="Faaa" />
+    <edge source="Elai" target="Huna" />
+    <edge source="Elai" target="Iffi" />
+    <edge source="Elai" target="Jojo" />
+    <edge source="Faaa" target="Gola" />
+    <edge source="Faaa" target="Jojo" />
+    <edge source="Gola" target="Jojo" />
+    <edge source="Gola" target="Kahu" />
+    <edge source="Huna" target="Iffi" />
+    <edge source="Huna" target="Lale" />
+    <edge source="Iffi" target="Jojo" />
+    <edge source="Iffi" target="Kahu" />
+    <edge source="Iffi" target="Lale" />
+    <edge source="Jojo" target="Kahu" />
+    <edge source="Kahu" target="Lale" />
+    <data key="d0">data/kahuna/kahuna.yaml</data>
+  </graph>
+</graphml>

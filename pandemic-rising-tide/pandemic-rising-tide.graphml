@@ -1,0 +1,514 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d4" for="edge" attr.name="weight" attr.type="int" />
+  <key id="d3" for="edge" attr.name="initial" attr.type="int" />
+  <key id="d2" for="node" attr.name="color" attr.type="string" />
+  <key id="d1" for="node" attr.name="id" attr.type="int" />
+  <key id="d0" for="graph" attr.name="filename" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Noordzee">
+      <data key="d1">0</data>
+      <data key="d2">sea</data>
+    </node>
+    <node id="Zuiderzee">
+      <data key="d1">1</data>
+      <data key="d2">sea</data>
+    </node>
+    <node id="Drenthe">
+      <data key="d1">2</data>
+      <data key="d2">high</data>
+    </node>
+    <node id="Twente">
+      <data key="d1">3</data>
+      <data key="d2">high</data>
+    </node>
+    <node id="Veluwe">
+      <data key="d1">4</data>
+      <data key="d2">high</data>
+    </node>
+    <node id="Utrechtse Heuvelrug">
+      <data key="d1">5</data>
+      <data key="d2">high</data>
+    </node>
+    <node id="Oost-brabant">
+      <data key="d1">6</data>
+      <data key="d2">high</data>
+    </node>
+    <node id="De Zoom">
+      <data key="d1">7</data>
+      <data key="d2">high</data>
+    </node>
+    <node id="Noorderzijlvest">
+      <data key="d1">8</data>
+      <data key="d2">purple</data>
+    </node>
+    <node id="Frysl&#226;n">
+      <data key="d1">9</data>
+      <data key="d2">purple</data>
+    </node>
+    <node id="Weiringermeer">
+      <data key="d1">10</data>
+      <data key="d2">purple</data>
+    </node>
+    <node id="Noordoostpolder">
+      <data key="d1">11</data>
+      <data key="d2">purple</data>
+    </node>
+    <node id="Kennemerland">
+      <data key="d1">12</data>
+      <data key="d2">purple</data>
+    </node>
+    <node id="Markerwaard">
+      <data key="d1">13</data>
+      <data key="d2">purple</data>
+    </node>
+    <node id="Flevoland">
+      <data key="d1">14</data>
+      <data key="d2">purple</data>
+    </node>
+    <node id="Vollenhove">
+      <data key="d1">15</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Ijsseldelta">
+      <data key="d1">16</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Kromme Rijn">
+      <data key="d1">17</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Gelderse Vallei">
+      <data key="d1">18</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Rijn en Ijssel">
+      <data key="d1">19</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Vijfherenlanden">
+      <data key="d1">20</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Betuwe">
+      <data key="d1">21</data>
+      <data key="d2">yellow</data>
+    </node>
+    <node id="Delfland">
+      <data key="d1">22</data>
+      <data key="d2">orange</data>
+    </node>
+    <node id="Voorne-Putten">
+      <data key="d1">23</data>
+      <data key="d2">orange</data>
+    </node>
+    <node id="Goeree-Ovarflakkee">
+      <data key="d1">24</data>
+      <data key="d2">orange</data>
+    </node>
+    <node id="Schouwen-Duiveland">
+      <data key="d1">25</data>
+      <data key="d2">orange</data>
+    </node>
+    <node id="Walcheren">
+      <data key="d1">26</data>
+      <data key="d2">orange</data>
+    </node>
+    <node id="Zuid-Beveland">
+      <data key="d1">27</data>
+      <data key="d2">orange</data>
+    </node>
+    <node id="Zeeuws-Vlaanderen">
+      <data key="d1">28</data>
+      <data key="d2">orange</data>
+    </node>
+    <node id="Hoekse Waard">
+      <data key="d1">29</data>
+      <data key="d2">green</data>
+    </node>
+    <node id="West-Brabant">
+      <data key="d1">30</data>
+      <data key="d2">green</data>
+    </node>
+    <node id="Land van Altena">
+      <data key="d1">31</data>
+      <data key="d2">green</data>
+    </node>
+    <node id="Land van Heusden">
+      <data key="d1">32</data>
+      <data key="d2">green</data>
+    </node>
+    <node id="Land van Maas en Waal">
+      <data key="d1">33</data>
+      <data key="d2">green</data>
+    </node>
+    <node id="Peel en Maasvallei">
+      <data key="d1">34</data>
+      <data key="d2">green</data>
+    </node>
+    <node id="Roer en Overmaas">
+      <data key="d1">35</data>
+      <data key="d2">green</data>
+    </node>
+    <edge source="Noordzee" target="Noorderzijlvest">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Noordzee" target="Frysl&#226;n">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Noordzee" target="Zuiderzee">
+      <data key="d3">0</data>
+      <data key="d4">0</data>
+    </edge>
+    <edge source="Noordzee" target="Weiringermeer">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Noordzee" target="Kennemerland">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Noordzee" target="Delfland">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Noordzee" target="Voorne-Putten">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Noordzee" target="Goeree-Ovarflakkee">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Noordzee" target="Schouwen-Duiveland">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Noordzee" target="Walcheren">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Noordzee" target="Zeeuws-Vlaanderen">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Zuiderzee" target="Frysl&#226;n">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Zuiderzee" target="Noordoostpolder">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Zuiderzee" target="Flevoland">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Zuiderzee" target="Markerwaard">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Zuiderzee" target="Kennemerland">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Zuiderzee" target="Weiringermeer">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Drenthe" target="Noorderzijlvest">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Drenthe" target="Twente">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Drenthe" target="Vollenhove">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Drenthe" target="Frysl&#226;n">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Twente" target="Rijn en Ijssel">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Twente" target="Vollenhove">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Veluwe" target="Flevoland">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Veluwe" target="Ijsseldelta">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Veluwe" target="Rijn en Ijssel">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Veluwe" target="Betuwe">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Veluwe" target="Gelderse Vallei">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Utrechtse Heuvelrug" target="Flevoland">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Utrechtse Heuvelrug" target="Gelderse Vallei">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Utrechtse Heuvelrug" target="Betuwe">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Utrechtse Heuvelrug" target="Kromme Rijn">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Oost-brabant" target="West-Brabant">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Oost-brabant" target="Land van Heusden">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Oost-brabant" target="Land van Maas en Waal">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Oost-brabant" target="Peel en Maasvallei">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Oost-brabant" target="Roer en Overmaas">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="De Zoom" target="Zuid-Beveland">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="De Zoom" target="Schouwen-Duiveland">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="De Zoom" target="West-Brabant">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Noorderzijlvest" target="Frysl&#226;n">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Frysl&#226;n" target="Noordoostpolder">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Frysl&#226;n" target="Vollenhove">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Weiringermeer" target="Kennemerland">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Noordoostpolder" target="Vollenhove">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Noordoostpolder" target="Ijsseldelta">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Noordoostpolder" target="Flevoland">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Kennemerland" target="Markerwaard">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Kennemerland" target="Delfland">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Markerwaard" target="Flevoland">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Markerwaard" target="Delfland">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Flevoland" target="Ijsseldelta">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Flevoland" target="Gelderse Vallei">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Flevoland" target="Kromme Rijn">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Vollenhove" target="Rijn en Ijssel">
+      <data key="d3">2</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Vollenhove" target="Ijsseldelta">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Ijsseldelta" target="Rijn en Ijssel">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Kromme Rijn" target="Betuwe">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Kromme Rijn" target="Vijfherenlanden">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Kromme Rijn" target="Delfland">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Gelderse Vallei" target="Betuwe">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Rijn en Ijssel" target="Betuwe">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Vijfherenlanden" target="Delfland">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Vijfherenlanden" target="Betuwe">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Vijfherenlanden" target="Land van Altena">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Vijfherenlanden" target="Hoekse Waard">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Betuwe" target="Land van Maas en Waal">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Betuwe" target="Land van Heusden">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Betuwe" target="Land van Altena">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Delfland" target="Hoekse Waard">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Delfland" target="Voorne-Putten">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Voorne-Putten" target="Hoekse Waard">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Voorne-Putten" target="Goeree-Ovarflakkee">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Goeree-Ovarflakkee" target="Hoekse Waard">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Goeree-Ovarflakkee" target="West-Brabant">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Goeree-Ovarflakkee" target="Schouwen-Duiveland">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Schouwen-Duiveland" target="West-Brabant">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Schouwen-Duiveland" target="Zuid-Beveland">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Schouwen-Duiveland" target="Walcheren">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Walcheren" target="Zuid-Beveland">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Walcheren" target="Zeeuws-Vlaanderen">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Zuid-Beveland" target="Zeeuws-Vlaanderen">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Hoekse Waard" target="Land van Altena">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Hoekse Waard" target="West-Brabant">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="West-Brabant" target="Land van Altena">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="West-Brabant" target="Land van Heusden">
+      <data key="d3">0</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Land van Altena" target="Land van Heusden">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Land van Heusden" target="Land van Maas en Waal">
+      <data key="d3">2</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Land van Maas en Waal" target="Peel en Maasvallei">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <edge source="Peel en Maasvallei" target="Roer en Overmaas">
+      <data key="d3">1</data>
+      <data key="d4">1</data>
+    </edge>
+    <data key="d0">data/pandemic-rising-tide/pandemic-rising-tide.yaml</data>
+  </graph>
+</graphml>

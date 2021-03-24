@@ -1,0 +1,463 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d4" for="edge" attr.name="weight" attr.type="int" />
+  <key id="d3" for="node" attr.name="region" attr.type="string" />
+  <key id="d2" for="node" attr.name="color" attr.type="string" />
+  <key id="d1" for="node" attr.name="id" attr.type="int" />
+  <key id="d0" for="graph" attr.name="filename" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Ganggye">
+      <data key="d1">0</data>
+      <data key="d2">pink</data>
+      <data key="d3">north</data>
+    </node>
+    <node id="Sinuiju">
+      <data key="d1">1</data>
+      <data key="d2">pink</data>
+      <data key="d3">north</data>
+    </node>
+    <node id="Anju">
+      <data key="d1">2</data>
+      <data key="d2">pink</data>
+      <data key="d3">north</data>
+    </node>
+    <node id="Pyeongyang">
+      <data key="d1">3</data>
+      <data key="d2">pink</data>
+      <data key="d3">north</data>
+    </node>
+    <node id="Nampo">
+      <data key="d1">4</data>
+      <data key="d2">pink</data>
+      <data key="d3">north</data>
+    </node>
+    <node id="Hwongju">
+      <data key="d1">5</data>
+      <data key="d2">pink</data>
+      <data key="d3">north</data>
+    </node>
+    <node id="Haeju">
+      <data key="d1">6</data>
+      <data key="d2">pink</data>
+      <data key="d3">north</data>
+    </node>
+    <node id="Rasun">
+      <data key="d1">7</data>
+      <data key="d2">red</data>
+      <data key="d3">north</data>
+    </node>
+    <node id="Cheongjin">
+      <data key="d1">8</data>
+      <data key="d2">red</data>
+      <data key="d3">north</data>
+    </node>
+    <node id="Gyeongseong">
+      <data key="d1">9</data>
+      <data key="d2">red</data>
+      <data key="d3">north</data>
+    </node>
+    <node id="Hyesan">
+      <data key="d1">10</data>
+      <data key="d2">red</data>
+      <data key="d3">north</data>
+    </node>
+    <node id="Kimch'aek">
+      <data key="d1">11</data>
+      <data key="d2">red</data>
+      <data key="d3">north</data>
+    </node>
+    <node id="Hamheung">
+      <data key="d1">12</data>
+      <data key="d2">red</data>
+      <data key="d3">north</data>
+    </node>
+    <node id="Wonsan">
+      <data key="d1">13</data>
+      <data key="d2">red</data>
+      <data key="d3">north</data>
+    </node>
+    <node id="Gaesung">
+      <data key="d1">14</data>
+      <data key="d2">purple</data>
+      <data key="d3">north</data>
+    </node>
+    <node id="Seoul">
+      <data key="d1">15</data>
+      <data key="d2">purple</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Goyang">
+      <data key="d1">16</data>
+      <data key="d2">purple</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Incheon">
+      <data key="d1">17</data>
+      <data key="d2">purple</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Yongin">
+      <data key="d1">18</data>
+      <data key="d2">purple</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Anyang">
+      <data key="d1">19</data>
+      <data key="d2">purple</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Suwon">
+      <data key="d1">20</data>
+      <data key="d2">purple</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Sokcho">
+      <data key="d1">21</data>
+      <data key="d2">brown</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Chuncheon">
+      <data key="d1">22</data>
+      <data key="d2">brown</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Gangneung">
+      <data key="d1">23</data>
+      <data key="d2">brown</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Wonju">
+      <data key="d1">24</data>
+      <data key="d2">brown</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Donghae">
+      <data key="d1">25</data>
+      <data key="d2">brown</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Samcheok">
+      <data key="d1">26</data>
+      <data key="d2">brown</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Taeraek">
+      <data key="d1">27</data>
+      <data key="d2">brown</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Chungju">
+      <data key="d1">28</data>
+      <data key="d2">green</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Cheongju">
+      <data key="d1">29</data>
+      <data key="d2">green</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Daejon">
+      <data key="d1">30</data>
+      <data key="d2">green</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Jeonju">
+      <data key="d1">31</data>
+      <data key="d2">green</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Gwangju">
+      <data key="d1">32</data>
+      <data key="d2">green</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Naju">
+      <data key="d1">33</data>
+      <data key="d2">green</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Jeju">
+      <data key="d1">34</data>
+      <data key="d2">green</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Andong">
+      <data key="d1">35</data>
+      <data key="d2">yellow</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Sangju">
+      <data key="d1">36</data>
+      <data key="d2">yellow</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Gyeongju">
+      <data key="d1">37</data>
+      <data key="d2">yellow</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Daegu">
+      <data key="d1">38</data>
+      <data key="d2">yellow</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Ulsan">
+      <data key="d1">39</data>
+      <data key="d2">yellow</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Jinju">
+      <data key="d1">40</data>
+      <data key="d2">yellow</data>
+      <data key="d3">south</data>
+    </node>
+    <node id="Busan">
+      <data key="d1">41</data>
+      <data key="d2">yellow</data>
+      <data key="d3">south</data>
+    </node>
+    <edge source="Ganggye" target="Hyesan">
+      <data key="d4">20</data>
+    </edge>
+    <edge source="Ganggye" target="Hamheung">
+      <data key="d4">19</data>
+    </edge>
+    <edge source="Ganggye" target="Anju">
+      <data key="d4">22</data>
+    </edge>
+    <edge source="Ganggye" target="Sinuiju">
+      <data key="d4">25</data>
+    </edge>
+    <edge source="Sinuiju" target="Anju">
+      <data key="d4">13</data>
+    </edge>
+    <edge source="Anju" target="Hamheung">
+      <data key="d4">20</data>
+    </edge>
+    <edge source="Anju" target="Pyeongyang">
+      <data key="d4">7</data>
+    </edge>
+    <edge source="Anju" target="Nampo">
+      <data key="d4">10</data>
+    </edge>
+    <edge source="Pyeongyang" target="Hamheung">
+      <data key="d4">23</data>
+    </edge>
+    <edge source="Pyeongyang" target="Wonsan">
+      <data key="d4">18</data>
+    </edge>
+    <edge source="Pyeongyang" target="Gaesung">
+      <data key="d4">14</data>
+    </edge>
+    <edge source="Pyeongyang" target="Hwongju">
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Pyeongyang" target="Nampo">
+      <data key="d4">5</data>
+    </edge>
+    <edge source="Nampo" target="Hwongju">
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Hwongju" target="Haeju">
+      <data key="d4">8</data>
+    </edge>
+    <edge source="Haeju" target="Gaesung">
+      <data key="d4">8</data>
+    </edge>
+    <edge source="Rasun" target="Cheongjin">
+      <data key="d4">8</data>
+    </edge>
+    <edge source="Cheongjin" target="Gyeongseong">
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Gyeongseong" target="Kimch'aek">
+      <data key="d4">16</data>
+    </edge>
+    <edge source="Gyeongseong" target="Hyesan">
+      <data key="d4">18</data>
+    </edge>
+    <edge source="Hyesan" target="Kimch'aek">
+      <data key="d4">14</data>
+    </edge>
+    <edge source="Hyesan" target="Hamheung">
+      <data key="d4">23</data>
+    </edge>
+    <edge source="Kimch'aek" target="Hamheung">
+      <data key="d4">17</data>
+    </edge>
+    <edge source="Hamheung" target="Wonsan">
+      <data key="d4">11</data>
+    </edge>
+    <edge source="Wonsan" target="Sokcho">
+      <data key="d4">18</data>
+    </edge>
+    <edge source="Wonsan" target="Chuncheon">
+      <data key="d4">19</data>
+    </edge>
+    <edge source="Wonsan" target="Gaesung">
+      <data key="d4">18</data>
+    </edge>
+    <edge source="Gaesung" target="Chuncheon">
+      <data key="d4">13</data>
+    </edge>
+    <edge source="Gaesung" target="Goyang">
+      <data key="d4">7</data>
+    </edge>
+    <edge source="Seoul" target="Chuncheon">
+      <data key="d4">8</data>
+    </edge>
+    <edge source="Seoul" target="Yongin">
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Seoul" target="Goyang">
+      <data key="d4">0</data>
+    </edge>
+    <edge source="Goyang" target="Anyang">
+      <data key="d4">0</data>
+    </edge>
+    <edge source="Goyang" target="Incheon">
+      <data key="d4">0</data>
+    </edge>
+    <edge source="Incheon" target="Anyang">
+      <data key="d4">0</data>
+    </edge>
+    <edge source="Yongin" target="Chuncheon">
+      <data key="d4">9</data>
+    </edge>
+    <edge source="Yongin" target="Wonju">
+      <data key="d4">8</data>
+    </edge>
+    <edge source="Yongin" target="Chungju">
+      <data key="d4">10</data>
+    </edge>
+    <edge source="Yongin" target="Cheongju">
+      <data key="d4">10</data>
+    </edge>
+    <edge source="Yongin" target="Suwon">
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Anyang" target="Suwon">
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Suwon" target="Cheongju">
+      <data key="d4">10</data>
+    </edge>
+    <edge source="Sokcho" target="Gangneung">
+      <data key="d4">6</data>
+    </edge>
+    <edge source="Sokcho" target="Wonju">
+      <data key="d4">15</data>
+    </edge>
+    <edge source="Sokcho" target="Chuncheon">
+      <data key="d4">10</data>
+    </edge>
+    <edge source="Chuncheon" target="Wonju">
+      <data key="d4">7</data>
+    </edge>
+    <edge source="Gangneung" target="Donghae">
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Gangneung" target="Wonju">
+      <data key="d4">12</data>
+    </edge>
+    <edge source="Wonju" target="Donghae">
+      <data key="d4">14</data>
+    </edge>
+    <edge source="Wonju" target="Taeraek">
+      <data key="d4">13</data>
+    </edge>
+    <edge source="Wonju" target="Chungju">
+      <data key="d4">5</data>
+    </edge>
+    <edge source="Donghae" target="Samcheok">
+      <data key="d4">0</data>
+    </edge>
+    <edge source="Samcheok" target="Taeraek">
+      <data key="d4">5</data>
+    </edge>
+    <edge source="Taeraek" target="Andong">
+      <data key="d4">8</data>
+    </edge>
+    <edge source="Taeraek" target="Chungju">
+      <data key="d4">13</data>
+    </edge>
+    <edge source="Chungju" target="Andong">
+      <data key="d4">11</data>
+    </edge>
+    <edge source="Chungju" target="Sangju">
+      <data key="d4">9</data>
+    </edge>
+    <edge source="Chungju" target="Cheongju">
+      <data key="d4">7</data>
+    </edge>
+    <edge source="Cheongju" target="Sangju">
+      <data key="d4">8</data>
+    </edge>
+    <edge source="Cheongju" target="Daejon">
+      <data key="d4">4</data>
+    </edge>
+    <edge source="Daejon" target="Sangju">
+      <data key="d4">8</data>
+    </edge>
+    <edge source="Daejon" target="Daegu">
+      <data key="d4">15</data>
+    </edge>
+    <edge source="Daejon" target="Jeonju">
+      <data key="d4">9</data>
+    </edge>
+    <edge source="Jeonju" target="Daegu">
+      <data key="d4">16</data>
+    </edge>
+    <edge source="Jeonju" target="Jinju">
+      <data key="d4">15</data>
+    </edge>
+    <edge source="Jeonju" target="Gwangju">
+      <data key="d4">11</data>
+    </edge>
+    <edge source="Gwangju" target="Jinju">
+      <data key="d4">14</data>
+    </edge>
+    <edge source="Gwangju" target="Naju">
+      <data key="d4">2</data>
+    </edge>
+    <edge source="Naju" target="Jinju">
+      <data key="d4">15</data>
+    </edge>
+    <edge source="Naju" target="Jeju">
+      <data key="d4">19</data>
+    </edge>
+    <edge source="Andong" target="Gyeongju">
+      <data key="d4">11</data>
+    </edge>
+    <edge source="Andong" target="Daegu">
+      <data key="d4">10</data>
+    </edge>
+    <edge source="Andong" target="Sangju">
+      <data key="d4">6</data>
+    </edge>
+    <edge source="Sangju" target="Daegu">
+      <data key="d4">9</data>
+    </edge>
+    <edge source="Gyeongju" target="Ulsan">
+      <data key="d4">3</data>
+    </edge>
+    <edge source="Gyeongju" target="Daegu">
+      <data key="d4">7</data>
+    </edge>
+    <edge source="Daegu" target="Ulsan">
+      <data key="d4">10</data>
+    </edge>
+    <edge source="Daegu" target="Busan">
+      <data key="d4">12</data>
+    </edge>
+    <edge source="Daegu" target="Jinju">
+      <data key="d4">11</data>
+    </edge>
+    <edge source="Ulsan" target="Busan">
+      <data key="d4">7</data>
+    </edge>
+    <edge source="Jinju" target="Busan">
+      <data key="d4">11</data>
+    </edge>
+    <data key="d0">data/power-grid/korea.yaml</data>
+  </graph>
+</graphml>

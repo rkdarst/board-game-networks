@@ -1,0 +1,320 @@
+meta:
+  name: "Pandemic: Rising tide"
+  bgg: https://www.boardgamegeek.com/boardgame/234671/pandemic-rising-tide
+  site: https://www.zmangames.com/en/products/pandemic-rising-tide/
+  rules: https://images.zmangames.com/filer_public/ef/d4/efd42a51-2537-4dba-8439-e4d8c7f72f04/rising_tide_rules.pdf
+  type: area map
+  year: 2017
+  image: https://cf.geekdo-images.com/qyw0Gm2K0xHd7nugSASXqg__original/img/4it21NOmPdwk9uIDiTGBDZAKsZQ=/0x0/filters:format(png)/pic3728815.png
+
+data:
+  - &p purple
+  - &o orange
+  - &y yellow
+  - &g green
+  - &s sea       # sea territory
+  - &h high      # high ground
+
+nodes:
+  # Seas
+  - &n-zee {deg: 11, labels: {color: *s,}, label: Noordzee}
+  - &z-zee {deg:  7, labels: {color: *s,}, label: Zuiderzee}
+  # High-elevation regions
+  - &dre    {deg: 4, labels: {color: *h,}, label: Drenthe}
+  - &twe    {deg: 3, labels: {color: *h,}, label: Twente}
+  - &vel    {deg: 5, labels: {color: *h,}, label: Veluwe}
+  - &utr    {deg: 4, labels: {color: *h,}, label: Utrechtse Heuvelrug}
+  - &oos    {deg: 5, labels: {color: *h,}, label: Oost-brabant}
+  - &dez    {deg: 3, labels: {color: *h,}, label: De Zoom}
+  # Purple           labels: {          }},
+  - &noorde {deg: 2, labels: {color: *p,}, label: Noorderzijlvest}
+  - &fry    {deg: 5, labels: {color: *p,}, label: Fryslân}
+  - &wei    {deg: 3, labels: {color: *p,}, label: Weiringermeer}
+  - &noordo {deg: 5, labels: {color: *p,}, label: Noordoostpolder}
+  - &ken    {deg: 5, labels: {color: *p,}, label: Kennemerland}
+  - &mar    {deg: 4, labels: {color: *p,}, label: Markerwaard}
+  - &fle    {deg: 6, labels: {color: *p,}, label: Flevoland}
+  # Yellow           labels: {          },
+  - &vol    {deg: 4, labels: {color: *y,}, label: Vollenhove}
+  - &ijs    {deg: 4, labels: {color: *y,}, label: Ijsseldelta}
+  - &kro    {deg: 4, labels: {color: *y,}, label: Kromme Rijn}
+  - &gel    {deg: 2, labels: {color: *y,}, label: Gelderse Vallei}
+  - &rij    {deg: 3, labels: {color: *y,}, label: Rijn en Ijssel}
+  - &vij    {deg: 5, labels: {color: *y,}, label: Vijfherenlanden}
+  - &bet    {deg: 7, labels: {color: *y,}, label: Betuwe}
+  # Orange           labels: {          },
+  - &del    {deg: 7, labels: {color: *o,}, label: Delfland}
+  - &voo    {deg: 4, labels: {color: *o,}, label: Voorne-Putten}
+  - &goe    {deg: 5, labels: {color: *o,}, label: Goeree-Ovarflakkee}
+  - &sch    {deg: 5, labels: {color: *o,}, label: Schouwen-Duiveland}
+  - &wal    {deg: 4, labels: {color: *o,}, label: Walcheren}
+  - &zui    {deg: 3, labels: {color: *o,}, label: Zuid-Beveland}
+  - &zee    {deg: 3, labels: {color: *o,}, label: Zeeuws-Vlaanderen}
+  # Green            labels: {          },
+  - &hoe    {deg: 6, labels: {color: *g,}, label: Hoekse Waard}
+  - &wes    {deg: 5, labels: {color: *g,}, label: West-Brabant}
+  - &l-alt  {deg: 5, labels: {color: *g,}, label: Land van Altena}
+  - &l-heu  {deg: 4, labels: {color: *g,}, label: Land van Heusden}
+  - &l-maa  {deg: 3, labels: {color: *g,}, label: Land van Maas en Waal}
+  - &pee    {deg: 2, labels: {color: *g,}, label: Peel en Maasvallei}
+  - &roe    {deg: 1, labels: {color: *g,}, label: Roer en Overmaas}
+
+adjacency:
+  # Seas
+  - src: *n-zee
+    dst:
+      - [*noorde, 1, {initial: 1}]
+      - [*fry   , 1, {initial: 1}]
+      - [*z-zee , 0, {initial: 0}]
+      - [*wei   , 1, {initial: 0}]
+      - [*ken   , 1, {initial: 1}]
+      - [*del   , 1, {initial: 1}]
+      - [*voo   , 1, {initial: 1}]
+      - [*goe   , 1, {initial: 1}]
+      - [*sch   , 1, {initial: 1}]
+      - [*wal   , 1, {initial: 1}]
+      - [*zee   , 1, {initial: 1}]
+  - src: *z-zee
+    dst:
+      - [*n-zee , 0, {initial: 0}]
+      - [*fry   , 1, {initial: 1}]
+      - [*noordo, 1, {initial: 0}]
+      - [*fle   , 1, {initial: 0}]
+      - [*mar   , 1, {initial: 0}]
+      - [*ken   , 1, {initial: 1}]
+      - [*wei   , 1, {initial: 0}]
+  # High-elevation regions
+  - src: *dre
+    dst:
+      - [*noorde, 1, {initial: 0}]
+      - [*twe   , 1, {initial: 0}]
+      - [*vol   , 1, {initial: 0}]
+      - [*fry   , 1, {initial: 0}]
+  - src: *twe
+    dst:
+      - [*dre   , 1, {initial: 0}]
+      - [*rij   , 1, {initial: 0}]
+      - [*vol   , 1, {initial: 0}]
+  - src: *vel
+    dst:
+      - [*fle   , 1, {initial: 0}]
+      - [*ijs   , 1, {initial: 0}]
+      - [*rij   , 1, {initial: 0}]
+      - [*bet   , 1, {initial: 0}]
+      - [*gel   , 1, {initial: 0}]
+  - src: *utr
+    dst:
+      - [*fle   , 1, {initial: 0}]
+      - [*gel   , 1, {initial: 0}]
+      - [*bet   , 1, {initial: 0}]
+      - [*kro   , 1, {initial: 0}]
+  - src: *oos
+    dst:
+      - [*wes   , 1, {initial: 0}]
+      - [*l-heu , 1, {initial: 0}]
+      - [*l-maa , 1, {initial: 0}]
+      - [*pee   , 1, {initial: 0}]
+      - [*roe   , 1, {initial: 0}]
+  - src: *dez
+    dst:
+      - [*zui   , 1, {initial: 0}]
+      - [*sch   , 1, {initial: 0}]
+      - [*wes   , 1, {initial: 0}]
+  # Purple
+  - src: *noorde
+    dst:
+      - [*n-zee , 1, {initial: 1}]
+      - [*dre   , 1, {initial: 0}]  # high
+      - [*fry   , 1, {initial: 0}]
+  - src: *fry
+    dst:
+      - [*noorde, 1, {initial: 0}]
+      - [*dre   , 1, {initial: 0}]  # high
+      - [*n-zee , 1, {initial: 1}]
+      - [*z-zee , 1, {initial: 1}]
+      - [*noordo, 1, {initial: 1}]
+      - [*vol   , 1, {initial: 0}]
+  - src: *wei
+    dst:
+      - [*n-zee , 1, {initial: 0}]
+      - [*z-zee , 1, {initial: 0}]
+      - [*ken   , 1, {initial: 1}]
+  - src: *noordo
+    dst:
+      - [*fry   , 1, {initial: 1}]
+      - [*vol   , 1, {initial: 1}]
+      - [*ijs   , 1, {initial: 1}]
+      - [*fle   , 1, {initial: 0}]
+      - [*z-zee , 1, {initial: 0}]
+  - src: *ken
+    dst:
+      - [*n-zee , 1, {initial: 1}]
+      - [*wei   , 1, {initial: 1}]
+      - [*z-zee , 1, {initial: 1}]
+      - [*mar   , 1, {initial: 1}]
+      - [*del   , 1, {initial: 0}]
+  - src: *mar
+    dst:
+      - [*ken   , 1, {initial: 1}]
+      - [*z-zee , 1, {initial: 0}]
+      - [*fle   , 1, {initial: 0}]
+      - [*del   , 1, {initial: 1}]
+  - src: *fle
+    dst:
+      - [*mar   , 1, {initial: 0}]
+      - [*z-zee , 1, {initial: 0}]
+      - [*noordo, 1, {initial: 0}]
+      - [*ijs   , 1, {initial: 1}]
+      - [*vel   , 1, {initial: 0}]  # high
+      - [*gel   , 1, {initial: 1}]
+      - [*utr   , 1, {initial: 0}]  # high
+      - [*kro   , 1, {initial: 1}]
+  # Yellow
+  - src: *vol
+    dst:
+      - [*fry   , 1, {initial: 0}]
+      - [*dre   , 1, {initial: 0}]  # high
+      - [*twe   , 1, {initial: 0}]  # high
+      - [*rij   , 1, {initial: 2}]  # double initial
+      - [*ijs   , 1, {initial: 0}]
+      - [*noordo, 1, {initial: 1}]
+  - src: *ijs
+    dst:
+      - [*noordo, 1, {initial: 1}]
+      - [*vol   , 1, {initial: 0}]
+      - [*rij   , 1, {initial: 1}]
+      - [*vel   , 1, {initial: 0}]  # high
+      - [*fle   , 1, {initial: 1}]
+  - src: *kro
+    dst:
+      - [*fle   , 1, {initial: 1}]
+      - [*utr   , 1, {initial: 0}]  # land
+      - [*bet   , 1, {initial: 1}]
+      - [*vij   , 1, {initial: 1}]
+      - [*del   , 1, {initial: 1}]
+  - src: *gel
+    dst:
+      - [*fle   , 1, {initial: 1}]
+      - [*vel   , 1, {initial: 0}]  # high
+      - [*bet   , 1, {initial: 0}]
+      - [*utr   , 1, {initial: 0}]  # high
+  - src: *rij
+    dst:
+      - [*vol   , 1, {initial: 2}]  # double initial
+      - [*twe   , 1, {initial: 0}]  # high
+      - [*bet   , 1, {initial: 1}]
+      - [*vel   , 1, {initial: 0}]  # high
+      - [*ijs   , 1, {initial: 1}]
+  - src: *vij
+    dst:
+      - [*del   , 1, {initial: 0}]
+      - [*kro   , 1, {initial: 1}]
+      - [*bet   , 1, {initial: 1}]
+      - [*l-alt , 1, {initial: 1}]
+      - [*hoe   , 1, {initial: 1}]
+  - src: *bet
+    dst:
+      - [*vij   , 1, {initial: 1}]
+      - [*kro   , 1, {initial: 1}]
+      - [*utr   , 1, {initial: 0}]  # high
+      - [*gel   , 1, {initial: 0}]
+      - [*vel   , 1, {initial: 0}]  # high
+      - [*rij   , 1, {initial: 1}]
+      - [*l-maa , 1, {initial: 1}]
+      - [*l-heu , 1, {initial: 1}]
+      - [*l-alt , 1, {initial: 0}]
+  # Orange
+  - src: *del
+    dst:
+      - [*n-zee , 1, {initial: 1}]
+      - [*ken   , 1, {initial: 0}]
+      - [*mar   , 1, {initial: 1}]
+      - [*kro   , 1, {initial: 1}]
+      - [*vij   , 1, {initial: 0}]
+      - [*hoe   , 1, {initial: 0}]
+      - [*voo   , 1, {initial: 1}]
+  - src: *voo
+    dst:
+      - [*n-zee , 1, {initial: 1}]
+      - [*del   , 1, {initial: 1}]
+      - [*hoe   , 1, {initial: 1}]
+      - [*goe   , 1, {initial: 1}]
+  - src: *goe
+    dst:
+      - [*n-zee , 1, {initial: 1}]
+      - [*voo   , 1, {initial: 1}]
+      - [*hoe   , 1, {initial: 0}]
+      - [*wes   , 1, {initial: 1}]
+      - [*sch   , 1, {initial: 1}]
+  - src: *sch
+    dst:
+      - [*n-zee , 1, {initial: 1}]
+      - [*goe   , 1, {initial: 1}]
+      - [*wes   , 1, {initial: 1}]
+      - [*dez   , 1, {initial: 0}]  # land
+      - [*zui   , 1, {initial: 1}]
+      - [*wal   , 1, {initial: 0}]
+  - src: *wal
+    dst:
+      - [*n-zee , 1, {initial: 1}]
+      - [*sch   , 1, {initial: 0}]
+      - [*zui   , 1, {initial: 1}]
+      - [*zee   , 1, {initial: 1}]
+  - src: *zui
+    dst:
+      - [*sch   , 1, {initial: 1}]
+      - [*dez   , 1, {initial: 0}]  # land
+      - [*zee   , 1, {initial: 1}]
+      - [*wal   , 1, {initial: 1}]
+  - src: *zee
+    dst:
+      - [*n-zee , 1, {initial: 1}]
+      - [*wal   , 1, {initial: 1}]
+      - [*zui   , 1, {initial: 1}]
+  # Green
+  - src: *hoe
+    dst:
+      - [*del   , 1, {initial: 0}]
+      - [*vij   , 1, {initial: 1}]
+      - [*l-alt , 1, {initial: 1}]
+      - [*wes   , 1, {initial: 1}]
+      - [*goe   , 1, {initial: 0}]
+      - [*voo   , 1, {initial: 1}]
+  - src: *wes
+    dst:
+      - [*hoe   , 1, {initial: 1}]
+      - [*l-alt , 1, {initial: 1}]
+      - [*l-heu , 1, {initial: 0}]
+      - [*oos   , 1, {initial: 0}]  # land
+      - [*dez   , 1, {initial: 0}]  # land
+      - [*sch   , 1, {initial: 1}]
+      - [*goe   , 1, {initial: 1}]
+  - src: *l-alt
+    dst:
+      - [*vij   , 1, {initial: 1}]
+      - [*bet   , 1, {initial: 0}]
+      - [*l-heu , 1, {initial: 1}]
+      - [*wes   , 1, {initial: 1}]
+      - [*hoe   , 1, {initial: 1}]
+  - src: *l-heu
+    dst:
+      - [*l-alt , 1, {initial: 1}]
+      - [*bet   , 1, {initial: 1}]
+      - [*l-maa , 1, {initial: 2}]  # double initial
+      - [*oos   , 1, {initial: 0}]  # land
+      - [*wes   , 1, {initial: 0}]
+  - src: *l-maa
+    dst:
+      - [*bet   , 1, {initial: 1}]
+      - [*pee   , 1, {initial: 1}]
+      - [*oos   , 1, {initial: 0}]  #land
+      - [*l-heu , 1, {initial: 2}]  # double initial
+  - src: *pee
+    dst:
+      - [*l-maa , 1, {initial: 1}]
+      - [*roe   , 1, {initial: 1}]
+      - [*oos   , 1, {initial: 0}]  #land
+  - src: *roe
+    dst:
+      - [*pee   , 1, {initial: 1}]
+      - [*oos   , 1, {initial: 0}]  # land

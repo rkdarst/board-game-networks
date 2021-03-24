@@ -1,0 +1,244 @@
+meta:
+  name: Narcos
+  bgg: https://boardgamegeek.com/boardgame/253106/narcos-board-game
+  year: 2018
+  features: [node-attributes, regions]
+  rules: https://cdn.1j1ju.com/medias/92/c4/6f-narcos-the-board-game-rulebook.pdf
+  site: https://cmon.com/product/narcos/narcos
+  image: https://www.queenofgames.be/wp-content/uploads/2019/06/Narcos-The-Board-Game-bordspellen-kopen-Oostende-prijs-05.jpg
+  fixme: find a better image
+
+data:
+  - &g  green
+  - &w  white
+  - &a  andina
+  - &c  caribe
+  - &o  orinoquía
+
+
+nodes:
+  # C region
+  - &c1
+    label: C1 Cartagena
+    labels: {color: *w, region: *c, airport: 1}
+  - &c2
+    label: C2
+    labels: {color: *w, region: *c, airport: 0}
+  - &c3
+    label: C3
+    labels: {color: *g, region: *c, airport: 0}
+  - &c4
+    label: C4
+    labels: {color: *g, region: *c, airport: 0}
+  - &c5
+    label: C5
+    labels: {color: *g, region: *c, airport: 0}
+  - &c6
+    label: C6
+    labels: {color: *g, region: *c, airport: 0}
+  - &c7
+    label: C7
+    labels: {color: *w, region: *c, airport: 0}
+  - &c8
+    label: C8 Barranquilla
+    labels: {color: *w, region: *c, airport: 1}
+  - &c9
+    label: C9
+    labels: {color: *w, region: *c, airport: 0}
+  - &c10
+    label: C10
+    labels: {color: *w, region: *c, airport: 0}
+  - &c11
+    label: C11
+    labels: {color: *w, region: *c, airport: 0}
+  - &c12
+    label: C12
+    labels: {color: *g, region: *c, airport: 0}
+  - &c13
+    label: C13
+    labels: {color: *g, region: *c, airport: 0}
+  - &c14
+    label: C14
+    labels: {color: *g, region: *c, airport: 0}
+  - &c15
+    label: C15
+    labels: {color: *w, region: *c, airport: 0}
+  - &c16
+    label: C16
+    labels: {color: *g, region: *c, airport: 0}
+  - &c17
+    label: C17
+    labels: {color: *w, region: *c, airport: 0}
+  - &c18
+    label: C18
+    labels: {color: *g, region: *c, airport: 0}
+  # A region
+  - &a1
+    label: A1
+    labels: {color: *w, region: *a, airport: 0}
+  - &a2
+    label: A2
+    labels: {color: *g, region: *a, airport: 0}
+  - &a3
+    label: A3
+    labels: {color: *w, region: *a, airport: 0}
+  - &a4
+    label: A4 MedellÍn
+    labels: {color: *w, region: *a, airport: 1}
+  - &a5
+    label: A5
+    labels: {color: *g, region: *a, airport: 0}
+  - &a6
+    label: A6
+    labels: {color: *g, region: *a, airport: 0}
+  - &a7
+    label: A7
+    labels: {color: *w, region: *a, airport: 0}
+  - &a8
+    label: A8
+    labels: {color: *g, region: *a, airport: 0}
+  - &a9
+    label: A9
+    labels: {color: *w, region: *a, airport: 0}
+  - &a10
+    label: A10
+    labels: {color: *g, region: *a, airport: 0}
+  - &a11
+    label: A11
+    labels: {color: *w, region: *a, airport: 0}
+  - &a12
+    label: A12
+    labels: {color: *g, region: *a, airport: 0}
+  - &a13
+    label: A13
+    labels: {color: *g, region: *a, airport: 0}
+  - &a14
+    label: A14 Cali
+    labels: {color: *w, region: *a, airport: 1}
+  - &a15
+    label: A15
+    labels: {color: *g, region: *a, airport: 0}
+  - &a16
+    label: A16
+    labels: {color: *w, region: *a, airport: 0}
+  - &a17
+    label: A17
+    labels: {color: *w, region: *a, airport: 0}
+  - &a18
+    label: A18
+    labels: {color: *g, region: *a, airport: 0}
+  # O region
+  - &o1
+    label: O1
+    labels: {color: *g, region: *o, airport: 0}
+  - &o2
+    label: O2 Bucaramanga
+    labels: {color: *w, region: *o, airport: 1}
+  - &o3
+    label: O3
+    labels: {color: *g, region: *o, airport: 0}
+  - &o4
+    label: O4
+    labels: {color: *g, region: *o, airport: 0}
+  - &o5
+    label: O5
+    labels: {color: *w, region: *o, airport: 0}
+  - &o6
+    label: O6
+    labels: {color: *g, region: *o, airport: 0}
+  - &o7
+    label: O7
+    labels: {color: *w, region: *o, airport: 0}
+  - &o8
+    label: O8
+    labels: {color: *w, region: *o, airport: 0}
+  - &o9
+    label: O9
+    labels: {color: *g, region: *o, airport: 0}
+  - &o10
+    label: O10
+    labels: {color: *g, region: *o, airport: 0}
+  - &o11
+    label: O11
+    labels: {color: *w, region: *o, airport: 0}
+  - &o12
+    label: O12 Bogotá
+    labels: {color: *w, region: *o, airport: 1}
+  - &o13
+    label: O13
+    labels: {color: *w, region: *o, airport: 0}
+  - &o14
+    label: O14
+    labels: {color: *w, region: *o, airport: 0}
+  - &o15
+    label: O15
+    labels: {color: *g, region: *o, airport: 0}
+  - &o16
+    label: O16
+    labels: {color: *g, region: *o, airport: 0}
+  - &o17
+    label: O17
+    labels: {color: *g, region: *o, airport: 0}
+  - &o18
+    label: O18
+    labels: {color: *w, region: *o, airport: 0}
+
+
+adjacency:
+  # C
+  - {src: *c1 , dst: [*c2, *c5, *c4]}
+  - {src: *c2 , dst: [*c1, *c5, *c6, *c3]}
+  - {src: *c3 , dst: [*c2, *c6, *c7]}
+  - {src: *c4 , dst: [*c1, *c5, *c9, *c11, *c8]}
+  - {src: *c5 , dst: [*c1, *c2, *c6, *c9, *c4]}
+  - {src: *c6 , dst: [*c2, *c3, *c7, *c10, *c12, *c9, *c5]}
+  - {src: *c7 , dst: [*c3, *c6, *c10]}
+  - {src: *c8 , dst: [*c4, *c11, *c13]}
+  - {src: *c9 , dst: [*c4, *c5, *c6, *c11, *c12, *c14]}
+  - {src: *c10, dst: [*c6, *c7, *c12, *o1]}
+  - {src: *c11, dst: [*c4, *c9, *c14, *c15, *c13, *c8]}
+  - {src: *c12, dst: [*c6, *c10, *a1, *c14, *c9]}
+  - {src: *c13, dst: [*c8, *c11, *c15, *c16]}
+  - {src: *c14, dst: [*c9, *c11, *c12, *c15, *a1, *a2, *a3]}
+  - {src: *c15, dst: [*c11, *c13, *c14, *c16, *a3, *a4]}
+  - {src: *c16, dst: [*c13, *c15, *c17, *a4]}
+  - {src: *c17, dst: [*c16, *c18, *a4]}
+  - {src: *c18, dst: [*c17, *a4, *a7, *a10]}
+  # A
+  - {src: *a1 , dst: [*c12, *c14, *a2, *o1, *o2]}
+  - {src: *a2 , dst: [*a1, *a3, *a5, *o2, *o5, *c14]}
+  - {src: *a3 , dst: [*a2, *a4, *a5, *a8, *c14, *c15]}
+  - {src: *a4 , dst: [*c15, *c16, *c17, *c18, *a3, *a7, *a8]}
+  - {src: *a5 , dst: [*a2, *a3, *a6, *a8, *a9, *o5]}
+  - {src: *a6 , dst: [*a5, *a9, *o5, *o6, *o8, *o9]}
+  - {src: *a7 , dst: [*a4, *a8, *a10, *a11, *c18]}
+  - {src: *a8 , dst: [*a3, *a4, *a5, *a7, *a9, *a11, *a12]}
+  - {src: *a9 , dst: [*a5, *a6, *a8, *a12, *o9, *o11]}
+  - {src: *a10, dst: [*c18, *a7, *a11, *a14, *a13]}
+  - {src: *a11, dst: [*a7, *a8, *a10, *a12, *a14, *a15]}
+  - {src: *a12, dst: [*a9, *a8, *a11, *a15, *o11]}
+  - {src: *a13, dst: [*a10, *a14, *a16, *a17]}
+  - {src: *a14, dst: [*a10, *a11, *a13, *a16, *a15]}
+  - {src: *a15, dst: [*a11, *a12, *a14, *a16, *o11, *o14, *o17]}
+  - {src: *a16, dst: [*a13, *a14, *a15, *a17, *a18, *o17]}
+  - {src: *a17, dst: [*a13, *a16, *a18]}
+  - {src: *a18, dst: [*a16, *a17, *o17]}
+  # *o
+  - {src: *o1 , dst: [*c10, *a1, *o2]}
+  - {src: *o2 , dst: [*o1, *o3, *o5, *a1, *a2]}
+  - {src: *o3 , dst: [*o2, *o4, *o5, *o6]}
+  - {src: *o4 , dst: [*o3, *o6, *o7]}
+  - {src: *o5 , dst: [*o2, *o3, *o6, *a2, *a5, *a6]}
+  - {src: *o6 , dst: [*o3, *o4, *o7, *o8, *a6, *o5]}
+  - {src: *o7 , dst: [*o4, *o6, *o8, *o10]}
+  - {src: *o8 , dst: [*o6, *o7, *o9, *o10, *a6]}
+  - {src: *o9 , dst: [*o8, *o10, *o11, *o12, *a6, *a9]}
+  - {src: *o10, dst: [*o7, *o8, *o9, *o12, *o13]}
+  - {src: *o11, dst: [*o9, *o12, *o14, *o15, *a15, *a12, *a9]}
+  - {src: *o12, dst: [*o9, *o10, *o11, *o13, *o15, *o16]}
+  - {src: *o13, dst: [*o10, *o12, *o16]}
+  - {src: *o14, dst: [*o11, *o15, *o18, *o17, *a15]}
+  - {src: *o15, dst: [*o11, *o12, *o14, *o16, *o18]}
+  - {src: *o16, dst: [*o12, *o13, *o15, *o18]}
+  - {src: *o17, dst: [*a15, *a16, *a18, *o14, *o18]}
+  - {src: *o18, dst: [*o14, *o15, *o16, *o17]}
