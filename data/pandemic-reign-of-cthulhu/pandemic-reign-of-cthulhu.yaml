@@ -121,7 +121,7 @@ adjacency:
   - src: *doc
     dst: [*boa, *woo]
   - src: *fac
-    dst: [*boa, *doc, *paw, *hos]
+    dst: [*boa, *paw, *hos]
   - src: *boa
     dst: [*doc, *fac]
   # Dun
