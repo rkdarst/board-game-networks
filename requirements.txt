@@ -2,3 +2,5 @@ jinja2
 networkx
 pyyaml
 snakemake
+requests
+defusedxml

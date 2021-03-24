@@ -83,7 +83,12 @@ add them yourself.
 License
 -------
 
-All data: CC-BY 4.0
+All original data: CC-BY 4.0, except linked data from other sources.
+Credits:
+
+* ``bbg-*`` metadata values: `BoardGameGeek
+  <https://boardgamegeek.com/wiki/page/XML_API_Terms_of_Use>`__
+
 
 Code: MIT
 

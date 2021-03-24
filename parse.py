@@ -1,11 +1,16 @@
 import collections
+import dbm
 import json
 import os
+import re
 import sys
 import yaml
 
+from defusedxml import ElementTree
 import jinja2
 import networkx
+import requests
+
 
 VERBOSE = False
 ALL_FEATURES = set([
@@ -180,7 +185,25 @@ def process_network(graph, args):
         print("edge keys: %s"%stats['edge_keys'])
         exit(0)
 
-    #from ipdb import set_trace ; set_trace()
+    # If we have a BoardGameGeek attribute, look up and link some extra
+    # information from BGG.  Cache this in `bgg-cache.dbm.db` to prevent
+    # excessive web queries.
+    # - docs: https://boardgamegeek.com/wiki/page/BGG_XML_API2
+    # - terms: https://boardgamegeek.com/wiki/page/XML_API_Terms_of_Use
+    if 'bgg' in data['meta']:
+        BGG_CACHE = dbm.open('bgg-cache.dbm', 'c')
+        bgg_id = re.search(r'(boardgame/)?(?P<id>\d+)', data['meta']['bgg']).group('id')
+        if str(bgg_id) not in BGG_CACHE:
+            print('requesting info from BGG...')
+            ret = requests.get('https://www.boardgamegeek.com/xmlapi2/thing',
+                               params={'id': str(bgg_id)})
+            x = ElementTree.fromstring(ret.content.decode())
+            bgg_stats = { }
+            bgg_stats['bgg-gamemechanics'] = [y.get('value') for y in x[0].findall(".//link[@type='boardgamemechanic']")]
+            bgg_stats['bgg-gamecategory'] = [y.get('value') for y in x[0].findall(".//link[@type='boardgamecategory']")]
+            BGG_CACHE[str(bgg_id)] = json.dumps(bgg_stats)
+        stats.update(json.loads(BGG_CACHE[str(bgg_id)]))
+
 
     # Write graphs out to various formats
     def generate_edgelist_ids(G):
